@@ -533,6 +533,51 @@ function coreFundingState() {
   };
 }
 
+function estimatedRevenueData() {
+  const er = state.data?.scenario?.estimatedRevenue;
+  if (er?.lines?.length) return er;
+  const total = state.data?.scenario?.vendorRevenue ?? 0;
+  return {
+    total,
+    summary: state.data?.scenario?.label ?? "",
+    lines: [{ label: cashOffsetLabel(), amount: total }],
+  };
+}
+
+function renderRevenueModal() {
+  const er = estimatedRevenueData();
+  const body = document.getElementById("revenue-modal-body");
+  if (!body) return;
+
+  const rows = er.lines
+    .map(
+      (line) => `
+    <tr>
+      <td>${line.label}${line.note ? `<span class="revenue-modal-note">${line.note}</span>` : ""}</td>
+      <td>${fmt(line.amount)}</td>
+    </tr>`,
+    )
+    .join("");
+
+  body.innerHTML = `
+    ${er.summary ? `<p class="revenue-modal-summary">${er.summary}</p>` : ""}
+    <table>
+      <tbody>${rows}</tbody>
+      <tfoot>
+        <tr>
+          <th>Total estimated revenue</th>
+          <td>${fmt(er.total ?? er.lines.reduce((s, l) => s + l.amount, 0))}</td>
+        </tr>
+      </tfoot>
+    </table>
+  `;
+}
+
+function openRevenueModal() {
+  renderRevenueModal();
+  document.getElementById("revenue-modal")?.showModal();
+}
+
 function renderCoreProgress() {
   const core = coreFundingState();
   const labelEl = document.getElementById("core-label");
@@ -896,6 +941,7 @@ async function init() {
   });
   document.getElementById("cart-btn").onclick = openCartModal;
   document.getElementById("cart-clear").onclick = clearSelections;
+  document.getElementById("revenue-info-btn").onclick = openRevenueModal;
 
   try {
     const manifestRes = await fetch("festivals.json");

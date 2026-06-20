@@ -18,7 +18,18 @@
     "mvpCap": 10250,
     "vendorRevenue": 10575,
     "headroomOrGap": 325,
-    "vendorSlots": 28
+    "vendorSlots": 28,
+    "estimatedRevenue": {
+      "total": 10575,
+      "summary": "28 vendor slots \u00b7 2,500 attendance \u00b7 100% fill",
+      "lines": [
+        {
+          "label": "Vendor booth fees",
+          "amount": 10575,
+          "note": "Fri night market + Sat festival @ planning mix"
+        }
+      ]
+    }
   },
   "gifts": [
     {

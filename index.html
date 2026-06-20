@@ -44,7 +44,16 @@
       <h2 id="core-progress-title">Core ops funded</h2>
       <div class="progress-wrap">
         <div class="progress-labels">
-          <span id="core-label"></span>
+          <div class="progress-label-group">
+            <span id="core-label"></span>
+            <button type="button" class="progress-info-btn" id="revenue-info-btn" aria-label="Estimated revenue breakdown" title="Estimated revenue breakdown">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 10v6"/>
+                <path d="M12 7h.01"/>
+              </svg>
+            </button>
+          </div>
           <span id="core-target-label"></span>
         </div>
         <div class="progress-bar progress-bar--core" id="core-progress-bar" role="progressbar" aria-labelledby="core-progress-title"></div>
@@ -166,6 +175,18 @@
       </div>
       <div class="modal-body" id="modal-guest"></div>
       <div class="modal-body hidden" id="modal-funds"></div>
+      <footer class="modal-footer">
+        <button type="submit" class="btn">Close</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <dialog id="revenue-modal">
+    <form method="dialog" class="modal-inner">
+      <header class="modal-header">
+        <h3>Estimated revenue</h3>
+      </header>
+      <div class="modal-body" id="revenue-modal-body"></div>
       <footer class="modal-footer">
         <button type="submit" class="btn">Close</button>
       </footer>

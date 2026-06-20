@@ -17,7 +17,28 @@
     "mvpCap": 39625,
     "vendorRevenue": 26435,
     "headroomOrGap": 13190,
-    "vendorSlots": 37
+    "vendorSlots": 37,
+    "estimatedRevenue": {
+      "total": 26435,
+      "summary": "37 paid booths \u00b7 6,000 attendance \u00b7 100% fill",
+      "lines": [
+        {
+          "label": "Vendor booth fees",
+          "amount": 18200,
+          "note": "37 paid booths @ weekend rate card"
+        },
+        {
+          "label": "Parking",
+          "amount": 5164,
+          "note": "Scaled from 2026 $5,164 deposited"
+        },
+        {
+          "label": "Carnival share",
+          "amount": 3071,
+          "note": "cPALSs 20% commission, scaled from 2026"
+        }
+      ]
+    }
   },
   "gifts": [
     {
