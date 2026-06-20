@@ -8,6 +8,9 @@
   --accent: #4a9eff;
   --accent-hover: #5cabff;
   --accent-dim: #2a5a8a;
+  --progress-funded: var(--accent);
+  --progress-core-unfunded: rgba(74, 158, 255, 0.22);
+  --progress-unfunded: var(--bg);
   --success: #3dd68c;
   --danger: #f87171;
   --on-accent: #fff;
@@ -33,6 +36,9 @@
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
   --accent-dim: #93c5fd;
+  --progress-funded: var(--accent);
+  --progress-core-unfunded: rgba(37, 99, 235, 0.14);
+  --progress-unfunded: var(--bg);
   --card-active-bg: #eef4ff;
   --overlay: rgba(15, 20, 25, 0.45);
   --notice-bg: rgba(92, 107, 128, 0.1);
@@ -54,6 +60,9 @@
     --accent: #2563eb;
     --accent-hover: #1d4ed8;
     --accent-dim: #93c5fd;
+    --progress-funded: var(--accent);
+    --progress-core-unfunded: rgba(37, 99, 235, 0.14);
+    --progress-unfunded: var(--bg);
     --card-active-bg: #eef4ff;
     --overlay: rgba(15, 20, 25, 0.45);
     --notice-bg: rgba(92, 107, 128, 0.1);
@@ -149,12 +158,13 @@ body {
 }
 
 .festival-select {
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 6px 28px 6px 10px;
+  font: inherit;
+  line-height: inherit;
+  padding: 4px 28px 4px 8px;
+  width: auto;
   max-width: 100%;
-  min-width: 0;
-  flex: 1 1 12rem;
+  flex: 0 0 auto;
+  field-sizing: content;
 }
 
 .subtitle {
@@ -173,6 +183,29 @@ body {
 .panel h2 {
   margin: 0 0 12px;
   font-size: 1.1rem;
+}
+
+.progress-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.progress-row > .progress-panel {
+  margin-top: 0;
+}
+
+.progress-panel h2 {
+  line-height: 1.2;
+}
+
+@media (min-width: 720px) {
+  .progress-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
 }
 
 .hint {
@@ -289,17 +322,110 @@ select {
   border: 1px solid var(--border);
 }
 
+.progress-bar--core {
+  background: var(--progress-unfunded);
+}
+
+.progress-bar--core .progress-seg.funded {
+  background: var(--progress-funded);
+}
+
+.progress-bar--vision {
+  background: var(--progress-unfunded);
+}
+
+.progress-bar--vision .progress-seg.funded {
+  background: var(--progress-funded);
+}
+
+.progress-bar--vision .progress-seg.core-unfunded {
+  background: var(--progress-core-unfunded);
+}
+
+.progress-bar--vision .progress-seg.vision-unfunded {
+  background: var(--progress-unfunded);
+}
+
 .progress-seg {
   height: 100%;
   transition: width 0.2s ease;
 }
 
-.progress-seg.mvp {
-  background: var(--accent);
+.progress-footnote {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
 }
 
-.progress-seg.registry {
+.progress-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.progress-metric--start {
+  text-align: left;
+}
+
+.progress-metric--center {
+  text-align: center;
+}
+
+.progress-metric--end {
+  text-align: right;
+}
+
+.progress-metric-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.progress-metric-value--closed {
+  color: var(--success);
+}
+
+.progress-metric-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.progress-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.progress-legend li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.progress-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.progress-swatch.cash {
+  background: var(--accent-dim);
+}
+
+.progress-swatch.sponsor {
   background: var(--success);
+}
+
+.progress-swatch.gap {
+  background: var(--bg);
 }
 
 .gift-grid {
@@ -417,6 +543,7 @@ select {
 .gift-card h3 {
   margin: 0 0 4px;
   font-size: 1rem;
+  line-height: 1.2;
   display: flex;
   align-items: center;
   gap: 6px;

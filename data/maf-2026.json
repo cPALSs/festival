@@ -130,6 +130,7 @@
       "amount": 2500,
       "category": "registry",
       "sortOrder": 1,
+      "impactOrder": 7,
       "tagline": "The walk that closes Mid-Autumn Festival \u2014 light moving through the park.",
       "description": "Music-driven lantern walk \u2014 children with LED lanterns, route staging, and the moment families photograph.",
       "benefits": [
@@ -158,6 +159,7 @@
       "amount": 3500,
       "category": "registry",
       "sortOrder": 2,
+      "impactOrder": 8,
       "tagline": "Mid-Autumn Festival is for the kids \u2014 this is their day on stage.",
       "description": "Full Sat schedule \u2014 MC, singers, dancers, magic, clown, storytelling.",
       "benefits": [
@@ -186,6 +188,7 @@
       "amount": 2000,
       "category": "registry",
       "sortOrder": 3,
+      "impactOrder": 4,
       "tagline": "Grandparents watch the procession in comfort \u2014 an MAF value made visible.",
       "description": "A restful zone with shade tent, seating, and elder tea hospitality.",
       "benefits": [
@@ -210,6 +213,7 @@
       "amount": 2580,
       "category": "registry",
       "sortOrder": 4,
+      "impactOrder": 6,
       "tagline": "Trees, stage, and night market lit for MAF \u2014 the park glows at dusk.",
       "description": "Functional power and light for stage + night market, plus tree uplights, string lights, and stage flowers \u2014 Mid-Autumn Festival atmosphere before the procession.",
       "benefits": [
@@ -242,6 +246,7 @@
       "amount": 800,
       "category": "registry",
       "sortOrder": 5,
+      "impactOrder": 1,
       "tagline": "Spread the Word presented by [Sponsor] \u2014 reach families who have not found us yet.",
       "description": "Paid Meta / Instagram and boosted posts \u2014 media sponsorship, not a petty-cash ask.",
       "benefits": [
@@ -262,6 +267,7 @@
       "amount": 2875,
       "category": "registry",
       "sortOrder": 6,
+      "impactOrder": 5,
       "requiresCoreGift": "festival_stage",
       "tagline": "Saturday stage at full production quality.",
       "description": "Upgrade from playlist-only to concert-quality outdoor sound and basic stage lighting \u2014 requires Festival Stage in Core ops.",
@@ -281,6 +287,7 @@
       "amount": 1120,
       "category": "registry",
       "sortOrder": 7,
+      "impactOrder": 3,
       "requiresCoreGift": "safe_festival",
       "tagline": "Extra guards Fri/Sat",
       "description": "Additional security beyond the Safe Festival baseline \u2014 requires Safe Festival in Core ops.",
@@ -300,6 +307,7 @@
       "amount": 545,
       "category": "registry",
       "sortOrder": 8,
+      "impactOrder": 2,
       "requiresCoreGift": "festival_amenities",
       "tagline": "Additional restrooms/sinks",
       "description": "Extra restroom capacity for peak Sat hours \u2014 requires Festival Amenities in Core ops.",

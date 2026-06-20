@@ -17,6 +17,9 @@ const GIFT_SORT = {
   festival_stage_plus: 6,
   safe_festival_plus: 7,
   festival_amenities_plus: 8,
+  lucky_wav: 8,
+  asian_cajun_show: 9,
+  stage_production_plus: 10,
   sponsor_booth: 1,
   tent_rental: 2,
   additional_amount: 0,
@@ -76,13 +79,16 @@ function globalPerkLines(total = sponsorTotal()) {
   }));
 }
 
+/** Core/options: sortOrder. Registry: impactOrder ascending (lower = smaller lift, higher = flagship). */
+function giftSortKey(gift, category) {
+  if (category === "registry" && gift.impactOrder != null) return gift.impactOrder;
+  return gift.sortOrder ?? GIFT_SORT[gift.id] ?? 99;
+}
+
 function giftsInCategory(gifts, category) {
   return gifts
     .filter((g) => g.category === category)
-    .sort(
-      (a, b) =>
-        (a.sortOrder ?? GIFT_SORT[a.id] ?? 99) - (b.sortOrder ?? GIFT_SORT[b.id] ?? 99),
-    );
+    .sort((a, b) => giftSortKey(a, category) - giftSortKey(b, category));
 }
 
 const FESTIVAL_ID_KEY = "build-festival-id";
@@ -497,35 +503,90 @@ function renderSectionHints() {
   if (optionsEl) optionsEl.textContent = replaceTokens(sections.options) || "";
 }
 
+function cashOffsetLabel() {
+  return currentFestivalEntry()?.cashOffsetLabel ?? "Cash ops";
+}
+
+function coreFundingState() {
+  if (!state.data?.scenario) return null;
+  const mvpCap = state.data.scenario.mvpCap;
+  if (!mvpCap) return null;
+
+  const rawCash = state.data.scenario.vendorRevenue ?? 0;
+  const cashOffset = Math.min(mvpCap, rawCash);
+  const sponsorGap = Math.max(0, mvpCap - cashOffset);
+  const sponsorFill = Math.min(sumEnabled(["core"]) + (state.extraCash || 0), sponsorGap);
+  const remainingGap = Math.max(0, sponsorGap - sponsorFill);
+  const fundedTotal = cashOffset + sponsorFill;
+
+  return {
+    mvpCap,
+    cashOffset,
+    sponsorGap,
+    sponsorFill,
+    remainingGap,
+    fundedTotal,
+    cashPct: (cashOffset / mvpCap) * 100,
+    sponsorPct: (sponsorFill / mvpCap) * 100,
+    fundedPct: (fundedTotal / mvpCap) * 100,
+    cashOpsOnly: sponsorGap === 0,
+  };
+}
+
+function renderCoreProgress() {
+  const core = coreFundingState();
+  const labelEl = document.getElementById("core-label");
+  const targetEl = document.getElementById("core-target-label");
+  const barEl = document.getElementById("core-progress-bar");
+  const fundedEl = document.getElementById("core-funded-value");
+  const sponsoredEl = document.getElementById("core-sponsored-value");
+  const neededEl = document.getElementById("core-needed-value");
+  if (!core || !labelEl || !targetEl || !barEl || !fundedEl || !sponsoredEl || !neededEl) return;
+
+  const pct = Math.min(100, Math.round(core.fundedPct));
+
+  labelEl.textContent = `Est. revenue ${fmt(core.cashOffset)}`;
+  targetEl.textContent = `Target ${fmt(core.mvpCap)}`;
+
+  barEl.setAttribute("aria-valuenow", String(pct));
+  barEl.setAttribute("aria-valuemin", "0");
+  barEl.setAttribute("aria-valuemax", "100");
+  barEl.innerHTML = `
+    <div class="progress-seg funded" style="width:${core.fundedPct}%" title="Core funded"></div>
+  `;
+
+  fundedEl.textContent = fmt(core.fundedTotal);
+  sponsoredEl.textContent = fmt(core.sponsorFill);
+  neededEl.textContent = core.remainingGap === 0 ? "✓" : fmt(core.remainingGap);
+  neededEl.classList.toggle("progress-metric-value--closed", core.remainingGap === 0);
+}
+
 function renderProgress() {
   const s = state.data.scenario;
+  const core = coreFundingState();
   const registryFunded = sumEnabled(["registry"]);
-  const visionTotal = s.mvpCap + registryFunded;
   const target = state.data.event.registryFull;
-  const pct = Math.min(100, Math.round((visionTotal / target) * 100));
+  const fundedBlue = core.cashOffset + core.sponsorFill + registryFunded;
+  const toFullVision = Math.max(0, target - fundedBlue);
 
-  document.getElementById("vision-label").textContent = `Vision ${fmt(visionTotal)} (${pct}%)`;
+  document.getElementById("vision-label").textContent = `Core ops ${fmt(s.mvpCap)}`;
   document.getElementById("target-label").textContent = `Target ${fmt(target)}`;
 
-  const mvpPct = Math.min(100, (s.mvpCap / target) * 100);
-  const regPct = Math.min(100 - mvpPct, (registryFunded / target) * 100);
+  const coreGap = core.remainingGap;
+  const visionGap = Math.max(0, target - s.mvpCap - registryFunded);
+  const fundedPct = (fundedBlue / target) * 100;
+  const coreGapPct = (coreGap / target) * 100;
+  const visionGapPct = (visionGap / target) * 100;
+
   document.getElementById("progress-bar").innerHTML = `
-    <div class="progress-seg mvp" style="width:${mvpPct}%" title="MVP"></div>
-    <div class="progress-seg registry" style="width:${regPct}%" title="Registry"></div>
+    <div class="progress-seg funded" style="width:${fundedPct}%" title="Funded"></div>
+    <div class="progress-seg core-unfunded" style="width:${coreGapPct}%" title="Unfunded core ops"></div>
+    <div class="progress-seg vision-unfunded" style="width:${visionGapPct}%" title="Unfunded full vision"></div>
   `;
 
-  const coreFunded = sumEnabled(["core"]);
-  const selectableCore = state.data.gifts.filter(
-    (g) => g.category === "core" && isSelectableGift(g),
-  );
-  const coreStatLabel = selectableCore.length ? "Core gifts toggled" : "MVP baseline";
-  const coreStatValue = selectableCore.length ? fmt(coreFunded) : fmt(s.mvpCap);
-  document.getElementById("vision-stats").innerHTML = `
-    <div class="stat"><div class="stat-value">${fmt(registryFunded)}</div><div class="stat-label">Registry funded</div></div>
-    <div class="stat"><div class="stat-value">${coreStatValue}</div><div class="stat-label">${coreStatLabel}</div></div>
-    <div class="stat"><div class="stat-value">${fmt(visionTotal)}</div><div class="stat-label">Vision total</div></div>
-    <div class="stat"><div class="stat-value">${fmt(Math.max(0, target - visionTotal))}</div><div class="stat-label">To full vision</div></div>
-  `;
+  document.getElementById("vision-total-value").textContent = fmt(core.fundedTotal + registryFunded);
+  document.getElementById("registry-funded-value").textContent = fmt(registryFunded);
+  document.getElementById("to-vision-value").textContent = fmt(toFullVision);
 }
 
 function giftLabel(gift) {
@@ -741,6 +802,7 @@ function setModalTab(tab) {
 function renderAll() {
   enforceOptionLocks();
   renderSectionHints();
+  renderCoreProgress();
   renderProgress();
   renderCartBadge();
   if (document.getElementById("cart-modal").open) {

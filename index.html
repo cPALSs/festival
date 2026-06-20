@@ -39,17 +39,57 @@
       </div>
     </header>
 
-    <section class="panel" aria-labelledby="progress-title">
-      <h2 id="progress-title">Registry progress</h2>
+    <div class="progress-row">
+    <section class="panel progress-panel" aria-labelledby="core-progress-title">
+      <h2 id="core-progress-title">Core ops funded</h2>
+      <div class="progress-wrap">
+        <div class="progress-labels">
+          <span id="core-label"></span>
+          <span id="core-target-label"></span>
+        </div>
+        <div class="progress-bar progress-bar--core" id="core-progress-bar" role="progressbar" aria-labelledby="core-progress-title"></div>
+        <div class="progress-footnote" id="core-footnote">
+          <div class="progress-metric progress-metric--start">
+            <span class="progress-metric-value" id="core-funded-value"></span>
+            <span class="progress-metric-label">Running total</span>
+          </div>
+          <div class="progress-metric progress-metric--center">
+            <span class="progress-metric-value" id="core-sponsored-value"></span>
+            <span class="progress-metric-label">Core sponsored</span>
+          </div>
+          <div class="progress-metric progress-metric--end">
+            <span class="progress-metric-value" id="core-needed-value"></span>
+            <span class="progress-metric-label">To full target</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel progress-panel" aria-labelledby="progress-title">
+      <h2 id="progress-title">Full festival vision</h2>
       <div class="progress-wrap">
         <div class="progress-labels">
           <span id="vision-label"></span>
           <span id="target-label"></span>
         </div>
-        <div class="progress-bar" id="progress-bar"></div>
+        <div class="progress-bar progress-bar--vision" id="progress-bar"></div>
+        <div class="progress-footnote" id="vision-footnote">
+          <div class="progress-metric progress-metric--start">
+            <span class="progress-metric-value" id="vision-total-value"></span>
+            <span class="progress-metric-label">Running total</span>
+          </div>
+          <div class="progress-metric progress-metric--center">
+            <span class="progress-metric-value" id="registry-funded-value"></span>
+            <span class="progress-metric-label">Registry funded</span>
+          </div>
+          <div class="progress-metric progress-metric--end">
+            <span class="progress-metric-value" id="to-vision-value"></span>
+            <span class="progress-metric-label">To full target</span>
+          </div>
+        </div>
       </div>
-      <div class="stats" id="vision-stats"></div>
     </section>
+    </div>
 
     <details class="panel collapsible" open>
       <summary><span class="caret" aria-hidden="true"></span>Core ops</summary>

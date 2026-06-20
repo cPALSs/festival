@@ -5,7 +5,7 @@
     "dates": "Sat\u2013Sun mid-February 2027 (TBD) \u00b7 11 AM\u20135 PM",
     "mvpCap": 39625,
     "vendorRev100": 18200,
-    "registryFull": 75500,
+    "registryFull": 66000,
     "vendorSlots": 37,
     "attendance": 6000
   },
@@ -21,57 +21,161 @@
   },
   "gifts": [
     {
-      "id": "mvp_core",
-      "name": "MVP Core",
-      "amount": 40000,
+      "id": "festival_foundation",
+      "name": "Festival Foundation",
+      "amount": 15035,
       "category": "core",
       "sortOrder": 0,
-      "selectable": false,
-      "tagline": "A real two-day festival \u2014 Sat\u2013Sun 11 AM\u20135 PM, lions, carnival, and ~37 vendors.",
-      "description": "Full-weekend ops baseline (~$40K) funded by vendor booth fees, parking, carnival share, and sponsor/grant gap. Includes 2 lion dances, 2 stages, and carnival midway (operator profit share \u2014 zero ops cost to cPALSs). Parade, elder hospitality, Saturday night, and paid talent are registry upgrades.",
+      "tagline": "Insurance, permits, and infrastructure every festival needs.",
+      "description": "CGL insurance, CCSD permit + TFF coordinator, transport and traffic, ops tents, organic digital marketing, volunteer hospitality, and festival coordination \u2014 embedded in the MVP cap.",
       "benefits": [
-        "Baseline experience every guest sees \u2014 not a sponsor toggle"
+        "Foundation sponsor recognition on website + email"
       ],
       "lineItems": [
         {
-          "label": "Security, sanitation, permits, insurance",
-          "amount": 12000
+          "label": "CGL insurance",
+          "amount": 3138
         },
         {
-          "label": "Stage ops + 2 lion dances",
-          "amount": 7000
+          "label": "CSD permit + service + TFF coordinator",
+          "amount": 1548
         },
         {
-          "label": "Site coordination + ops tents",
-          "amount": 5000
+          "label": "Transport, golf carts, parking/crossing signage",
+          "amount": 1984
         },
         {
-          "label": "Organic marketing + contingency",
-          "amount": 6000
+          "label": "Ops tents + tables/chairs (committee)",
+          "amount": 1600
         },
         {
-          "label": "5% ops buffer",
+          "label": "Organic digital marketing",
+          "amount": 782
+        },
+        {
+          "label": "Volunteer food + walkies/cleaning/safety",
           "amount": 2000
         },
         {
-          "label": "Vendor/parking/carnival offset (planning @ 6K)",
-          "amount": 0
+          "label": "Finance admin + ops coordination",
+          "amount": 2096
+        },
+        {
+          "label": "5% contingency buffer",
+          "amount": 1887
         }
       ]
     },
     {
-      "id": "parade_performers",
-      "name": "Parade Performers",
-      "emoji": "\ud83e\udd41",
+      "id": "outdoor_stage",
+      "name": "Outdoor Stage",
+      "amount": 13790,
+      "category": "core",
+      "sortOrder": 1,
+      "tagline": "Main outdoor stage \u2014 PA, sound engineer, power, and two lion dances.",
+      "description": "APEX trailer stage with ADA ramp, weekend PA and sound engineer (daylight hours), site generators for daylight power, and 2 lion dances (Sat + Sun, outdoor).",
+      "benefits": [
+        "Outdoor stage naming credit",
+        "MC thank-you",
+        "website + Facebook/Instagram feature"
+      ],
+      "lineItems": [
+        {
+          "label": "APEX trailer stage rental",
+          "amount": 4200
+        },
+        {
+          "label": "ADA ramp + setup/delivery",
+          "amount": 1850
+        },
+        {
+          "label": "Weekend PA + sound engineer (outdoor main)",
+          "amount": 4500
+        },
+        {
+          "label": "Site generators + diesel (daylight)",
+          "amount": 2500
+        },
+        {
+          "label": "2 lion dances (Sat + Sun, outdoor)",
+          "amount": 740
+        }
+      ]
+    },
+    {
+      "id": "indoor_stage",
+      "name": "Indoor Stage",
       "amount": 2500,
+      "category": "core",
+      "sortOrder": 2,
+      "tagline": "Rented indoor riser \u2014 PA, sound engineer, and Sunday programming.",
+      "description": "Rented stage riser with indoor PA, power, and sound engineer for day 2 programming.",
+      "benefits": [
+        "Indoor stage naming credit",
+        "MC thank-you",
+        "website + Facebook/Instagram feature"
+      ],
+      "lineItems": [
+        {
+          "label": "Indoor stage riser rental + setup",
+          "amount": 1200
+        },
+        {
+          "label": "Indoor PA, power + sound engineer",
+          "amount": 1300
+        }
+      ]
+    },
+    {
+      "id": "safe_festival",
+      "name": "Safe Festival",
+      "amount": 3800,
+      "category": "core",
+      "sortOrder": 3,
+      "tagline": "Peak security coverage for a crowded two-day park festival.",
+      "description": "Guards at peak hours for Sat\u2013Sun 11 AM\u20135 PM \u2014 daylight MVP staffing (no evening post).",
+      "benefits": [
+        "Safety sponsor recognition on website + email"
+      ],
+      "lineItems": [
+        {
+          "label": "Peak guards \u2014 daylight MVP hours",
+          "amount": 3800
+        }
+      ]
+    },
+    {
+      "id": "festival_amenities",
+      "name": "Festival Amenities",
+      "amount": 4000,
+      "category": "core",
+      "sortOrder": 4,
+      "tagline": "Families stay longer when comfort is covered.",
+      "description": "Restrooms and hand-wash stations for Sat\u2013Sun festival hours through 5 PM close.",
+      "benefits": [
+        "Named amenity sponsor on website + digital sponsor slide"
+      ],
+      "lineItems": [
+        {
+          "label": "Restrooms/sinks \u2014 5 PM close both days",
+          "amount": 4000
+        }
+      ]
+    },
+    {
+      "id": "parade_plus",
+      "name": "Parade+",
+      "emoji": "\ud83e\udd41",
+      "amount": 3700,
       "category": "registry",
       "sortOrder": 1,
-      "tagline": "Marching band, second line, and hired parade units \u2014 a parade worth watching.",
-      "description": "Paid parade performers and hired units. Without this block, there is no parade at MVP.",
+      "impactOrder": 8,
+      "tagline": "Marching band, hired units, and day-of parade production \u2014 a parade worth watching.",
+      "description": "Paid parade performers and hired units, plus parade production polish: route staging, lineup and spacing, MC/cue coordination, and unit check-in \u2014 the ops that turn hired performers into a coherent parade. Without Parade+, there is no parade at MVP.",
       "benefits": [
         "Parade program listing",
         "Facebook/Instagram shout-out",
-        "Named in unlock post"
+        "Named in Facebook/Instagram unlock post"
       ],
       "lineItems": [
         {
@@ -83,20 +187,29 @@
           "amount": 800
         },
         {
-          "label": "Staging + coordination",
+          "label": "Route staging + lineup coordination",
+          "amount": 700
+        },
+        {
+          "label": "Parade production polish (cues, spacing, day-of)",
+          "amount": 500
+        },
+        {
+          "label": "Unit check-in + safety staging",
           "amount": 500
         }
       ]
     },
     {
-      "id": "decor_parade",
-      "name": "Decor + Parade Production",
+      "id": "decor",
+      "name": "Decor",
       "emoji": "\ud83c\udfee",
-      "amount": 6000,
+      "amount": 4800,
       "category": "registry",
       "sortOrder": 2,
-      "tagline": "Lanterns, stage flowers, and parade production polish \u2014 visual T\u1ebft atmosphere.",
-      "description": "Decor registry block covering lanterns, stage flowers, and parade production elements families photograph.",
+      "impactOrder": 4,
+      "tagline": "Lanterns, stage flowers, and site accents \u2014 visual T\u1ebft atmosphere across the park.",
+      "description": "Site decor registry block: lanterns, pole and entrance accents, stage flowers, and install labor \u2014 what families photograph on the grounds. Parade route production lives under Parade Performers.",
       "benefits": [
         "Logo on decor assets photographed for social",
         "Decor presented by [Sponsor]"
@@ -111,31 +224,29 @@
           "amount": 1500
         },
         {
-          "label": "Parade production polish",
-          "amount": 1200
-        },
-        {
           "label": "Decor volunteer hospitality",
           "amount": 800
         }
       ]
     },
     {
-      "id": "digital_marketing",
-      "name": "Digital Marketing",
+      "id": "spread_the_word",
+      "name": "Spread the Word",
       "emoji": "\ud83d\udce3",
       "amount": 3500,
       "category": "registry",
       "sortOrder": 3,
-      "tagline": "Paid Meta / Instagram and boosted posts \u2014 reach families who have not found us yet.",
-      "description": "Paid digital marketing \u2014 media sponsorship, not a petty-cash ask. No print posters.",
+      "impactOrder": 1,
+      "tagline": "Spread the Word presented by [Sponsor] \u2014 reach families who have not found us yet.",
+      "description": "Paid Facebook/Instagram and boosted posts \u2014 media sponsorship, not a petty-cash ask. No print posters.",
       "benefits": [
-        "Silver-tier email + social recognition",
-        "Sponsor tag on boosted content"
+        "Sponsor tag on boosted content",
+        "Named in Facebook/Instagram unlock post",
+        "website recognition"
       ],
       "lineItems": [
         {
-          "label": "Paid Meta / Instagram + boosted posts",
+          "label": "Paid Facebook/Instagram + boosted posts",
           "amount": 3500
         }
       ]
@@ -147,11 +258,12 @@
       "amount": 4000,
       "category": "registry",
       "sortOrder": 4,
+      "impactOrder": 5,
       "tagline": "Shade tents, seating, and elder tea hospitality \u2014 a place for grandparents to rest.",
       "description": "Named elder hospitality zone with shade, seating, and tea service. Not in MVP ops \u2014 grass fallback without sponsor.",
       "benefits": [
         "Honor our Elders presented by [Sponsor]",
-        "Google Sites map + Instagram feature"
+        "website + Facebook/Instagram feature"
       ],
       "lineItems": [
         {
@@ -175,10 +287,11 @@
       "amount": 2000,
       "category": "registry",
       "sortOrder": 5,
+      "impactOrder": 2,
       "tagline": "Traditional centerpiece \u2014 the pole families gather around at T\u1ebft.",
       "description": "Traditional T\u1ebft pole centerpiece. 2027 community pool pilot \u2014 materials, decor labor, and volunteer hospitality.",
       "benefits": [
-        "Named on Google Sites + Instagram unlock post",
+        "Named on website + Facebook/Instagram unlock post",
         "Community pool co-credit where applicable"
       ],
       "lineItems": [
@@ -200,20 +313,25 @@
       "id": "sat_night_headliner",
       "name": "Saturday Night Headliner",
       "emoji": "\ud83c\udf19",
-      "amount": 12000,
+      "amount": 14000,
       "category": "registry",
       "sortOrder": 6,
-      "tagline": "Sat 5\u20138 PM \u2014 evening ops, AV, headliner, and MC. A night concert that holds a crowd.",
-      "description": "Saturday night extension with evening ops, lights/AV, headliner, and MC \u2014 not ops-only empty hours.",
+      "impactOrder": 9,
+      "tagline": "Sat 5\u20138 PM \u2014 evening ops, light towers, AV, headliner, and MC.",
+      "description": "Saturday night extension with evening ops, outdoor stage light towers, evening AV, headliner, and MC \u2014 not ops-only empty hours.",
       "benefits": [
         "Named Sat night sponsor",
         "Headliner intro",
-        "Instagram + Google Sites hero"
+        "Facebook/Instagram + website hero"
       ],
       "lineItems": [
         {
           "label": "Evening ops (security, sanitation, staff)",
           "amount": 4000
+        },
+        {
+          "label": "Outdoor stage light towers",
+          "amount": 2000
         },
         {
           "label": "Evening AV + lighting",
@@ -233,15 +351,16 @@
       "id": "pbn_revue",
       "name": "Paris By Night Style Revue",
       "emoji": "\ud83c\udfa4",
-      "amount": 18000,
+      "amount": 15500,
       "category": "registry",
       "sortOrder": 7,
+      "impactOrder": 10,
       "tagline": "~2-hour produced variety show \u2014 singers, comedy, cultural numbers, MC.",
-      "description": "Signature produced revue block \u2014 can stand alone or pair with Weekend Programming.",
+      "description": "Talent booking for a signature PBN-style revue on the MVP stage \u2014 singers, comedy, cultural acts, and MC. Assumes baseline stage, PA, and sound engineers; add Stage Production+ for upgraded sound and lights.",
       "benefits": [
         "Named revue block",
         "Hero billing",
-        "Dedicated email + Instagram feature"
+        "Dedicated email + Facebook/Instagram feature"
       ],
       "lineItems": [
         {
@@ -249,41 +368,8 @@
           "amount": 12000
         },
         {
-          "label": "Production + MC",
+          "label": "MC + show production (booking, run-of-show)",
           "amount": 3500
-        },
-        {
-          "label": "Stage/AV support for revue",
-          "amount": 2500
-        }
-      ]
-    },
-    {
-      "id": "weekend_programming",
-      "name": "Weekend Programming",
-      "emoji": "\ud83c\udfad",
-      "amount": 22000,
-      "category": "registry",
-      "sortOrder": 8,
-      "tagline": "Full Sat\u2013Sun talent slate \u2014 MC, singers, bands, dance beyond lions.",
-      "description": "Presenting programming sponsor block \u2014 full talent slate unlock for the weekend.",
-      "benefits": [
-        "Stage naming",
-        "Logo on Google Sites hero",
-        "Email header + Instagram features"
-      ],
-      "lineItems": [
-        {
-          "label": "MC + schedule production",
-          "amount": 3000
-        },
-        {
-          "label": "Singers, bands, dance acts",
-          "amount": 15000
-        },
-        {
-          "label": "Talent coordination + contingency",
-          "amount": 4000
         }
       ]
     },
@@ -293,12 +379,13 @@
       "emoji": "\ud83c\udfa7",
       "amount": 6000,
       "category": "registry",
-      "sortOrder": 9,
+      "sortOrder": 8,
+      "impactOrder": 7,
       "tagline": "Younger-skewed stage block \u2014 DJs, R&B, rap, dance.",
-      "description": "Named Lucky Wav segment \u2014 sub-block of programming with social-first unlock content.",
+      "description": "Named Lucky Wav stage segment \u2014 one selectable programming block among PBN revue, Sat night headliner, and other talent sponsors.",
       "benefits": [
         "Lucky Wav presented by [Sponsor]",
-        "Instagram Reel + collab post",
+        "Facebook/Instagram Reel + collab post",
         "MC intro"
       ],
       "lineItems": [
@@ -313,22 +400,49 @@
       ]
     },
     {
-      "id": "stage_av",
-      "name": "Stage Production / AV",
-      "emoji": "\ud83d\udd0a",
-      "amount": 8500,
+      "id": "asian_cajun_show",
+      "name": "Asian Cajun Show",
+      "emoji": "\ud83e\udd9e",
+      "amount": 5500,
       "category": "registry",
-      "sortOrder": 10,
-      "tagline": "Upgraded outdoor sound, lights, and LED \u2014 main stage concert quality.",
-      "description": "Outdoor AV upgrade \u2014 engineer, lights, LED for main stage production quality.",
+      "sortOrder": 9,
+      "impactOrder": 6,
+      "tagline": "~2\u20133 hour programming block \u2014 Gulf Coast bands, fusion acts, and MC.",
+      "description": "Booked Asian Cajun / Louisiana lineup on the MVP indoor or outdoor stage \u2014 existing PA and sound engineers are in core ops. Zydeco, R&B, and fusion acts for a 2\u20133 hour show block, like the programming families gathered around at Asian Cajun Village in 2026.",
       "benefits": [
-        "Gold-tier stage mentions",
-        "Google Sites sponsor page"
+        "Asian Cajun Show presented by [Sponsor]",
+        "Show block naming credit",
+        "Facebook/Instagram feature + MC thank-you"
       ],
       "lineItems": [
         {
-          "label": "Sound engineer + upgraded PA",
-          "amount": 4000
+          "label": "Talent (bands, fusion acts \u2014 2\u20133 hr block)",
+          "amount": 4500
+        },
+        {
+          "label": "MC + run-of-show production",
+          "amount": 1000
+        }
+      ]
+    },
+    {
+      "id": "stage_production_plus",
+      "name": "Stage Production+",
+      "emoji": "\ud83d\udd0a",
+      "amount": 7000,
+      "category": "registry",
+      "sortOrder": 10,
+      "impactOrder": 3,
+      "tagline": "Upgrade outdoor stage to concert-quality sound, lights, and LED.",
+      "description": "Upgrade from baseline MVP PA to concert-quality outdoor sound gear, stage lights, and LED \u2014 sound engineers are in core stage ops; this block adds production quality for talent sponsors.",
+      "benefits": [
+        "Gold-tier stage mentions",
+        "website sponsor page"
+      ],
+      "lineItems": [
+        {
+          "label": "Upgraded outdoor PA (concert quality)",
+          "amount": 2500
         },
         {
           "label": "Stage lights + LED",
@@ -341,88 +455,61 @@
       ]
     },
     {
-      "id": "community_anchor",
-      "name": "Community anchor / gap",
+      "id": "additional_amount",
+      "name": "Additional funds",
       "amount": 0,
       "category": "options",
       "sortOrder": 0,
       "variableAmount": true,
-      "tagline": "Close the MVP cash gap or stack toward recognition tiers.",
-      "description": "Flexible community or business anchor gift \u2014 $1,500\u2013$15,000 scales with tier benefits in Section B. Does not fund a named registry feature.",
+      "tagline": "Top up your package toward the next tier.",
+      "description": "Add any dollar amount on top of your selected gifts \u2014 for example, $500 toward Bronze ($3,000+) to unlock sponsor booth spot. Does not fund a named registry feature.",
       "benefits": [
-        "Counts toward recognition tier minimum",
-        "Name + logo on programs and web at Community tier"
+        "Counts toward recognition tier minimum"
       ],
       "lineItems": [
         {
-          "label": "Flexible sponsorship (tier-scaled)",
+          "label": "Additional sponsorship (flexible)",
           "amount": 0
-        }
-      ]
-    },
-    {
-      "id": "carnival_naming",
-      "name": "Carnival Zone Naming",
-      "amount": 1500,
-      "category": "options",
-      "sortOrder": 1,
-      "tagline": "Optional \u2014 logo at midway. Not required to run rides.",
-      "description": "Named carnival zone recognition. Midway is operator-funded at MVP \u2014 this is optional branding only.",
-      "benefits": [
-        "Bronze-tier recognition at carnival zone",
-        "Digital mention"
-      ],
-      "lineItems": [
-        {
-          "label": "Carnival zone naming + signage",
-          "amount": 1500
         }
       ]
     },
     {
       "id": "sponsor_booth",
       "name": "Sponsor booth spot",
-      "amount": 1250,
+      "amount": 0,
       "category": "options",
-      "sortOrder": 2,
+      "sortOrder": 1,
       "requiresSponsorThreshold": true,
-      "tagline": "10\u00d710 tent + table + chairs \u2014 on-site activation beyond logo.",
-      "description": "Sponsor booth slot at the festival. Includes tent, table, and 2 chairs. Path to grow booth count beyond spending-derived paid mix.",
+      "tagline": "On-site sponsor activation \u2014 bring your own tent.",
+      "description": "10\u00d710 sponsor activation footprint at the festival (not a vendor booth application). You provide the tent; cPALSs assigns your on-site location and recognizes you on the website.",
       "benefits": [
-        "Logo on vendor map (Google Sites)",
-        "Instagram vendor spotlight",
-        "Included with Bronze tier+"
+        "Logo on website sponsor page",
+        "Included with Bronze tier sponsorship"
       ],
       "lineItems": [
         {
-          "label": "10\u00d710 tent + table + 2 chairs",
-          "amount": 1250
+          "label": "Sponsor booth slot assignment",
+          "amount": 0
         }
       ]
     },
     {
-      "id": "sunday_festival_day",
-      "name": "Sunday Festival Day",
-      "amount": 10500,
-      "category": "secondary",
-      "sortOrder": 1,
-      "tagline": "Second festival day \u2014 Sat-only scenario only.",
-      "description": "Sun 11 AM\u20135 PM: second-day ops \u2014 security, sanitation, PA, KP indoor stage, 2nd lion dance. Full-weekend planning baseline already includes Sunday; this block applies only if steering chooses Sat-only and a sponsor funds day 2.",
+      "id": "tent_rental",
+      "name": "Tent rental",
+      "amount": 900,
+      "category": "options",
+      "sortOrder": 2,
+      "requiresBoothSpot": true,
+      "tagline": "Optional \u2014 we rent the 10\u00d710 for your sponsor booth.",
+      "description": "Capitol Tent City 10\u00d710 tent + weights for Sat\u2013Sun festival. Add alongside sponsor booth spot if you prefer not to bring your own tent.",
       "benefits": [
-        "Sunday presented by [Sponsor]"
+        "Delivery + pickup handled by festival ops",
+        "Same 10\u00d710 spec as sponsor booth footprint"
       ],
       "lineItems": [
         {
-          "label": "Sunday security + sanitation",
-          "amount": 3500
-        },
-        {
-          "label": "KP indoor stage + PA",
-          "amount": 4000
-        },
-        {
-          "label": "2nd lion dance + ops staff",
-          "amount": 3000
+          "label": "10\u00d710 tent + weights (weekend)",
+          "amount": 900
         }
       ]
     },
@@ -436,7 +523,7 @@
       "description": "Pageant and influencer activation block. Only if steering revives pageant programming in 2027.",
       "benefits": [
         "Dedicated email block",
-        "Instagram collaboration post"
+        "Facebook/Instagram collaboration post"
       ],
       "lineItems": [
         {
@@ -488,7 +575,7 @@
     },
     {
       "id": "sites_logo",
-      "label": "Google Sites",
+      "label": "Website",
       "template": "{tier}-tier logo placement on sponsor page"
     }
   ]
