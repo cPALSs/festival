@@ -1,0 +1,23 @@
+{
+  "source": "2026 LNY sponsorship deposits — renewal baselines (one-offs excluded, e.g. AFG pageant weatherproofing)",
+  "sponsors": [
+    { "name": "American Furniture Gallery", "amount": 15000, "giftId": "outdoor_stage" },
+    { "name": "Duc Huong", "amount": 15000, "giftId": "spread_the_word" },
+    { "name": "Fire Wings", "amount": 3000 },
+    { "name": "Metro by T-Mobile", "amount": 3000 },
+    { "name": "Verizon", "amount": 3000 },
+    { "name": "Xfinity", "amount": 3000 },
+    { "name": "AABC / Chason / Hook & Reel", "amount": 2000 },
+    { "name": "Hydro City", "amount": 2000 },
+    { "name": "Parkwest Casino Lotus", "amount": 2000 },
+    { "name": "SF Supermarket", "amount": 2000 },
+    { "name": "SMUD", "amount": 2000 },
+    { "name": "VABA + California Waste Solutions", "amount": 2000 },
+    { "name": "Anthem", "amount": 1500 },
+    { "name": "Rod Brewer", "amount": 1500 },
+    { "name": "Thien Ho", "amount": 1500 },
+    { "name": "Journey to the Dumpling", "amount": 1500 },
+    { "name": "Pat Hume", "amount": 1500 },
+    { "name": "Darren Suen", "amount": 1500 }
+  ]
+}

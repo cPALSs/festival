@@ -15,6 +15,7 @@
       "id": "lny2027",
       "label": "Lunar New Year 2027",
       "file": "data/lny-2027.json",
+      "estimatedSponsorsFile": "data/lny-2026-sponsors.json",
       "cashOffsetLabel": "Vendors, parking & carnival",
       "sections": {
         "core": "Cash ops cover most of core (~$26K of ~$40K). Sponsor a core gift below to close the remaining gap — each unlocks stories for social posting.",

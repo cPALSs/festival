@@ -98,6 +98,10 @@ const FESTIVAL_ID_KEY = "build-festival-id";
 const THEME_STORAGE_KEY = "build-theme";
 const LEGACY_THEME_KEY = "maf2026-theme";
 
+function estimatedSponsorsStorageKey(festivalId) {
+  return `build-estimated-sponsors:${festivalId}`;
+}
+
 function enabledStorageKey(festivalId) {
   return `build-enabled:${festivalId}`;
 }
@@ -168,6 +172,9 @@ const state = {
   modalGiftId: null,
   modalTab: "guest",
   cartTab: "selection",
+  estimatedSponsors: null,
+  estimatedSponsorMap: {},
+  showEstimatedSponsors: false,
 };
 
 function currentFestivalEntry() {
@@ -238,6 +245,138 @@ function isVariableAmountGift(gift) {
 function isSelectableGift(gift) {
   if (gift.selectable === false) return false;
   return gift.category !== "secondary" && !isVariableAmountGift(gift);
+}
+
+function choicesLockedForEstimate() {
+  return !!state.showEstimatedSponsors;
+}
+
+/** Feature registry order for tier-fit matches. */
+const FEATURE_SPONSOR_ALLOC_ORDER = [
+  "lucky_wav",
+  "decor",
+  "parade_plus",
+  "honor_elders",
+  "children_show",
+  "children_village",
+  "asian_cajun_show",
+  "stage_production_plus",
+  "sat_night_headliner",
+  "pbn_revue",
+  "youth_culture_day",
+  "cay_neu",
+  "tent_rental",
+];
+
+function featureAllocationSortKey(gift) {
+  const pref = FEATURE_SPONSOR_ALLOC_ORDER.indexOf(gift.id);
+  if (pref >= 0) return pref;
+  return 100 + giftSortKey(gift, gift.category);
+}
+
+/** One sponsor per gift — no splitting. Omit gifts no sponsor fully covers. */
+function computeEstimatedSponsorMap(gifts, sponsorPayload) {
+  if (!sponsorPayload?.sponsors?.length) return {};
+
+  let pool = sponsorPayload.sponsors.map((s) => ({
+    name: s.name,
+    amount: s.amount,
+    giftId: s.giftId ?? null,
+  }));
+
+  const map = {};
+  const assigned = new Set();
+
+  const assign = (gift, sponsor) => {
+    if (!gift || assigned.has(gift.id)) return false;
+    map[gift.id] = sponsor.name;
+    assigned.add(gift.id);
+    return true;
+  };
+
+  const allocatableGifts = (g) =>
+    g.amount > 0 &&
+    !assigned.has(g.id) &&
+    (g.category === "registry" ||
+      g.category === "secondary" ||
+      (g.category === "options" && !g.variableAmount));
+
+  const featureGifts = () =>
+    gifts.filter(allocatableGifts).sort((a, b) => featureAllocationSortKey(a) - featureAllocationSortKey(b));
+
+  for (const sponsor of [...pool]) {
+    if (!sponsor.giftId) continue;
+    const gift = gifts.find((g) => g.id === sponsor.giftId);
+    if (gift?.amount && sponsor.amount >= gift.amount && assign(gift, sponsor)) {
+      pool = pool.filter((s) => s !== sponsor);
+    }
+  }
+
+  pool.sort((a, b) => b.amount - a.amount);
+  for (const sponsor of [...pool]) {
+    const fits = featureGifts()
+      .filter((g) => g.amount <= sponsor.amount)
+      .sort((a, b) => b.amount - a.amount);
+    if (!fits.length) continue;
+    if (assign(fits[0], sponsor)) {
+      pool = pool.filter((s) => s !== sponsor);
+    }
+  }
+
+  return map;
+}
+
+function estimatedSponsorTagsHtml(giftId) {
+  if (!state.showEstimatedSponsors) return "";
+  const name = state.estimatedSponsorMap[giftId];
+  if (!name) return "";
+  return `<div class="gift-sponsor-tags"><span class="gift-sponsor-tag">${name}</span></div>`;
+}
+
+function loadEstimatedSponsorsToggle(festivalId) {
+  try {
+    return localStorage.getItem(estimatedSponsorsStorageKey(festivalId)) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function persistEstimatedSponsorsToggle() {
+  if (!state.festivalId) return;
+  try {
+    localStorage.setItem(
+      estimatedSponsorsStorageKey(state.festivalId),
+      state.showEstimatedSponsors ? "1" : "0",
+    );
+  } catch {
+    /* ignore */
+  }
+}
+
+function syncEstimatedSponsorsFooter() {
+  const entry = currentFestivalEntry();
+  const footer = document.getElementById("page-footer");
+  const toggle = document.getElementById("estimated-sponsors-toggle");
+  const hint = document.getElementById("estimated-sponsors-hint");
+  const page = document.querySelector(".page");
+  const available = !!entry?.estimatedSponsorsFile && !!state.estimatedSponsors;
+
+  if (footer) footer.hidden = !available;
+  if (toggle) {
+    toggle.checked = !!state.showEstimatedSponsors;
+    toggle.disabled = !available;
+  }
+  if (hint) hint.hidden = !state.showEstimatedSponsors;
+  if (page) {
+    page.classList.toggle("estimated-sponsors-on", !!state.showEstimatedSponsors);
+  }
+}
+
+function setShowEstimatedSponsors(on) {
+  state.showEstimatedSponsors = !!on;
+  persistEstimatedSponsorsToggle();
+  syncEstimatedSponsorsFooter();
+  renderAll();
 }
 
 function purgeNonSelectable() {
@@ -326,6 +465,7 @@ function boothGapHint() {
 }
 
 function setExtraCash(amount) {
+  if (choicesLockedForEstimate()) return;
   const n = Math.max(0, Math.round(Number(amount) || 0));
   state.extraCash = n;
   enforceOptionLocks();
@@ -361,6 +501,7 @@ function persistEnabled() {
 }
 
 function setGiftEnabled(id, checked) {
+  if (choicesLockedForEstimate()) return;
   const gift = state.data.gifts.find((g) => g.id === id);
   if (gift && !isSelectableGift(gift)) return;
   if (gift && !isOptionUnlocked(gift) && checked) return;
@@ -372,6 +513,7 @@ function setGiftEnabled(id, checked) {
 }
 
 function clearSelections() {
+  if (choicesLockedForEstimate()) return;
   state.enabled = {};
   state.extraCash = 0;
   persistEnabled();
@@ -669,6 +811,7 @@ function variableAmountCardHtml(gift) {
       </div>
       ${gift.tagline ? `<p class="gift-tagline">${gift.tagline}</p>` : ""}
       ${gapHint ? `<p class="gift-gap-hint">${gapHint}</p>` : ""}
+      ${estimatedSponsorTagsHtml(gift.id)}
     </article>
   `;
 }
@@ -678,6 +821,7 @@ function giftCardHtml(gift) {
   const selectable = isSelectableGift(gift);
   const on = selectable && !!state.enabled[gift.id];
   const unlocked = isOptionUnlocked(gift);
+  const lockChoices = choicesLockedForEstimate();
   return `
     <article class="gift-card${on ? " enabled" : ""}${selectable && !unlocked ? " locked" : ""}${selectable ? "" : " gift-card--readonly"}" data-id="${gift.id}" tabindex="0">
       <div class="gift-card-head">
@@ -687,13 +831,14 @@ function giftCardHtml(gift) {
         </div>
         ${
           selectable
-            ? `<label class="toggle-wrap${unlocked ? "" : " toggle-wrap--disabled"}" onclick="event.stopPropagation()">
-          <input type="checkbox" data-toggle="${gift.id}"${on ? " checked" : ""}${unlocked ? "" : " disabled"} aria-label="Fund ${gift.name}" />
+            ? `<label class="toggle-wrap${unlocked && !lockChoices ? "" : " toggle-wrap--disabled"}" onclick="event.stopPropagation()">
+          <input type="checkbox" data-toggle="${gift.id}"${on ? " checked" : ""}${unlocked && !lockChoices ? "" : " disabled"} aria-label="Fund ${gift.name}" />
         </label>`
             : ""
         }
       </div>
       ${gift.tagline ? `<p class="gift-tagline">${gift.tagline}</p>` : ""}
+      ${estimatedSponsorTagsHtml(gift.id)}
     </article>
   `;
 }
@@ -767,8 +912,12 @@ function renderModalContent(giftId) {
   toggleWrap.hidden = !selectable || variable;
   const toggle = document.getElementById("modal-toggle");
   toggle.checked = !!state.enabled[giftId];
-  toggle.disabled = !selectable || !unlocked;
+  toggle.disabled = !selectable || !unlocked || choicesLockedForEstimate();
   toggle.onchange = () => {
+    if (choicesLockedForEstimate()) {
+      toggle.checked = !!state.enabled[giftId];
+      return;
+    }
     if (!unlocked) {
       toggle.checked = false;
       return;
@@ -801,6 +950,7 @@ function renderModalContent(giftId) {
         : ""
     }
     ${gift.tagline ? `<p class="modal-tagline">${gift.tagline}</p>` : ""}
+    ${estimatedSponsorTagsHtml(gift.id)}
     ${!unlocked && !variable ? `<p class="modal-unlock-notice">${unlockNotice(gift)}</p>` : ""}
     <p>${gift.description}</p>
     ${
@@ -906,6 +1056,25 @@ function syncFestivalSelect() {
   select.value = state.festivalId;
 }
 
+async function loadEstimatedSponsorsData(entry) {
+  state.estimatedSponsors = null;
+  state.estimatedSponsorMap = {};
+  if (!entry?.estimatedSponsorsFile) return;
+
+  try {
+    const res = await fetch(entry.estimatedSponsorsFile);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    state.estimatedSponsors = await res.json();
+    state.estimatedSponsorMap = computeEstimatedSponsorMap(
+      state.data.gifts,
+      state.estimatedSponsors,
+    );
+  } catch {
+    state.estimatedSponsors = null;
+    state.estimatedSponsorMap = {};
+  }
+}
+
 async function loadFestivalData(festivalId) {
   const entry = state.manifest.festivals.find((f) => f.id === festivalId);
   if (!entry) throw new Error(`Unknown festival: ${festivalId}`);
@@ -918,11 +1087,15 @@ async function loadFestivalData(festivalId) {
   state.enabled = loadEnabledFromStorage(festivalId, state.data.gifts.map((g) => g.id));
   state.extraCash = loadExtraCashFromStorage(festivalId);
   state.modalGiftId = null;
+  state.showEstimatedSponsors = loadEstimatedSponsorsToggle(festivalId);
   enforceOptionLocks();
   persistEnabled();
   persistExtraCash();
   persistFestivalId();
+  await loadEstimatedSponsorsData(entry);
+  if (!entry.estimatedSponsorsFile) state.showEstimatedSponsors = false;
   syncFestivalSelect();
+  syncEstimatedSponsorsFooter();
   renderMeta();
   renderAll();
 }
@@ -945,6 +1118,10 @@ async function init() {
   document.getElementById("cart-btn").onclick = openCartModal;
   document.getElementById("cart-clear").onclick = clearSelections;
   document.getElementById("revenue-info-btn").onclick = openRevenueModal;
+  const estimatedToggle = document.getElementById("estimated-sponsors-toggle");
+  if (estimatedToggle) {
+    estimatedToggle.onchange = () => setShowEstimatedSponsors(estimatedToggle.checked);
+  }
 
   try {
     const manifestRes = await fetch("festivals.json");

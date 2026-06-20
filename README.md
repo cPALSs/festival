@@ -32,5 +32,3 @@ Open http://localhost:8765 — use `?festival=maf2026` or `?festival=lny2027` to
 - Custom domain: **festival.cpalss.com** (CNAME `festival` → `cpalss.github.io` at cpalss.com DNS host)
 - Files served from repo root
 - After DNS propagates, enable **Enforce HTTPS** in repo Settings → Pages
-
-Legacy MAF-only site: https://maf.cpalss.com (to be decommissioned)
