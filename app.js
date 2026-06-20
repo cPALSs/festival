@@ -1,0 +1,859 @@
+/** Build the Festival — multi-festival interactive model */
+
+const fmt = (n) =>
+  n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+
+/** Most important → most optional within each section */
+const GIFT_SORT = {
+  festival_foundation: 0,
+  festival_stage: 1,
+  safe_festival: 2,
+  festival_amenities: 3,
+  lantern_procession: 1,
+  saturday_children: 2,
+  honor_elders: 3,
+  light_up_derr_okamoto: 4,
+  spread_the_word: 5,
+  festival_stage_plus: 6,
+  safe_festival_plus: 7,
+  festival_amenities_plus: 8,
+  sponsor_booth: 1,
+  tent_rental: 2,
+  additional_amount: 0,
+};
+
+function giftBenefits(gift) {
+  const b = gift.benefits;
+  if (!b) return [];
+  return Array.isArray(b) ? b : [b];
+}
+
+const DEFAULT_SPONSOR_TIERS = [
+  { label: "Community supporter", min: 0 },
+  { label: "Supporter", min: 250 },
+  { label: "Bronze", min: 500 },
+  { label: "Silver", min: 1000 },
+  { label: "Gold", min: 2500 },
+  { label: "Diamond", min: 5000 },
+  { label: "Presenting", min: 10000 },
+];
+
+function getSponsorTiers() {
+  return state.data?.sponsorTiers ?? DEFAULT_SPONSOR_TIERS;
+}
+
+function sponsorTierForTotal(total) {
+  const tiers = getSponsorTiers();
+  let current = tiers[0];
+  for (const tier of tiers) {
+    if (total >= tier.min) current = tier;
+  }
+  return current;
+}
+
+function currentSponsorTier() {
+  return sponsorTierForTotal(sponsorTotal());
+}
+
+function resolveBenefitText(text, total = sponsorTotal()) {
+  const tier = sponsorTierForTotal(total);
+  return text.replace(/\{tier\}/g, tier.label);
+}
+
+const DEFAULT_GLOBAL_PERKS = [
+  { id: "stage_mentions", label: "Stage recognition", template: "{tier}-tier stage mentions" },
+];
+
+function getGlobalPerks() {
+  return state.data?.globalPerks ?? DEFAULT_GLOBAL_PERKS;
+}
+
+function globalPerkLines(total = sponsorTotal()) {
+  if (total <= 0) return [];
+  return getGlobalPerks().map((p) => ({
+    label: p.label,
+    text: resolveBenefitText(p.template, total),
+  }));
+}
+
+function giftsInCategory(gifts, category) {
+  return gifts
+    .filter((g) => g.category === category)
+    .sort(
+      (a, b) =>
+        (a.sortOrder ?? GIFT_SORT[a.id] ?? 99) - (b.sortOrder ?? GIFT_SORT[b.id] ?? 99),
+    );
+}
+
+const FESTIVAL_ID_KEY = "build-festival-id";
+const THEME_STORAGE_KEY = "build-theme";
+const LEGACY_THEME_KEY = "maf2026-theme";
+
+function enabledStorageKey(festivalId) {
+  return `build-enabled:${festivalId}`;
+}
+
+function extraCashStorageKey(festivalId) {
+  return `build-extra-cash:${festivalId}`;
+}
+
+const VALID_THEMES = new Set(["auto", "light", "dark"]);
+
+const THEME_ICON_SVG = {
+  light: `<svg class="theme-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>`,
+  dark: `<svg class="theme-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`,
+  auto: `<svg class="theme-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18V3z" fill="currentColor" stroke="none"/></svg>`,
+};
+
+function renderThemeIcon(theme) {
+  const el = document.getElementById("theme-icon");
+  if (!el) return;
+  const key = VALID_THEMES.has(theme) ? theme : "auto";
+  el.innerHTML = THEME_ICON_SVG[key];
+}
+
+function loadThemeFromStorage() {
+  try {
+    const theme =
+      localStorage.getItem(THEME_STORAGE_KEY) || localStorage.getItem(LEGACY_THEME_KEY);
+    return VALID_THEMES.has(theme) ? theme : "auto";
+  } catch {
+    return "auto";
+  }
+}
+
+function applyTheme(theme) {
+  const next = VALID_THEMES.has(theme) ? theme : "auto";
+  document.documentElement.setAttribute("data-theme", next);
+  renderThemeIcon(next);
+  const select = document.getElementById("theme-select");
+  if (select && select.value !== next) select.value = next;
+}
+
+function setTheme(theme) {
+  const next = VALID_THEMES.has(theme) ? theme : "auto";
+  applyTheme(next);
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, next);
+  } catch {
+    /* ignore */
+  }
+}
+
+function initTheme() {
+  applyTheme(loadThemeFromStorage());
+  const select = document.getElementById("theme-select");
+  if (!select) return;
+  select.onchange = () => setTheme(select.value);
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if (loadThemeFromStorage() === "auto") applyTheme("auto");
+  });
+}
+
+const state = {
+  manifest: null,
+  festivalId: null,
+  data: null,
+  enabled: {},
+  extraCash: 0,
+  modalGiftId: null,
+  modalTab: "guest",
+  cartTab: "selection",
+};
+
+function currentFestivalEntry() {
+  return state.manifest?.festivals?.find((f) => f.id === state.festivalId) ?? null;
+}
+
+function variableAmountGift() {
+  return state.data?.gifts.find((g) => isVariableAmountGift(g)) ?? null;
+}
+
+function sumEnabled(categories) {
+  if (!state.data) return 0;
+  return state.data.gifts
+    .filter((g) => categories.includes(g.category) && state.enabled[g.id])
+    .reduce((s, g) => s + g.amount, 0);
+}
+
+function getSponsorRules() {
+  return state.data?.sponsorRules ?? { boothUnlockThreshold: 2500, boothTierLabel: "Gold" };
+}
+
+function sponsorTotal() {
+  return sumEnabled(["registry", "core"]) + (state.extraCash || 0);
+}
+
+function giftsSubtotal() {
+  return selectedGifts().reduce((s, g) => s + g.amount, 0);
+}
+
+function cartTotal() {
+  return giftsSubtotal() + (state.extraCash || 0);
+}
+
+function coreGiftName(giftId) {
+  const gift = state.data?.gifts.find((g) => g.id === giftId);
+  return gift ? gift.name : "base core gift";
+}
+
+function isOptionUnlocked(gift) {
+  const { boothUnlockThreshold, boothTierLabel } = getSponsorRules();
+  if (gift.requiresSponsorThreshold && sponsorTotal() < boothUnlockThreshold) return false;
+  if (gift.requiresBoothSpot && !state.enabled.sponsor_booth) return false;
+  if (gift.requiresCoreGift && !state.enabled[gift.requiresCoreGift]) return false;
+  return true;
+}
+
+function unlockNotice(gift) {
+  const { boothUnlockThreshold, boothTierLabel } = getSponsorRules();
+  const parts = [];
+  if (gift.requiresSponsorThreshold && sponsorTotal() < boothUnlockThreshold) {
+    parts.push(
+      `Requires ${boothTierLabel} sponsorship (${fmt(boothUnlockThreshold)} minimum). Your build: ${fmt(sponsorTotal())}.`,
+    );
+  }
+  if (gift.requiresBoothSpot && !state.enabled.sponsor_booth) {
+    parts.push("Requires sponsor booth spot — add sponsor booth spot first.");
+  }
+  if (gift.requiresCoreGift && !state.enabled[gift.requiresCoreGift]) {
+    parts.push(`Requires ${coreGiftName(gift.requiresCoreGift)} — select it first.`);
+  }
+  return parts.join(" ");
+}
+
+function isVariableAmountGift(gift) {
+  return !!gift.variableAmount;
+}
+
+function isSelectableGift(gift) {
+  if (gift.selectable === false) return false;
+  return gift.category !== "secondary" && !isVariableAmountGift(gift);
+}
+
+function purgeNonSelectable() {
+  if (!state.data) return;
+  for (const id of Object.keys(state.enabled)) {
+    const gift = state.data.gifts.find((g) => g.id === id);
+    if (gift && !isSelectableGift(gift)) delete state.enabled[id];
+  }
+}
+
+function enforceOptionLocks() {
+  purgeNonSelectable();
+  if (state.data) {
+    for (const gift of state.data.gifts) {
+      if (gift.requiresCoreGift && !state.enabled[gift.requiresCoreGift]) {
+        delete state.enabled[gift.id];
+      }
+    }
+  }
+  const { boothUnlockThreshold } = getSponsorRules();
+  if (sponsorTotal() < boothUnlockThreshold) {
+    for (const gift of state.data?.gifts ?? []) {
+      if (gift.requiresSponsorThreshold) delete state.enabled[gift.id];
+    }
+  }
+  for (const gift of state.data?.gifts ?? []) {
+    if (gift.requiresBoothSpot) {
+      const boothGift = state.data.gifts.find(
+        (g) => g.requiresSponsorThreshold && state.enabled[g.id],
+      );
+      if (!boothGift) delete state.enabled[gift.id];
+    }
+  }
+}
+
+function loadEnabledFromStorage(festivalId, validIds) {
+  const valid = new Set(validIds);
+  try {
+    const raw = localStorage.getItem(enabledStorageKey(festivalId));
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    const enabled = {};
+    for (const id of Object.keys(parsed)) {
+      if (valid.has(id) && parsed[id]) enabled[id] = true;
+    }
+    return enabled;
+  } catch {
+    return {};
+  }
+}
+
+function persistExtraCash() {
+  if (!state.festivalId) return;
+  try {
+    localStorage.setItem(
+      extraCashStorageKey(state.festivalId),
+      String(Math.max(0, state.extraCash || 0)),
+    );
+  } catch {
+    /* ignore */
+  }
+}
+
+function loadExtraCashFromStorage(festivalId) {
+  try {
+    const raw = localStorage.getItem(extraCashStorageKey(festivalId));
+    if (raw == null) return 0;
+    const n = Math.round(Number(raw));
+    return Number.isFinite(n) && n > 0 ? n : 0;
+  } catch {
+    return 0;
+  }
+}
+
+function boothGapHint() {
+  const giftOnly = sumEnabled(["registry", "core"]);
+  const { boothUnlockThreshold, boothTierLabel } = getSponsorRules();
+  const hasBoothGift = state.data?.gifts.some(
+    (g) => g.requiresSponsorThreshold && state.enabled[g.id],
+  );
+  if (giftOnly > 0 && giftOnly < boothUnlockThreshold && !hasBoothGift) {
+    const needed = boothUnlockThreshold - sponsorTotal();
+    if (needed > 0) return `Add ${fmt(needed)} more to unlock sponsor booth spot.`;
+  }
+  return "";
+}
+
+function setExtraCash(amount) {
+  const n = Math.max(0, Math.round(Number(amount) || 0));
+  state.extraCash = n;
+  enforceOptionLocks();
+  persistExtraCash();
+  renderAll();
+  const varGift = variableAmountGift();
+  if (varGift && state.modalGiftId === varGift.id && document.getElementById("gift-modal").open) {
+    const gift = varGift;
+    if (gift) {
+      document.getElementById("modal-amount").textContent = giftAmountLabel(gift);
+    }
+    const modalInput = document.getElementById("modal-variable-amount-input");
+    if (modalInput && document.activeElement !== modalInput) {
+      modalInput.value = state.extraCash ? String(state.extraCash) : "";
+    }
+  }
+}
+
+function persistEnabled() {
+  if (!state.festivalId) return;
+  try {
+    const compact = {};
+    for (const [id, on] of Object.entries(state.enabled)) {
+      if (!on) continue;
+      const gift = state.data?.gifts.find((g) => g.id === id);
+      if (gift && !isSelectableGift(gift)) continue;
+      compact[id] = true;
+    }
+    localStorage.setItem(enabledStorageKey(state.festivalId), JSON.stringify(compact));
+  } catch {
+    /* ignore quota / private mode */
+  }
+}
+
+function setGiftEnabled(id, checked) {
+  const gift = state.data.gifts.find((g) => g.id === id);
+  if (gift && !isSelectableGift(gift)) return;
+  if (gift && !isOptionUnlocked(gift) && checked) return;
+  if (checked) state.enabled[id] = true;
+  else delete state.enabled[id];
+  enforceOptionLocks();
+  persistEnabled();
+  renderAll();
+}
+
+function clearSelections() {
+  state.enabled = {};
+  state.extraCash = 0;
+  persistEnabled();
+  persistExtraCash();
+  renderAll();
+}
+
+function giftAmountLabel(gift) {
+  if (isVariableAmountGift(gift)) {
+    return state.extraCash > 0 ? fmt(state.extraCash) : "Variable";
+  }
+  if (gift.requiresSponsorThreshold) {
+    const { boothUnlockThreshold, boothTierLabel } = getSponsorRules();
+    const suffix = gift.amount > 0 ? ` · ${fmt(gift.amount)}` : "";
+    return `${boothTierLabel} · ${fmt(boothUnlockThreshold)}+${suffix}`;
+  }
+  if (gift.amount === 0) return "Included";
+  return fmt(gift.amount);
+}
+
+function selectedGifts() {
+  if (!state.data) return [];
+  return state.data.gifts.filter((g) => state.enabled[g.id] && isSelectableGift(g));
+}
+
+function renderCartBadge() {
+  const n = selectedGifts().length + (state.extraCash > 0 ? 1 : 0);
+  const badge = document.getElementById("cart-count");
+  badge.textContent = String(n);
+  badge.hidden = n === 0;
+}
+
+function renderCartModal() {
+  const selected = selectedGifts();
+  document.getElementById("cart-total").textContent = fmt(cartTotal());
+  document.getElementById("cart-clear").disabled = selected.length === 0 && !state.extraCash;
+
+  const listEl = document.getElementById("cart-selection-list");
+  const extraGift = variableAmountGift();
+  if (!selected.length && !state.extraCash) {
+    listEl.innerHTML =
+      `<p class="hint">No features selected yet. Toggle cards to build your sponsorship package.</p>`;
+  } else {
+    const rows = selected
+      .map(
+        (g) =>
+          `<li><span>${giftLabel(g)}</span><span>${giftAmountLabel(g)}</span></li>`,
+      )
+      .join("");
+    const extraRow =
+      state.extraCash > 0 && extraGift
+        ? `<li><span>${giftLabel(extraGift)}</span><span>${fmt(state.extraCash)}</span></li>`
+        : "";
+    listEl.innerHTML = `<ul class="cart-list">${rows}${extraRow}</ul>`;
+  }
+
+  const withBenefits = selected.filter((g) => giftBenefits(g).length);
+  const global = globalPerkLines();
+  const perksEl = document.getElementById("cart-perks");
+
+  if (!global.length && !withBenefits.length) {
+    perksEl.innerHTML = `<p class="hint">Select features to see sponsor perks.</p>`;
+    return;
+  }
+
+  const tier = currentSponsorTier();
+  const globalHtml = global.length
+    ? `<div class="cart-global-perks">
+        <h4>Global perks</h4>
+        <p class="cart-tier-note">Recognition tier for your build: <strong>${tier.label}</strong> (${fmt(sponsorTotal())})</p>
+        <ul>${global.map((p) => `<li><span class="cart-global-perk-label">${p.label}</span> — ${p.text}</li>`).join("")}</ul>
+      </div>`
+    : "";
+
+  const giftHtml = withBenefits.length
+    ? `<div class="cart-perk-groups">
+        ${withBenefits.length && global.length ? "<h4 class=\"cart-perk-groups-title\">Feature perks</h4>" : ""}
+        ${withBenefits
+          .map(
+            (g) => `
+        <div class="cart-perk-group">
+          <h4>${giftLabel(g)}</h4>
+          <ul>${giftBenefits(g)
+            .map((b) => `<li>${b}</li>`)
+            .join("")}</ul>
+        </div>`,
+          )
+          .join("")}
+      </div>`
+    : "";
+
+  perksEl.innerHTML = globalHtml + giftHtml;
+}
+
+function openCartModal() {
+  renderCartModal();
+  setCartTab("selection");
+  document.getElementById("cart-modal").showModal();
+}
+
+function setCartTab(tab) {
+  state.cartTab = tab;
+  document.querySelectorAll(".cart-tab").forEach((t) => {
+    t.classList.toggle("active", t.dataset.cartTab === tab);
+  });
+  document.getElementById("cart-selection").classList.toggle("hidden", tab !== "selection");
+  document.getElementById("cart-perks").classList.toggle("hidden", tab !== "perks");
+}
+
+function renderMeta() {
+  const e = state.data.event;
+  const attendance = e.attendance?.toLocaleString() ?? "—";
+  document.getElementById("event-meta").textContent =
+    `${e.venue} · ${e.dates} · ~${attendance} attendees`;
+  document.title = `Build the Festival — ${e.name}`;
+}
+
+function renderSectionHints() {
+  const entry = currentFestivalEntry();
+  const sections = entry?.sections ?? {};
+  const { boothUnlockThreshold, boothTierLabel } = getSponsorRules();
+  const replaceTokens = (text) =>
+    (text ?? "")
+      .replace(/\{boothTierLabel\}/g, boothTierLabel)
+      .replace(/\{boothThreshold\}/g, fmt(boothUnlockThreshold));
+
+  const coreEl = document.getElementById("core-desc");
+  const registryEl = document.getElementById("registry-desc");
+  const optionsEl = document.getElementById("options-desc");
+  if (coreEl) coreEl.textContent = replaceTokens(sections.core) || "";
+  if (registryEl) registryEl.textContent = replaceTokens(sections.registry) || "";
+  if (optionsEl) optionsEl.textContent = replaceTokens(sections.options) || "";
+}
+
+function renderProgress() {
+  const s = state.data.scenario;
+  const registryFunded = sumEnabled(["registry"]);
+  const visionTotal = s.mvpCap + registryFunded;
+  const target = state.data.event.registryFull;
+  const pct = Math.min(100, Math.round((visionTotal / target) * 100));
+
+  document.getElementById("vision-label").textContent = `Vision ${fmt(visionTotal)} (${pct}%)`;
+  document.getElementById("target-label").textContent = `Target ${fmt(target)}`;
+
+  const mvpPct = Math.min(100, (s.mvpCap / target) * 100);
+  const regPct = Math.min(100 - mvpPct, (registryFunded / target) * 100);
+  document.getElementById("progress-bar").innerHTML = `
+    <div class="progress-seg mvp" style="width:${mvpPct}%" title="MVP"></div>
+    <div class="progress-seg registry" style="width:${regPct}%" title="Registry"></div>
+  `;
+
+  const coreFunded = sumEnabled(["core"]);
+  const selectableCore = state.data.gifts.filter(
+    (g) => g.category === "core" && isSelectableGift(g),
+  );
+  const coreStatLabel = selectableCore.length ? "Core gifts toggled" : "MVP baseline";
+  const coreStatValue = selectableCore.length ? fmt(coreFunded) : fmt(s.mvpCap);
+  document.getElementById("vision-stats").innerHTML = `
+    <div class="stat"><div class="stat-value">${fmt(registryFunded)}</div><div class="stat-label">Registry funded</div></div>
+    <div class="stat"><div class="stat-value">${coreStatValue}</div><div class="stat-label">${coreStatLabel}</div></div>
+    <div class="stat"><div class="stat-value">${fmt(visionTotal)}</div><div class="stat-label">Vision total</div></div>
+    <div class="stat"><div class="stat-value">${fmt(Math.max(0, target - visionTotal))}</div><div class="stat-label">To full vision</div></div>
+  `;
+}
+
+function giftLabel(gift) {
+  return gift.emoji ? `${gift.emoji} ${gift.name}` : gift.name;
+}
+
+function variableAmountCardHtml(gift) {
+  const on = state.extraCash > 0;
+  const gapHint = boothGapHint();
+  return `
+    <article class="gift-card gift-card--variable${on ? " enabled" : ""}" data-id="${gift.id}" tabindex="0">
+      <div class="gift-card-head">
+        <div>
+          <h3>${gift.name}</h3>
+          <div class="gift-amount">${giftAmountLabel(gift)}</div>
+        </div>
+        <div class="gift-card-variable" onclick="event.stopPropagation()">
+          <label class="gift-variable-label" for="variable-amount-${gift.id}">$</label>
+          <input
+            type="number"
+            id="variable-amount-${gift.id}"
+            class="gift-variable-input"
+            data-variable-amount
+            min="0"
+            step="1"
+            placeholder="0"
+            value="${state.extraCash ? state.extraCash : ""}"
+            inputmode="numeric"
+            aria-label="Additional amount"
+          />
+        </div>
+      </div>
+      ${gift.tagline ? `<p class="gift-tagline">${gift.tagline}</p>` : ""}
+      ${gapHint ? `<p class="gift-gap-hint">${gapHint}</p>` : ""}
+    </article>
+  `;
+}
+
+function giftCardHtml(gift) {
+  if (isVariableAmountGift(gift)) return variableAmountCardHtml(gift);
+  const selectable = isSelectableGift(gift);
+  const on = selectable && !!state.enabled[gift.id];
+  const unlocked = isOptionUnlocked(gift);
+  return `
+    <article class="gift-card${on ? " enabled" : ""}${selectable && !unlocked ? " locked" : ""}${selectable ? "" : " gift-card--readonly"}" data-id="${gift.id}" tabindex="0">
+      <div class="gift-card-head">
+        <div>
+          <h3>${gift.emoji ? `<span class="gift-emoji">${gift.emoji}</span>` : ""}${gift.name}</h3>
+          <div class="gift-amount">${giftAmountLabel(gift)}</div>
+        </div>
+        ${
+          selectable
+            ? `<label class="toggle-wrap${unlocked ? "" : " toggle-wrap--disabled"}" onclick="event.stopPropagation()">
+          <input type="checkbox" data-toggle="${gift.id}"${on ? " checked" : ""}${unlocked ? "" : " disabled"} aria-label="Fund ${gift.name}" />
+        </label>`
+            : ""
+        }
+      </div>
+      ${gift.tagline ? `<p class="gift-tagline">${gift.tagline}</p>` : ""}
+    </article>
+  `;
+}
+
+function bindGiftGrid(containerId, category) {
+  const gifts = giftsInCategory(state.data.gifts, category);
+  const el = document.getElementById(containerId);
+  const activeVar = document.activeElement?.matches?.("[data-variable-amount]")
+    ? document.activeElement
+    : null;
+  const selStart = activeVar?.selectionStart ?? null;
+  const selEnd = activeVar?.selectionEnd ?? null;
+
+  el.innerHTML = gifts.map(giftCardHtml).join("");
+
+  el.querySelectorAll("[data-variable-amount]").forEach((input) => {
+    input.oninput = () => setExtraCash(input.value);
+    input.onclick = (e) => e.stopPropagation();
+  });
+
+  if (activeVar) {
+    const next = el.querySelector("[data-variable-amount]");
+    if (next) {
+      next.focus();
+      if (selStart != null && selEnd != null) {
+        try {
+          next.setSelectionRange(selStart, selEnd);
+        } catch {
+          /* ignore */
+        }
+      }
+    }
+  }
+
+  el.querySelectorAll(".gift-card").forEach((card) => {
+    const id = card.dataset.id;
+    const open = () => openModal(id);
+    card.onclick = (e) => {
+      if (e.target.closest("[data-toggle]")) return;
+      open();
+    };
+    card.onkeydown = (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        open();
+      }
+    };
+  });
+
+  el.querySelectorAll("[data-toggle]").forEach((input) => {
+    input.onchange = () => setGiftEnabled(input.dataset.toggle, input.checked);
+  });
+
+  if (category === "secondary") {
+    const panel = document.getElementById("secondary-panel");
+    if (panel) panel.hidden = gifts.length === 0;
+  }
+}
+
+function renderModalContent(giftId) {
+  const gift = state.data.gifts.find((g) => g.id === giftId);
+  if (!gift) return;
+
+  const unlocked = isOptionUnlocked(gift);
+  const selectable = isSelectableGift(gift);
+  const variable = isVariableAmountGift(gift);
+
+  document.getElementById("modal-title").textContent = giftLabel(gift);
+  document.getElementById("modal-amount").textContent = giftAmountLabel(gift);
+  const toggleWrap = document.getElementById("modal-toggle-wrap");
+  toggleWrap.hidden = !selectable || variable;
+  const toggle = document.getElementById("modal-toggle");
+  toggle.checked = !!state.enabled[giftId];
+  toggle.disabled = !selectable || !unlocked;
+  toggle.onchange = () => {
+    if (!unlocked) {
+      toggle.checked = false;
+      return;
+    }
+    setGiftEnabled(giftId, toggle.checked);
+    toggle.checked = !!state.enabled[giftId];
+  };
+
+  const benefits = giftBenefits(gift);
+  const gapHint = variable ? boothGapHint() : "";
+  document.getElementById("modal-guest").innerHTML = `
+    ${
+      variable
+        ? `<div class="modal-variable-amount" onclick="event.stopPropagation()">
+      <label for="modal-variable-amount-input">Your amount</label>
+      <div class="gift-variable-input-row">
+        <span class="gift-variable-prefix">$</span>
+        <input
+          type="number"
+          id="modal-variable-amount-input"
+          min="0"
+          step="1"
+          placeholder="0"
+          value="${state.extraCash ? state.extraCash : ""}"
+          inputmode="numeric"
+        />
+      </div>
+      ${gapHint ? `<p class="gift-gap-hint">${gapHint}</p>` : ""}
+    </div>`
+        : ""
+    }
+    ${gift.tagline ? `<p class="modal-tagline">${gift.tagline}</p>` : ""}
+    ${!unlocked && !variable ? `<p class="modal-unlock-notice">${unlockNotice(gift)}</p>` : ""}
+    <p>${gift.description}</p>
+    ${
+      benefits.length
+        ? `<p class="modal-benefits-label">Benefits</p><ul class="modal-benefits">${benefits.map((b) => `<li>${b}</li>`).join("")}</ul>`
+        : ""
+    }
+  `;
+
+  if (variable) {
+    document.getElementById("modal-variable-amount-input").oninput = (e) => {
+      setExtraCash(e.target.value);
+    };
+  }
+
+  const rows = gift.lineItems
+    .map((li) => `<tr><td>${li.label}</td><td>${li.amount ? fmt(li.amount) : "Included"}</td></tr>`)
+    .join("");
+  document.getElementById("modal-funds").innerHTML = `
+    <table>
+      <thead><tr><th>Line item</th><th>Amount</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+
+function openModal(giftId) {
+  state.modalGiftId = giftId;
+  state.modalTab = "guest";
+  const gift = state.data.gifts.find((g) => g.id === giftId);
+  if (!gift) return;
+
+  renderModalContent(giftId);
+  setModalTab("guest");
+  document.getElementById("gift-modal").showModal();
+}
+
+function setModalTab(tab) {
+  state.modalTab = tab;
+  document.querySelectorAll(".gift-tab").forEach((t) => {
+    t.classList.toggle("active", t.dataset.giftTab === tab);
+  });
+  document.getElementById("modal-guest").classList.toggle("hidden", tab !== "guest");
+  document.getElementById("modal-funds").classList.toggle("hidden", tab !== "funds");
+}
+
+function renderAll() {
+  enforceOptionLocks();
+  renderSectionHints();
+  renderProgress();
+  renderCartBadge();
+  if (document.getElementById("cart-modal").open) {
+    renderCartModal();
+  }
+  bindGiftGrid("core-grid", "core");
+  bindGiftGrid("registry-grid", "registry");
+  bindGiftGrid("options-grid", "options");
+  bindGiftGrid("secondary-grid", "secondary");
+  if (state.modalGiftId && document.getElementById("gift-modal").open) {
+    const typingVariable = document.activeElement?.id === "modal-variable-amount-input";
+    if (!typingVariable) {
+      renderModalContent(state.modalGiftId);
+      setModalTab(state.modalTab);
+    }
+  }
+}
+
+function resolveInitialFestivalId(manifest) {
+  const ids = new Set(manifest.festivals.map((f) => f.id));
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const fromUrl = params.get("festival");
+    if (fromUrl && ids.has(fromUrl)) return fromUrl;
+  } catch {
+    /* ignore */
+  }
+  try {
+    const stored = localStorage.getItem(FESTIVAL_ID_KEY);
+    if (stored && ids.has(stored)) return stored;
+  } catch {
+    /* ignore */
+  }
+  if (manifest.default && ids.has(manifest.default)) return manifest.default;
+  return manifest.festivals[0]?.id ?? null;
+}
+
+function persistFestivalId() {
+  if (!state.festivalId) return;
+  try {
+    localStorage.setItem(FESTIVAL_ID_KEY, state.festivalId);
+  } catch {
+    /* ignore */
+  }
+}
+
+function syncFestivalSelect() {
+  const select = document.getElementById("festival-select");
+  if (!select || !state.manifest) return;
+  select.innerHTML = state.manifest.festivals
+    .map((f) => `<option value="${f.id}">${f.label}</option>`)
+    .join("");
+  select.value = state.festivalId;
+}
+
+async function loadFestivalData(festivalId) {
+  const entry = state.manifest.festivals.find((f) => f.id === festivalId);
+  if (!entry) throw new Error(`Unknown festival: ${festivalId}`);
+
+  const res = await fetch(entry.file);
+  if (!res.ok) throw new Error(`HTTP ${res.status} loading ${entry.file}`);
+
+  state.festivalId = festivalId;
+  state.data = await res.json();
+  state.enabled = loadEnabledFromStorage(festivalId, state.data.gifts.map((g) => g.id));
+  state.extraCash = loadExtraCashFromStorage(festivalId);
+  state.modalGiftId = null;
+  enforceOptionLocks();
+  persistEnabled();
+  persistExtraCash();
+  persistFestivalId();
+  syncFestivalSelect();
+  renderMeta();
+  renderAll();
+}
+
+async function switchFestival(festivalId) {
+  if (!state.manifest || festivalId === state.festivalId) return;
+  persistEnabled();
+  persistExtraCash();
+  await loadFestivalData(festivalId);
+}
+
+async function init() {
+  initTheme();
+  document.querySelectorAll(".gift-tab").forEach((t) => {
+    t.onclick = () => setModalTab(t.dataset.giftTab);
+  });
+  document.querySelectorAll(".cart-tab").forEach((t) => {
+    t.onclick = () => setCartTab(t.dataset.cartTab);
+  });
+  document.getElementById("cart-btn").onclick = openCartModal;
+  document.getElementById("cart-clear").onclick = clearSelections;
+
+  try {
+    const manifestRes = await fetch("festivals.json");
+    if (!manifestRes.ok) throw new Error(`HTTP ${manifestRes.status} loading festivals.json`);
+    state.manifest = await manifestRes.json();
+
+    const festivalId = resolveInitialFestivalId(state.manifest);
+    if (!festivalId) throw new Error("No festivals configured");
+
+    syncFestivalSelect();
+    const select = document.getElementById("festival-select");
+    select.onchange = () => switchFestival(select.value);
+
+    await loadFestivalData(festivalId);
+  } catch (err) {
+    document.querySelector(".page").innerHTML = `
+      <p class="error">Could not load festival data. Run from a local server:<br>
+      <code>cd "Projects - Mid-Autumn Festival/2026/Marketing/Build the Festival" && python3 -m http.server 8765</code><br>
+      Then open http://localhost:8765<br><br>${err.message}</p>`;
+  }
+}
+
+init();

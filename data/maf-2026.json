@@ -1,0 +1,417 @@
+{
+  "event": {
+    "name": "MAF 2026",
+    "venue": "Derr-Okamoto Park",
+    "dates": "Fri Sep 25 4\u20138 PM + Sat Sep 26 11 AM\u20138 PM",
+    "mvpCap": 10250,
+    "vendorRev100": 10575,
+    "registryFull": 24190,
+    "vendorSlots": 28,
+    "attendance": 2500
+  },
+  "scenario": {
+    "id": "planning",
+    "label": "Planning baseline",
+    "fillRate": 1.0,
+    "parkFee": 0,
+    "attendance": 2500,
+    "mvpCap": 10250,
+    "vendorRevenue": 10575,
+    "headroomOrGap": 325,
+    "vendorSlots": 28
+  },
+  "gifts": [
+    {
+      "id": "festival_foundation",
+      "name": "Festival Foundation",
+      "amount": 4140,
+      "category": "core",
+      "sortOrder": 0,
+      "tagline": "Insurance, permits, and infrastructure every festival needs.",
+      "description": "CGL insurance, CSD permits, TFF coordinator, ops tents, organic marketing, and contingency \u2014 embedded in the MVP cap.",
+      "benefits": [
+        "Foundation sponsor recognition on website + email"
+      ],
+      "lineItems": [
+        {
+          "label": "CGL insurance",
+          "amount": 2200
+        },
+        {
+          "label": "CSD permit + service",
+          "amount": 960
+        },
+        {
+          "label": "TFF organizer coordinator fee",
+          "amount": 584
+        },
+        {
+          "label": "Ops 10\u00d710 tents + weights",
+          "amount": 900
+        },
+        {
+          "label": "Organic digital marketing",
+          "amount": 400
+        },
+        {
+          "label": "5% contingency buffer",
+          "amount": 490
+        }
+      ]
+    },
+    {
+      "id": "festival_stage",
+      "name": "Festival Stage",
+      "amount": 2400,
+      "category": "core",
+      "sortOrder": 1,
+      "tagline": "The stage where Mid-Autumn Festival comes alive.",
+      "description": "30\u00d730 stage tent, portable PA + mic, and two lion dances \u2014 the cultural heart of Saturday at Derr-Okamoto.",
+      "benefits": [
+        "Stage naming credit",
+        "MC thank-you",
+        "website + Facebook/Instagram feature"
+      ],
+      "lineItems": [
+        {
+          "label": "30\u00d730 stage tent + weights",
+          "amount": 900
+        },
+        {
+          "label": "Portable speaker + playlist + basic mic",
+          "amount": 800
+        },
+        {
+          "label": "2 lion dances @ $350",
+          "amount": 700
+        }
+      ]
+    },
+    {
+      "id": "safe_festival",
+      "name": "Safe Festival",
+      "amount": 480,
+      "category": "core",
+      "sortOrder": 2,
+      "tagline": "A safe place for children to run with lanterns at dusk.",
+      "description": "Security coverage Fri 4\u20138 PM and Sat festival hours.",
+      "benefits": [
+        "Safety sponsor recognition on website + email"
+      ],
+      "lineItems": [
+        {
+          "label": "Guards @ $20/hr \u2014 Fri 1\u00d74 hr, Sat 2\u00d710 hr",
+          "amount": 480
+        }
+      ]
+    },
+    {
+      "id": "festival_amenities",
+      "name": "Festival Amenities",
+      "amount": 750,
+      "category": "core",
+      "sortOrder": 3,
+      "tagline": "Families stay longer when comfort is covered.",
+      "description": "Restrooms, ADA unit, and hand-wash stations for Fri night market and Sat festival.",
+      "benefits": [
+        "Named amenity sponsor on website + digital sponsor slide"
+      ],
+      "lineItems": [
+        {
+          "label": "2 standard + 1 ADA + 1 hand-wash (1.5-day)",
+          "amount": 750
+        }
+      ]
+    },
+    {
+      "id": "lantern_procession",
+      "name": "Lantern Procession",
+      "emoji": "\ud83c\udfee",
+      "amount": 2500,
+      "category": "registry",
+      "sortOrder": 1,
+      "tagline": "The walk that closes Mid-Autumn Festival \u2014 light moving through the park.",
+      "description": "Music-driven lantern walk \u2014 children with LED lanterns, route staging, and the moment families photograph.",
+      "benefits": [
+        "Named procession \u2014 \"Lantern Procession presented by [Sponsor]\"",
+        "Facebook/Instagram unlock post + Reel"
+      ],
+      "lineItems": [
+        {
+          "label": "Procession music + coordination",
+          "amount": 800
+        },
+        {
+          "label": "Route staging + LED lantern supply",
+          "amount": 1200
+        },
+        {
+          "label": "Volunteer + safety staging",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "id": "saturday_children",
+      "name": "Children's Show",
+      "emoji": "\ud83c\udfad",
+      "amount": 3500,
+      "category": "registry",
+      "sortOrder": 2,
+      "tagline": "Mid-Autumn Festival is for the kids \u2014 this is their day on stage.",
+      "description": "Full Sat schedule \u2014 MC, singers, dancers, magic, clown, storytelling.",
+      "benefits": [
+        "Programming presented by [Sponsor]",
+        "MC scripts + Facebook/Instagram features"
+      ],
+      "lineItems": [
+        {
+          "label": "MC + talent fees",
+          "amount": 2200
+        },
+        {
+          "label": "Magic, clown, storytelling",
+          "amount": 900
+        },
+        {
+          "label": "Schedule production",
+          "amount": 400
+        }
+      ]
+    },
+    {
+      "id": "honor_elders",
+      "name": "Honor our Elders",
+      "emoji": "\ud83c\udf75",
+      "amount": 2000,
+      "category": "registry",
+      "sortOrder": 3,
+      "tagline": "Grandparents watch the procession in comfort \u2014 an MAF value made visible.",
+      "description": "A restful zone with shade tent, seating, and elder tea hospitality.",
+      "benefits": [
+        "Honor our Elders presented by [Sponsor]",
+        "website + Facebook/Instagram"
+      ],
+      "lineItems": [
+        {
+          "label": "Shade tent + seating rental",
+          "amount": 1600
+        },
+        {
+          "label": "Elder tea hospitality",
+          "amount": 400
+        }
+      ]
+    },
+    {
+      "id": "light_up_derr_okamoto",
+      "name": "Light Up The Park",
+      "emoji": "\u2728",
+      "amount": 2580,
+      "category": "registry",
+      "sortOrder": 4,
+      "tagline": "Trees, stage, and night market lit for MAF \u2014 the park glows at dusk.",
+      "description": "Functional power and light for stage + night market, plus tree uplights, string lights, and stage flowers \u2014 Mid-Autumn Festival atmosphere before the procession.",
+      "benefits": [
+        "Named lighting sponsor",
+        "website + Facebook/Instagram unlock post"
+      ],
+      "lineItems": [
+        {
+          "label": "Stage zone \u2014 light tower + 25 KVA generator",
+          "amount": 980
+        },
+        {
+          "label": "Booth/parking zone \u2014 light tower + 8K generator",
+          "amount": 650
+        },
+        {
+          "label": "Delivery, diesel, taxes",
+          "amount": 350
+        },
+        {
+          "label": "Tree uplights, string lights, stage flowers",
+          "amount": 600
+        }
+      ]
+    },
+    {
+      "id": "spread_the_word",
+      "name": "Spread the Word",
+      "emoji": "\ud83d\udce3",
+      "amount": 800,
+      "category": "registry",
+      "sortOrder": 5,
+      "tagline": "Spread the Word presented by [Sponsor] \u2014 reach families who have not found us yet.",
+      "description": "Paid Meta / Instagram and boosted posts \u2014 media sponsorship, not a petty-cash ask.",
+      "benefits": [
+        "Sponsor tag on boosted content",
+        "Named in Facebook/Instagram unlock post",
+        "website recognition"
+      ],
+      "lineItems": [
+        {
+          "label": "Paid Meta / Instagram + boosted posts",
+          "amount": 800
+        }
+      ]
+    },
+    {
+      "id": "festival_stage_plus",
+      "name": "Festival Stage+",
+      "amount": 2875,
+      "category": "registry",
+      "sortOrder": 6,
+      "requiresCoreGift": "festival_stage",
+      "tagline": "Saturday stage at full production quality.",
+      "description": "Upgrade from playlist-only to concert-quality outdoor sound and basic stage lighting \u2014 requires Festival Stage in Core ops.",
+      "benefits": [
+        "Stage naming credit"
+      ],
+      "lineItems": [
+        {
+          "label": "Sound engineer + basic stage lights",
+          "amount": 2875
+        }
+      ]
+    },
+    {
+      "id": "safe_festival_plus",
+      "name": "Safe Festival+",
+      "amount": 1120,
+      "category": "registry",
+      "sortOrder": 7,
+      "requiresCoreGift": "safe_festival",
+      "tagline": "Extra guards Fri/Sat",
+      "description": "Additional security beyond the Safe Festival baseline \u2014 requires Safe Festival in Core ops.",
+      "benefits": [
+        "Ops sponsor recognition"
+      ],
+      "lineItems": [
+        {
+          "label": "Extra guards Fri/Sat",
+          "amount": 1120
+        }
+      ]
+    },
+    {
+      "id": "festival_amenities_plus",
+      "name": "Festival Amenities+",
+      "amount": 545,
+      "category": "registry",
+      "sortOrder": 8,
+      "requiresCoreGift": "festival_amenities",
+      "tagline": "Additional restrooms/sinks",
+      "description": "Extra restroom capacity for peak Sat hours \u2014 requires Festival Amenities in Core ops.",
+      "benefits": [
+        "Ops sponsor recognition"
+      ],
+      "lineItems": [
+        {
+          "label": "Additional restrooms/sinks",
+          "amount": 545
+        }
+      ]
+    },
+    {
+      "id": "additional_amount",
+      "name": "Additional amount",
+      "amount": 0,
+      "category": "options",
+      "sortOrder": 0,
+      "variableAmount": true,
+      "tagline": "Top up your package toward the next tier.",
+      "description": "Add any dollar amount on top of your selected gifts \u2014 for example, $100 on top of Festival Stage ($2,400) to reach Gold ($2,500+) and unlock sponsor booth spot. Does not fund a named registry feature.",
+      "benefits": [
+        "Counts toward Gold tier sponsorship minimum"
+      ],
+      "lineItems": [
+        {
+          "label": "Additional sponsorship (flexible)",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "sponsor_booth",
+      "name": "Sponsor booth spot",
+      "amount": 0,
+      "category": "options",
+      "sortOrder": 1,
+      "requiresSponsorThreshold": true,
+      "tagline": "On-site sponsor activation \u2014 bring your own tent.",
+      "description": "10\u00d710 sponsor activation footprint at the festival (not a vendor booth application). You provide the tent; cPALSs assigns your on-site location and recognizes you on the website.",
+      "benefits": [
+        "Logo on website sponsor page",
+        "Included with Gold tier sponsorship"
+      ],
+      "lineItems": [
+        {
+          "label": "Sponsor booth slot assignment",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "tent_rental",
+      "name": "Tent rental",
+      "amount": 900,
+      "category": "options",
+      "sortOrder": 2,
+      "requiresBoothSpot": true,
+      "tagline": "Optional \u2014 we rent the 10\u00d710 for your sponsor booth.",
+      "description": "Capitol Tent City 10\u00d710 tent + weights for Fri night market and Sat festival. Add alongside sponsor booth spot if you prefer not to bring your own tent.",
+      "benefits": [
+        "Delivery + pickup handled by festival ops",
+        "Same 10\u00d710 spec as sponsor booth footprint"
+      ],
+      "lineItems": [
+        {
+          "label": "10\u00d710 tent + weights (1.5-day)",
+          "amount": 900
+        }
+      ]
+    }
+  ],
+  "sponsorRules": {
+    "boothUnlockThreshold": 2500,
+    "boothTierLabel": "Gold"
+  },
+  "sponsorTiers": [
+    {
+      "label": "Community supporter",
+      "min": 0
+    },
+    {
+      "label": "Supporter",
+      "min": 250
+    },
+    {
+      "label": "Bronze",
+      "min": 500
+    },
+    {
+      "label": "Silver",
+      "min": 1000
+    },
+    {
+      "label": "Gold",
+      "min": 2500
+    },
+    {
+      "label": "Diamond",
+      "min": 5000
+    },
+    {
+      "label": "Presenting",
+      "min": 10000
+    }
+  ],
+  "globalPerks": [
+    {
+      "id": "stage_mentions",
+      "label": "Stage recognition",
+      "template": "{tier}-tier stage mentions"
+    }
+  ]
+}

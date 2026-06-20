@@ -1,0 +1,25 @@
+{
+  "festivals": [
+    {
+      "id": "maf2026",
+      "label": "Mid-Autumn Festival 2026",
+      "file": "data/maf-2026.json",
+      "sections": {
+        "core": "Vendor fees already cover these core operations, but sponsoring them unlocks stories for social media posting.",
+        "registry": "Sponsor-funded features beyond the vendor baseline. Some upgrades require the matching core ops gift — select it above first.",
+        "options": "Sponsor perks — sponsor booth spot unlocks at Gold ($2,500+). Tent rental requires sponsor booth spot."
+      }
+    },
+    {
+      "id": "lny2027",
+      "label": "Lunar New Year 2027",
+      "file": "data/lny-2027.json",
+      "sections": {
+        "core": "Vendor fees, parking, and carnival fund the MVP core (~$40K ops). This baseline runs Sat–Sun 11 AM–5 PM without upgrade sponsors.",
+        "registry": "Upgrade blocks families remember — parade, talent, decor, Saturday night, and more. Pick the story you want to own.",
+        "options": "Recognition add-ons and community anchor gifts. Sponsor booth unlocks at Bronze ($3,000+)."
+      }
+    }
+  ],
+  "default": "lny2027"
+}
