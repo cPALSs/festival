@@ -5,7 +5,7 @@
     "dates": "Sat\u2013Sun mid-February 2027 (TBD) \u00b7 11 AM\u20135 PM",
     "mvpCap": 39625,
     "vendorRev100": 18200,
-    "registryFull": 66000,
+    "registryFull": 76500,
     "vendorSlots": 37,
     "attendance": 6000
   },
@@ -153,15 +153,19 @@
       "amount": 3800,
       "category": "core",
       "sortOrder": 3,
-      "tagline": "Peak security coverage for a crowded two-day park festival.",
-      "description": "Guards at peak hours for Sat\u2013Sun 11 AM\u20135 PM \u2014 daylight MVP staffing (no evening post).",
+      "tagline": "Peak guards and pro traffic direction for a crowded two-day park festival.",
+      "description": "Private security at peak hours Sat\u2013Sun 11 AM\u20135 PM \u2014 crowd safety on festival grounds plus traffic and parking direction at entries and crossings. Daylight MVP staffing (no evening post).",
       "benefits": [
         "Safety sponsor recognition on website + email"
       ],
       "lineItems": [
         {
-          "label": "Peak guards \u2014 daylight MVP hours",
-          "amount": 3800
+          "label": "Peak guards \u2014 festival grounds",
+          "amount": 2800
+        },
+        {
+          "label": "Private security \u2014 traffic/parking direction",
+          "amount": 1000
         }
       ]
     },
@@ -171,15 +175,19 @@
       "amount": 4000,
       "category": "core",
       "sortOrder": 4,
-      "tagline": "Families stay longer when comfort is covered.",
-      "description": "Restrooms and hand-wash stations for Sat\u2013Sun festival hours through 5 PM close.",
+      "tagline": "Restrooms, hand-wash, and pro trash crew \u2014 volunteers handle simple litter.",
+      "description": "Restrooms and hand-wash stations through 5 PM close, plus hired porters and trash collectors for heavy and gross waste. Volunteer crews pick up simple litter only \u2014 not bins, kitchens, or restrooms.",
       "benefits": [
         "Named amenity sponsor on website + digital sponsor slide"
       ],
       "lineItems": [
         {
           "label": "Restrooms/sinks \u2014 5 PM close both days",
-          "amount": 4000
+          "amount": 3000
+        },
+        {
+          "label": "Hired porters + trash haul (heavy/gross waste)",
+          "amount": 1000
         }
       ]
     },
@@ -476,6 +484,92 @@
       ]
     },
     {
+      "id": "children_show",
+      "name": "Children's Show",
+      "emoji": "\ud83c\udfad",
+      "amount": 3500,
+      "category": "registry",
+      "sortOrder": 11,
+      "impactOrder": 7,
+      "tagline": "Family stage block \u2014 MC, storytelling, magic, and dance.",
+      "description": "Family-facing children's programming on the MVP indoor or outdoor stage \u2014 MC, storytelling, magic, and dance for kids and parents. Assumes baseline stage, PA, and sound engineers in core ops. Pair with Youth Culture Day for school and club groups.",
+      "benefits": [
+        "Children's Show presented by [Sponsor]",
+        "MC scripts + Facebook/Instagram feature",
+        "Program listing on website"
+      ],
+      "lineItems": [
+        {
+          "label": "MC + family entertainment (storytelling, magic, dance)",
+          "amount": 2200
+        },
+        {
+          "label": "Run-of-show production",
+          "amount": 1300
+        }
+      ]
+    },
+    {
+      "id": "youth_culture_day",
+      "name": "Youth Culture Day",
+      "emoji": "\ud83c\udf93",
+      "amount": 3000,
+      "category": "registry",
+      "sortOrder": 12,
+      "impactOrder": 7,
+      "tagline": "School and club groups on stage \u2014 the youth pipeline for T\u1ebft.",
+      "description": "Dedicated stage block for student performance groups from local schools and cultural clubs \u2014 the Youth Culture Day lane families saw in 2026. Covers group hospitality, MC, and staging; assumes baseline stage, PA, and sound engineers in core ops.",
+      "benefits": [
+        "Youth Culture Day presented by [Sponsor]",
+        "Facebook/Instagram feature + website program listing",
+        "MC thank-you for participating schools"
+      ],
+      "lineItems": [
+        {
+          "label": "School/club group hospitality + coordination",
+          "amount": 1800
+        },
+        {
+          "label": "Youth block MC + run-of-show",
+          "amount": 700
+        },
+        {
+          "label": "Group prizes + volunteer hospitality",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "id": "children_village",
+      "name": "Children's Village",
+      "emoji": "\ud83d\udc09",
+      "amount": 4000,
+      "category": "registry",
+      "sortOrder": 13,
+      "impactOrder": 5,
+      "tagline": "Shade, crafts, and cultural activities \u2014 a place for kids to explore T\u1ebft.",
+      "description": "Named children's activity zone with shade tents, seating, craft supplies, and cultural play stations \u2014 inspired by the Little Dragons & Fairies village families remember. Not in MVP ops.",
+      "benefits": [
+        "Children's Village presented by [Sponsor]",
+        "website + Facebook/Instagram feature",
+        "Named on activity signage"
+      ],
+      "lineItems": [
+        {
+          "label": "Shade tents + seating",
+          "amount": 2000
+        },
+        {
+          "label": "Crafts, supplies + cultural activity kits",
+          "amount": 1200
+        },
+        {
+          "label": "Zone signage + volunteer hospitality",
+          "amount": 800
+        }
+      ]
+    },
+    {
       "id": "additional_amount",
       "name": "Additional funds",
       "amount": 0,
@@ -535,24 +629,39 @@
       ]
     },
     {
-      "id": "pageant_influencer",
-      "name": "Pageant / Influencer",
-      "amount": 6500,
+      "id": "pageant",
+      "name": "Pageant",
+      "amount": 4000,
       "category": "secondary",
       "sortOrder": 2,
-      "tagline": "Off-year 2027 \u2014 pageant segments and influencer activations if brought back.",
-      "description": "Pageant and influencer activation block. Only if steering revives pageant programming in 2027.",
+      "tagline": "Off-year 2027 \u2014 pageant segments if steering brings them back.",
+      "description": "Miss/community pageant segments on indoor or outdoor stage \u2014 talent, staging, and run-of-show. Off-year in 2027; only if steering revives pageant programming.",
       "benefits": [
         "Dedicated email block",
-        "Facebook/Instagram collaboration post"
+        "Facebook/Instagram feature"
       ],
       "lineItems": [
         {
-          "label": "Pageant segments",
+          "label": "Pageant talent + staging",
           "amount": 4000
-        },
+        }
+      ]
+    },
+    {
+      "id": "influencer",
+      "name": "Influencer",
+      "amount": 2500,
+      "category": "secondary",
+      "sortOrder": 3,
+      "tagline": "Creator activations \u2014 eating contest, collab posts, on-site spectacle.",
+      "description": "Invited creators for festival activations (e.g. eating contest) plus collaboration posts that carry the festival into feeds beyond word of mouth.",
+      "benefits": [
+        "Instagram collaboration post",
+        "Activation naming credit"
+      ],
+      "lineItems": [
         {
-          "label": "Influencer activations",
+          "label": "Creator fees + activation production",
           "amount": 2500
         }
       ]
