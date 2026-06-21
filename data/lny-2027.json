@@ -3,7 +3,7 @@
     "name": "LNY 2027",
     "venue": "Elk Grove Regional Park",
     "dates": "Sat\u2013Sun mid-February 2027 (TBD) \u00b7 11 AM\u20135 PM",
-    "mvpCap": 39625,
+    "mvpCap": 39940,
     "vendorRev100": 18200,
     "registryFull": 76500,
     "vendorSlots": 37,
@@ -14,9 +14,9 @@
     "label": "Planning baseline",
     "fillRate": 1.0,
     "attendance": 6000,
-    "mvpCap": 39625,
+    "mvpCap": 39940,
     "vendorRevenue": 26435,
-    "headroomOrGap": 13190,
+    "headroomOrGap": 13505,
     "vendorSlots": 37,
     "estimatedRevenue": {
       "total": 26435,
@@ -90,11 +90,11 @@
     {
       "id": "outdoor_stage",
       "name": "Outdoor Stage",
-      "amount": 13790,
+      "amount": 14090,
       "category": "core",
       "sortOrder": 1,
-      "tagline": "Main outdoor stage \u2014 PA, sound engineer, power, and two lion dances.",
-      "description": "APEX trailer stage with ADA ramp, weekend PA and sound engineer (daylight hours), site generators for daylight power, and 2 lion dances (Sat + Sun, outdoor).",
+      "tagline": "Main outdoor stage \u2014 PA, sound engineer, power, weather sidings, and two lion dances.",
+      "description": "APEX trailer stage with ADA ramp, stage sidings for rain and wind protection, weekend PA and sound engineer (daylight hours), site generators for daylight power, and 2 lion dances (Sat + Sun, outdoor).",
       "benefits": [
         "Outdoor stage naming credit",
         "MC thank-you",
@@ -108,6 +108,10 @@
         {
           "label": "ADA ramp + setup/delivery",
           "amount": 1850
+        },
+        {
+          "label": "Stage sidings \u2014 rain + wind protection",
+          "amount": 300
         },
         {
           "label": "Weekend PA + sound engineer (outdoor main)",
@@ -492,7 +496,7 @@
       "sortOrder": 11,
       "impactOrder": 7,
       "tagline": "Family stage block \u2014 MC, storytelling, magic, and dance.",
-      "description": "Family-facing children's programming on the MVP indoor or outdoor stage \u2014 MC, storytelling, magic, and dance for kids and parents. Assumes baseline stage, PA, and sound engineers in core ops. Pair with Youth Culture Day for school and club groups.",
+      "description": "Family-facing children's programming on the MVP indoor or outdoor stage \u2014 MC, storytelling, magic, and dance for kids and parents. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Youth Culture Day** (EGUSD high school clubs only \u2014 see youth_culture_day).",
       "benefits": [
         "Children's Show presented by [Sponsor]",
         "MC scripts + Facebook/Instagram feature",
@@ -517,8 +521,8 @@
       "category": "registry",
       "sortOrder": 12,
       "impactOrder": 7,
-      "tagline": "School and club groups on stage \u2014 the youth pipeline for T\u1ebft.",
-      "description": "Dedicated stage block for student performance groups from local schools and cultural clubs \u2014 the Youth Culture Day lane families saw in 2026. Covers group hospitality, MC, and staging; assumes baseline stage, PA, and sound engineers in core ops.",
+      "tagline": "Elk Grove high school clubs on stage \u2014 the youth pipeline for T\u1ebft.",
+      "description": "Dedicated stage block for **EGUSD high school** performance groups and cultural clubs \u2014 the Youth Culture Day lane families saw in 2026 (Sheldon, Cosumnes Oaks, Florin VSA, etc.). **College / campus orgs perform at Sac State APIDA LNY, not on this bill.** Covers group hospitality, MC, and staging; assumes baseline stage, PA, and sound engineers in core ops.",
       "benefits": [
         "Youth Culture Day presented by [Sponsor]",
         "Facebook/Instagram feature + website program listing",
@@ -547,8 +551,8 @@
       "category": "registry",
       "sortOrder": 13,
       "impactOrder": 5,
-      "tagline": "Shade, crafts, and cultural activities \u2014 a place for kids to explore T\u1ebft.",
-      "description": "Named children's activity zone with shade tents, seating, craft supplies, and cultural play stations \u2014 inspired by the Little Dragons & Fairies village families remember. Not in MVP ops.",
+      "tagline": "Shade, crafts, and cultural activities \u2014 kids explore T\u1ebft; families regroup here.",
+      "description": "Named children's activity zone with shade tents, seating, craft supplies, and cultural play stations \u2014 inspired by the Little Dragons & Fairies village families remember. **Default family meetup / home base** on site (gym-class, PTA, stroller groups). Visible signage + map pin in marketing. Not in MVP ops.",
       "benefits": [
         "Children's Village presented by [Sponsor]",
         "website + Facebook/Instagram feature",
