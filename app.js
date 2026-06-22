@@ -20,7 +20,7 @@ const GIFT_SORT = {
   lucky_wav: 8,
   asian_cajun_show: 9,
   children_show: 11,
-  youth_culture_day: 12,
+  tet_relay_cup: 12,
   children_village: 13,
   stage_production_plus: 10,
   sponsor_booth: 1,
@@ -263,7 +263,7 @@ const FEATURE_SPONSOR_ALLOC_ORDER = [
   "stage_production_plus",
   "sat_night_headliner",
   "pbn_revue",
-  "youth_culture_day",
+  "tet_relay_cup",
   "cay_neu",
   "tent_rental",
 ];

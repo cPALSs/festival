@@ -496,7 +496,7 @@
       "sortOrder": 11,
       "impactOrder": 7,
       "tagline": "Family stage block \u2014 MC, storytelling, magic, and dance.",
-      "description": "Family-facing children's programming on the MVP indoor or outdoor stage \u2014 MC, storytelling, magic, and dance for kids and parents. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Youth Culture Day** (EGUSD high school clubs only \u2014 see youth_culture_day).",
+      "description": "Family-facing children's programming on the MVP indoor or outdoor stage \u2014 MC, storytelling, magic, and dance for kids and parents. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Tet Relay Cup** (EGUSD high school club teams \u2014 see tet_relay_cup).",
       "benefits": [
         "Children's Show presented by [Sponsor]",
         "MC scripts + Facebook/Instagram feature",
@@ -514,32 +514,37 @@
       ]
     },
     {
-      "id": "youth_culture_day",
-      "name": "Youth Culture Day",
-      "emoji": "\ud83c\udf93",
+      "id": "tet_relay_cup",
+      "name": "Tet Relay Cup",
+      "emoji": "\ud83c\udfc6",
       "amount": 3000,
       "category": "registry",
       "sortOrder": 12,
       "impactOrder": 7,
-      "tagline": "Elk Grove high school clubs on stage \u2014 the youth pipeline for T\u1ebft.",
-      "description": "Dedicated stage block for **EGUSD high school** performance groups and cultural clubs \u2014 the Youth Culture Day lane families saw in 2026 (Sheldon, Cosumnes Oaks, Florin VSA, etc.). **College / campus orgs perform at Sac State APIDA LNY, not on this bill.** Covers group hospitality, MC, and staging; assumes baseline stage, PA, and sound engineers in core ops.",
+      "tagline": "School club bracket tournament \u2014 East vs West finals, real prizes, sidelines that multiply.",
+      "description": "**Tet Relay Cup** \u2014 festival-run relay tournament on the grass corral beside Children's Village. **EGUSD high school clubs** register teams (VSA, Key Club, Chinese / Japanese / Korean clubs, Pacific Islander, Desi, and more) \u2014 **no dance performance required.** Clubs split into arbitrary **East** and **West** halves; single-elimination within each side; **final: East champion vs West champion.** When your club loses, you **ride the bracket** \u2014 join your division's carrier on the sideline; if your half wins the final, eliminated teams share a **division consolation** pool. Top prizes to champion and runner-up clubs; spirit/attire award; optional short halftime cultural dance. cPALSs runs games + MC \u2014 **no parent supervisor requirement.** College orgs route to Sac State APIDA LNY.",
       "benefits": [
-        "Youth Culture Day presented by [Sponsor]",
-        "Facebook/Instagram feature + website program listing",
-        "MC thank-you for participating schools"
+        "Tet Relay Cup presented by [Sponsor]",
+        "Facebook/Instagram feature + public bracket on website program",
+        "MC thank-you for participating schools and clubs",
+        "Traveling trophy + prize checks to winning club accounts"
       ],
       "lineItems": [
         {
-          "label": "School/club group hospitality + coordination",
-          "amount": 1800
+          "label": "Prize pool \u2014 champion, runner-up, division split, spirit",
+          "amount": 1850
         },
         {
-          "label": "Youth block MC + run-of-show",
-          "amount": 700
+          "label": "Relay facilitator + East/West bracket ops + corral supplies",
+          "amount": 1050
         },
         {
-          "label": "Group prizes + volunteer hospitality",
-          "amount": 500
+          "label": "Halftime PA + runner hospitality",
+          "amount": 400
+        },
+        {
+          "label": "Traveling trophy + medals + certificates",
+          "amount": 200
         }
       ]
     },
