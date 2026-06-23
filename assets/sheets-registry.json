@@ -22,8 +22,7 @@
       "url": "https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link",
       "season": "autumn",
       "schema": "assets/autumn/research/competitive-landscape-schema.md",
-      "tab": null,
-      "tab_note": "Use MCP sheets_list_tabs if tab name is unknown; default import is often Sheet1."
+      "tab": "Greater Sacramento Autumn Season - Competitive Landscape",
     }
   ]
 }

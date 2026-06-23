@@ -13,6 +13,6 @@ title: Anchor Registry
 
 ## Registry fields
 
-See research CSV + scheduling columns in competitive-landscape-schema.md.
+See competitive landscape sheet (via [sheets-registry.json](../../sheets-registry.json)) + scheduling columns in competitive-landscape-schema.md.
 
 <!-- TODO: event mapping from rollup-arcs.md -->

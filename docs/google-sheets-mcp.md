@@ -204,7 +204,6 @@ npx -y google-sheet-mcp test
 ## Operating rules
 
 - **Sheets = source of truth** — humans edit in Google Sheets; agents update via MCP
-- **Repo** holds `sheets-registry.json`, column schema, and guides — not live rows
-- **Do not** edit `assets/autumn/research/competitive-landscape.csv` for live data (stub/archive only)
+- **Repo** holds `sheets-registry.json`, column schema, and guides — **not** live rows (no CSV)
 - Match columns in [competitive-landscape-schema.md](../assets/autumn/research/competitive-landscape-schema.md)
 - Protect row 1 (headers) in the Sheet

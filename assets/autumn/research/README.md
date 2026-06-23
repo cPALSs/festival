@@ -6,13 +6,14 @@
 
 Registry entry: [sheets-registry.json](../../sheets-registry.json) → `autumn-competitive-landscape`
 
+There is **no CSV in this repo** — the Google Sheet is canonical.
+
 ## Files in this folder
 
 | File | Role |
 |------|------|
 | [competitive-landscape-schema.md](competitive-landscape-schema.md) | Column dictionary (contract for the Sheet) |
-| [competitive-landscape.csv](competitive-landscape.csv) | **Archive/stub only** — do not edit for live data |
 | [greater-sac-autumn-season-report.md](greater-sac-autumn-season-report.md) | Narrative analysis (repo) |
 | [CONTRIBUTING-RESEARCH.md](CONTRIBUTING-RESEARCH.md) | How to contribute |
 
-Agents: read and write the **Google Sheet** via MCP. See [docs/google-sheets-mcp.md](../../../docs/google-sheets-mcp.md).
+Agents: read and write the **Google Sheet** via MCP. See [docs/google-sheets-mcp.md](../../../docs/google-sheets-mcp.md) and [AGENTS.md](../../../AGENTS.md).

@@ -19,9 +19,17 @@ Instructions for AI agents working with this repository.
 
 ### Autumn competitive landscape
 
-- **Spreadsheet ID:** `1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA`
-- **URL:** https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit
-- **Schema:** [assets/autumn/research/competitive-landscape-schema.md](assets/autumn/research/competitive-landscape-schema.md)
+Registry ID: `autumn-competitive-landscape` in [assets/sheets-registry.json](assets/sheets-registry.json)
+
+| | |
+|---|---|
+| **Title** | Greater Sacramento Autumn Season - Competitive Landscape |
+| **Spreadsheet ID** | `1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA` |
+| **URL** | https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit |
+| **Tab** | `Greater Sacramento Autumn Season - Competitive Landscape` |
+| **Schema** | [assets/autumn/research/competitive-landscape-schema.md](assets/autumn/research/competitive-landscape-schema.md) |
+
+**No local CSV** — this sheet is the only canonical copy of autumn event rows. Read and write via MCP (`sheets_read_range`, `sheets_write_range`, `sheets_append_row`).
 
 ## Load order
 

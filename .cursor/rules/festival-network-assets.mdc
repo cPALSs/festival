@@ -13,7 +13,7 @@ Mirror of public repo `AGENTS.md`. Read [AGENTS.md](../../AGENTS.md) first.
 
 **Google Sheets** for live tabular research. Registry: [assets/sheets-registry.json](../../assets/sheets-registry.json).
 
-Use **google-sheets** MCP to read/update. Do not treat repo CSV as canonical.
+Use **google-sheets** MCP to read/update. **No local CSV** — autumn event rows live only in Google Sheets.
 
 ## Load order
 
