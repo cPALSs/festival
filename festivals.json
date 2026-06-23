@@ -4,6 +4,7 @@
       "id": "maf2026",
       "label": "Mid-Autumn Festival 2026",
       "file": "data/maf-2026.json",
+      "registryImpactSort": "desc",
       "cashOffsetLabel": "Vendor booth fees",
       "sections": {
         "core": "Vendor fees already cover these core operations, but sponsoring them unlocks stories for social media posting.",

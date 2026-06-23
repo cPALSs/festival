@@ -98,16 +98,28 @@ function globalPerkLines(total = sponsorTotal()) {
   }));
 }
 
-/** Core/options: sortOrder. Registry: impactOrder ascending (lower = smaller lift, higher = flagship). */
+/** Core/options: sortOrder. Registry: impactOrder (higher = flagship). Direction per festival. */
+function registrySortMultiplier() {
+  const mode = currentFestivalEntry()?.registryImpactSort;
+  return mode === "desc" ? -1 : 1;
+}
+
 function giftSortKey(gift, category) {
   if (category === "registry" && gift.impactOrder != null) return gift.impactOrder;
   return gift.sortOrder ?? GIFT_SORT[gift.id] ?? 99;
 }
 
+function compareGifts(a, b, category) {
+  const ka = giftSortKey(a, category);
+  const kb = giftSortKey(b, category);
+  if (ka !== kb) return registrySortMultiplier() * (ka - kb);
+  return (a.sortOrder ?? 0) - (b.sortOrder ?? 0);
+}
+
 function giftsInCategory(gifts, category) {
   return gifts
     .filter((g) => g.category === category)
-    .sort((a, b) => giftSortKey(a, category) - giftSortKey(b, category));
+    .sort((a, b) => compareGifts(a, b, category));
 }
 
 const FESTIVAL_ID_KEY = "build-festival-id";
