@@ -16,6 +16,7 @@
       "id": "lny2027",
       "label": "Lunar New Year 2027",
       "file": "data/lny-2027.json",
+      "registryImpactSort": "desc",
       "estimatedSponsorsFile": "data/lny-2026-sponsors.json",
       "cashOffsetLabel": "Vendors, parking & carnival",
       "sections": {

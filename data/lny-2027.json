@@ -202,7 +202,7 @@
       "amount": 3700,
       "category": "registry",
       "sortOrder": 1,
-      "impactOrder": 8,
+      "impactOrder": 9,
       "tagline": "Marching band, hired units, and day-of parade production \u2014 a parade worth watching.",
       "description": "Paid parade performers and hired units, plus parade production polish: route staging, lineup and spacing, MC/cue coordination, and unit check-in \u2014 the ops that turn hired performers into a coherent parade. Without Parade+, there is no parade at MVP.",
       "benefits": [
@@ -240,7 +240,7 @@
       "amount": 4800,
       "category": "registry",
       "sortOrder": 2,
-      "impactOrder": 4,
+      "impactOrder": 8,
       "tagline": "Lanterns, stage flowers, and site accents \u2014 visual T\u1ebft atmosphere across the park.",
       "description": "Site decor registry block: lanterns, pole and entrance accents, stage flowers, and install labor \u2014 what families photograph on the grounds. Parade route production lives under Parade Performers.",
       "benefits": [
@@ -269,7 +269,7 @@
       "amount": 3500,
       "category": "registry",
       "sortOrder": 3,
-      "impactOrder": 1,
+      "impactOrder": 7,
       "tagline": "Spread the Word presented by [Sponsor] \u2014 reach families who have not found us yet.",
       "description": "Paid Facebook/Instagram and boosted posts \u2014 media sponsorship, not a petty-cash ask. No print posters.",
       "benefits": [
@@ -291,7 +291,7 @@
       "amount": 4000,
       "category": "registry",
       "sortOrder": 4,
-      "impactOrder": 5,
+      "impactOrder": 10,
       "tagline": "Shade tents, seating, and elder tea hospitality \u2014 a place for grandparents to rest.",
       "description": "Named elder hospitality zone with shade, seating, and tea service. Not in MVP ops \u2014 grass fallback without sponsor.",
       "benefits": [
@@ -320,7 +320,7 @@
       "amount": 2000,
       "category": "registry",
       "sortOrder": 5,
-      "impactOrder": 2,
+      "impactOrder": 6,
       "tagline": "Traditional centerpiece \u2014 the pole families gather around at T\u1ebft.",
       "description": "Traditional T\u1ebft pole centerpiece. 2027 community pool pilot \u2014 materials, decor labor, and volunteer hospitality.",
       "benefits": [
@@ -349,7 +349,7 @@
       "amount": 14000,
       "category": "registry",
       "sortOrder": 6,
-      "impactOrder": 9,
+      "impactOrder": 2,
       "tagline": "Sat 5\u20138 PM \u2014 evening ops, light towers, AV, headliner, and MC.",
       "description": "Saturday night extension with evening ops, outdoor stage light towers, evening AV, headliner, and MC \u2014 not ops-only empty hours.",
       "benefits": [
@@ -387,7 +387,7 @@
       "amount": 15500,
       "category": "registry",
       "sortOrder": 7,
-      "impactOrder": 10,
+      "impactOrder": 1,
       "tagline": "~2-hour produced variety show \u2014 singers, comedy, cultural numbers, MC.",
       "description": "Talent booking for a signature PBN-style revue on the MVP stage \u2014 singers, comedy, cultural acts, and MC. Assumes baseline stage, PA, and sound engineers; add Stage Production+ for upgraded sound and lights.",
       "benefits": [
@@ -413,7 +413,7 @@
       "amount": 6000,
       "category": "registry",
       "sortOrder": 8,
-      "impactOrder": 7,
+      "impactOrder": 3,
       "tagline": "Younger-skewed stage block \u2014 DJs, R&B, rap, dance.",
       "description": "Named Lucky Wav stage segment \u2014 one selectable programming block among PBN revue, Sat night headliner, and other talent sponsors.",
       "benefits": [
@@ -439,7 +439,7 @@
       "amount": 5500,
       "category": "registry",
       "sortOrder": 9,
-      "impactOrder": 6,
+      "impactOrder": 5,
       "tagline": "~2\u20133 hour programming block \u2014 Gulf Coast bands, fusion acts, and MC.",
       "description": "Booked Asian Cajun / Louisiana lineup on the MVP indoor or outdoor stage \u2014 existing PA and sound engineers are in core ops. Zydeco, R&B, and fusion acts for a 2\u20133 hour show block, like the programming families gathered around at Asian Cajun Village in 2026.",
       "benefits": [
@@ -465,7 +465,7 @@
       "amount": 7000,
       "category": "registry",
       "sortOrder": 10,
-      "impactOrder": 3,
+      "impactOrder": 4,
       "tagline": "Upgrade outdoor stage to concert-quality sound, lights, and LED.",
       "description": "Upgrade from baseline MVP PA to concert-quality outdoor sound gear, stage lights, and LED \u2014 sound engineers are in core stage ops; this block adds production quality for talent sponsors.",
       "benefits": [
@@ -494,7 +494,7 @@
       "amount": 3500,
       "category": "registry",
       "sortOrder": 11,
-      "impactOrder": 7,
+      "impactOrder": 12,
       "tagline": "Kids stage \u2014 short sets parents can actually sit through.",
       "description": "Sac County Fair Kids Zone model \u2014 **30\u201345 min blocks, 2\u20133 sets per day** on the family stage (local magic, storytelling, puppetry, character participation). Participation beats spectacle; not a headliner stack. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Children's Village** (in-ground activities + anchor hosts) and **Tet Relay Cup** (HS club bracket \u2014 see tet_relay_cup).",
       "benefits": [
@@ -536,7 +536,7 @@
       "amount": 3000,
       "category": "registry",
       "sortOrder": 12,
-      "impactOrder": 7,
+      "impactOrder": 11,
       "tagline": "School club bracket tournament \u2014 East vs West finals, real prizes, sidelines that multiply.",
       "description": "**Tet Relay Cup** \u2014 festival-run relay tournament on the grass corral beside Children's Village. **EGUSD high school clubs** register teams (VSA, Key Club, Chinese / Japanese / Korean clubs, Pacific Islander, Desi, and more) \u2014 **no dance performance required.** Clubs split into arbitrary **East** and **West** halves; single-elimination within each side; **final: East champion vs West champion.** When your club loses, you **ride the bracket** \u2014 join your division's carrier on the sideline; if your half wins the final, eliminated teams share a **division consolation** pool. Top prizes to champion and runner-up clubs; spirit/attire award; optional short halftime cultural dance. cPALSs runs games + MC \u2014 **no parent supervisor requirement.** College orgs route to Sac State APIDA LNY.",
       "benefits": [
@@ -571,7 +571,7 @@
       "amount": 6000,
       "category": "registry",
       "sortOrder": 13,
-      "impactOrder": 5,
+      "impactOrder": 13,
       "tagline": "START HERE \u2014 shade, activities, anchor hosts; families regroup and kids do T\u1ebft.",
       "description": "**Default family home base** \u2014 compact zone with shade, stroller corral, benches, and cultural **do** stations (lantern craft, red-envelope play, scavenger). **Anchor hosts** run repeat parent\u2013toddler sessions (bilingual sing-along, story circle \u2014 a person families already know, not an empty org tent). **Turnkey activations** for gyms/PTAs: partner forwards one email; festival runs the slot. **Family meetup corral** with labeled stations on the map. Adjacent to Tet Relay Cup corral. Pillar 4 relationship product \u2014 *place + time + something to do*. Not in MVP ops.",
       "benefits": [

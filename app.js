@@ -98,10 +98,12 @@ function globalPerkLines(total = sponsorTotal()) {
   }));
 }
 
-/** Core/options: sortOrder. Registry: impactOrder (higher = flagship). Direction per festival. */
-function registrySortMultiplier() {
+/** Core/options: sortOrder. Registry: impactOrder (higher = flagship). Default desc for registry. */
+function registrySortMultiplier(category) {
+  if (category !== "registry") return 1;
   const mode = currentFestivalEntry()?.registryImpactSort;
-  return mode === "desc" ? -1 : 1;
+  if (mode === "asc") return 1;
+  return -1;
 }
 
 function giftSortKey(gift, category) {
@@ -112,7 +114,7 @@ function giftSortKey(gift, category) {
 function compareGifts(a, b, category) {
   const ka = giftSortKey(a, category);
   const kb = giftSortKey(b, category);
-  if (ka !== kb) return registrySortMultiplier() * (ka - kb);
+  if (ka !== kb) return registrySortMultiplier(category) * (ka - kb);
   return (a.sortOrder ?? 0) - (b.sortOrder ?? 0);
 }
 
@@ -220,6 +222,20 @@ function sumEnabled(categories) {
     .reduce((s, g) => s + g.amount, 0);
 }
 
+/** Gift amounts covered by estimated 2026 sponsors (estimated-sponsors view only). */
+function sumEstimatedAssigned(categories) {
+  if (!state.showEstimatedSponsors || !state.data) return null;
+  return state.data.gifts
+    .filter((g) => categories.includes(g.category) && estimatedSponsorNames(g.id).length)
+    .reduce((s, g) => s + g.amount, 0);
+}
+
+function registryFundedAmount() {
+  const estimated = sumEstimatedAssigned(["registry", "secondary"]);
+  if (estimated !== null) return estimated;
+  return sumEnabled(["registry"]);
+}
+
 function getSponsorRules() {
   return state.data?.sponsorRules ?? { boothUnlockThreshold: 2500, boothTierLabel: "Gold" };
 }
@@ -279,101 +295,126 @@ function choicesLockedForEstimate() {
   return !!state.showEstimatedSponsors;
 }
 
-/** Feature registry order for tier-fit matches. */
-const FEATURE_SPONSOR_ALLOC_ORDER = [
-  "spread_the_word",
-  "lucky_wav",
-  "decor",
-  "parade_plus",
-  "honor_elders",
-  "children_show",
-  "children_village",
-  "asian_cajun_show",
-  "stage_production_plus",
-  "sat_night_headliner",
-  "pbn_revue",
-  "tet_relay_cup",
-  "cay_neu",
-  "tent_rental",
-];
-
-function featureAllocationSortKey(gift) {
-  const pref = FEATURE_SPONSOR_ALLOC_ORDER.indexOf(gift.id);
-  if (pref >= 0) return pref;
-  return 100 + giftSortKey(gift, gift.category);
+/**
+ * Estimated sponsor pool: fund gifts in the same order as registry cards
+ * (impact desc per festival). Last card on the grid is least likely covered.
+ */
+function compareGiftsForEstimate(a, b) {
+  const rank = { registry: 0, secondary: 1, core: 2 };
+  const ra = rank[a.category] ?? 3;
+  const rb = rank[b.category] ?? 3;
+  if (ra !== rb) return ra - rb;
+  const category = a.category === "registry" ? "registry" : a.category;
+  return compareGifts(a, b, category);
 }
 
-/** Explicit giftIds first; then tier-fit auto-match for unassigned sponsors. */
-function sponsorGiftIds(sponsor) {
-  if (Array.isArray(sponsor.giftIds) && sponsor.giftIds.length) return sponsor.giftIds;
-  if (sponsor.giftId) return [sponsor.giftId];
-  return [];
+/** Explicit giftIds first; then pool remaining balances (multi-sponsor per gift). */
+function isAllocatableEstimateGift(g) {
+  return (
+    g.amount > 0 &&
+    !g.variableAmount &&
+    !g.requiresBoothSpot &&
+    !g.requiresSponsorThreshold &&
+    (g.category === "core" || g.category === "registry" || g.category === "secondary")
+  );
+}
+
+function addGiftContributor(map, giftId, sponsorName) {
+  if (!map[giftId]) map[giftId] = [];
+  if (!map[giftId].includes(sponsorName)) map[giftId].push(sponsorName);
+}
+
+/** Draw from sponsor balances (largest first) until gift is fully funded. */
+function tryFundGift(gift, balances, map) {
+  let need = gift.amount;
+  const pool = balances
+    .filter((s) => s.balance > 0)
+    .sort((a, b) => b.balance - a.balance);
+  const ledger = [];
+  for (const sponsor of pool) {
+    if (need <= 0) break;
+    const take = Math.min(sponsor.balance, need);
+    if (take <= 0) continue;
+    ledger.push({ sponsor, take });
+    need -= take;
+  }
+  if (need > 0) return false;
+  for (const { sponsor, take } of ledger) {
+    sponsor.balance -= take;
+    addGiftContributor(map, gift.id, sponsor.name);
+  }
+  return true;
 }
 
 function computeEstimatedSponsorMap(gifts, sponsorPayload) {
   if (!sponsorPayload?.sponsors?.length) return {};
 
-  let pool = sponsorPayload.sponsors.map((s) => ({
+  const balances = sponsorPayload.sponsors.map((s) => ({
     name: s.name,
-    amount: s.amount,
-    giftIds: sponsorGiftIds(s),
+    balance: s.amount,
+    pinGiftId: s.giftId ?? null,
+    bundleGiftIds: Array.isArray(s.giftIds) && s.giftIds.length ? [...s.giftIds] : null,
   }));
 
   const map = {};
-  const assigned = new Set();
+  const funded = new Set();
 
-  const assign = (gift, sponsor) => {
-    if (!gift || assigned.has(gift.id)) return false;
-    map[gift.id] = sponsor.name;
-    assigned.add(gift.id);
-    return true;
+  const giftById = (id) => gifts.find((g) => g.id === id);
+
+  const markFunded = (gift) => {
+    if (gift) funded.add(gift.id);
   };
 
-  const allocatableGifts = (g) =>
-    g.amount > 0 &&
-    !assigned.has(g.id) &&
-    (g.category === "registry" ||
-      g.category === "secondary" ||
-      (g.category === "options" && !g.variableAmount));
-
-  const featureGifts = () =>
-    gifts.filter(allocatableGifts).sort((a, b) => featureAllocationSortKey(a) - featureAllocationSortKey(b));
-
-  for (const sponsor of [...pool]) {
-    if (!sponsor.giftIds.length) continue;
-    let spent = 0;
-    let assignedAny = false;
-    for (const gid of sponsor.giftIds) {
-      const gift = gifts.find((g) => g.id === gid);
-      if (!gift?.amount || assigned.has(gift.id)) continue;
-      if (spent + gift.amount > sponsor.amount) continue;
-      if (assign(gift, sponsor)) {
-        spent += gift.amount;
-        assignedAny = true;
-      }
-    }
-    if (assignedAny) pool = pool.filter((s) => s !== sponsor);
+  // Phase 1a — single pin (e.g. AFG → outdoor stage)
+  for (const sponsor of balances) {
+    if (!sponsor.pinGiftId || sponsor.bundleGiftIds) continue;
+    const gift = giftById(sponsor.pinGiftId);
+    if (!gift?.amount || funded.has(gift.id) || !isAllocatableEstimateGift(gift)) continue;
+    if (tryFundGift(gift, [sponsor], map)) markFunded(gift);
   }
 
-  pool.sort((a, b) => b.amount - a.amount);
-  for (const sponsor of [...pool]) {
-    const fits = featureGifts()
-      .filter((g) => g.amount <= sponsor.amount)
-      .sort((a, b) => b.amount - a.amount);
-    if (!fits.length) continue;
-    if (assign(fits[0], sponsor)) {
-      pool = pool.filter((s) => s !== sponsor);
+  // Phase 1b — sponsor-exclusive bundles (giftIds array, no pinGiftId)
+  for (const sponsor of balances) {
+    if (!sponsor.bundleGiftIds) continue;
+    for (const gid of sponsor.bundleGiftIds) {
+      if (sponsor.balance <= 0) break;
+      const gift = giftById(gid);
+      if (!gift?.amount || funded.has(gift.id) || !isAllocatableEstimateGift(gift)) continue;
+      if (tryFundGift(gift, [sponsor], map)) markFunded(gift);
     }
+  }
+
+  // Phase 2 — pool balances; same impact order as registry cards (top card funded first)
+  const openGifts = gifts
+    .filter((g) => isAllocatableEstimateGift(g) && !funded.has(g.id))
+    .sort(compareGiftsForEstimate);
+
+  for (const gift of openGifts) {
+    if (tryFundGift(gift, balances, map)) markFunded(gift);
   }
 
   return map;
 }
 
+function estimatedSponsorNames(giftId) {
+  const entry = state.estimatedSponsorMap[giftId];
+  if (!entry) return [];
+  return Array.isArray(entry) ? entry : [entry];
+}
+
 function estimatedSponsorTagsHtml(giftId) {
   if (!state.showEstimatedSponsors) return "";
-  const name = state.estimatedSponsorMap[giftId];
-  if (!name) return "";
-  return `<div class="gift-sponsor-tags"><span class="gift-sponsor-tag">${name}</span></div>`;
+  const names = estimatedSponsorNames(giftId);
+  if (!names.length) return "";
+  const tags = names.map((name) => `<span class="gift-sponsor-tag">${name}</span>`).join("");
+  return `<div class="gift-sponsor-tags">${tags}</div>`;
+}
+
+function estimatedSponsorCardClass(giftId) {
+  if (!state.showEstimatedSponsors) return "";
+  return estimatedSponsorNames(giftId).length
+    ? " gift-card--sponsor-covered"
+    : " gift-card--sponsor-open";
 }
 
 function loadEstimatedSponsorsToggle(festivalId) {
@@ -703,7 +744,11 @@ function coreFundingState() {
   const rawCash = state.data.scenario.vendorRevenue ?? 0;
   const cashOffset = Math.min(mvpCap, rawCash);
   const sponsorGap = Math.max(0, mvpCap - cashOffset);
-  const sponsorFill = Math.min(sumEnabled(["core"]) + (state.extraCash || 0), sponsorGap);
+  const estimatedCore = sumEstimatedAssigned(["core"]);
+  const sponsorFill =
+    estimatedCore !== null
+      ? Math.min(estimatedCore, sponsorGap)
+      : Math.min(sumEnabled(["core"]) + (state.extraCash || 0), sponsorGap);
   const remainingGap = Math.max(0, sponsorGap - sponsorFill);
   const fundedTotal = cashOffset + sponsorFill;
 
@@ -797,7 +842,7 @@ function renderCoreProgress() {
 function renderProgress() {
   const s = state.data.scenario;
   const core = coreFundingState();
-  const registryFunded = sumEnabled(["registry"]);
+  const registryFunded = registryFundedAmount();
   const target = state.data.event.registryFull;
   const fundedBlue = core.cashOffset + core.sponsorFill + registryFunded;
   const toFullVision = Math.max(0, target - fundedBlue);
@@ -830,7 +875,7 @@ function variableAmountCardHtml(gift) {
   const on = state.extraCash > 0;
   const gapHint = boothGapHint();
   return `
-    <article class="gift-card gift-card--variable${on ? " enabled" : ""}" data-id="${gift.id}" tabindex="0">
+    <article class="gift-card gift-card--variable${on ? " enabled" : ""}${estimatedSponsorCardClass(gift.id)}" data-id="${gift.id}" tabindex="0">
       <div class="gift-card-head">
         <div>
           <h3>${gift.name}</h3>
@@ -866,7 +911,7 @@ function giftCardHtml(gift) {
   const unlocked = isOptionUnlocked(gift);
   const lockChoices = choicesLockedForEstimate();
   return `
-    <article class="gift-card${on ? " enabled" : ""}${selectable && !unlocked ? " locked" : ""}${selectable ? "" : " gift-card--readonly"}" data-id="${gift.id}" tabindex="0">
+    <article class="gift-card${on ? " enabled" : ""}${selectable && !unlocked ? " locked" : ""}${selectable ? "" : " gift-card--readonly"}${estimatedSponsorCardClass(gift.id)}" data-id="${gift.id}" tabindex="0">
       <div class="gift-card-head">
         <div>
           <h3>${gift.emoji ? `<span class="gift-emoji">${gift.emoji}</span>` : ""}${gift.name}</h3>
@@ -1105,7 +1150,7 @@ async function loadEstimatedSponsorsData(entry) {
   if (!entry?.estimatedSponsorsFile) return;
 
   try {
-    const res = await fetch(entry.estimatedSponsorsFile);
+    const res = await fetch(entry.estimatedSponsorsFile, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.estimatedSponsors = await res.json();
     state.estimatedSponsorMap = computeEstimatedSponsorMap(
@@ -1122,7 +1167,7 @@ async function loadFestivalData(festivalId) {
   const entry = state.manifest.festivals.find((f) => f.id === festivalId);
   if (!entry) throw new Error(`Unknown festival: ${festivalId}`);
 
-  const res = await fetch(entry.file);
+  const res = await fetch(entry.file, { cache: "no-store" });
   if (!res.ok) throw new Error(`HTTP ${res.status} loading ${entry.file}`);
 
   state.festivalId = festivalId;
@@ -1167,7 +1212,7 @@ async function init() {
   }
 
   try {
-    const manifestRes = await fetch("festivals.json");
+    const manifestRes = await fetch("festivals.json", { cache: "no-store" });
     if (!manifestRes.ok) throw new Error(`HTTP ${manifestRes.status} loading festivals.json`);
     state.manifest = await manifestRes.json();
 
