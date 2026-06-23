@@ -5,7 +5,7 @@
     "dates": "Sat\u2013Sun mid-February 2027 (TBD) \u00b7 11 AM\u20135 PM",
     "mvpCap": 39940,
     "vendorRev100": 18200,
-    "registryFull": 76500,
+    "registryFull": 78500,
     "vendorSlots": 37,
     "attendance": 6000
   },
@@ -495,8 +495,8 @@
       "category": "registry",
       "sortOrder": 11,
       "impactOrder": 7,
-      "tagline": "Family stage block \u2014 MC, storytelling, magic, and dance.",
-      "description": "Family-facing children's programming on the MVP indoor or outdoor stage \u2014 MC, storytelling, magic, and dance for kids and parents. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Tet Relay Cup** (EGUSD high school club teams \u2014 see tet_relay_cup).",
+      "tagline": "Kids stage \u2014 short sets parents can actually sit through.",
+      "description": "Sac County Fair Kids Zone model \u2014 **30\u201345 min blocks, 2\u20133 sets per day** on the family stage (local magic, storytelling, puppetry, character participation). Participation beats spectacle; not a headliner stack. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Children's Village** (in-ground activities + anchor hosts) and **Tet Relay Cup** (HS club bracket \u2014 see tet_relay_cup).",
       "benefits": [
         "Children's Show presented by [Sponsor]",
         "MC scripts + Facebook/Instagram feature",
@@ -504,12 +504,28 @@
       ],
       "lineItems": [
         {
-          "label": "MC + family entertainment (storytelling, magic, dance)",
-          "amount": 2200
+          "label": "Magic sets \u00d72 (45 min each \u2014 local fair acts)",
+          "amount": 700
         },
         {
-          "label": "Run-of-show production",
-          "amount": 1300
+          "label": "Storytelling / puppet set",
+          "amount": 500
+        },
+        {
+          "label": "Clown or character participation set",
+          "amount": 500
+        },
+        {
+          "label": "MC + run-of-show (cues, sponsor scripts, handoffs)",
+          "amount": 500
+        },
+        {
+          "label": "Rain plan, props, performer hospitality",
+          "amount": 300
+        },
+        {
+          "label": "Schedule production + program grid",
+          "amount": 1000
         }
       ]
     },
@@ -552,29 +568,41 @@
       "id": "children_village",
       "name": "Children's Village",
       "emoji": "\ud83d\udc09",
-      "amount": 4000,
+      "amount": 6000,
       "category": "registry",
       "sortOrder": 13,
       "impactOrder": 5,
-      "tagline": "Shade, crafts, and cultural activities \u2014 kids explore T\u1ebft; families regroup here.",
-      "description": "Named children's activity zone with shade tents, seating, craft supplies, and cultural play stations \u2014 inspired by the Little Dragons & Fairies village families remember. **Default family meetup / home base** on site (gym-class, PTA, stroller groups). Visible signage + map pin in marketing. Not in MVP ops.",
+      "tagline": "START HERE \u2014 shade, activities, anchor hosts; families regroup and kids do T\u1ebft.",
+      "description": "**Default family home base** \u2014 compact zone with shade, stroller corral, benches, and cultural **do** stations (lantern craft, red-envelope play, scavenger). **Anchor hosts** run repeat parent\u2013toddler sessions (bilingual sing-along, story circle \u2014 a person families already know, not an empty org tent). **Turnkey activations** for gyms/PTAs: partner forwards one email; festival runs the slot. **Family meetup corral** with labeled stations on the map. Adjacent to Tet Relay Cup corral. Pillar 4 relationship product \u2014 *place + time + something to do*. Not in MVP ops.",
       "benefits": [
         "Children's Village presented by [Sponsor]",
         "website + Facebook/Instagram feature",
-        "Named on activity signage"
+        "Named on activity signage + festival map"
       ],
       "lineItems": [
         {
-          "label": "Shade tents + seating",
-          "amount": 2000
+          "label": "Shade tents + seating + stroller corral",
+          "amount": 1800
         },
         {
-          "label": "Crafts, supplies + cultural activity kits",
-          "amount": 1200
+          "label": "Family meetup corral \u2014 signage, map pin, labeled stations",
+          "amount": 500
         },
         {
-          "label": "Zone signage + volunteer hospitality",
-          "amount": 800
+          "label": "Craft supplies + cultural activity kits",
+          "amount": 1000
+        },
+        {
+          "label": "Anchor host sessions (2 curated hosts \u00d7 weekend stipends)",
+          "amount": 1500
+        },
+        {
+          "label": "Turnkey group activations \u2014 facilitators + supplies (3\u20134/day)",
+          "amount": 900
+        },
+        {
+          "label": "Village zone lead + volunteer hospitality",
+          "amount": 300
         }
       ]
     },

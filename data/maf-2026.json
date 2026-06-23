@@ -5,7 +5,7 @@
     "dates": "Fri Sep 25 4\u20138 PM + Sat Sep 26 11 AM\u20138 PM",
     "mvpCap": 10250,
     "vendorRev100": 10575,
-    "registryFull": 24190,
+    "registryFull": 26990,
     "vendorSlots": 28,
     "attendance": 2500
   },
@@ -171,24 +171,74 @@
       "category": "registry",
       "sortOrder": 2,
       "impactOrder": 8,
-      "tagline": "Mid-Autumn Festival is for the kids \u2014 this is their day on stage.",
-      "description": "Full Sat schedule \u2014 MC, singers, dancers, magic, clown, storytelling.",
+      "tagline": "Mid-Autumn is for the kids \u2014 short stage sets on Saturday.",
+      "description": "Sac County Fair Kids Zone model \u2014 **30\u201345 min blocks, 2\u20133 sets on Saturday** (local magic, clown, storytelling, puppetry). Participation beats spectacle. Pair with **Children's Village** for in-ground crafts, anchor hosts, and family meetup.",
       "benefits": [
         "Programming presented by [Sponsor]",
         "MC scripts + Facebook/Instagram features"
       ],
       "lineItems": [
         {
-          "label": "MC + talent fees",
-          "amount": 2200
+          "label": "Magic sets \u00d72 (45 min each \u2014 local fair acts)",
+          "amount": 700
         },
         {
-          "label": "Magic, clown, storytelling",
+          "label": "Storytelling / clown / puppet set",
+          "amount": 600
+        },
+        {
+          "label": "MC + run-of-show (cues, sponsor scripts)",
+          "amount": 500
+        },
+        {
+          "label": "Rain plan, props, performer hospitality",
+          "amount": 300
+        },
+        {
+          "label": "Schedule production + program grid",
+          "amount": 1400
+        }
+      ]
+    },
+    {
+      "id": "children_village",
+      "name": "Children's Village",
+      "emoji": "\ud83e\uddd2",
+      "amount": 2800,
+      "category": "registry",
+      "sortOrder": 3,
+      "impactOrder": 6,
+      "tagline": "START HERE \u2014 shade, crafts, anchor hosts; families regroup before the procession.",
+      "description": "**Family home base** @ Derr-Okamoto \u2014 shade, stroller-friendly seating, cultural **do** stations, and a **family meetup corral** on the map. **Anchor host** runs repeat parent\u2013toddler sessions (sing-along, story circle). **Turnkey activations** for gyms/PTAs \u2014 festival runs the craft slot; partner forwards one email. Kids make lanterns here before joining the **Lantern Procession** at dusk.",
+      "benefits": [
+        "Children's Village presented by [Sponsor]",
+        "website + Facebook/Instagram feature",
+        "Named on activity signage + festival map"
+      ],
+      "lineItems": [
+        {
+          "label": "Shade tent + seating + stroller corral",
           "amount": 900
         },
         {
-          "label": "Schedule production",
-          "amount": 400
+          "label": "Family meetup signage + map pin",
+          "amount": 300
+        },
+        {
+          "label": "Craft supplies + cultural activity kits",
+          "amount": 600
+        },
+        {
+          "label": "Anchor host sessions (1 curated host, 3\u00d7 Sat)",
+          "amount": 450
+        },
+        {
+          "label": "Turnkey group activations \u2014 facilitators + supplies (2/day)",
+          "amount": 350
+        },
+        {
+          "label": "Village lead + volunteer hospitality",
+          "amount": 200
         }
       ]
     },
@@ -198,7 +248,7 @@
       "emoji": "\ud83c\udf75",
       "amount": 2000,
       "category": "registry",
-      "sortOrder": 3,
+      "sortOrder": 4,
       "impactOrder": 4,
       "tagline": "Grandparents watch the procession in comfort \u2014 an MAF value made visible.",
       "description": "A restful zone with shade tent, seating, and elder tea hospitality.",
@@ -223,7 +273,7 @@
       "emoji": "\u2728",
       "amount": 2580,
       "category": "registry",
-      "sortOrder": 4,
+      "sortOrder": 5,
       "impactOrder": 6,
       "tagline": "Trees, stage, and night market lit for MAF \u2014 the park glows at dusk.",
       "description": "Functional power and light for stage + night market, plus tree uplights, string lights, and stage flowers \u2014 Mid-Autumn Festival atmosphere before the procession.",
@@ -256,7 +306,7 @@
       "emoji": "\ud83d\udce3",
       "amount": 800,
       "category": "registry",
-      "sortOrder": 5,
+      "sortOrder": 6,
       "impactOrder": 1,
       "tagline": "Spread the Word presented by [Sponsor] \u2014 reach families who have not found us yet.",
       "description": "Paid Meta / Instagram and boosted posts \u2014 media sponsorship, not a petty-cash ask.",
@@ -277,11 +327,10 @@
       "name": "Festival Stage+",
       "amount": 2875,
       "category": "registry",
-      "sortOrder": 6,
+      "sortOrder": 7,
       "impactOrder": 5,
-      "requiresCoreGift": "festival_stage",
       "tagline": "Saturday stage at full production quality.",
-      "description": "Upgrade from playlist-only to concert-quality outdoor sound and basic stage lighting \u2014 requires Festival Stage in Core ops.",
+      "description": "Upgrade from MVP playlist-only to concert-quality outdoor sound and basic stage lighting. Core stage ops are vendor-funded; this block adds production quality for Saturday programming.",
       "benefits": [
         "Stage naming credit"
       ],
@@ -297,11 +346,10 @@
       "name": "Safe Festival+",
       "amount": 1120,
       "category": "registry",
-      "sortOrder": 7,
+      "sortOrder": 8,
       "impactOrder": 3,
-      "requiresCoreGift": "safe_festival",
       "tagline": "Extra guards Fri/Sat",
-      "description": "Additional security beyond the Safe Festival baseline \u2014 requires Safe Festival in Core ops.",
+      "description": "Additional security beyond the MVP guard baseline. Core security is vendor-funded; this block adds peak-hour coverage.",
       "benefits": [
         "Ops sponsor recognition"
       ],
@@ -317,11 +365,10 @@
       "name": "Festival Amenities+",
       "amount": 545,
       "category": "registry",
-      "sortOrder": 8,
+      "sortOrder": 9,
       "impactOrder": 2,
-      "requiresCoreGift": "festival_amenities",
       "tagline": "Additional restrooms/sinks",
-      "description": "Extra restroom capacity for peak Sat hours \u2014 requires Festival Amenities in Core ops.",
+      "description": "Extra restroom capacity for peak Sat hours. Core amenities are vendor-funded; this block adds comfort capacity.",
       "benefits": [
         "Ops sponsor recognition"
       ],
