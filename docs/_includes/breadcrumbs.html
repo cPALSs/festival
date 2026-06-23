@@ -1,0 +1,36 @@
+{% unless page.url == '/' or page.url == '/index.html' %}
+<div class="breadcrumb-bar">
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </li>
+      {% assign crumb_path = '' %}
+      {% assign url_parts = page.url | split: '/' %}
+      {% for part in url_parts %}
+        {% if part != '' %}
+          {% assign crumb_path = crumb_path | append: '/' | append: part %}
+          {% if forloop.last %}
+            <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">{{ page.title }}</li>
+          {% else %}
+            {% case part %}
+              {% when 'lny' %}
+                {% assign section_label = 'Lunar New Year' %}
+                {% assign section_href = crumb_path | append: '/overview.html' %}
+              {% when 'autumn' %}
+                {% assign section_label = 'Autumn Season' %}
+                {% assign section_href = crumb_path | append: '/overview.html' %}
+              {% else %}
+                {% assign section_label = part | replace: '-', ' ' | capitalize %}
+                {% assign section_href = crumb_path %}
+            {% endcase %}
+            <li class="breadcrumb-item">
+              <a href="{{ section_href | relative_url }}">{{ section_label }}</a>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </nav>
+</div>
+{% endunless %}
