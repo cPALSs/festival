@@ -1,0 +1,18 @@
+{
+  "name": "festival-network",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open-source, AI-readable assets for Autumn and Lunar New Year festival season coordination",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cPALSs/festival-network.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "mcp:install": "npm install",
+    "mcp:test": "npx google-sheet-mcp test"
+  },
+  "devDependencies": {
+    "google-sheet-mcp": "^1.0.1"
+  }
+}

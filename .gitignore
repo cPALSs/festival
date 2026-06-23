@@ -1,0 +1,3 @@
+.credentials/
+.google-sheet-mcp.json
+node_modules/

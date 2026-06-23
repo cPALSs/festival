@@ -1,0 +1,32 @@
+---
+description: Agent instructions when working with Festival Season Networks assets in cPALSs
+globs:
+  - "Festival Network/**"
+alwaysApply: false
+---
+
+# Festival Season Networks assets
+
+Mirror of public repo `AGENTS.md`. Read [AGENTS.md](../../AGENTS.md) first.
+
+## Source of truth
+
+**Google Sheets** for live tabular research. Registry: [assets/sheets-registry.json](../../assets/sheets-registry.json).
+
+Use **google-sheets** MCP to read/update. Do not treat repo CSV as canonical.
+
+## Load order
+
+1. `assets/sheets-registry.json` → MCP read live sheet → schema doc
+2. `assets/autumn/graphs/ecosystem-graph.json`
+3. `assets/autumn/calendars/`
+4. `assets/case-studies/`
+5. Playbooks, kits, simulations
+
+## Phase 0
+
+Most markdown assets have `status: stub`. The competitive landscape **Sheet** has live rows.
+
+## Principles
+
+P1 roll-up, P2 group attendance, P3 right-sizing, P4 stakeholder sustainability.

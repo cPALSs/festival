@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EcosystemGraph",
+  "type": "object",
+  "required": [
+    "season",
+    "region",
+    "as_of",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "season": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "event",
+              "sponsor",
+              "performer",
+              "vendor",
+              "org",
+              "venue"
+            ]
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "from",
+          "to"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "sponsors",
+              "performs_at",
+              "vends_at",
+              "organizes",
+              "hosts_at",
+              "roll_up_path",
+              "shared_patron_pool"
+            ]
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    }
+  }
+}
