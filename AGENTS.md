@@ -26,7 +26,8 @@ Registry ID: `autumn-competitive-landscape` in [assets/sheets-registry.json](ass
 | **Title** | Greater Sacramento Autumn Season - Competitive Landscape |
 | **Spreadsheet ID** | `1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA` |
 | **URL** | https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit |
-| **Tab** | `Greater Sacramento Autumn Season - Competitive Landscape` |
+| **Tab (data)** | `All` |
+| **View tabs** | `2026`, `2025` (newest first) |
 | **Schema** | [assets/autumn/research/competitive-landscape-schema.md](assets/autumn/research/competitive-landscape-schema.md) |
 
 **No local CSV** — this sheet is the only canonical copy of autumn event rows. Read and write via MCP (`sheets_read_range`, `sheets_write_range`, `sheets_append_row`).
@@ -40,7 +41,8 @@ Registry ID: `lny-competitive-landscape` in [assets/sheets-registry.json](assets
 | **Title** | Greater Sacramento Lunar New Year Season - Competitive Landscape |
 | **Spreadsheet ID** | `1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0` |
 | **URL** | https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit |
-| **Tab** | `Greater Sacramento Lunar New Year Season - Competitive Landscape` |
+| **Tab (data)** | `All` |
+| **View tabs** | `2027`, `2026` (newest first) |
 | **Schema** | [assets/lny/research/competitive-landscape-schema.md](assets/lny/research/competitive-landscape-schema.md) |
 
 Seeded from the 2026 **Lunar New Year Season** flyer (12 events Jan 24–Mar 7) plus ecosystem reference rows. **No local CSV.**
@@ -66,8 +68,9 @@ Human guides: `docs/` (GitHub Pages source).
 
 ## Stable ID conventions
 
-- Events: `event_id` slug (e.g. `maf-2026`, `caaps-2025`)
-- Lanes: `L1`–`L7`
+- **Events:** `event_id` slug on every landscape row — e.g. `cpalss-maf`, `cpalss-lny-capstone`, `caaps-lantern`
+- **Occurrences:** one row per `event_id` + `Season year`; use `Row status` (`planning`, `held`, `historical`, …)
+- **Lanes:** `L1`–`L7`
 - Arcs: `arc-moon`, `arc-fall`, `arc-lantern`, `ambient`
 - Weekend slots: `2027-wk-sep-26`
 

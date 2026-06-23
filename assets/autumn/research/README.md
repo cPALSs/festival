@@ -2,7 +2,7 @@
 
 ## Source of truth
 
-**Live data:** [Greater Sacramento Autumn Season - Competitive Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link)
+**Live data:** [Greater Sacramento Autumn Season - Competitive Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link) — tabs **2026** · **2025** · **All**
 
 Registry entry: [sheets-registry.json](../../sheets-registry.json) → `autumn-competitive-landscape`
 

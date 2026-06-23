@@ -10,6 +10,18 @@ season: autumn
 
 Row 1 in the Sheet must match these headers exactly.
 
+## Sheet tabs
+
+Tab order (left to right): **2026** · **2025** · **All**
+
+| Tab | Role |
+|-----|------|
+| **2026** | Live view — all rows where `Season year` = 2026 |
+| **2025** | Live view — all rows where `Season year` = 2025 |
+| **All** | **Source of truth** — edit here only |
+
+Year tabs are `FILTER` + `SORT` formulas (by **Dates**, then **Category**); they refresh when **All** changes. Do not edit year tabs directly. When a new season starts, add a year tab (re-run `scripts/add-landscape-view-tabs.mjs` or duplicate an existing year tab and update the formula).
+
 ## Column dictionary
 
 | Column | Meaning |
@@ -17,10 +29,13 @@ Row 1 in the Sheet must match these headers exactly.
 | Category | Lane — e.g. `Mid-Autumn / Moon / Lantern`, `Autumn Family Fair`, `Activity Comp (reference)` |
 | Tier | Priority within category — `1` (direct), `2`, `3`, or `A`/`B`/`C` for family fairs |
 | Event Name | Display name |
-| Host / Organizer | Producing org |
+| **event_id** | Stable slug linking all years of the same event — e.g. `cpalss-maf`, `caaps-lantern` |
+| **Season year** | Calendar year this row describes — `2025`, `2026`, `2027`, or `reference` |
+| **Row status** | `planning` · `confirmed` · `held` · `historical` · `cancelled` · `reference` |
+| Host / Organizer | Producing org — **lead org first** (VACOS for MAF, cPALSs for EGLNY) |
 | City | Primary city |
 | Venue | Location detail |
-| Typical / Recent Dates | Last known or planned dates |
+| **Dates** | **This occurrence only** — lead with `YYYY-MM-DD` (year tabs sort on this column); add day/time after |
 | Duration | Hours or days |
 | Admission | Free, ticketed, parking notes |
 | Attendance (number or range) | Best honest number or range |
@@ -37,9 +52,49 @@ Row 1 in the Sheet must match these headers exactly.
 
 ## Enums
 
-**MAF overlap (common values):** `Our event`, `Direct comp - same city`, `Direct comp - spectacle product`, `Direct comp - late September`, `Direct comp - lunar weekend`, `Substitute - October`, `Substitute - same city + ecosystem`, `Reference only`, `Low - commercial`, `Low - church program`
+**MAF overlap (common values):** Short labels for the Sheet — see [tone of voice](../../../docs/tone-of-voice.md) for plain English.
 
-**Attendance source:** Always set when attendance is non-empty. Distinguish press/organizer claims from field reads.
+| Sheet value | Plain language |
+|-------------|----------------|
+| `Our event` | Coalition Mid-Autumn we produce |
+| `Direct comp - same city` | Direct competitor in the same city |
+| `Direct comp - spectacle product` | Direct competitor with a different spectacle (e.g. sky lanterns) |
+| `Direct comp - late September` | Direct competitor in the same late-September window |
+| `Direct comp - lunar weekend` | Direct competitor on lunar Mid-Autumn weekend |
+| `Substitute - October` | Families might choose this instead in October |
+| `Substitute - same city + ecosystem` | Same city; shared vendors or audience |
+| `Reference only` | Not in the autumn competitive set |
+| `Low - commercial` | Commercial/ticketed; weak fair comparison |
+| `Low - church program` | Church program; not a full street fair |
+
+**Attendance source:** Always set when attendance is non-empty. Distinguish press/organizer claims from on-the-ground estimates.
+
+## Occurrence rows (one row per year)
+
+- **Do not overwrite** last year's row when next year's date is announced — add a row (or copy → edit → set prior row to `held`).
+- **Latest season only when dated:** For the current planning year (MAF 2026, LNY 2027, …), **do not add a row** until you have at least a tentative date from the organizer or a public listing. No `TBD` placeholder rows on the year tab.
+- **Filter views** (recommended in Google Sheets):
+  - **Current planning** — `Season year` = 2026 or 2027 · `Row status` = `planning` or `confirmed`
+  - **Last held** — `Row status` = `held` · sort `Season year` descending
+  - **By event** — filter `event_id` to see full history (e.g. `cpalss-maf`)
+
+**Row status:**
+
+| Value | When to use |
+|-------|-------------|
+| `planning` | Dates TBD or internal working row |
+| `confirmed` | Public listing with firm dates |
+| `held` | Event completed; attendance may be updated |
+| `historical` | Prior-year archive; not in current comp set |
+| `cancelled` | Announced then cancelled |
+| `reference` | Out-of-season or out-of-region; not a calendar row |
+
+**Colleague shortcuts (June 2026):**
+
+| Ask | Tab |
+|-----|-----|
+| **MAF 2026 calendar** | **2026** (3 events as of Jun 2026 — CAAPS Sep 19, APIDA Center Sep 21, MAF Sep 25–26) |
+| **Autumn 2025 (last held)** | **2025** |
 
 ## Data gap semantics
 
@@ -50,4 +105,4 @@ Row 1 in the Sheet must match these headers exactly.
 
 ## Future columns (deferred)
 
-Scheduling tier, roll-up arc, R-tier, capstone event, weeks before capstone, recommended 2027 slot, collision flag, network member, relationship product — add to Sheet + this doc together when substance phase starts.
+Scheduling tier, roll-up arc, R-tier, capstone event, weeks before capstone, recommended slot, collision flag, network member flag, relationship product — add to Sheet + this doc together when substance phase starts.

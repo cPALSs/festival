@@ -16,6 +16,18 @@ Row 1 in the Sheet must match these headers exactly.
 
 **Not in scope:** Bay Area, SoCal, or May AAPI Heritage Month events — use `Reference only` or `Ecosystem (not LNY calendar)` rows when cited for vendor/sponsor attention.
 
+## Sheet tabs
+
+Tab order (left to right): **2027** · **2026** · **All**
+
+| Tab | Role |
+|-----|------|
+| **2027** | Live view — all rows where `Season year` = 2027 |
+| **2026** | Live view — all rows where `Season year` = 2026 (last held season) |
+| **All** | **Source of truth** — edit here only |
+
+Year tabs are `FILTER` formulas; they refresh when **All** changes. Do not edit year tabs directly.
+
 ## Column dictionary
 
 | Column | Meaning |
@@ -23,10 +35,13 @@ Row 1 in the Sheet must match these headers exactly.
 | Category | Lane — e.g. `Vietnamese Tết / Family Fair`, `Chinese New Year / Spring Festival`, `Pan-Asian / Chamber`, `Church / Parish Tết`, `Ticketed Concert / Casino`, `Mardi Gras / Adjacent Season`, `Iu Mien / Ethnic Heritage`, `Ecosystem (not LNY calendar)`, `Reference / Out of region` |
 | Tier | Priority within category — `1` (direct capstone comp), `2`, `3`, or `A`/`B`/`C` for reference rows |
 | Event Name | Display name |
-| Host / Organizer | Producing org |
+| **event_id** | Stable slug — e.g. `cpalss-lny-capstone`, `scncca-lny`, `ca-is-my-home-mid-autumn` |
+| **Season year** | Calendar year — `2026`, `2027`, or `reference` |
+| **Row status** | `planning` · `confirmed` · `held` · `historical` · `cancelled` · `reference` |
+| Host / Organizer | Producing org — **lead org first** (cPALSs for EGLNY, VACOS for MAF) |
 | City | Primary city |
 | Venue | Location detail |
-| Typical / Recent Dates | Last known or planned dates |
+| **Dates** | **This occurrence only** — lead with `YYYY-MM-DD`; year tabs sort on this column |
 | Duration | Hours or days |
 | Admission | Free, ticketed, parking notes |
 | Attendance (number or range) | Best honest number or range |
@@ -43,9 +58,33 @@ Row 1 in the Sheet must match these headers exactly.
 
 ## Enums
 
-**LNY overlap (common values):** `Our event`, `Direct comp - same day capstone`, `Direct comp - same weekend cluster`, `Direct comp - same city`, `Season network member`, `Twin season - bridge product`, `Ecosystem partner`, `Low - ticketed concert`, `Substitute - free civic`, `Reference only`
+**LNY overlap (common values):** Short labels for the Sheet — see [tone of voice](../../docs/tone-of-voice.md) for plain English.
 
-**Attendance source:** Always set when attendance is non-empty. Distinguish press/organizer claims from field reads and CCSD.
+| Sheet value | Plain language |
+|-------------|----------------|
+| `Our event` | Coalition capstone we produce |
+| `Direct comp - same day capstone` | Direct competitor on capstone Saturday |
+| `Direct comp - same weekend cluster` | Direct competitor the same pre-capstone weekend |
+| `Direct comp - same city` | Direct competitor in the same city |
+| `Season network member` | Part of the season calendar; not a capstone fight |
+| `Twin season - bridge product` | Adjacent season (e.g. Mardi Gras) that can extend the story |
+| `Ecosystem partner` | Shared vendors, media, or audience — coordinate, don't collide |
+| `Low - ticketed concert` | Different product (ticketed); weak attendance comparison |
+| `Substitute - free civic` | Different free weekend option for families |
+| `Reference only` | Out of region or out of season — context only |
+
+**Attendance source:** Always set when attendance is non-empty. Distinguish press/organizer claims from on-the-ground estimates and CCSD.
+
+## Occurrence rows (one row per year)
+
+Same rules as [Autumn schema](../autumn/research/competitive-landscape-schema.md#occurrence-rows-one-row-per-year). **No 2027 rows until dates are known** — the **2027** tab is empty until then.
+
+**Colleague shortcuts (June 2026):**
+
+| Ask | Tab |
+|-----|-----|
+| **LNY 2027 (EGLNY)** | **2027** — `cpalss-lny-capstone` · tentative **Feb 13–14** |
+| **LNY 2026 (last held)** | **2026** |
 
 ## Data gap semantics
 
@@ -60,4 +99,4 @@ The 2026 **Lunar New Year Season** one-pager (orange–magenta gradient calendar
 
 ## Future columns (deferred)
 
-Scheduling tier, roll-up arc, R-tier, capstone event, weeks before capstone, recommended 2027 slot, collision flag, network member flag, relationship product, `event_id` slug — add to Sheet + this doc together when substance phase starts.
+Scheduling tier, roll-up arc, R-tier, capstone event, weeks before capstone, recommended slot, collision flag, network member flag, relationship product — add to Sheet + this doc together when substance phase starts.

@@ -2,7 +2,7 @@
 
 ## Source of truth
 
-**Live data:** [Greater Sacramento Lunar New Year Season - Competitive Landscape](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link)
+**Live data:** [Greater Sacramento Lunar New Year Season - Competitive Landscape](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link) — tabs **2027** · **2026** · **All**
 
 Registry entry: [sheets-registry.json](../../sheets-registry.json) → `lny-competitive-landscape`
 

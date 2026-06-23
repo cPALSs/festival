@@ -65,3 +65,7 @@ Calendar rules and graph schemas live in `assets/` as JSON + `schema.md` until m
 ## Simulation scenarios
 
 YAML scenarios in `assets/autumn/simulations/scenarios/` reference `event_id` values from the live sheet.
+
+## Tone and wording
+
+Public pages use plain language. Sheet columns may use short enum labels (`Direct comp - same city`). Every enum needs a gloss in the schema and in [tone of voice](tone-of-voice.md).
