@@ -3,6 +3,22 @@
 const fmt = (n) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
+function escapeHtml(text) {
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/** Subset of markdown used in gift copy — **bold**, *italic* */
+function formatMarkdown(text) {
+  if (!text) return "";
+  return escapeHtml(text)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.+?)\*/g, "<em>$1</em>");
+}
+
 /** Most important → most optional within each section */
 const GIFT_SORT = {
   festival_foundation: 0,
@@ -952,7 +968,7 @@ function renderModalContent(giftId) {
     ${gift.tagline ? `<p class="modal-tagline">${gift.tagline}</p>` : ""}
     ${estimatedSponsorTagsHtml(gift.id)}
     ${!unlocked && !variable ? `<p class="modal-unlock-notice">${unlockNotice(gift)}</p>` : ""}
-    <p>${gift.description}</p>
+    <p class="modal-description">${formatMarkdown(gift.description)}</p>
     ${
       benefits.length
         ? `<p class="modal-benefits-label">Benefits</p><ul class="modal-benefits">${benefits.map((b) => `<li>${b}</li>`).join("")}</ul>`

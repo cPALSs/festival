@@ -1039,6 +1039,14 @@ dialog::backdrop {
   margin: 0 0 12px;
 }
 
+.modal-description strong {
+  font-weight: 600;
+}
+
+.modal-description em {
+  font-style: italic;
+}
+
 .modal-unlock-notice {
   margin: 0 0 12px;
   padding: 10px 12px;
