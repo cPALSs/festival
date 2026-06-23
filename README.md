@@ -9,6 +9,7 @@ Open-source, **AI-readable** assets for **Autumn** and **Lunar New Year** festiv
 ## What this is
 
 - **Not** a membership org or event owner
+- **Not** the cPALSs Festivals Committee repo — see [Related repositories](#related-repositories) below
 - **Neutral** shared calendars, market research, ecosystem graphs, playbooks, group-activity kits, and case studies
 - **Decentralized but coordinated** — fork, plan with AI, run your own simulations
 
@@ -53,6 +54,15 @@ cd festival-network
 ## Contribute
 
 See [docs/contribute.md](docs/contribute.md) and [CONTRIBUTING-RESEARCH.md](assets/autumn/research/CONTRIBUTING-RESEARCH.md).
+
+## Related repositories
+
+| Repo | Role |
+|------|------|
+| **[cPALSs/festival-network](https://github.com/cPALSs/festival-network)** (this repo) | **Neutral, public** season-coordination library — research schemas, playbooks, calendars, case studies. Any organizer can fork. Live data in Google Sheets. |
+| **[cPALSs/festival](https://github.com/cPALSs/festival)** | **cPALSs Festivals Committee** production tooling — e.g. [Build the Festival](https://festival.cpalss.com) sponsorship builder for coalition events (MAF, LNY). Committee-operated, not the neutral network layer. |
+
+The Festivals Committee runs events; **Festival Season Networks** publishes infrastructure the wider season can share without adopting cPALSs branding or committee governance.
 
 ## License
 

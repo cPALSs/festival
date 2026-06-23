@@ -14,6 +14,14 @@ Open-source, **AI-readable** assets for autumn and Lunar New Year festival seaso
 
 - **Is:** Neutral shared tools any organizer can fork; decentralized coordination; AI-assisted planning
 - **Is not:** A membership org, event owner, or enforcement body
+- **Is not:** The [cPALSs Festivals Committee](https://github.com/cPALSs/festival) repo — that holds committee production apps (e.g. Build the Festival). This repo is the neutral season library.
+
+## Related repositories
+
+| Repo | Role |
+|------|------|
+| **festival-network** (here) | Neutral public assets — schemas, playbooks, sheet registry |
+| **[cPALSs/festival](https://github.com/cPALSs/festival)** | Festivals Committee tooling for coalition event production |
 
 ## Principles
 
