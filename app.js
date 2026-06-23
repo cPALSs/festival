@@ -281,6 +281,7 @@ function choicesLockedForEstimate() {
 
 /** Feature registry order for tier-fit matches. */
 const FEATURE_SPONSOR_ALLOC_ORDER = [
+  "spread_the_word",
   "lucky_wav",
   "decor",
   "parade_plus",
@@ -302,14 +303,20 @@ function featureAllocationSortKey(gift) {
   return 100 + giftSortKey(gift, gift.category);
 }
 
-/** One sponsor per gift — no splitting. Omit gifts no sponsor fully covers. */
+/** Explicit giftIds first; then tier-fit auto-match for unassigned sponsors. */
+function sponsorGiftIds(sponsor) {
+  if (Array.isArray(sponsor.giftIds) && sponsor.giftIds.length) return sponsor.giftIds;
+  if (sponsor.giftId) return [sponsor.giftId];
+  return [];
+}
+
 function computeEstimatedSponsorMap(gifts, sponsorPayload) {
   if (!sponsorPayload?.sponsors?.length) return {};
 
   let pool = sponsorPayload.sponsors.map((s) => ({
     name: s.name,
     amount: s.amount,
-    giftId: s.giftId ?? null,
+    giftIds: sponsorGiftIds(s),
   }));
 
   const map = {};
@@ -333,11 +340,19 @@ function computeEstimatedSponsorMap(gifts, sponsorPayload) {
     gifts.filter(allocatableGifts).sort((a, b) => featureAllocationSortKey(a) - featureAllocationSortKey(b));
 
   for (const sponsor of [...pool]) {
-    if (!sponsor.giftId) continue;
-    const gift = gifts.find((g) => g.id === sponsor.giftId);
-    if (gift?.amount && sponsor.amount >= gift.amount && assign(gift, sponsor)) {
-      pool = pool.filter((s) => s !== sponsor);
+    if (!sponsor.giftIds.length) continue;
+    let spent = 0;
+    let assignedAny = false;
+    for (const gid of sponsor.giftIds) {
+      const gift = gifts.find((g) => g.id === gid);
+      if (!gift?.amount || assigned.has(gift.id)) continue;
+      if (spent + gift.amount > sponsor.amount) continue;
+      if (assign(gift, sponsor)) {
+        spent += gift.amount;
+        assignedAny = true;
+      }
     }
+    if (assignedAny) pool = pool.filter((s) => s !== sponsor);
   }
 
   pool.sort((a, b) => b.amount - a.amount);

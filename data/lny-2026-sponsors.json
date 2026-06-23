@@ -2,7 +2,12 @@
   "source": "2026 LNY sponsorship deposits — renewal baselines (one-offs excluded, e.g. AFG pageant weatherproofing)",
   "sponsors": [
     { "name": "American Furniture Gallery", "amount": 15000, "giftId": "outdoor_stage" },
-    { "name": "Duc Huong", "amount": 15000, "giftId": "spread_the_word" },
+    {
+      "name": "Duc Huong",
+      "amount": 15000,
+      "giftIds": ["spread_the_word", "lucky_wav", "children_show", "cay_neu"],
+      "note": "$3.5K marketing + $6K Lucky Wav + $3.5K kids stage + $2K Tết pole = $15K Platinum"
+    },
     { "name": "Fire Wings", "amount": 3000 },
     { "name": "Metro by T-Mobile", "amount": 3000 },
     { "name": "Verizon", "amount": 3000 },
