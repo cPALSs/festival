@@ -3,9 +3,9 @@
     "name": "MAF 2026",
     "venue": "Derr-Okamoto Park",
     "dates": "Fri Sep 25 4\u20138 PM + Sat Sep 26 11 AM\u20138 PM",
-    "mvpCap": 10250,
+    "mvpCap": 10580,
     "vendorRev100": 10575,
-    "registryFull": 26990,
+    "registryFull": 27320,
     "vendorSlots": 28,
     "attendance": 2500
   },
@@ -15,9 +15,9 @@
     "fillRate": 1.0,
     "parkFee": 0,
     "attendance": 2500,
-    "mvpCap": 10250,
+    "mvpCap": 10580,
     "vendorRevenue": 10575,
-    "headroomOrGap": 325,
+    "headroomOrGap": -5,
     "vendorSlots": 28,
     "estimatedRevenue": {
       "total": 10575,
@@ -119,18 +119,22 @@
     {
       "id": "festival_amenities",
       "name": "Festival Amenities",
-      "amount": 750,
+      "amount": 1080,
       "category": "core",
       "sortOrder": 3,
-      "tagline": "Families stay longer when comfort is covered.",
-      "description": "Restrooms, ADA unit, and hand-wash stations for Fri night market and Sat festival.",
+      "tagline": "Restrooms, hand-wash, and pro porter service \u2014 units stay stocked all weekend.",
+      "description": "Portable restrooms, ADA unit, and hand-wash stations for Fri night market and Sat festival, plus hired porters to restock toilet paper, refill hand-wash water, and keep units clean during event hours.",
       "benefits": [
         "Named amenity sponsor on website + digital sponsor slide"
       ],
       "lineItems": [
         {
-          "label": "2 standard + 1 ADA + 1 hand-wash (1.5-day)",
+          "label": "2 standard + 1 ADA + 1 hand-wash (1.5-day rental)",
           "amount": 750
+        },
+        {
+          "label": "Porter service \u2014 TP, soap, hand-wash refill (4 units)",
+          "amount": 330
         }
       ]
     },
@@ -469,7 +473,7 @@
       "min": 5000
     },
     {
-      "label": "Presenting",
+      "label": "Presenter",
       "min": 10000
     }
   ],
