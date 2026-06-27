@@ -9,7 +9,7 @@ season: autumn
 
 *Bao Thien Ngo · cPALSs MAF Co-Chair · June 2026*
 
-Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts, parish fairs, campus events, civic fall festivals, retail activations, and November spectacles. This page is one organizer's read on how to **assign lanes** instead of treating the list like a turf war.
+Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts, parish fairs, campus events, civic fall festivals, and retail activations. This page is one organizer's read on how to **assign lanes** instead of treating the list like a turf war.
 
 **Live calendar:** [Autumn market landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit) · [Market research guide](market-research.html)
 
@@ -20,12 +20,12 @@ Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts,
 | When | Event | Where |
 |------|-------|-------|
 | Early Sep | California Is My Home Mid-Autumn Fair | District 56, Elk Grove |
+| **Sep 19** (tent.) | CAAPS Autumn Lantern Festival | Sacramento region |
 | Late Sep | Sac State Harvest Moon / APIDA Mid-Autumn | Sacramento State campus |
 | Late Sep | Riverside UMC community fair | Parish / neighborhood |
 | **Sep 25–26** | **VACOS/cPALSs MAF** | **Derr-Okamoto Park, Elk Grove** |
 | Oct 3–4 | Giant Pumpkin Festival | Elk Grove Regional Park |
 | Oct 4–5 (est.) | SF Supermarket Mid-Autumn activation | Rancho Cordova |
-| Nov (est.) | CAAPS Autumn Lantern Festival | Sacramento region |
 | Nov (est.) | Creative Space Autumn Craft Fair | SASF, Elk Grove |
 
 That's a lot of weekends — and several events that look like the same product if you squint.
@@ -56,15 +56,15 @@ I wouldn't try to merge everything into one mega-festival. I wouldn't chase the 
 | Riverside UMC | Parish / neighborhood | Warm-up — build a lantern, bring community together |
 | California Is My Home | Elk Grove producers | Parallel fair — vendors, stage, local press |
 | Sac State (APIDA + JSSCC) | Campus / Gen Z | Different audience — heritage + mainstream on campus, not the family park product |
+| **CAAPS** (Sep 19 est.) | Spectacle / night market | Hoi An install — different product, different weekend than family capstone |
 | **VACOS/cPALSs MAF** | **Elk Grove families** | **Capstone — lantern contest, procession, regional haul-in moment** |
 | Giant Pumpkin Festival | Civic / regional fall | October destination — pumpkin weigh-off; room for a lantern exhibition after MAF |
 | SF Supermarket | Retail / plaza | Foot traffic — mooncakes, kits, lantern museum for entries the park can't store |
-| CAAPS | November spectacle | Night market, silk-lantern install — different month, volunteer respite |
 | Creative Space @ SASF | Craft / holiday shopping | Bookend — pre-Christmas makers, not moon programming |
 
 Same events. Different assignment: **who each one is for, what job it does, which weekend it owns.**
 
-A parish fair isn't trying to be Sac State. Sac State isn't trying to be the pumpkin festival. The pumpkin festival isn't trying to be Mid-Autumn. When each host knows its lane, cross-promo becomes honest — *family fair at the park · campus celebration at Sac State · pumpkins in October · makers in November* — instead of every flyer claiming to be "the only" or "the biggest."
+A parish fair isn't trying to be Sac State. CAAPS spectacle isn't trying to be the family fair at the park. When each host knows its lane, cross-promo becomes honest — *Hoi An lights Sep 19 · capstone Sep 25–26 · pumpkins in October · makers in November* — instead of every flyer claiming to be "the only" or "the biggest."
 
 ---
 
