@@ -27,6 +27,10 @@ python3 -m http.server 8765
 
 Open http://localhost:8765 — use `?festival=maf2026` or `?festival=lny2027` to deep-link.
 
+## Public copy / links
+
+Registry `description`, `tagline`, and `benefits` export **verbatim** to sponsors on festival.cpalss.com. **No monorepo paths or relative `.md` links** — see [.cursor/rules/github-pages-public-sites.mdc](../../../../.cursor/rules/github-pages-public-sites.mdc). External `https://` only, or plain text for internal docs.
+
 ## GitHub Pages
 
 - Custom domain: **festival.cpalss.com** (CNAME `festival` → `cpalss.github.io` at cpalss.com DNS host)
