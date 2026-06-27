@@ -1,6 +1,7 @@
 ---
 status: published
 title: Coordinating Greater Sacramento's Autumn Season
+layout: default
 asset_type: guide
 season: autumn
 ---

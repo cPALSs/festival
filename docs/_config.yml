@@ -22,3 +22,9 @@ header_pages:
   - tone-of-voice.md
 
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
