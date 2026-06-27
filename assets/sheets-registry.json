@@ -39,9 +39,6 @@
       "schema": "assets/autumn/research/market-landscape-schema.md",
       "tab": "All",
       "view_tabs": [
-        "2026 Confirmed",
-        "2026 Tentative",
-        "2026 Estimated",
         "2026",
         "2025"
       ]

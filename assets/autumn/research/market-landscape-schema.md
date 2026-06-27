@@ -12,18 +12,17 @@ Row 1 in the Sheet must match these headers exactly.
 
 ## Sheet tabs
 
-Tab order (left to right): **2026 Confirmed** · **2026 Tentative** · **2026 Estimated** · **2026** · **2025** · **All**
+Tab order (left to right): **2026** · **2025** · **All**
 
 | Tab | Role |
 |-----|------|
-| **2026 Confirmed** | Live view — `Season year` = 2026 · `Schedule confidence` = Confirmed |
-| **2026 Tentative** | Live view — `Season year` = 2026 · `Schedule confidence` = Tentative |
-| **2026 Estimated** | Live view — `Season year` = 2026 · `Schedule confidence` = Estimated |
-| **2026** | All current-year rows |
-| **2025** | Last held season |
+| **2026** | **Read view** — all current-year rows on one tab, grouped by **Schedule confidence** section headers (Krewe Subunit Contacts pattern). Re-run `add-landscape-view-tabs.mjs` after editing **All**. |
+| **2025** | Last held season — live `FILTER` formula |
 | **All** | **Source of truth** — edit here only |
 
-Year tabs are `FILTER` + `SORT` formulas (by **Dates**, then **Category**); they refresh when **All** changes. Do not edit year tabs directly. When a new season starts, add a year tab (re-run `scripts/add-landscape-view-tabs.mjs` or duplicate an existing year tab and update the formula).
+The **2026** tab uses colored section bands — **Confirmed** · **Tentative** · **Estimated** — with event rows sorted by **Dates** under each band. Do not edit **2026** directly; change **All** and refresh the view script.
+
+**2025** and other year tabs (when added) use `FILTER` + `SORT` formulas; they refresh when **All** changes.
 
 ## Column dictionary
 
@@ -108,10 +107,10 @@ Year tabs are `FILTER` + `SORT` formulas (by **Dates**, then **Category**); they
 
 **Colleague shortcuts (June 2026):**
 
-| Ask | Tab |
-|-----|-----|
-| **MAF 2026 — confirmed** | **2026 Confirmed** |
-| **MAF 2026 — need outreach** | **2026 Estimated** |
+| Ask | Tab / section |
+|-----|----------------|
+| **MAF 2026 — confirmed** | **2026** → **Confirmed** band |
+| **MAF 2026 — need outreach** | **2026** → **Estimated** band |
 | **Autumn 2025 (last held)** | **2025** |
 
 ## Data gap semantics
