@@ -16,6 +16,12 @@ Column schema: [Autumn market landscape schema](https://github.com/cPALSs/festiv
 
 ---
 
+## Season coordination (essay)
+
+**[Same calendar, different story](season-coordination.html)** — how Greater Sacramento's autumn events look like competition without intentional lane assignment, and what changes when each host owns a role and market. Sustainability and coordination over headcount.
+
+---
+
 ## Schedule confidence — three tiers
 
 The **2026** season is split by how sure we are about each occurrence:

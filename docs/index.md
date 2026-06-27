@@ -40,6 +40,7 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 
 - [Overview](autumn/overview.html)
 - [Market research](autumn/market-research.html)
+- [Season coordination](autumn/season-coordination.html)
 - [Calendar & registry](autumn/calendar.html)
 - [Group activity kits](autumn/group-activities.html)
 

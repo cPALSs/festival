@@ -24,6 +24,7 @@ Seeded from the 2026 **Lunar New Year Season** flyer (12 events Jan 24–Mar 7).
 **Source of truth:** [Greater Sacramento Autumn Season - Market Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link) — edit **All**; browse **2026** / **2025**
 
 - [Autumn market research](autumn/market-research.html) — season guide on this site
+- [Autumn season coordination](autumn/season-coordination.html) — lane assignment essay
 - [Autumn season overview](autumn/overview.html)
 
 ## Planning with AI
