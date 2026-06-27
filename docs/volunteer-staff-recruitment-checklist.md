@@ -8,9 +8,9 @@ layout: default
 
 # Volunteer staff recruitment checklist
 
-Use this when recruiting **capstone volunteer staff** — festival **directors** and other season-shaping roles with a named owner, a bounded scope, and a check-in rhythm. It applies to any host using Festival Season Networks; the **Greater Sacramento** coalition uses it for Mid-Autumn and Lunar New Year capstones.
+Use this when recruiting **capstone volunteer staff** — festival **directors** and other season-shaping roles with a named owner, a bounded scope, and a check-in rhythm. Any host can fork and adapt it; pair with your season’s [market research](research.html) and [principles](principles.html).
 
-**Related:** [Principles (P3 — stakeholder sustainability)](principles.html) · [Autumn market research](autumn/market-research.html) · [LNY market research](lny/market-research.html)
+**Related:** [Principles (P3 — stakeholder sustainability)](principles.html) · [Using market research](research.html)
 
 ---
 
@@ -42,7 +42,7 @@ Directors are **unpaid leadership**. Sponsor-funded features may pay performers 
 Post the same core message everywhere; adapt length to the channel.
 
 - [ ] **Festival email** — role name in subject line; mailto link in web copy
-- [ ] **Prior-season list** — one combined blast when MAF + LNY both need directors (avoid duplicate sends)
+- [ ] **Prior-season list** — one combined blast when multiple capstones in the same season both need directors (avoid duplicate sends)
 - [ ] **Idealist** (or equivalent) — weekly check for new applications
 - [ ] **Instagram / Facebook** — short caption + link to role detail; comment/DM path for interest
 - [ ] **Referrals** — ask placed directors and coalition partners for names before cold outreach
@@ -108,33 +108,10 @@ Respect the lead’s **preferred contact method**. Default order:
 
 `New` → `Contacted` → `Triage` → `Placed` | `Declined` | `Deferred`
 
-Track leads in your coalition’s internal intake workbook — not on public calendars or market landscape sheets.
-
----
-
-## Greater Sacramento — open capstones (June 2026)
-
-### Mid-Autumn Festival 2026
-
-**Sep 25–26** · Derr-Okamoto Park, Elk Grove · free admission · VACOS + cPALSs
-
-Director roles open across site & ops, program & experience, and outreach & partners. Co-chairs, sponsorship, marketing, and Honor our Elders are filled.
-
-- **Interest:** [midautumn@cpalss.com](mailto:midautumn@cpalss.com?subject=MAF%202026%20Director%20interest) — subject `MAF 2026 — Director interest: [role name]`
-- **Season context:** [Autumn market research](autumn/market-research.html)
-
-### Lunar New Year 2027
-
-**Planning year** — capstone @ Elk Grove Regional Park (expected Feb 2027 weekend)
-
-Committee director recruitment follows the LNY 2026 model with honest vendor math and right-sizing per [Principles P2](principles.html).
-
-- **Interest:** [LunarNewYear@cPALSs.com](mailto:LunarNewYear@cPALSs.com?subject=LNY%202027%20Director%20interest)
-- **Public site:** [ElkGroveLunarNewYear.com](https://ElkGroveLunarNewYear.com)
-- **Season context:** [LNY market research](lny/market-research.html)
+Track leads in your host’s internal intake workbook — not on public calendars or market landscape sheets.
 
 ---
 
 ## Questions
 
-Email [contact@cpalss.com](mailto:contact@cpalss.com) about using this checklist in your region or fork.
+Open a [GitHub issue](https://github.com/cPALSs/festival-network/issues) or email [contact@cpalss.com](mailto:contact@cpalss.com) about using this checklist in your region or fork.
