@@ -14,7 +14,37 @@
       "to": {
         "type": "event",
         "id": "sac-state-maf",
-        "label": "Sac State MAF (emerging)"
+        "label": "Sac State Mid-Autumn Festival (APIDA Center)"
+      },
+      "transparency": "Coalition internal",
+      "involvement_type": "Co-chair"
+    },
+    {
+      "type": "organizes",
+      "from": {
+        "type": "person",
+        "id": "mai-nguyen",
+        "label": "Mai Nguyen"
+      },
+      "to": {
+        "type": "event",
+        "id": "sf-supermarket-maf-rancho",
+        "label": "SF Supermarket Mid-Autumn Festival"
+      },
+      "transparency": "Coalition internal",
+      "involvement_type": "Producer"
+    },
+    {
+      "type": "organizes",
+      "from": {
+        "type": "person",
+        "id": "jen-tokunaga",
+        "label": "Jen Tokunaga"
+      },
+      "to": {
+        "type": "event",
+        "id": "creative-space-autumn-fair",
+        "label": "Autumn Food and Craft Fair (Creative Space)"
       },
       "transparency": "Coalition internal",
       "involvement_type": "Host"

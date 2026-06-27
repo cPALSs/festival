@@ -44,6 +44,34 @@
       ]
     },
     {
+      "id": "season-producer-roster",
+      "title": "Greater Sacramento Event Producer Roster (Internal)",
+      "spreadsheet_id": "1LnMG9e9Lnj5PHF60f2lbZOCdmG7Vn6Ag3ldRDIGtTXk",
+      "url": "https://docs.google.com/spreadsheets/d/1LnMG9e9Lnj5PHF60f2lbZOCdmG7Vn6Ag3ldRDIGtTXk/edit?usp=drivesdk",
+      "season": [
+        "lny",
+        "autumn",
+        "network"
+      ],
+      "visibility": "coalition_staff_only",
+      "schema": "assets/research/producer-roster-schema.md",
+      "tab": "All",
+      "view_tabs": [
+        "2026",
+        "LNY",
+        "Autumn",
+        "Network"
+      ],
+      "pairs_with": [
+        "autumn-market-landscape",
+        "lny-market-landscape"
+      ],
+      "legacy_ids": [
+        "autumn-producer-roster"
+      ],
+      "note": "Internal PII — never publish or link from GitHub Pages"
+    },
+    {
       "id": "community-activity-calendar",
       "title": "Community Activity Calendar",
       "spreadsheet_id": "1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg",
@@ -54,17 +82,15 @@
       "view_tabs": [
         "Community Matrix",
         "Archive",
-        "Event sources",
-        "Season stakeholders",
-        "Stakeholder event involvement",
-        "Recruitment pipeline"
+        "Event sources"
       ],
-      "stakeholder_tabs": {
+      "deprecated_tabs": {
         "season_stakeholders": "Season stakeholders",
         "stakeholder_involvement": "Stakeholder event involvement",
         "recruitment_pipeline": "Recruitment pipeline"
       },
-      "note": "spreadsheet_id set by init-community-activity-sheet.mjs"
+      "internal_companion": "season-producer-roster",
+      "note": "Public-facing calendar only — PII tabs hidden; producer contacts on season-producer-roster"
     }
   ],
   "deprecated_spreadsheets": [

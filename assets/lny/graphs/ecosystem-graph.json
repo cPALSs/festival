@@ -3,37 +3,6 @@
   "region": "greater-sacramento",
   "as_of": "2026-06-22",
   "nodes": [],
-  "edges": [
-    {
-      "type": "organizes",
-      "from": {
-        "type": "person",
-        "id": "lani-franklin",
-        "label": "Lani Franklin"
-      },
-      "to": {
-        "type": "event",
-        "id": "lny-lovers-exhibit-2026",
-        "label": "LNY Lover's Exhibit 2026"
-      },
-      "transparency": "Coalition internal",
-      "involvement_type": "Producer"
-    },
-    {
-      "type": "organizes",
-      "from": {
-        "type": "person",
-        "id": "vu-tran",
-        "label": "Vu Tran"
-      },
-      "to": {
-        "type": "event",
-        "id": "cpalss-lny-capstone",
-        "label": "Elk Grove Lunar New Year 2026"
-      },
-      "transparency": "Public",
-      "involvement_type": "Co-chair"
-    }
-  ],
+  "edges": [],
   "generated_at": "2026-06-27"
 }

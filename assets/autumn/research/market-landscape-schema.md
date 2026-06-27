@@ -64,7 +64,7 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 |-------------|----------------|
 | `Our event` | Coalition Mid-Autumn we produce |
 | `Direct comp - same city` | Direct competitor in the same city |
-| `Direct comp - spectacle product` | Direct competitor with a different spectacle (e.g. sky lanterns) |
+| `Direct comp - spectacle product` | Direct competitor with a different spectacle (e.g. installed silk lantern display) |
 | `Direct comp - late September` | Direct competitor in the same late-September window |
 | `Direct comp - lunar weekend` | Direct competitor on lunar Mid-Autumn weekend |
 | `Substitute - October` | Families might choose this instead in October |
