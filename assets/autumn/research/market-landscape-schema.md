@@ -12,12 +12,15 @@ Row 1 in the Sheet must match these headers exactly.
 
 ## Sheet tabs
 
-Tab order (left to right): **2026** · **2025** · **All**
+Tab order (left to right): **2026 Confirmed** · **2026 Tentative** · **2026 Estimated** · **2026** · **2025** · **All**
 
 | Tab | Role |
 |-----|------|
-| **2026** | Live view — all rows where `Season year` = 2026 |
-| **2025** | Live view — all rows where `Season year` = 2025 |
+| **2026 Confirmed** | Live view — `Season year` = 2026 · `Schedule confidence` = Confirmed |
+| **2026 Tentative** | Live view — `Season year` = 2026 · `Schedule confidence` = Tentative |
+| **2026 Estimated** | Live view — `Season year` = 2026 · `Schedule confidence` = Estimated |
+| **2026** | All current-year rows |
+| **2025** | Last held season |
 | **All** | **Source of truth** — edit here only |
 
 Year tabs are `FILTER` + `SORT` formulas (by **Dates**, then **Category**); they refresh when **All** changes. Do not edit year tabs directly. When a new season starts, add a year tab (re-run `scripts/add-landscape-view-tabs.mjs` or duplicate an existing year tab and update the formula).
@@ -32,6 +35,10 @@ Year tabs are `FILTER` + `SORT` formulas (by **Dates**, then **Category**); they
 | **event_id** | Stable slug linking all years of the same event — e.g. `cpalss-maf`, `caaps-lantern` |
 | **Season year** | Calendar year this row describes — `2025`, `2026`, `2027`, or `reference` |
 | **Row status** | `planning` · `confirmed` · `held` · `historical` · `cancelled` · `reference` |
+| **Schedule confidence** | **Confirmed** · **Tentative** · **Estimated** — required for current planning-year rows (see below) |
+| **Confidence source** | `Steward confirmed` · `Public listing` · `Organizer conversation (pre-public)` · `Coalition internal` |
+| **Confirmed by** | Calendar steward name when human-confirmed |
+| **Confirmed date** | `YYYY-MM-DD` when steward confirmed |
 | Host / Organizer | Producing org — **lead org first** (VACOS for MAF, cPALSs for EGLNY) |
 | City | Primary city |
 | Venue | Location detail |
@@ -72,7 +79,7 @@ Year tabs are `FILTER` + `SORT` formulas (by **Dates**, then **Category**); they
 ## Occurrence rows (one row per year)
 
 - **Do not overwrite** last year's row when next year's date is announced — add a row (or copy → edit → set prior row to `held`).
-- **Latest season only when dated:** For the current planning year (MAF 2026, LNY 2027, …), **do not add a row** until you have at least a tentative date from the organizer or a public listing. No `TBD` placeholder rows on the year tab.
+- **Latest season only when dated:** For the current planning year, **Estimated rows are allowed** with projected dates from prior year + **Data gap** until organizer confirms.
 - **Filter views** (recommended in Google Sheets):
   - **Current planning** — `Season year` = 2026 or 2027 · `Row status` = `planning` or `confirmed`
   - **Last held** — `Row status` = `held` · sort `Season year` descending
@@ -89,11 +96,22 @@ Year tabs are `FILTER` + `SORT` formulas (by **Dates**, then **Category**); they
 | `cancelled` | Announced then cancelled |
 | `reference` | Out-of-season or out-of-region; not a calendar row |
 
+**Schedule confidence** (current planning year — separate from row lifecycle):
+
+| Value | When to use |
+|-------|-------------|
+| **Confirmed** | **Calendar steward** verified the date. Auto-signal: public listing (FB, Eventbrite, Sacramento365, organizer site). Steward may confirm **before** public post when organizer gave final date in conversation. |
+| **Tentative** | Spoken to organizer; committed date but not finalized |
+| **Estimated** | No organizer contact; date projected from prior year assuming recurrence |
+
+**Confidence source:** `Steward confirmed` · `Public listing` · `Organizer conversation (pre-public)` · `Coalition internal`
+
 **Colleague shortcuts (June 2026):**
 
 | Ask | Tab |
 |-----|-----|
-| **MAF 2026 calendar** | **2026** (3 events as of Jun 2026 — CAAPS Sep 19, APIDA Center Sep 21, MAF Sep 25–26) |
+| **MAF 2026 — confirmed** | **2026 Confirmed** |
+| **MAF 2026 — need outreach** | **2026 Estimated** |
 | **Autumn 2025 (last held)** | **2025** |
 
 ## Data gap semantics

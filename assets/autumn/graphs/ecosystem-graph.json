@@ -3,5 +3,22 @@
   "region": "greater-sacramento",
   "as_of": "2026-06-22",
   "nodes": [],
-  "edges": []
+  "edges": [
+    {
+      "type": "organizes",
+      "from": {
+        "type": "person",
+        "id": "vu-tran",
+        "label": "Vu Tran"
+      },
+      "to": {
+        "type": "event",
+        "id": "sac-state-maf",
+        "label": "Sac State MAF (emerging)"
+      },
+      "transparency": "Coalition internal",
+      "involvement_type": "Host"
+    }
+  ],
+  "generated_at": "2026-06-27"
 }

@@ -19,6 +19,12 @@ Instructions for AI agents working with this repository.
 
 **MCP:** Use the `google-sheets` MCP server (`google-sheet-mcp`) to read and update sheets. If MCP is unavailable, ask the user to run setup in `docs/google-sheets-mcp.md` — do not treat repo CSV as canonical.
 
+## Google Drive + Docs (sponsorship packets)
+
+**Per-festival** folder and document IDs live in each project's `drive-registry.json` — see [drive-registry index](assets/drive-registry.json). Generic templates: `scripts/content/sponsorship-packet-standard.md`, post-event report templates.
+
+**MCP:** Use the `google-drive` MCP server for sponsorship packet edits. Dollar amounts sync from each project's `festival_registry.json`.
+
 ### LNY market landscape
 
 Registry ID: `lny-market-landscape` in [assets/sheets-registry.json](assets/sheets-registry.json)
@@ -108,6 +114,8 @@ Paths below are for agents after `git clone` — not surfaced on GitHub Pages.
 - **Season naming:** Together → **Lunar New Year & Autumn Festivals** (LNY always before Autumn when listing both); alone → LNY / EGLNY or Autumn / Mid-Autumn / MAF ([tone of voice](docs/tone-of-voice.md))
 - **Events:** `event_id` slug on every landscape row — e.g. `cpalss-maf`, `cpalss-lny-capstone`, `caaps-lantern`
 - **Occurrences:** one row per `event_id` + `Season year`; use `Row status` (`planning`, `held`, `historical`, …)
+- **Schedule confidence** (autumn landscape): `Confirmed` · `Tentative` · `Estimated` — steward-verified; see [autumn market-research.md](docs/autumn/market-research.md)
+- **Stakeholder involvement:** Community Activity Calendar → **Stakeholder event involvement** tab; sync via `scripts/sync-stakeholder-involvements.mjs`
 - **Lanes:** `L1`–`L7`
 - Arcs: `arc-moon`, `arc-fall`, `arc-lantern`, `ambient`
 - Weekend slots: `2027-wk-sep-26`

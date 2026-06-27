@@ -6,9 +6,11 @@
   "site": "https://cpalss.github.io/festival-network/",
   "drive": {
     "shared_drive": "Festival Network",
+    "docs_registry": "assets/drive-registry.json",
+    "docs_setup": "docs/google-drive-mcp.md",
     "recommended_folders": {
       "Research": "Market research, market landscape, analyses",
-      "Calendars": "Roll-up paths, anchor registry, scheduling (future)",
+      "Calendars": "Community Activity Calendar — public list, Community Matrix, archive",
       "Graphs": "Ecosystem relationship data (future)",
       "Operations": "Steering trackers, debriefs (future)"
     },
@@ -23,7 +25,10 @@
       "season": "lny",
       "schema": "assets/lny/research/market-landscape-schema.md",
       "tab": "All",
-      "view_tabs": ["2027", "2026"]
+      "view_tabs": [
+        "2027",
+        "2026"
+      ]
     },
     {
       "id": "autumn-market-landscape",
@@ -33,7 +38,46 @@
       "season": "autumn",
       "schema": "assets/autumn/research/market-landscape-schema.md",
       "tab": "All",
-      "view_tabs": ["2026", "2025"]
+      "view_tabs": [
+        "2026 Confirmed",
+        "2026 Tentative",
+        "2026 Estimated",
+        "2026",
+        "2025"
+      ]
+    },
+    {
+      "id": "community-activity-calendar",
+      "title": "Community Activity Calendar",
+      "spreadsheet_id": "1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg",
+      "url": "https://docs.google.com/spreadsheets/d/1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg/edit?ouid=117520336769674993102",
+      "schema": "Corporate Administration/community-activity-calendar-schema.md",
+      "registry": "Corporate Administration/drive-registry.json",
+      "tab": "Public events",
+      "view_tabs": [
+        "Community Matrix",
+        "Archive",
+        "Event sources",
+        "Season stakeholders",
+        "Stakeholder event involvement",
+        "Recruitment pipeline"
+      ],
+      "stakeholder_tabs": {
+        "season_stakeholders": "Season stakeholders",
+        "stakeholder_involvement": "Stakeholder event involvement",
+        "recruitment_pipeline": "Recruitment pipeline"
+      },
+      "note": "spreadsheet_id set by init-community-activity-sheet.mjs"
+    }
+  ],
+  "deprecated_spreadsheets": [
+    {
+      "id": "cong-dong-planning-calendar",
+      "title": "Cộng Đồng Planning Calendar - Sacramento/Stockton",
+      "spreadsheet_id": "1Qe6KyqeTv9VUe4Ff1LYyO34jTML5YutGCFceuPia2gc",
+      "url": "https://docs.google.com/spreadsheets/d/1Qe6KyqeTv9VUe4Ff1LYyO34jTML5YutGCFceuPia2gc/edit",
+      "replaced_by": "community-activity-calendar",
+      "replaced_by_tab": "Community Matrix"
     }
   ]
 }

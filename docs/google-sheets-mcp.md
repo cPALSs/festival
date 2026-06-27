@@ -78,9 +78,16 @@ OAuth lets the agent act **as you** — no service account, no sharing the sheet
 **cPALSs staging** — run from the parent folder (local tooling, not in the public repo):
 
 ```bash
-cd "/Users/bao/cPALSs/Festival Network"
+cd "/Users/bao/cPALSs"
 npm install
-npx -y google-sheet-mcp init --auth oauth
+npm run mcp:oauth -w festival-network
+```
+
+Or run the wizard directly:
+
+```bash
+cd "/Users/bao/cPALSs/Festival Network"
+npx google-sheet-mcp init --auth oauth
 ```
 
 **Public clone** — install MCP in your clone root if you use Sheets MCP locally:
@@ -103,8 +110,14 @@ The wizard opens a browser → sign in → **Allow** access to Google Sheets. To
 
 ### 6. Install MCP server package (local)
 
-**cPALSs staging:** `npm install` in `Festival Network/` (parent of `shared/`).  
-The public repo does not ship `package.json`; MCP is optional local tooling.
+**cPALSs staging:** from the workspace root:
+
+```bash
+cd "/Users/bao/cPALSs"
+npm install
+```
+
+This installs workspace packages (`Festival Network`, project scripts) and hoists shared deps like `googleapis`. The public repo does not ship `package.json`; MCP is optional local tooling.
 
 This installs `google-sheet-mcp` so Cursor can run the **server** entrypoint (not the CLI).
 
@@ -118,7 +131,7 @@ npx -y google-sheet-mcp token-status
 
 ### 8. Cursor MCP config
 
-`.cursor/mcp.json` must run `server.mjs` directly — **not** `npx google-sheet-mcp` (that launches the CLI help and fails in Cursor):
+`.cursor/mcp.json` runs a small wrapper that resolves `google-sheet-mcp` via npm (works with workspace hoisting):
 
 ```json
 {
@@ -126,7 +139,7 @@ npx -y google-sheet-mcp token-status
     "google-sheets": {
       "command": "node",
       "args": [
-        "/Users/bao/cPALSs/Festival Network/node_modules/google-sheet-mcp/src/server/server.mjs"
+        "/Users/bao/cPALSs/Festival Network/scripts/start-google-sheet-mcp.mjs"
       ],
       "cwd": "/Users/bao/cPALSs"
     }
@@ -195,7 +208,11 @@ Add to `.cursor/mcp.json` `env`:
 "GOOGLE_APPLICATION_CREDENTIALS": "/Users/bao/cPALSs/Festival Network/.credentials/google-service-account.json"
 ```
 
-### 5. Test
+### 5. Google Drive + Docs (sponsorship packets)
+
+See [google-drive-mcp.md](google-drive-mcp.md) for Drive/Docs MCP setup. Uses the same OAuth client with expanded scopes (Drive + Docs + Sheets).
+
+### 6. Test
 
 ```bash
 cd "/Users/bao/cPALSs/Festival Network"   # cPALSs staging
