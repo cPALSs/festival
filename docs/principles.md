@@ -37,7 +37,7 @@ Festival Season Networks is a **coordination library**, not an event owner. Thes
 - Scheduling a **direct competitor** on capstone Saturday without talking to the network first (see [LNY market landscape](lny/market-research.html))
 - Treating warm-up events as substitutes for the capstone — they **feed** the capstone, not replace it
 
-**Assets:** market landscape sheets (who's in the season), [calendar rules](../assets/autumn/calendars/rules/calendar-rules.json), [roll-up arcs](../assets/autumn/calendars/rollup-arcs.md) (Autumn), season reports.
+**Assets:** market landscape sheets (who's in the season), [calendar rules](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/calendars/rules/calendar-rules.json), [roll-up arcs](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/calendars/rollup-arcs.md) (Autumn), season reports.
 
 **Greater Sacramento note:** The 2026 **Lunar New Year Season** one-pager listed 12 dated events Jan 24–Mar 7 with the Elk Grove capstone centered — a roll-up calendar in flyer form. Those rows now live in the [LNY market landscape Sheet](lny/market-research.html).
 
@@ -67,7 +67,7 @@ Festival Season Networks is a **coordination library**, not an event owner. Thes
 - Sprawl so large that groups cannot find each other
 - Assuming social media reach equals family retention
 
-**Assets:** [group activity kits](../assets/autumn/group-activities/) (Autumn), [shared kits](../assets/shared/group-activities/), case studies tagged `group-attendance`.
+**Assets:** [group activity kits](https://github.com/cPALSs/festival-network/tree/main/assets/autumn/group-activities) (Autumn), [shared kits](https://github.com/cPALSs/festival-network/tree/main/assets/shared/group-activities), case studies tagged `group-attendance`.
 
 ---
 
@@ -92,7 +92,7 @@ Festival Season Networks is a **coordination library**, not an event owner. Thes
 - Right-size vendor count, parking, and sanitation to **planning band**, not marketed ceiling
 - Compare across **product format** (free fair vs ticketed night market vs church dinner) — not raw headliner followership
 
-**Assets:** [LNY](../assets/lny/research/market-landscape-schema.md) and [Autumn](../assets/autumn/research/market-landscape-schema.md) landscape schemas, [right-sizing playbook](../assets/autumn/playbooks/right-sizing.md), case studies tagged `right-sizing` or `honest-scale`.
+**Assets:** [LNY](https://github.com/cPALSs/festival-network/blob/main/assets/lny/research/market-landscape-schema.md) and [Autumn](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/research/market-landscape-schema.md) landscape schemas, [right-sizing playbook](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/playbooks/right-sizing.md), case studies tagged `right-sizing` or `honest-scale`.
 
 ---
 
@@ -115,7 +115,7 @@ Festival Season Networks is a **coordination library**, not an event owner. Thes
 - Separate **coalition capstone** economics from **network member** events (different P&L, same season story)
 - Debrief templates that include a **P4 check** (vendor/sponsor/partner)
 
-**Assets:** [stakeholder sustainability playbook](../assets/autumn/playbooks/stakeholder-sustainability.md), [pilot debrief template](../assets/autumn/playbooks/pilot-debrief-template.md), [case studies](case-studies.html).
+**Assets:** [stakeholder sustainability playbook](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/playbooks/stakeholder-sustainability.md), [pilot debrief template](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/playbooks/pilot-debrief-template.md), [case studies](case-studies.html).
 
 ---
 
@@ -151,7 +151,7 @@ Playbooks + case studies       →  tested patterns and cautions (P2–P4)
 Simulations (future)           →  what-if before committing dates (P1, P3)
 ```
 
-Start with [ecosystem harmony](ecosystem-harmony.html) for how research and relationships merge. Agents: see [AGENTS.md](../AGENTS.md) for load order and machine-readable conventions.
+Start with [ecosystem harmony](ecosystem-harmony.html) for how research and relationships merge. Agents: see [AGENTS.md](https://github.com/cPALSs/festival-network/blob/main/AGENTS.md) for load order and machine-readable conventions.
 
 ---
 
@@ -163,4 +163,4 @@ Start with [ecosystem harmony](ecosystem-harmony.html) for how research and rela
 4. **Size** — Set planning attendance from field evidence; mark claims separately.
 5. **Debrief** — Run P4 checks with vendors and partners; file a case study if the lesson generalizes.
 
-Contributions that change a principle should update this page and [AGENTS.md](../AGENTS.md) together so humans and AI agents stay aligned. For wording standards, see [tone of voice](tone-of-voice.html).
+Contributions that change a principle should update this page and [AGENTS.md](https://github.com/cPALSs/festival-network/blob/main/AGENTS.md) together so humans and AI agents stay aligned. For wording standards, see [tone of voice](tone-of-voice.html).

@@ -17,7 +17,7 @@ cPALSs no longer exports Zoom AI summaries to Notion via Zapier. Agents and huma
 
 ## Before a meeting
 
-- Update the relevant agenda in `Staff - Meeting/` (e.g. [Festival Projects Weekly agenda.md](../../../Staff%20-%20Meeting/Festival%20Projects%20Weekly%20agenda.md)).
+- Update the relevant agenda in `Staff - Meeting/` (e.g. `Festival Projects Weekly agenda.md`).
 - Operational finance checklists stay in `Staff - Ops/`.
 
 ## Where things live
@@ -30,4 +30,4 @@ cPALSs no longer exports Zoom AI summaries to Notion via Zapier. Agents and huma
 | Tabular research | Google Sheets |
 | Official coalition docs | Google Drive |
 
-Agent rules: [`.cursor/rules/zoom-mcp.mdc`](../../../.cursor/rules/zoom-mcp.mdc), [`.cursor/rules/local-ops.mdc`](../../../.cursor/rules/local-ops.mdc).
+Agent rules: `.cursor/rules/zoom-mcp.mdc` and `.cursor/rules/local-ops.mdc` in the coalition monorepo.

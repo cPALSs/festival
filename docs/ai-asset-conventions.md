@@ -12,15 +12,23 @@ season: cross
 
 | Data type | Canonical store | Repo holds |
 |-----------|-----------------|------------|
-| Tabular research (market landscape, etc.) | **Google Sheets** | [sheets-registry.json](../assets/sheets-registry.json), column schema |
+| Tabular research (market landscape, etc.) | **Google Sheets** | [sheets-registry.json](https://github.com/cPALSs/festival-network/blob/main/assets/sheets-registry.json), column schema |
 | Graphs, calendars, kits (for now) | Repo JSON/Markdown | `assets/` |
 | Private organizer notes | Staging folder | `assets/autumn/staging/` (not all published) |
 
-Agents **read and write live sheets via MCP** (`google-sheets`). See [google-sheets-mcp.md](google-sheets-mcp.md).
+Agents **read and write live sheets via MCP** (`google-sheets`). See [google-sheets-mcp.html](google-sheets-mcp.html).
+
+## Public site links
+
+GitHub Pages publishes `docs/` only. On human-facing pages:
+
+- Link to other site pages with **`.html`** (e.g. [research.html](research.html)).
+- Link to repo files with **GitHub blob/tree URLs** on [cPALSs/festival-network](https://github.com/cPALSs/festival-network) — not relative `../assets/` paths.
+- Do **not** link to coalition-internal monorepo paths (private cPALSs repo, `Staff - Meeting/`, project folders) — name them in plain text instead.
 
 ## Sheet registry
 
-Add a new spreadsheet to [assets/sheets-registry.json](../assets/sheets-registry.json):
+Add a new spreadsheet to [assets/sheets-registry.json](https://github.com/cPALSs/festival-network/blob/main/assets/sheets-registry.json):
 
 ```json
 {
@@ -58,7 +66,7 @@ season: lny | autumn | cross
 
 ## Column dictionaries
 
-Each canonical sheet has a schema doc (e.g. [market-landscape-schema.md](../assets/autumn/research/market-landscape-schema.md)). Sheet row 1 must match schema headers exactly.
+Each canonical sheet has a schema doc (e.g. [market-landscape-schema.md](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/research/market-landscape-schema.md)). Sheet row 1 must match schema headers exactly.
 
 ## Rules as data
 
@@ -70,4 +78,4 @@ YAML scenarios in `assets/autumn/simulations/scenarios/` reference `event_id` va
 
 ## Tone and wording
 
-Public pages use plain language. When both seasons appear together, say **Lunar New Year & Autumn Festivals** ([tone of voice](tone-of-voice.md)). Sheet columns may use short enum labels (`Direct comp - same city`). Every enum needs a gloss in the schema and in [tone of voice](tone-of-voice.md).
+Public pages use plain language. When both seasons appear together, say **Lunar New Year & Autumn Festivals** ([tone of voice](tone-of-voice.html)). Sheet columns may use short enum labels (`Direct comp - same city`). Every enum needs a gloss in the schema and in [tone of voice](tone-of-voice.html).

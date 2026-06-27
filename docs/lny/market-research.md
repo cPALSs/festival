@@ -22,4 +22,4 @@ See [Using market research](../research.html) for methodology and contributing.
 
 ## Planning with AI
 
-Agents: clone the repo and follow [AGENTS.md](../../AGENTS.md) for column schema, sheet IDs, and MCP load order.
+Agents: clone [festival-network](https://github.com/cPALSs/festival-network) and follow [AGENTS.md](https://github.com/cPALSs/festival-network/blob/main/AGENTS.md) for column schema, sheet IDs, and MCP load order.

@@ -9,7 +9,7 @@ Live research data is stored in **Google Sheets** (source of truth). Cursor agen
 
 ## Sheet registry
 
-Canonical links live in [sheets-registry.json](../assets/sheets-registry.json).
+Canonical links live in [sheets-registry.json](https://github.com/cPALSs/festival-network/blob/main/assets/sheets-registry.json).
 
 | Dataset | Spreadsheet |
 |---------|-------------|
@@ -210,7 +210,7 @@ Add to `.cursor/mcp.json` `env`:
 
 ### 5. Google Drive + Docs (sponsorship packets)
 
-See [google-drive-mcp.md](google-drive-mcp.md) for Drive/Docs MCP setup. Uses the same OAuth client with expanded scopes (Drive + Docs + Sheets).
+See [google-drive-mcp.html](google-drive-mcp.html) for Drive/Docs MCP setup. Uses the same OAuth client with expanded scopes (Drive + Docs + Sheets).
 
 ### 6. Test
 
@@ -233,5 +233,5 @@ npx -y google-sheet-mcp test
 
 - **Sheets = source of truth** — humans edit in Google Sheets; agents update via MCP
 - **Repo** holds `sheets-registry.json`, column schema, and guides — **not** live rows (no CSV)
-- Match columns in [lny schema](../assets/lny/research/market-landscape-schema.md) or [autumn schema](../assets/autumn/research/market-landscape-schema.md)
+- Match columns in [LNY schema](https://github.com/cPALSs/festival-network/blob/main/assets/lny/research/market-landscape-schema.md) or [Autumn schema](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/research/market-landscape-schema.md)
 - Protect row 1 (headers) in the Sheet

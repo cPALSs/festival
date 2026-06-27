@@ -75,7 +75,7 @@ Tokens save to `.zoom-mcp-tokens.json` (gitignored). Re-run when expired if refr
 
 ## Cursor MCP config
 
-Wired in [`.cursor/mcp.json`](../../../.cursor/mcp.json) via [`start-zoom-mcp.mjs`](../../scripts/start-zoom-mcp.mjs):
+Wired in `.cursor/mcp.json` (coalition monorepo) via `Festival Network/scripts/start-zoom-mcp.mjs`:
 
 ```json
 {
@@ -120,9 +120,9 @@ Wired in [`.cursor/mcp.json`](../../../.cursor/mcp.json) via [`start-zoom-mcp.mj
 
 Prefer **Zoom MCP** for "what was said in the meeting." Prefer **local repo markdown** for living checklists and prep agendas.
 
-Post-meeting workflow: [meeting-workflow.md](meeting-workflow.md). Smoke test: [zoom-mcp-smoke-test.md](zoom-mcp-smoke-test.md). Disable Zapier: [zapier-deprecation.md](zapier-deprecation.md).
+Post-meeting workflow: [meeting-workflow.html](meeting-workflow.html). Smoke test: [zoom-mcp-smoke-test.html](zoom-mcp-smoke-test.html). Disable Zapier: [zapier-deprecation.html](zapier-deprecation.html).
 
-Agent rules: [`.cursor/rules/zoom-mcp.mdc`](../../../.cursor/rules/zoom-mcp.mdc), [`.cursor/rules/local-ops.mdc`](../../../.cursor/rules/local-ops.mdc).
+Agent rules: `.cursor/rules/zoom-mcp.mdc` and `.cursor/rules/local-ops.mdc` in the coalition monorepo.
 
 ## Troubleshooting
 

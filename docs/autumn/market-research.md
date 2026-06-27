@@ -8,11 +8,11 @@ season: autumn
 
 ## Market landscape (live)
 
-**Source of truth:** [Greater Sacramento Autumn Season - Market Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit) — edit **All** only; browse confidence views and year tabs.
+**Source of truth:** [Greater Sacramento Autumn Season - Market Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit) — edit **All** only; browse **2026** section bands and **2025** on year tabs.
 
-Seeded from [Greater Sacramento Autumn Season - Market Research.md](https://github.com/cPALSs/cPALSs/blob/main/Projects%20-%20Mid-Autumn%20Festival/Research/Greater%20Sacramento%20Autumn%20Season%20-%20Market%20Research.md) plus coalition field notes.
+Seeded from coalition field notes and the internal *Greater Sacramento Autumn Season — Market Research* narrative.
 
-Column schema: [market-landscape-schema.md](../../assets/autumn/research/market-landscape-schema.md)
+Column schema: [Autumn market landscape schema](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/research/market-landscape-schema.md) (in the [festival-network](https://github.com/cPALSs/festival-network) repo — clone for agents).
 
 ---
 
@@ -41,42 +41,37 @@ The **2026** season is split by how sure we are about each occurrence:
 | Tab | Role |
 |-----|------|
 | **All** | Source of truth — edit here only |
-| **2026 Confirmed** | Verified 2026 occurrences |
-| **2026 Tentative** | Organizer conversation; date not final |
-| **2026 Estimated** | Prior-year projection; outreach queue |
-| **2026** | All current-year rows |
+| **2026** | All 2026 rows on one tab — **Confirmed** · **Tentative** · **Estimated** section bands (like Krewe Subunit Contacts) |
 | **2025** | Last held season |
 
-Re-run view tabs after header changes:
+Re-run view tabs after editing **All** or changing schedule confidence:
 
 ```bash
 cd Festival\ Network
 node scripts/add-landscape-view-tabs.mjs
-node scripts/seed-autumn-landscape-confidence.mjs
+node scripts/seed-autumn-landscape-confidence.mjs   # if updating confidence on All
 ```
+
+*(Scripts live in the coalition cPALSs monorepo — not published on this site.)*
 
 ---
 
 ## Season report (narrative)
 
-Full competitive landscape, three **moon lanes**, and honesty rules:
+Full competitive landscape, three **moon lanes**, and honesty rules live in the coalition internal *Greater Sacramento Autumn Season — Market Research* report.
 
-- [Greater Sacramento Autumn Season - Market Research.md](https://github.com/cPALSs/cPALSs/blob/main/Projects%20-%20Mid-Autumn%20Festival/Research/Greater%20Sacramento%20Autumn%20Season%20-%20Market%20Research.md) (cPALSs repo)
-
-**Stakeholder involvement** (who produces what): Community Activity Calendar → **Stakeholder event involvement** tab. Charter: [season-stakeholder-charter.md](https://github.com/cPALSs/cPALSs/blob/main/Corporate%20Administration/season-stakeholder-charter.md)
+**Stakeholder involvement** (who produces what): [Community Activity Calendar](https://docs.google.com/spreadsheets/d/1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg/edit) → **Stakeholder event involvement** tab. Charter: *season stakeholder charter* (coalition internal).
 
 ---
 
 ## Producer brief
 
-Coalition-facing mission + sustainability framing for autumn hosts:
-
-- [MAF Season - Producer Brief.md](https://github.com/cPALSs/cPALSs/blob/main/Projects%20-%20Mid-Autumn%20Festival/2026/Marketing/MAF%20Season%20-%20Producer%20Brief.md)
+Coalition-facing mission + sustainability framing for autumn hosts: *MAF Season — Producer Brief* (coalition internal). Questions: [contact@cpalss.com](mailto:contact@cpalss.com).
 
 ---
 
 ## Planning with AI
 
-Agents: clone [festival-network](https://github.com/cPALSs/festival-network) and follow [AGENTS.md](../../AGENTS.md) for column schema, sheet IDs, and MCP load order.
+Agents: clone [festival-network](https://github.com/cPALSs/festival-network) and follow [AGENTS.md](https://github.com/cPALSs/festival-network/blob/main/AGENTS.md) for column schema, sheet IDs, and MCP load order.
 
 See [Using market research](../research.html) for methodology and contributing.

@@ -11,7 +11,7 @@ The **Zoom → Notion** Zap (and any related CSV export to `Staff - Meeting/`) i
 
 ## Prerequisites
 
-Complete [zoom-mcp.md](zoom-mcp.md) setup and run the smoke test in [zoom-mcp-smoke-test.md](zoom-mcp-smoke-test.md) before turning off Zapier.
+Complete [zoom-mcp.html](zoom-mcp.html) setup and run the smoke test in [zoom-mcp-smoke-test.html](zoom-mcp-smoke-test.html) before turning off Zapier.
 
 ## Disable in Zapier
 
@@ -23,11 +23,9 @@ Complete [zoom-mcp.md](zoom-mcp.md) setup and run the smoke test in [zoom-mcp-sm
 ## After disabling
 
 - New meetings will **not** appear in Notion Meeting Notes.
-- Historical Notion pages remain until you cancel Notion; substantive ops content was migrated to:
-  - [`Staff - Ops/`](../../../Staff%20-%20Ops/)
-  - [`Staff - Meeting/Festival Projects Weekly agenda.md`](../../../Staff%20-%20Meeting/Festival%20Projects%20Weekly%20agenda.md)
+- Historical Notion pages remain until you cancel Notion; substantive ops content was migrated to coalition-internal `Staff - Ops/` and `Staff - Meeting/` markdown.
 - Use Cursor + Zoom MCP to query past meetings.
 
 ## Cancel Notion (optional)
 
-Once you no longer need read-only access to old Meeting Notes pages, cancel the Notion subscription. Notion MCP has been removed from [`.cursor/mcp.json`](../../../.cursor/mcp.json).
+Once you no longer need read-only access to old Meeting Notes pages, cancel the Notion subscription. Notion MCP has been removed from `.cursor/mcp.json` in the coalition monorepo.

@@ -5,7 +5,7 @@ layout: default
 
 # Zoom MCP smoke test
 
-Run after completing [zoom-mcp.md](zoom-mcp.md) setup.
+Run after completing [zoom-mcp.html](zoom-mcp.html) setup.
 
 **Verified 2026-06-25:** `search_meetings` + `get_meeting_assets` for Festival Projects Weekly (2026-06-23) returned Mid-Autumn Festival budget / "Build the Festival" summary — replaces former Zapier → Notion export.
 
@@ -34,9 +34,9 @@ Expected: non-empty search results with an AI recap and next steps (replacing wh
 
 - Run `node "Festival Network/scripts/zoom-mcp-authorize.mjs"` if `.zoom-mcp-tokens.json` is missing
 - Confirm `ZOOM_MCP_REDIRECT_URI` matches Zoom redirect + allow list exactly
-- Confirm all scopes from [zoom-mcp.md](zoom-mcp.md) are added
+- Confirm all scopes from [zoom-mcp.html](zoom-mcp.html) are added
 - Try US endpoint in `start-zoom-mcp.mjs`: `https://mcp-us.zoom.us/mcp/zoom/streamable`
 
 ## 4. After smoke test passes
 
-Disable the Zoom → Notion Zap per [zapier-deprecation.md](zapier-deprecation.md).
+Disable the Zoom → Notion Zap per [zapier-deprecation.html](zapier-deprecation.html).
