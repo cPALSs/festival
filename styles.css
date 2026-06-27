@@ -19,6 +19,10 @@
   --notice-bg: rgba(154, 168, 188, 0.12);
   --tagline-bg: rgba(61, 214, 140, 0.12);
   --tagline-border: rgba(61, 214, 140, 0.45);
+  --sponsor-covered-bg: rgba(61, 214, 140, 0.12);
+  --sponsor-covered-border: rgba(61, 214, 140, 0.5);
+  --sponsor-open-bg: rgba(154, 168, 188, 0.08);
+  --sponsor-open-border: rgba(154, 168, 188, 0.45);
   --fab-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(74, 158, 255, 0.25);
   --fab-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 8px rgba(74, 158, 255, 0.35);
   --focus-ring: #fff;
@@ -44,6 +48,10 @@
   --notice-bg: rgba(92, 107, 128, 0.1);
   --tagline-bg: rgba(61, 214, 140, 0.14);
   --tagline-border: rgba(34, 160, 99, 0.45);
+  --sponsor-covered-bg: rgba(34, 160, 99, 0.12);
+  --sponsor-covered-border: rgba(34, 160, 99, 0.45);
+  --sponsor-open-bg: rgba(92, 107, 128, 0.08);
+  --sponsor-open-border: rgba(92, 107, 128, 0.35);
   --fab-shadow: 0 4px 16px rgba(15, 20, 25, 0.15), 0 2px 6px rgba(37, 99, 235, 0.2);
   --fab-shadow-hover: 0 6px 20px rgba(15, 20, 25, 0.2), 0 3px 8px rgba(37, 99, 235, 0.28);
   --focus-ring: #2563eb;
@@ -68,6 +76,10 @@
     --notice-bg: rgba(92, 107, 128, 0.1);
     --tagline-bg: rgba(61, 214, 140, 0.14);
     --tagline-border: rgba(34, 160, 99, 0.45);
+    --sponsor-covered-bg: rgba(34, 160, 99, 0.12);
+    --sponsor-covered-border: rgba(34, 160, 99, 0.45);
+    --sponsor-open-bg: rgba(92, 107, 128, 0.08);
+    --sponsor-open-border: rgba(92, 107, 128, 0.35);
     --fab-shadow: 0 4px 16px rgba(15, 20, 25, 0.15), 0 2px 6px rgba(37, 99, 235, 0.2);
     --fab-shadow-hover: 0 6px 20px rgba(15, 20, 25, 0.2), 0 3px 8px rgba(37, 99, 235, 0.28);
     --focus-ring: #2563eb;
@@ -443,6 +455,7 @@ select {
 
 .progress-metric-label {
   font-size: 0.75rem;
+  line-height: 1.3;
   color: var(--muted);
 }
 
@@ -694,6 +707,18 @@ select {
 .page.estimated-sponsors-on #modal-toggle-wrap {
   pointer-events: none;
   opacity: 0.55;
+}
+
+.page.estimated-sponsors-on .gift-card--sponsor-covered {
+  background: var(--sponsor-covered-bg);
+  border-color: var(--sponsor-covered-border);
+  border-width: 1.5px;
+}
+
+.page.estimated-sponsors-on .gift-card--sponsor-open {
+  background: var(--sponsor-open-bg);
+  border-color: var(--sponsor-open-border);
+  border-style: dashed;
 }
 
 .toggle-wrap {

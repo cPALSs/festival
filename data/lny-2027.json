@@ -5,7 +5,7 @@
     "dates": "Sat\u2013Sun mid-February 2027 (TBD) \u00b7 11 AM\u20135 PM",
     "mvpCap": 39940,
     "vendorRev100": 18200,
-    "registryFull": 78500,
+    "registryFull": 125790,
     "vendorSlots": 37,
     "attendance": 6000
   },
@@ -496,7 +496,7 @@
       "sortOrder": 11,
       "impactOrder": 12,
       "tagline": "Kids stage \u2014 short sets parents can actually sit through.",
-      "description": "Sac County Fair Kids Zone model \u2014 **30\u201345 min blocks, 2\u20133 sets per day** on the family stage (local magic, storytelling, puppetry, character participation). Participation beats spectacle; not a headliner stack. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Children's Village** (in-ground activities + anchor hosts) and **Tet Relay Cup** (HS club bracket \u2014 see tet_relay_cup).",
+      "description": "Sac County Fair Kids Zone model \u2014 **30\u201345 min blocks, 2\u20133 sets per day** on the family stage (local magic, storytelling, puppetry, character participation). Participation beats spectacle; not a headliner stack. Assumes baseline stage, PA, and sound engineers in core ops. Pair with **Children's Village** (in-ground activities + anchor hosts), **Youth Culture Day** (school multicultural rallies), and **Tet Relay Cup** (open-age relay bracket \u2014 see `tet_relay_cup`).",
       "benefits": [
         "Children's Show presented by [Sponsor]",
         "MC scripts + Facebook/Instagram feature",
@@ -530,15 +530,54 @@
       ]
     },
     {
+      "id": "youth_culture_day",
+      "name": "Youth Culture Day",
+      "emoji": "\ud83c\udf8c",
+      "amount": 3500,
+      "category": "registry",
+      "sortOrder": 12,
+      "impactOrder": 10,
+      "tagline": "Multicultural rallies \u2014 high schools take the stage together.",
+      "description": "**Youth Culture Day** \u2014 a **Sunday showcase block** for **EGUSD high school** dance crews, cultural clubs, and performance groups from **multiple schools** on one bill (2026 proof: Sheldon, Cosumnes Oaks, Florin VSA, etc.). Think **multicultural rally energy** \u2014 schools bring their communities, parents in the audience, MC introduces each group. **Separate product from Tet Relay Cup** (competition on grass, open-age brackets). College / campus orgs route to **Sac State APIDA LNY**, not this stage.",
+      "benefits": [
+        "Youth Culture Day presented by [Sponsor]",
+        "Facebook/Instagram feature + school tags on program grid",
+        "MC thank-you for participating schools",
+        "Listed on website weekend schedule"
+      ],
+      "lineItems": [
+        {
+          "label": "Stage block production + MC (school intros, run-of-show)",
+          "amount": 800
+        },
+        {
+          "label": "School liaison / registration coordination",
+          "amount": 600
+        },
+        {
+          "label": "Per-group hospitality + green-room supplies",
+          "amount": 400
+        },
+        {
+          "label": "Program grid + social assets (school-by-school)",
+          "amount": 500
+        },
+        {
+          "label": "Optional modest stipends / travel support (2\u20133 anchor groups)",
+          "amount": 1200
+        }
+      ]
+    },
+    {
       "id": "tet_relay_cup",
       "name": "Tet Relay Cup",
       "emoji": "\ud83c\udfc6",
       "amount": 3000,
       "category": "registry",
-      "sortOrder": 12,
+      "sortOrder": 13,
       "impactOrder": 11,
-      "tagline": "School club bracket tournament \u2014 East vs West finals, real prizes, sidelines that multiply.",
-      "description": "**Tet Relay Cup** \u2014 festival-run relay tournament on the grass corral beside Children's Village. **EGUSD high school clubs** register teams (VSA, Key Club, Chinese / Japanese / Korean clubs, Pacific Islander, Desi, and more) \u2014 **no dance performance required.** Clubs split into arbitrary **East** and **West** halves; single-elimination within each side; **final: East champion vs West champion.** When your club loses, you **ride the bracket** \u2014 join your division's carrier on the sideline; if your half wins the final, eliminated teams share a **division consolation** pool. Top prizes to champion and runner-up clubs; spirit/attire award; optional short halftime cultural dance. cPALSs runs games + MC \u2014 **no parent supervisor requirement.** College orgs route to Sac State APIDA LNY.",
+      "tagline": "Open-age relay bracket \u2014 clubs, leagues, and community teams on the grass.",
+      "description": "**Tet Relay Cup** \u2014 festival-run **relay tournament** on the grass corral beside Children's Village. **Not a youth-only product** \u2014 open **age brackets** (adult rec, parish teams, school clubs, service orgs). **2027 MVP:** one featured bracket (often HS-heavy); expand divisions as registration fills. Single-elimination heats, East/West or age pools, prizes to winning teams. **Youth Culture Day** (stage rallies) is a **separate registry block** \u2014 schools may do both. College org performance routes to Sac State APIDA LNY.",
       "benefits": [
         "Tet Relay Cup presented by [Sponsor]",
         "Facebook/Instagram feature + public bracket on website program",
@@ -572,8 +611,8 @@
       "category": "registry",
       "sortOrder": 13,
       "impactOrder": 13,
-      "tagline": "START HERE \u2014 shade, activities, anchor hosts; families regroup and kids do T\u1ebft.",
-      "description": "**Default family home base** \u2014 compact zone with shade, stroller corral, benches, and cultural **do** stations (lantern craft, red-envelope play, scavenger). **Anchor hosts** run repeat parent\u2013toddler sessions (bilingual sing-along, story circle \u2014 a person families already know, not an empty org tent). **Turnkey activations** for gyms/PTAs: partner forwards one email; festival runs the slot. **Family meetup corral** with labeled stations on the map. Adjacent to Tet Relay Cup corral. Pillar 4 relationship product \u2014 *place + time + something to do*. Not in MVP ops.",
+      "tagline": "Shade, activities, anchor hosts \u2014 families regroup and kids do T\u1ebft.",
+      "description": "**Family home base** \u2014 compact zone with shade, stroller corral, benches, and cultural **do** stations (lantern craft, red-envelope play, scavenger). **Anchor hosts** run repeat parent\u2013toddler sessions (bilingual sing-along, story circle \u2014 a person families already know, not an empty org tent). **Turnkey activations** for gyms/PTAs: partner forwards one email; festival runs the slot. **Family meetup corral** with labeled stations on the map. Adjacent to Tet Relay Cup corral. **Bounce house rentals** (vendor) and **owned inflatable carnival games** (deploy labor) are **separate registry blocks** \u2014 same **Children's Village** director when funded. Not in MVP ops.",
       "benefits": [
         "Children's Village presented by [Sponsor]",
         "website + Facebook/Instagram feature",
@@ -602,6 +641,74 @@
         },
         {
           "label": "Village zone lead + volunteer hospitality",
+          "amount": 300
+        }
+      ]
+    },
+    {
+      "id": "bounce_house_rentals",
+      "name": "Bounce House Rentals",
+      "emoji": "\ud83c\udff0",
+      "amount": 1950,
+      "category": "registry",
+      "sortOrder": 14,
+      "impactOrder": 14,
+      "tagline": "Rented bounce houses \u2014 vendor delivers, sets up, and hauls away.",
+      "description": "**Vendor rental only** \u2014 not the coalition-owned inflatable carnival games in storage. Party-rental company delivers bounce houses for the weekend, handles setup/teardown and cleaning, and takes them back. **Children's Village** director books the vendor and zone layout; **Foundation** director confirms **CGL covers inflatables** (or rider increment below) and collects **vendor COI** naming the coalition before go. Bounce houses typically **change insurance requirements** \u2014 do not unlock without Foundation sign-off.",
+      "benefits": [
+        "Bounce House Rentals presented by [Sponsor]",
+        "website + Facebook/Instagram feature",
+        "Named on play-zone signage + festival map"
+      ],
+      "lineItems": [
+        {
+          "label": "Bounce house rentals \u00d72 (weekend \u2014 delivery, setup, teardown, vendor clean)",
+          "amount": 1400
+        },
+        {
+          "label": "Safety mats / perimeter if not in rental",
+          "amount": 200
+        },
+        {
+          "label": "CGL review / rider increment for inflatables (Foundation confirms quote)",
+          "amount": 350
+        }
+      ]
+    },
+    {
+      "id": "inflatable_carnival_games",
+      "name": "Inflatable Carnival Games",
+      "emoji": "\ud83c\udfaf",
+      "amount": 1900,
+      "category": "registry",
+      "sortOrder": 15,
+      "impactOrder": 15,
+      "tagline": "Our 8-station carnival games \u2014 funded deploy labor, not a rental fee.",
+      "description": "cPALSs + VACOS **already own** the Magic Jump\u2013class **8-station inflatable games** bundle. This block pays **deploy cost only** \u2014 U-Haul trailer, setup/teardown crew (meals or hired hands), cleaning, **6K portable generator + weekend fuel** (not a site-scale rental \u2014 coordinate with Power & Lighting if sharing), and **storage amortization** (U-Haul unit rent \u00f7 3 flagship events). **Not** bounce houses (separate rental block). **Children's Village** director runs the zone. See [Coalition Assets \u2014 Inflatable Carnival Games](../../../Corporate%20Administration/Coalition%20Assets%20-%20Inflatable%20Carnival%20Games.md).",
+      "benefits": [
+        "Inflatable Carnival Games presented by [Sponsor]",
+        "website + Facebook/Instagram feature",
+        "Named on game-station signage + festival map"
+      ],
+      "lineItems": [
+        {
+          "label": "U-Haul trailer \u2014 pickup, return, mileage",
+          "amount": 350
+        },
+        {
+          "label": "Setup + teardown labor (hired hands or volunteer crew meals)",
+          "amount": 700
+        },
+        {
+          "label": "Post-event cleaning \u2014 stations + debris",
+          "amount": 250
+        },
+        {
+          "label": "6K portable generator + weekend fuel (blower infrastructure)",
+          "amount": 150
+        },
+        {
+          "label": "Storage amortization \u2014 U-Haul unit share (\u00f7 3 flagships; Finance confirms)",
           "amount": 300
         }
       ]

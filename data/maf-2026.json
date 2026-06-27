@@ -5,7 +5,7 @@
     "dates": "Fri Sep 25 4\u20138 PM + Sat Sep 26 11 AM\u20138 PM",
     "mvpCap": 10580,
     "vendorRev100": 10575,
-    "registryFull": 27320,
+    "registryFull": 31170,
     "vendorSlots": 28,
     "attendance": 2500
   },
@@ -212,8 +212,8 @@
       "category": "registry",
       "sortOrder": 3,
       "impactOrder": 8,
-      "tagline": "START HERE \u2014 shade, crafts, anchor hosts; families regroup before the procession.",
-      "description": "**Family home base** @ Derr-Okamoto \u2014 shade, stroller-friendly seating, cultural **do** stations, and a **family meetup corral** on the map. **Anchor host** runs repeat parent\u2013toddler sessions (sing-along, story circle). **Turnkey activations** for gyms/PTAs \u2014 festival runs the craft slot; partner forwards one email. Kids make lanterns here before joining the **Lantern Procession** at dusk.",
+      "tagline": "Shade, crafts, anchor hosts \u2014 families regroup before the procession.",
+      "description": "**Family home base** @ Derr-Okamoto \u2014 shade, stroller-friendly seating, cultural **do** stations, and a **family meetup corral** on the map. **Anchor host** runs repeat parent\u2013toddler sessions (sing-along, story circle). **Turnkey activations** for gyms/PTAs \u2014 festival runs the craft slot; partner forwards one email. Kids make lanterns here before joining the **Lantern Procession** at dusk. **Bounce house rentals** and **owned inflatable carnival games** (deploy labor) are separate registry blocks \u2014 same **Children's Village** director when funded.",
       "benefits": [
         "Children's Village presented by [Sponsor]",
         "website + Facebook/Instagram feature",
@@ -247,13 +247,81 @@
       ]
     },
     {
+      "id": "bounce_house_rentals",
+      "name": "Bounce House Rentals",
+      "emoji": "\ud83c\udff0",
+      "amount": 1950,
+      "category": "registry",
+      "sortOrder": 4,
+      "impactOrder": 7,
+      "tagline": "Rented bounce houses \u2014 vendor delivers, sets up, and hauls away.",
+      "description": "**Vendor rental only** \u2014 not the coalition-owned inflatable carnival games in storage. Party-rental company delivers bounce houses for Saturday, handles setup/teardown and cleaning, and takes them back. **Children's Village** director books the vendor and zone layout; **Foundation** director confirms **CGL covers inflatables** (or rider increment below) and collects **vendor COI** naming the coalition before go. Bounce houses typically **change insurance requirements** \u2014 do not unlock without Foundation sign-off.",
+      "benefits": [
+        "Bounce House Rentals presented by [Sponsor]",
+        "website + Facebook/Instagram feature",
+        "Named on play-zone signage + festival map"
+      ],
+      "lineItems": [
+        {
+          "label": "Bounce house rentals \u00d72 (Sat \u2014 delivery, setup, teardown, vendor clean)",
+          "amount": 1400
+        },
+        {
+          "label": "Safety mats / perimeter if not in rental",
+          "amount": 200
+        },
+        {
+          "label": "CGL review / rider increment for inflatables (Foundation confirms quote)",
+          "amount": 350
+        }
+      ]
+    },
+    {
+      "id": "inflatable_carnival_games",
+      "name": "Inflatable Carnival Games",
+      "emoji": "\ud83c\udfaf",
+      "amount": 1900,
+      "category": "registry",
+      "sortOrder": 5,
+      "impactOrder": 6,
+      "tagline": "Our 8-station carnival games \u2014 funded deploy labor, not a rental fee.",
+      "description": "cPALSs + VACOS **already own** the Magic Jump\u2013class **8-station inflatable games** bundle ([asset reference](https://www.magicjump.com/blog/inflatable-carnival-games/)). This block pays **deploy cost only** \u2014 U-Haul trailer, setup/teardown crew (meals or hired hands), cleaning, **6K portable generator + weekend fuel** (not a site-scale rental \u2014 coordinate with Power & Lighting if sharing), and **storage amortization** (U-Haul unit rent \u00f7 3 flagship events). **Not** bounce houses (those are a separate rental block). **Children's Village** director runs the zone. See [Coalition Assets \u2014 Inflatable Carnival Games](../../../Corporate%20Administration/Coalition%20Assets%20-%20Inflatable%20Carnival%20Games.md).",
+      "benefits": [
+        "Inflatable Carnival Games presented by [Sponsor]",
+        "website + Facebook/Instagram feature",
+        "Named on game-station signage + festival map"
+      ],
+      "lineItems": [
+        {
+          "label": "U-Haul trailer \u2014 pickup, return, mileage",
+          "amount": 350
+        },
+        {
+          "label": "Setup + teardown labor (hired hands or volunteer crew meals)",
+          "amount": 700
+        },
+        {
+          "label": "Post-event cleaning \u2014 stations + debris",
+          "amount": 250
+        },
+        {
+          "label": "6K portable generator + weekend fuel (blower infrastructure)",
+          "amount": 150
+        },
+        {
+          "label": "Storage amortization \u2014 U-Haul unit share (\u00f7 3 flagships; Finance confirms)",
+          "amount": 300
+        }
+      ]
+    },
+    {
       "id": "honor_elders",
       "name": "Honor our Elders",
       "emoji": "\ud83c\udf75",
       "amount": 2000,
       "category": "registry",
-      "sortOrder": 4,
-      "impactOrder": 6,
+      "sortOrder": 6,
+      "impactOrder": 5,
       "tagline": "Grandparents watch the procession in comfort \u2014 an MAF value made visible.",
       "description": "A restful zone with shade tent, seating, and elder tea hospitality.",
       "benefits": [
@@ -277,8 +345,8 @@
       "emoji": "\u2728",
       "amount": 2580,
       "category": "registry",
-      "sortOrder": 5,
-      "impactOrder": 7,
+      "sortOrder": 7,
+      "impactOrder": 4,
       "tagline": "Trees, stage, and night market lit for MAF \u2014 the park glows at dusk.",
       "description": "Functional power and light for stage + night market, plus tree uplights, string lights, and stage flowers \u2014 Mid-Autumn Festival atmosphere before the procession.",
       "benefits": [
@@ -310,8 +378,8 @@
       "emoji": "\ud83d\udce3",
       "amount": 800,
       "category": "registry",
-      "sortOrder": 6,
-      "impactOrder": 4,
+      "sortOrder": 8,
+      "impactOrder": 3,
       "tagline": "Spread the Word presented by [Sponsor] \u2014 reach families who have not found us yet.",
       "description": "Paid Meta / Instagram and boosted posts \u2014 media sponsorship, not a petty-cash ask.",
       "benefits": [
@@ -331,8 +399,8 @@
       "name": "Festival Stage+",
       "amount": 2875,
       "category": "registry",
-      "sortOrder": 7,
-      "impactOrder": 5,
+      "sortOrder": 9,
+      "impactOrder": 2,
       "tagline": "Saturday stage at full production quality.",
       "description": "Upgrade from MVP playlist-only to concert-quality outdoor sound and basic stage lighting. Core stage ops are vendor-funded; this block adds production quality for Saturday programming.",
       "benefits": [
@@ -350,8 +418,8 @@
       "name": "Safe Festival+",
       "amount": 1120,
       "category": "registry",
-      "sortOrder": 8,
-      "impactOrder": 3,
+      "sortOrder": 10,
+      "impactOrder": 1,
       "tagline": "Extra guards Fri/Sat",
       "description": "Additional security beyond the MVP guard baseline. Core security is vendor-funded; this block adds peak-hour coverage.",
       "benefits": [
@@ -369,8 +437,8 @@
       "name": "Festival Amenities+",
       "amount": 545,
       "category": "registry",
-      "sortOrder": 9,
-      "impactOrder": 2,
+      "sortOrder": 11,
+      "impactOrder": 0,
       "tagline": "Additional restrooms/sinks",
       "description": "Extra restroom capacity for peak Sat hours. Core amenities are vendor-funded; this block adds comfort capacity.",
       "benefits": [
