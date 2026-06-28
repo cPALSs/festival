@@ -26,7 +26,7 @@ Festival Season Network is a **coordination library**, not an event owner. These
 |------|------|-------------------------|
 | **R0 — Warm-up** | Small gatherings, church fairs, chamber activations | Iu Mien New Year (Jan 24); ARI celebration (Feb 6) |
 | **R1 — Bridge** | Cluster events one week before capstone; cross-promote, don't compete on product | Feb 7 cluster: Creative Space, SCNCCA, Arden Fair × Chamber |
-| **R2 — Capstone** | The flagship weekend the season is organized around | EGLNY — cPALSs leads, with VACOS / NVCC (Feb 14–15) |
+| **R2 — Capstone** | The flagship weekend the season is organized around | EGLNY — VACOS, cPALSs, NVCC (cPALSs leads; Feb 14–15) |
 | **R3 — Afterglow** | Post-capstone dinners, concerts, parish fairs, twin-season bridges | Rice Bowl Tết dinner (Feb 20); Cache Creek concert (Mar 7); Mardi Gras parades (late Feb–Mar) |
 
 **Roll-up mistakes to avoid:**
@@ -125,9 +125,9 @@ These principles do **not** require a central membership org or enforcement body
 |---------------------|-------------------------|
 | Shared research, calendars, schemas, playbooks | An event producer or permit holder |
 | Forkable assets any organizer can use | A brand mandate ("you must use our flyer") |
-| A place to document **ecosystem harmony** | A replacement for existing coalitions (cPALSs, VACOS, NVCC, chambers, parishes) |
+| A place to document **ecosystem harmony** | A replacement for existing coalitions (VACOS, cPALSs, NVCC, chambers, parishes) |
 
-**cPALSs** leads EGLNY; **VACOS** leads MAF — the coalition capstones within **Lunar New Year & Autumn Festivals** — both with NVCC and coalition partners. **Festival Season Network** stays neutral: the same roll-up logic should work for California Is My Home, SCNCCA, Creative Space, or a new anchor host without adopting cPALSs governance.
+**VACOS, cPALSs, and NVCC** co-host the coalition capstones within **Lunar New Year & Autumn Festivals** — **cPALSs** leads EGLNY; **VACOS** leads MAF — with other coalition partners. **Festival Season Network** stays neutral: the same roll-up logic should work for California Is My Home, SCNCCA, Creative Space, or a new anchor host without adopting cPALSs governance.
 
 Convener role in practice:
 

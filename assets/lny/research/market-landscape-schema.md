@@ -38,7 +38,7 @@ Year tabs are `FILTER` formulas; they refresh when **All** changes. Do not edit 
 | **event_id** | Stable slug — e.g. `cpalss-lny-capstone`, `scncca-lny`, `ca-is-my-home-mid-autumn` |
 | **Season year** | Calendar year — `2026`, `2027`, or `reference` |
 | **Row status** | `planning` · `confirmed` · `held` · `historical` · `cancelled` · `reference` |
-| Host / Organizer | Producing org — **lead org first** (cPALSs for EGLNY, VACOS for MAF) |
+| Host / Organizer | Coalition hosts — **VACOS, cPALSs, NVCC** (always all three, that order; cPALSs leads EGLNY, VACOS leads MAF) |
 | City | Primary city |
 | Venue | Location detail |
 | **Dates** | **This occurrence only** — lead with `YYYY-MM-DD`; year tabs sort on this column |
@@ -51,7 +51,7 @@ Year tabs are `FILTER` formulas; they refresh when **All** changes. Do not edit 
 | Vietnamese focus | Yes / Partial / No |
 | Kids / family center | Yes / Partial / No |
 | Parade / spectacle moment | Yes / Partial / No — parade, lion dance, second line, mall stage |
-| LNY overlap | Relationship to cPALSs/NVCC/VACOS capstone — see enums below |
+| LNY overlap | Relationship to VACOS/cPALSs/NVCC capstone — see enums below |
 | Notes for reviewers | Steering context, honesty gaps, ecosystem notes |
 | Source URL | Primary citation |
 | Data gap | What is still unknown or unverified |

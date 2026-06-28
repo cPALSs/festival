@@ -6,7 +6,7 @@ season: lny
 
 # Lunar New Year Season — Festival Network
 
-Neutral coordination assets for the **Greater Sacramento LNY season** (January–March), centered on the cPALSs/VACOS/NVCC capstone weekend.
+Neutral coordination assets for the **Greater Sacramento LNY season** (January–March), centered on the VACOS/cPALSs/NVCC capstone weekend.
 
 ## Live research
 

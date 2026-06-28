@@ -40,7 +40,7 @@ status: draft
 | Feb 7 | The Creative Space LNY | Old Town Plaza |
 | Feb 7 | SCNCCA Festival | Luther Burbank HS |
 | Feb 7 | Arden Fair × SacAsian Chamber | Arden Fair |
-| **Feb 14–15** | **Lunar New Year Tết Festival & Parade** (cPALSs/VACOS/NVCC) | **Elk Grove Regional Park** |
+| **Feb 14–15** | **Lunar New Year Tết Festival & Parade** (VACOS/cPALSs/NVCC) | **Elk Grove Regional Park** |
 | Feb 14 | Spring Festival Street Fair | District56 |
 | Feb 14 | Chinese New Year Celebration | Locke Boarding House |
 | Feb 14 | Hội Chợ Tết | Vietnamese Martyrs Church |

@@ -78,7 +78,7 @@ When listing both seasons (tables, navigation, links), always put **Lunar New Ye
 
 **Competition.** Naming another event is factual, not hostile. "California Is My Home runs a Mid-Autumn fair the same month" — not "competitor threat."
 
-**Coalition events.** EGLNY and MAF are coalition capstones within Lunar New Year & Autumn Festivals — not the brand of this library. Name the **lead** org first in **Host / Organizer**: **VACOS** leads Mid-Autumn; **cPALSs** leads EGLNY (with VACOS / NVCC as partners). Say "the Elk Grove capstone" when you do not need org names.
+**Coalition events.** EGLNY and MAF are coalition capstones within Lunar New Year & Autumn Festivals — not the brand of this library. List coalition hosts together in **Host / Organizer**: **VACOS, cPALSs, NVCC** (that order, always all three). **VACOS** leads Mid-Autumn; **cPALSs** leads EGLNY. Say "the Elk Grove capstone" when you do not need org names.
 
 ---
 

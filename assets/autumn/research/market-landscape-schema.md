@@ -38,7 +38,7 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 | **Confidence source** | `Steward confirmed` · `Public listing` · `Organizer conversation (pre-public)` · `Coalition internal` |
 | **Confirmed by** | Calendar steward name when human-confirmed |
 | **Confirmed date** | `YYYY-MM-DD` when steward confirmed |
-| Host / Organizer | Producing org — **lead org first** (VACOS for MAF, cPALSs for EGLNY) |
+| Host / Organizer | Coalition hosts — **VACOS, cPALSs, NVCC** (always all three, that order; VACOS leads MAF, cPALSs leads EGLNY) |
 | City | Primary city |
 | Venue | Location detail |
 | **Dates** | **This occurrence only** — lead with `YYYY-MM-DD` (year tabs sort on this column); add day/time after |
@@ -51,7 +51,7 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 | Vietnamese focus | Yes / Partial / No |
 | Kids / family center | Yes / Partial / No |
 | Lantern moment | Yes / Partial / No — procession, release, making |
-| MAF overlap | Relationship to cPALSs/NVCC/VACOS MAF — `Our event`, `Direct comp`, `Substitute`, `Reference only` |
+| MAF overlap | Relationship to VACOS/cPALSs/NVCC MAF — `Our event`, `Direct comp`, `Substitute`, `Reference only` |
 | Notes for reviewers | Steering context, honesty gaps, ecosystem notes |
 | Source URL | Primary citation |
 | Data gap | What is still unknown or unverified |

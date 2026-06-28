@@ -12,7 +12,7 @@ source: Coalition steering discussion, June 2026
 
 ## Context
 
-Elk Grove runs two Lane A Mid-Autumn producers: **California Is My Home** @ District 56 (one-night fair, ~2–3K) and **cPALSs/VACOS** rebuild @ Derr-Okamoto (lunar weekend, 1.5-day). CAIMH packs the Avenue stage; District 56 campus — especially **The Preserve** — is mostly idle during their fair.
+Elk Grove runs two Lane A Mid-Autumn producers: **California Is My Home** @ District 56 (one-night fair, ~2–3K) and **VACOS/cPALSs/NVCC** rebuild @ Derr-Okamoto (lunar weekend, 1.5-day). CAIMH packs the Avenue stage; District 56 campus — especially **The Preserve** — is mostly idle during their fair.
 
 ## What happened
 

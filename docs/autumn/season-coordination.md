@@ -22,7 +22,7 @@ Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts,
 | **Sep 19** (tent.) | CAAPS Autumn Lantern Festival | Sacramento region |
 | Late Sep | Sac State Harvest Moon / APIDA Mid-Autumn | Sacramento State campus |
 | Late Sep | Riverside UMC community fair | Parish / neighborhood |
-| **Sep 25–26** | **VACOS/cPALSs MAF** | **Derr-Okamoto Park, Elk Grove** |
+| **Sep 25–26** | **VACOS/cPALSs/NVCC MAF** | **Derr-Okamoto Park, Elk Grove** |
 | Oct 3–4 | Giant Pumpkin Festival | Elk Grove Regional Park |
 | Oct 4–5 (est.) | SF Supermarket Mid-Autumn activation | Rancho Cordova |
 | Nov (est.) | Creative Space Autumn Craft Fair | SASF, Elk Grove |
@@ -56,7 +56,7 @@ I wouldn't try to merge everything into one mega-festival. I wouldn't chase the 
 | California Is My Home | Elk Grove producers | Parallel fair — vendors, stage, local press |
 | Sac State (APIDA + JSSCC) | Campus / Gen Z | Different audience — heritage + mainstream on campus, not the family park product |
 | **CAAPS** (Sep 19 est.) | Spectacle / night market | Hoi An install — different product, different weekend than family capstone |
-| **VACOS/cPALSs MAF** | **Elk Grove families** | **Capstone — lantern contest, procession, regional haul-in moment** |
+| **VACOS/cPALSs/NVCC MAF** | **Elk Grove families** | **Capstone — lantern contest, procession, regional haul-in moment** |
 | Giant Pumpkin Festival | Civic / regional fall | October destination — pumpkin weigh-off; room for a lantern exhibition after MAF |
 | SF Supermarket | Retail / plaza | Foot traffic — mooncakes, kits, lantern museum for entries the park can't store |
 | Creative Space @ SASF | Craft / holiday shopping | Bookend — pre-Christmas makers, not moon programming |
@@ -85,7 +85,7 @@ The line I keep coming back to: **If your vendors and core team can repeat next 
 
 ## Get involved
 
-**VACOS/cPALSs MAF 2026** is Sep 25–26 at Derr-Okamoto Park — run by VACOS and cPALSs, with cPALSs also producing Lunar New Year in Elk Grove.
+**VACOS/cPALSs/NVCC MAF 2026** is Sep 25–26 at Derr-Okamoto Park — hosted by VACOS, cPALSs, and NVCC, with cPALSs also producing Lunar New Year in Elk Grove.
 
 On this calendar and want to compare lanes? [contact@cpalss.com](mailto:contact@cpalss.com)
 
