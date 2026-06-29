@@ -335,18 +335,23 @@
   function renderRoleCard(role) {
     const title = role.emoji ? `${role.emoji} ${role.title}` : role.title;
     const phase2 = role.phase2 ? " phase2" : "";
-    let body = "";
+    let body = "<dl>";
 
     if (role.experience) {
-      body += `<dl><dt>What guests experience</dt><dd>${escapeHtml(role.experience)}</dd>`;
-      body += `<dt>You'd own</dt><dd>${escapeHtml(role.own)}</dd>`;
-      if (role.fit) body += `<dt>Good fit if you</dt><dd>${escapeHtml(role.fit)}</dd>`;
-      body += "</dl>";
-    } else {
-      body += `<dl><dt>You'd own</dt><dd>${escapeHtml(role.own)}</dd>`;
-      if (role.fit) body += `<dt>Good fit if you</dt><dd>${escapeHtml(role.fit)}</dd>`;
-      body += "</dl>";
+      body += `<dt>What guests experience</dt><dd>${escapeHtml(role.experience)}</dd>`;
     }
+    if (role.test) {
+      body += `<dt>You'd test</dt><dd>${escapeHtml(role.test)}</dd>`;
+    }
+    const deliverable = role.ship ?? role.own;
+    if (deliverable) {
+      body += `<dt>You'd ship</dt><dd>${escapeHtml(deliverable)}</dd>`;
+    }
+    if (role.get) {
+      body += `<dt>You'd get</dt><dd>${escapeHtml(role.get)}</dd>`;
+    }
+    if (role.fit) body += `<dt>Good fit if you</dt><dd>${escapeHtml(role.fit)}</dd>`;
+    body += "</dl>";
 
     const note = role.note ? `<p class="role-note">${escapeHtml(role.note)}</p>` : "";
 

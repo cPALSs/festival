@@ -15,9 +15,9 @@
   },
   "hero": {
     "headline": "Run one room of the Mid-Autumn party",
-    "intro": "Mid-Autumn Festival returns Sep 25–26 at Derr-Okamoto Park — free admission, Friday night market, Saturday festival, lantern procession at dusk. Vendor fees fund the essentials. Sponsors unlock the magic.",
+    "intro": "Mid-Autumn Festival returns Sep 25–26 at Derr-Okamoto Park — free admission, Friday night market, Saturday festival, lantern procession at dusk.",
     "subhead": "Real families, real constraints — pick the challenge you want to take on.",
-    "body": "Co-chairs already hold permits, site, and vendor baseline — and bring fintech-style data and automation thinking plus an open-source ethos to nonprofit festival work. Nineteen product lanes are open: ship one module, document what worked, and contribute forkable playbooks on Festival Season Network."
+    "body": "Co-chairs already hold permits, site, and vendor baseline — and bring fintech-style data and automation thinking plus an open-source ethos to nonprofit festival work: automate what repeats, improve quality, publish playbooks others can fork. Nineteen product lanes are open — each is a live testbed: ship one module, document what worked, and contribute to open best practice on Festival Season Network."
   },
   "cta": {
     "primaryLabel": "Claim a lane on Idealist",
@@ -62,34 +62,40 @@
       "roles": [
         {
           "title": "Finance & Administration Director",
-          "own": "Budget actuals current · service-vendor bills paid · Eventeny reconciliation and deposit closeout by October",
+          "test": "How can one keep festival money honest through a live event weekend — booth collections, county permit pass-through, and closeout under real pressure?",
+          "ship": "Budget actuals current · service-vendor bills paid · Eventeny reconciliation and deposit closeout by October",
           "fit": "Are detail-oriented and comfortable tracking money in and out"
         },
         {
           "title": "Foundation Director",
-          "own": "Insurance, CSD permit, ops tents, and contingency signed off before load-in",
+          "test": "How can one build a solid base of operations so every other lane can play?",
+          "ship": "Insurance, CSD permit, ops tents, and contingency signed off before load-in",
           "fit": "Like building the platform others run on — checklists, deadlines, and make-it-official work",
           "note": "Bounce house rentals require CGL confirmation (or rider) and vendor COI before go-live."
         },
         {
           "title": "Operations & Logistics Director",
-          "own": "Site map, load-in/out plan, and day-of ops radio for Fri market + Sat festival",
+          "test": "How can one choreograph everyone so they know how to get to the site and load-in without causing a traffic jam?",
+          "ship": "Site map, load-in/out plan, and day-of ops radio for Fri market + Sat festival",
           "fit": "Love maps, timelines, and where does the truck go?"
         },
         {
           "title": "Security Director",
-          "own": "Guard schedule scaled to budget, contingency plan, and Golden Protection liaison",
-          "fit": "Are calm under pressure; can right-size coverage and liaise with Golden Protection"
+          "test": "How can one ensure safety for everyone on a sliding scale of available funds — and plan for contingency conditions?",
+          "ship": "Guard schedule scaled to budget, contingency plan, and Golden Protection liaison (Fri night + Sat festival hours)",
+          "fit": "Are calm under pressure; can right-size coverage to the budget, plan for what-if scenarios, and liaise with Golden Protection"
         },
         {
           "title": "Amenities Director",
-          "own": "Restrooms, ADA unit, hand-wash placement, and porter service locked before gates open",
+          "test": "How can one keep guests comfortable so they can stay as long as they want?",
+          "ship": "Restrooms, ADA unit, hand-wash placement, and porter service locked before gates open",
           "fit": "Think about guest comfort, site flow, and keeping units stocked through Sat close"
         },
         {
           "title": "Power & Lighting Director",
-          "own": "Generators and light towers installed, stage power and electrical zones live",
-          "fit": "Understand power math and safety — generators, light towers, load planning, diesel logistics"
+          "test": "How can one power the park safely — load math, generators, electrical zones, and stage hookups dialed before gates open?",
+          "ship": "Generators and light towers installed, stage power and electrical zones live — capacity and hookups cleared for Light Up the Park",
+          "fit": "Understand power math and safety — generators, light towers, load planning, diesel logistics; coordinate with Light Up on decorative loads"
         }
       ]
     },
@@ -102,50 +108,58 @@
         {
           "title": "Stage Director",
           "experience": "Stage tent, portable sound, lion dance",
-          "own": "Stage tent, sound, and Saturday programming incl. lion dance",
+          "test": "How can one ship an MVP stage stack — tent, portable sound, lion dance — on a community budget?",
+          "ship": "Stage tent, sound, and Saturday programming incl. lion dance",
           "fit": "Have production or AV experience (helpful, not required)"
         },
         {
           "title": "Program & Entertainment Director",
-          "experience": "Full Saturday run-of-show — talent, MC, sponsor and host moments, lion dance",
-          "own": "Saturday run-of-show, MC scripts, and talent cues locked with Stage Director before event week",
-          "fit": "Love show flow for a family crowd and keeping talent on schedule"
+          "experience": "Full Saturday run-of-show — talent, MC, sponsor and host moments, lion dance, and show-director modules slotted into the master clock",
+          "test": "How can one keep the public entertained while keeping entertainment participants on time?",
+          "ship": "Saturday run-of-show, MC scripts, and talent cues locked with Stage Director before event week",
+          "get": "Network with talent — MCs, performers, and family entertainers you'll coordinate all season",
+          "fit": "Love show flow for a family crowd, building relationships with performers, and keeping talent on schedule without losing the audience — ready to be the programming foundation show directors build on"
         },
         {
           "title": "Lantern Procession Director",
           "emoji": "🏮",
           "experience": "Children with LED lanterns, music, dusk walk through the park",
-          "own": "One walk-through on Sat evening with families through the park",
+          "test": "How can one create a moment families — especially children — will remember?",
+          "ship": "One walk-through on Sat evening with families through the park",
           "fit": "Love ritual moments and can stage volunteers without micromanaging"
         },
         {
           "title": "Children's Village Director",
           "emoji": "🧒",
-          "experience": "Shade, crafts, family meetup before the procession — plus bounce houses when sponsors fund those blocks",
-          "own": "Children's Village open Sat with anchor hosts and crafts",
-          "fit": "Think like a school picnic organizer — stations and anchor hosts, not empty tents"
+          "experience": "Shade, crafts, family meetup before the procession — plus bounce houses and inflatable carnival games when sponsors fund those blocks",
+          "test": "How can one keep children entertained through interaction, rather than walk-and-see — without it turning into chaos?",
+          "ship": "Children's Village open Sat with anchor hosts and crafts · bounce house rentals (vendor COI + Foundation CGL sign-off) · inflatable carnival games when sponsors fund those blocks",
+          "fit": "Think like a school picnic organizer — do stations and anchor hosts, not empty tents to walk past"
         },
         {
           "title": "Children's Show Director",
           "emoji": "🎭",
           "experience": "Short Saturday stage sets — magic, storytelling, puppetry",
-          "own": "Talent booked and children's sets run-of-show handed to Program & Entertainment Director before event week",
-          "fit": "Have booked youth or family entertainment before (helpful, not required)"
+          "test": "How can one book and stage family sets — magic, storytelling, puppetry — that hold kids' attention in 15–20 minute blocks?",
+          "ship": "Talent booked and children's sets run-of-show handed to Program & Entertainment Director before event week",
+          "fit": "Have booked youth or family entertainment before (helpful, not required) — you own a show module; Program owns the master clock"
         },
         {
           "title": "Honor our Elders Director",
           "emoji": "🍵",
-          "experience": "Shade, seating, and tea hospitality for elders and anyone who deserves a warm welcome",
-          "own": "Shade tent, seating, and elder tea station staffed and welcoming before Sat peak",
-          "fit": "Understand hospitality as respect — Mid-Autumn is for honoring elders",
+          "experience": "Shade, seating, and tea hospitality for elders — grandparents with families, and anyone who came on their own who deserves a warm welcome",
+          "test": "How can one offer tea hospitality so every elder feels honored — not only grandparents in groups, but also someone who showed up alone?",
+          "ship": "Shade tent, seating, and elder tea station staffed and welcoming before Sat peak",
+          "fit": "Understand hospitality as respect — Mid-Autumn is for honoring elders, whoever walks in",
           "note": "Director: Raul Armenta · Members welcome — inquire to join the committee"
         },
         {
           "title": "Light Up the Park Director",
           "emoji": "✨",
           "experience": "Dusk atmosphere — tree uplights, string lights, stage flowers",
-          "own": "Decorative lighting designed, installed, and live for procession hour",
-          "fit": "Have an eye for atmosphere and hands-on setup — coordinate loads with Power & Lighting"
+          "test": "How can one design and install the park's dusk atmosphere — uplights, string lights, stage flowers — so the vibes land for procession hour?",
+          "ship": "Decorative lighting designed, installed, and live for procession hour — loads and hookups coordinated with Power & Lighting",
+          "fit": "Have an eye for atmosphere and hands-on setup — vibe design and decorative rigging; Power installs generators and light towers"
         }
       ]
     },
@@ -157,32 +171,38 @@
       "roles": [
         {
           "title": "Sponsorship Director",
-          "experience": "Registry stories funded on Build the Festival — lantern procession, children's programming, Honor our Elders, and site lighting",
-          "own": "Pipeline active, registry asks out, sponsor deliverables tracked through event weekend",
-          "fit": "Think in win-win-win — guests, producers, and sponsors all grow",
+          "experience": "Registry stories funded on Build the Festival — lantern procession, children's programming, Honor our Elders, and site lighting unlock when sponsors claim a block",
+          "test": "How can one create win-win-win situations — great guest experiences, producers who make it happen, and sponsors growing their business?",
+          "ship": "Pipeline active, registry asks out, sponsor deliverables tracked through event weekend",
+          "get": "Business development network — coalition merchants and regional sponsors",
+          "fit": "Think in win-win-win — guests get memorable experiences, producers get resources to ship them, sponsors get real business growth",
           "note": "Director: Tido Hoang · Member: Vivian Vu · Members welcome"
         },
         {
           "title": "Marketing & Communications Director",
           "experience": "Families find the festival — save-the-dates, registry unlock posts, week-of rally",
-          "own": "Email and social live through event week · outreach coordinated with Sponsorship",
-          "fit": "Think in two-way comms — reach families where they are, and listen for next season",
+          "test": "How can one create the most effective approach for getting the word out — and gathering public feedback that feeds into the design of future events?",
+          "ship": "Email and social live through event week · outreach coordinated with Sponsorship · public feedback captured and routed to lane post-mortems and next-season design",
+          "fit": "Think in two-way comms — reach families where they are, and listen to what they tell you for the next event",
           "note": "Director: Ellie King · Members welcome"
         },
         {
           "title": "Vendor Operations Director",
-          "own": "Eventeny live — applications processed, category caps enforced, county permit pass-through, waitlist through event weekend",
-          "fit": "Care about food-market economics and guest experience — curated composition, fair process"
+          "test": "How can one create a winning balance of vendor profitability and guest experience — families looking for great tastes?",
+          "ship": "Eventeny live — applications processed, category caps enforced, county permit pass-through, waitlist through event weekend",
+          "fit": "Care about food-market economics and guest experience — curated composition, fair process, comfortable saying no when a category is full"
         },
         {
           "title": "Volunteers Director",
-          "own": "Recruitment, shifts, waivers, and appreciation — with contractor-backed fallback when critical slots won't fill",
-          "fit": "Think about volunteer experience and recognition — honest shifts, clear roles"
+          "test": "How can one create a great experience for volunteers — and help them see the value of their contributions?",
+          "ship": "Recruitment, shifts, waivers, and appreciation — executed by shift leads and day-of crew, with a contractor-backed fallback plan when critical slots won't fill",
+          "fit": "Think about volunteer experience and recognition — honest shifts, clear roles, appreciation that shows people their work mattered"
         },
         {
           "title": "Partnerships & Grants Director",
-          "own": "Community partnership map; CCSD liaison, cross-promo allies, grant language and renewals",
-          "fit": "Think in mutual benefit across the local ecosystem — institutional relationships and grant language"
+          "test": "How can one position MAF as a pillar of the community-at-large — and build mutually beneficial relationships with every organization around it?",
+          "ship": "Community partnership map; CCSD liaison, cross-promo allies (e.g. Giant Pumpkin), grant language and renewals; outreach log separating confirmed partners from exploratory threads; festival design advisory — when a grant opens a door we hadn't considered, rough-shape the idea on the Build the Festival gift registry until a lane director owns and details it",
+          "fit": "Think in mutual benefit across the local ecosystem — not just sponsorship asks; comfortable building institutional relationships and advising on festival design; can give grant-born ideas basic registry shape before handing off to a lane director"
         }
       ]
     }
@@ -191,10 +211,10 @@
     "title": "Sponsor unlocks — Phase 2",
     "intro": "These lanes activate when sponsors fund the matching Build the Festival gift. Plan with the base lane lead in the meantime; hold the vision until the block unlocks.",
     "roles": [
-      "Stage+ Director — Concert-quality sound and basic stage lights beyond MVP",
-      "Security+ Director — Guards at peak hours when sponsors fund the block",
-      "Amenities+ Director — Scale restrooms and sinks for a busy Saturday crowd",
-      "Spread the Word Director — Paid Meta / Instagram reach that fills the park"
+      "Stage+ Director — How can one upgrade to concert-quality sound and basic stage lights beyond MVP?",
+      "Security+ Director — How can one add guards at peak hours when sponsors fund the block?",
+      "Amenities+ Director — How can one scale restrooms and sinks for a busy Saturday crowd?",
+      "Spread the Word Director — How can one turn sponsor dollars into paid Meta / Instagram reach that fills the park?"
     ],
     "registryHref": "build/?festival=maf2026"
   },
