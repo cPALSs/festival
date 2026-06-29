@@ -167,7 +167,7 @@
       { id: "home", label: "Home", href: `${prefix}index.html` },
       { id: "about", label: "About", href: `${prefix}about.html` },
       { id: "team", label: "Team", href: `${prefix}team.html` },
-      { id: "build", label: "Build the Festival", href: `${prefix}build/?festival=maf2026` },
+      { id: "build", label: "Build the Festival", href: `${prefix}build/` },
     ];
   }
 

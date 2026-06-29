@@ -23,7 +23,7 @@
     "primaryLabel": "Claim a lane on Idealist",
     "primaryHref": "https://ideali.st/h9P2PJ",
     "buildLabel": "Build the Festival",
-    "buildHref": "build/?festival=maf2026"
+    "buildHref": "build/"
   },
   "apply": {
     "email": "midautumn@cpalss.com",
@@ -216,7 +216,7 @@
       "Amenities+ Director — How can one scale restrooms and sinks for a busy Saturday crowd?",
       "Spread the Word Director — How can one turn sponsor dollars into paid Meta / Instagram reach that fills the park?"
     ],
-    "registryHref": "build/?festival=maf2026"
+    "registryHref": "build/"
   },
   "faq": [
     {

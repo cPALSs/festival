@@ -11,7 +11,7 @@ Unified MAF hub — home, team, about, **Build the Festival (MAF only)** at `/bu
 | `/` | `index.html` |
 | `/team.html` | Product lane recruitment (from `data/site.json`) |
 | `/about.html` | Trung Thu + coalition |
-| `/build/?festival=maf2026` | Interactive sponsor builder (MAF only) |
+| `/build/` | Interactive sponsor builder (MAF only) |
 
 ## Content
 
@@ -28,7 +28,7 @@ python3 -m http.server 8765
 
 - http://localhost:8765/
 - http://localhost:8765/team.html
-- http://localhost:8765/build/?festival=maf2026
+- http://localhost:8765/build/
 - http://localhost:8765/about.html
 
 ## Publish
