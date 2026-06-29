@@ -14,33 +14,37 @@
     "attendanceNote": "Planning baseline ~2,500 attendees"
   },
   "hero": {
-    "headline": "Run one room of the Mid-Autumn party",
+    "headline": "Join the festival team",
     "intro": "Mid-Autumn Festival returns Sep 25–26 at Derr-Okamoto Park — free admission, Friday night market, Saturday festival, lantern procession at dusk.",
-    "subhead": "Real families, real constraints — pick the challenge you want to take on.",
-    "body": "Co-chairs already hold permits, site, and vendor baseline — and bring fintech-style data and automation thinking plus an open-source ethos to nonprofit festival work: automate what repeats, improve quality, publish playbooks others can fork. Nineteen product lanes are open — each is a live testbed: ship one module, document what worked, and contribute to open best practice on Festival Season Network."
+    "subhead": "We're recruiting directors and committee members for Sep 25–26.",
+    "body": "Hosted by VACOS, cPALSs, and NVCC with CCSD. Festival Co-Chairs already hold permits, site, and vendor baseline — now we're building the team. Browse open roles on the Team page, then apply on Idealist when you're ready.",
+    "ctaNote": "See the full roster on the Team page before you apply."
   },
   "cta": {
-    "primaryLabel": "Claim a lane on Idealist",
-    "primaryHref": "https://ideali.st/h9P2PJ",
+    "primaryLabel": "See open roles & committees",
+    "primaryHref": "team.html",
+    "secondaryLabel": "Apply on Idealist",
+    "secondaryHref": "https://ideali.st/h9P2PJ",
     "buildLabel": "Build the Festival",
     "buildHref": "build/"
   },
   "apply": {
     "email": "midautumn@cpalss.com",
-    "emailSubject": "MAF 2026 Product lane interest",
+    "emailSubject": "MAF 2026 Volunteer interest",
+    "intro": "Review the roles above — open and filled — then apply when you know which director or committee member role fits you.",
     "steps": [
-      "Pick one lane (or two if they're closely related — we'll talk). Director filled? You can still apply to join that committee as a Member.",
-      "Apply on Idealist — name your lane, preferred contact method (email, text, or phone), and any events you're already committed to this season.",
+      "Pick one role (or two if they're closely related — we'll talk). Director already filled? You can still apply to join that committee as a Member.",
+      "Apply on Idealist — name the role(s), whether you want Director or Member, your preferred contact method (email, text, or phone), and any events you're already committed to this season.",
       "We'll follow up within a few business days — add you to the staff directory, introduce vendor partners or teammates, and set a first check-in."
     ],
-    "idealistFallback": "Can't use Idealist? Email midautumn@cpalss.com with the lane name and one sentence on what you want to test."
+    "idealistFallback": "Can't use Idealist? Email midautumn@cpalss.com with the role name and one sentence on why you're interested."
   },
   "directorIntro": {
-    "title": "What is a product lane lead?",
+    "title": "Directors and committee members",
     "paragraphs": [
-      "A director is the go-to person for one festival module. You plan the lane — volunteers, members, vendors, or paid contractors may execute it. You don't have to do every shift or task yourself.",
-      "Already covered (director): Festival co-chairs (Thuy Pham, Bao Thien Ngo) · Sponsorship (Tido Hoang, with Vivian Vu) · Marketing (Ellie King) · Honor our Elders (Raul Armenta). Members still welcome on filled lanes.",
-      "Nineteen product lanes are open for directors. Member and support roles fill in behind every director — including lanes where the director slot is already taken."
+      "A director is the go-to person for one festival area. You plan the work — volunteers, members, vendors, or paid contractors may execute it. You don't have to do every shift or task yourself.",
+      "Already covered (director): Festival Co-Chairs (Thuy Pham, Bao Thien Ngo) · Sponsorship (Tido Hoang, with Vivian Vu) · Marketing (Ellie King) · Honor our Elders (Raul Armenta). Members still welcome on filled committees.",
+      "Nineteen director roles are open. Committee members are welcome on every team — including where the director seat is already filled."
     ],
     "notes": [
       "Most lanes are planning now through September; peak workload is the two weeks before and event weekend.",

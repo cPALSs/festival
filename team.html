@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Join the team — open product lane roles for Mid-Autumn Festival 2026 at Derr-Okamoto Park, Elk Grove." />
+  <meta name="description" content="Join the team — open director and committee member roles for Mid-Autumn Festival 2026 at Derr-Okamoto Park, Elk Grove." />
   <title>Team — Mid-Autumn Festival 2026</title>
   <script>
     (function () {
@@ -76,7 +76,7 @@
             <h1>Team</h1>
           </section>
           <section class="panel">
-            <h2>Product Lanes — 2026 Festival</h2>
+            <h2>Open roles &amp; committees</h2>
             <h3>${escapeHtml(intro.title)}</h3>
             ${intro.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
             <ul>${intro.notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul>
@@ -85,6 +85,7 @@
           ${phase2Html}
           <section class="panel">
             <h2>How to apply</h2>
+            ${site.apply.intro ? `<p>${escapeHtml(site.apply.intro)}</p>` : ""}
             ${renderApplyBlock(site)}
             <div class="co-chairs">${renderCoChairs(site)}</div>
           </section>

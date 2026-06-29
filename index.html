@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Mid-Autumn Festival 2026 — Sep 25–26 at Derr-Okamoto Park, Elk Grove. Free admission, lantern procession, director recruitment, and sponsorship." />
+  <meta name="description" content="Mid-Autumn Festival 2026 — Sep 25–26 at Derr-Okamoto Park, Elk Grove. Free admission, lantern procession, volunteer recruitment, and sponsorship." />
   <title>Mid-Autumn Festival 2026</title>
   <script>
     (function () {
@@ -42,7 +42,11 @@
             <h2>${escapeHtml(h.headline)}</h2>
             <p>${escapeHtml(h.subhead)}</p>
             <p class="muted">${escapeHtml(h.body)}</p>
-            <a class="btn btn-primary" href="${escapeHtml(c.primaryHref)}">${escapeHtml(c.primaryLabel)}</a>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="${escapeHtml(c.primaryHref)}">${escapeHtml(c.primaryLabel)}</a>
+              <a class="btn btn-secondary" href="${escapeHtml(c.secondaryHref)}" target="_blank" rel="noopener">${escapeHtml(c.secondaryLabel)}</a>
+            </div>
+            ${h.ctaNote ? `<p class="muted">${escapeHtml(h.ctaNote)}</p>` : ""}
           </section>
           <section class="panel">
             <h2>Sponsor the experience</h2>
