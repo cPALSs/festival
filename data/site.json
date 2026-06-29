@@ -269,7 +269,18 @@
           "The festival is co-hosted by Vietnamese American Community of Sacramento (VACOS), Community Partners Advocate of Little Saigon Sacramento (cPALSs), Norcal Vietnamese Chamber of Commerce (NVCC), and Cosumnes Community Services District (CCSD), with support from sponsors, donors, and volunteers."
         ]
       }
-    ]
+    ],
+    "posterWall": {
+      "title": "Past fliers over the years",
+      "intro": "Each season's festival flier reflects the host neighborhood and the community partners who made it happen.",
+      "posters": [
+        { "year": 2024, "venue": "Laguna Town Hall", "image": "posters/2024.jpg" },
+        { "year": 2023, "venue": "Laguna Town Hall", "image": "posters/2023.jpg" },
+        { "year": 2022, "venue": "Florin Towne Centre", "image": "posters/2022.jpg" },
+        { "year": 2021, "venue": "Florin Towne Centre", "image": "posters/2021.jpg" }
+      ],
+      "note": "2026 Derr-Okamoto Park flier coming soon. Past fliers originally published on cpalss.com/projects/mid-autumn-festival."
+    }
   },
   "footer": {
     "coalitionLinks": [
