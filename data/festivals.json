@@ -1,0 +1,17 @@
+{
+  "festivals": [
+    {
+      "id": "maf2026",
+      "label": "Mid-Autumn Festival 2026",
+      "file": "../data/maf-2026.json",
+      "registryImpactSort": "desc",
+      "cashOffsetLabel": "Vendor booth fees",
+      "sections": {
+        "core": "Vendor fees already cover these core operations, but sponsoring them unlocks stories for social media posting.",
+        "registry": "Sponsor-funded features beyond the vendor baseline — lantern procession, kids programming, lighting, and more. Vendor fees already fund core ops; pick any story you want to own.",
+        "options": "Sponsor perks — sponsor booth spot unlocks at Gold ($2,500+). Tent rental requires sponsor booth spot."
+      }
+    }
+  ],
+  "default": "maf2026"
+}

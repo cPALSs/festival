@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "siteName": "Mid-Autumn Festival 2026",
+    "titleSuffix": "Mid-Autumn Festival 2026",
+    "idealistUrl": "https://ideali.st/h9P2PJ"
+  },
+  "event": {
+    "name": "Mid-Autumn Festival 2026",
+    "dates": "Fri Sep 25 (4–8 PM) + Sat Sep 26 (11 AM–8 PM)",
+    "venue": "Derr-Okamoto Park, Elk Grove, California",
+    "city": "Elk Grove, CA",
+    "tagline": "free admission · Friday night market · Saturday festival",
+    "hosts": "VACOS · cPALSs · NVCC · CCSD",
+    "attendanceNote": "Planning baseline ~2,500 attendees"
+  },
+  "hero": {
+    "headline": "Run one room of the Mid-Autumn party",
+    "intro": "Mid-Autumn Festival returns Sep 25–26 at Derr-Okamoto Park — free admission, Friday night market, Saturday festival, lantern procession at dusk. Vendor fees fund the essentials. Sponsors unlock the magic.",
+    "subhead": "Real families, real constraints — pick the challenge you want to take on.",
+    "body": "Co-chairs already hold permits, site, and vendor baseline — and bring fintech-style data and automation thinking plus an open-source ethos to nonprofit festival work. Nineteen product lanes are open: ship one module, document what worked, and contribute forkable playbooks on Festival Season Network."
+  },
+  "cta": {
+    "primaryLabel": "Claim a lane on Idealist",
+    "primaryHref": "https://ideali.st/h9P2PJ",
+    "buildLabel": "Build the Festival",
+    "buildHref": "build/?festival=maf2026"
+  },
+  "apply": {
+    "email": "midautumn@cpalss.com",
+    "emailSubject": "MAF 2026 Product lane interest",
+    "steps": [
+      "Pick one lane (or two if they're closely related — we'll talk). Director filled? You can still apply to join that committee as a Member.",
+      "Apply on Idealist — name your lane, preferred contact method (email, text, or phone), and any events you're already committed to this season.",
+      "We'll follow up within a few business days — add you to the staff directory, introduce vendor partners or teammates, and set a first check-in."
+    ],
+    "idealistFallback": "Can't use Idealist? Email midautumn@cpalss.com with the lane name and one sentence on what you want to test."
+  },
+  "directorIntro": {
+    "title": "What is a product lane lead?",
+    "paragraphs": [
+      "A director is the go-to person for one festival module. You plan the lane — volunteers, members, vendors, or paid contractors may execute it. You don't have to do every shift or task yourself.",
+      "Already covered (director): Festival co-chairs (Thuy Pham, Bao Thien Ngo) · Sponsorship (Tido Hoang, with Vivian Vu) · Marketing (Ellie King) · Honor our Elders (Raul Armenta). Members still welcome on filled lanes.",
+      "Nineteen product lanes are open for directors. Member and support roles fill in behind every director — including lanes where the director slot is already taken."
+    ],
+    "notes": [
+      "Most lanes are planning now through September; peak workload is the two weeks before and event weekend.",
+      "Co-chairs encourage every director to find a counterpart at another festival — same lane, different producer — to bounce ideas and share learnings.",
+      "Stage owns tent, sound, and physical stack. Program & Entertainment owns the master schedule and MC. Show directors own content lanes and hand run-of-show up to Program.",
+      "Power & Lighting installs generators and light towers; Light Up the Park designs decorative lighting — coordinate on loads before either rigs."
+    ]
+  },
+  "coChairs": [
+    { "name": "Thuy Pham", "title": "MAF Co-Chair (VACOS)" },
+    { "name": "Bao Thien Ngo", "title": "MAF Co-Chair (cPALSs)" }
+  ],
+  "lanes": [
+    {
+      "id": "site-ops",
+      "title": "Site & operations",
+      "subtitle": "Infrastructure modules",
+      "intro": "Physical infrastructure, finance, and day-of execution. Vendor revenue funds this baseline.",
+      "roles": [
+        {
+          "title": "Finance & Administration Director",
+          "own": "Budget actuals current · service-vendor bills paid · Eventeny reconciliation and deposit closeout by October",
+          "fit": "Are detail-oriented and comfortable tracking money in and out"
+        },
+        {
+          "title": "Foundation Director",
+          "own": "Insurance, CSD permit, ops tents, and contingency signed off before load-in",
+          "fit": "Like building the platform others run on — checklists, deadlines, and make-it-official work",
+          "note": "Bounce house rentals require CGL confirmation (or rider) and vendor COI before go-live."
+        },
+        {
+          "title": "Operations & Logistics Director",
+          "own": "Site map, load-in/out plan, and day-of ops radio for Fri market + Sat festival",
+          "fit": "Love maps, timelines, and where does the truck go?"
+        },
+        {
+          "title": "Security Director",
+          "own": "Guard schedule scaled to budget, contingency plan, and Golden Protection liaison",
+          "fit": "Are calm under pressure; can right-size coverage and liaise with Golden Protection"
+        },
+        {
+          "title": "Amenities Director",
+          "own": "Restrooms, ADA unit, hand-wash placement, and porter service locked before gates open",
+          "fit": "Think about guest comfort, site flow, and keeping units stocked through Sat close"
+        },
+        {
+          "title": "Power & Lighting Director",
+          "own": "Generators and light towers installed, stage power and electrical zones live",
+          "fit": "Understand power math and safety — generators, light towers, load planning, diesel logistics"
+        }
+      ]
+    },
+    {
+      "id": "program",
+      "title": "Program & experience",
+      "subtitle": "What families see and remember",
+      "intro": "Stage, schedule, and signature moments — including sponsor-funded features from Build the Festival.",
+      "roles": [
+        {
+          "title": "Stage Director",
+          "experience": "Stage tent, portable sound, lion dance",
+          "own": "Stage tent, sound, and Saturday programming incl. lion dance",
+          "fit": "Have production or AV experience (helpful, not required)"
+        },
+        {
+          "title": "Program & Entertainment Director",
+          "experience": "Full Saturday run-of-show — talent, MC, sponsor and host moments, lion dance",
+          "own": "Saturday run-of-show, MC scripts, and talent cues locked with Stage Director before event week",
+          "fit": "Love show flow for a family crowd and keeping talent on schedule"
+        },
+        {
+          "title": "Lantern Procession Director",
+          "emoji": "🏮",
+          "experience": "Children with LED lanterns, music, dusk walk through the park",
+          "own": "One walk-through on Sat evening with families through the park",
+          "fit": "Love ritual moments and can stage volunteers without micromanaging"
+        },
+        {
+          "title": "Children's Village Director",
+          "emoji": "🧒",
+          "experience": "Shade, crafts, family meetup before the procession — plus bounce houses when sponsors fund those blocks",
+          "own": "Children's Village open Sat with anchor hosts and crafts",
+          "fit": "Think like a school picnic organizer — stations and anchor hosts, not empty tents"
+        },
+        {
+          "title": "Children's Show Director",
+          "emoji": "🎭",
+          "experience": "Short Saturday stage sets — magic, storytelling, puppetry",
+          "own": "Talent booked and children's sets run-of-show handed to Program & Entertainment Director before event week",
+          "fit": "Have booked youth or family entertainment before (helpful, not required)"
+        },
+        {
+          "title": "Honor our Elders Director",
+          "emoji": "🍵",
+          "experience": "Shade, seating, and tea hospitality for elders and anyone who deserves a warm welcome",
+          "own": "Shade tent, seating, and elder tea station staffed and welcoming before Sat peak",
+          "fit": "Understand hospitality as respect — Mid-Autumn is for honoring elders",
+          "note": "Director: Raul Armenta · Members welcome — inquire to join the committee"
+        },
+        {
+          "title": "Light Up the Park Director",
+          "emoji": "✨",
+          "experience": "Dusk atmosphere — tree uplights, string lights, stage flowers",
+          "own": "Decorative lighting designed, installed, and live for procession hour",
+          "fit": "Have an eye for atmosphere and hands-on setup — coordinate loads with Power & Lighting"
+        }
+      ]
+    },
+    {
+      "id": "outreach",
+      "title": "Outreach & partners",
+      "subtitle": "Audience and ally modules",
+      "intro": "Director filled? Full lane details still apply — inquire to join as a Member.",
+      "roles": [
+        {
+          "title": "Sponsorship Director",
+          "experience": "Registry stories funded on Build the Festival — lantern procession, children's programming, Honor our Elders, and site lighting",
+          "own": "Pipeline active, registry asks out, sponsor deliverables tracked through event weekend",
+          "fit": "Think in win-win-win — guests, producers, and sponsors all grow",
+          "note": "Director: Tido Hoang · Member: Vivian Vu · Members welcome"
+        },
+        {
+          "title": "Marketing & Communications Director",
+          "experience": "Families find the festival — save-the-dates, registry unlock posts, week-of rally",
+          "own": "Email and social live through event week · outreach coordinated with Sponsorship",
+          "fit": "Think in two-way comms — reach families where they are, and listen for next season",
+          "note": "Director: Ellie King · Members welcome"
+        },
+        {
+          "title": "Vendor Operations Director",
+          "own": "Eventeny live — applications processed, category caps enforced, county permit pass-through, waitlist through event weekend",
+          "fit": "Care about food-market economics and guest experience — curated composition, fair process"
+        },
+        {
+          "title": "Volunteers Director",
+          "own": "Recruitment, shifts, waivers, and appreciation — with contractor-backed fallback when critical slots won't fill",
+          "fit": "Think about volunteer experience and recognition — honest shifts, clear roles"
+        },
+        {
+          "title": "Partnerships & Grants Director",
+          "own": "Community partnership map; CCSD liaison, cross-promo allies, grant language and renewals",
+          "fit": "Think in mutual benefit across the local ecosystem — institutional relationships and grant language"
+        }
+      ]
+    }
+  ],
+  "phase2": {
+    "title": "Sponsor unlocks — Phase 2",
+    "intro": "These lanes activate when sponsors fund the matching Build the Festival gift. Plan with the base lane lead in the meantime; hold the vision until the block unlocks.",
+    "roles": [
+      "Stage+ Director — Concert-quality sound and basic stage lights beyond MVP",
+      "Security+ Director — Guards at peak hours when sponsors fund the block",
+      "Amenities+ Director — Scale restrooms and sinks for a busy Saturday crowd",
+      "Spread the Word Director — Paid Meta / Instagram reach that fills the park"
+    ],
+    "registryHref": "build/?festival=maf2026"
+  },
+  "faq": [
+    {
+      "q": "Why a product lab?",
+      "a": "Festival organizing hits the same failure modes as messy ops — handoffs, one-off spreadsheets, knowledge in people's heads. Co-chairs apply fintech and automation thinking with an open-source ethos: automate what repeats, improve quality, and publish forkable playbooks on Festival Season Network."
+    },
+    {
+      "q": "Should I find a counterpart at another festival?",
+      "a": "Yes — we encourage it. Every director should network with someone running the same lane at another festival or event. Co-chairs can help make an intro if you don't have one yet."
+    },
+    {
+      "q": "Do I need festival experience?",
+      "a": "Helpful, not required. LNY runbooks and co-chairs back you up."
+    },
+    {
+      "q": "Is this paid?",
+      "a": "These are volunteer leadership roles — you plan the lane; others may execute. Sponsor-funded experiences may include modest stipends for performers or vendors — not director compensation. Flag contractor needs early if volunteers won't cover the work."
+    },
+    {
+      "q": "Can two people co-direct?",
+      "a": "One name on the directory as Director; co-leads listed as Members is fine."
+    },
+    {
+      "q": "What if the director slot is already filled?",
+      "a": "Apply anyway — name the lane and ask to join as a Member. Every lane can use more members even when the director seat is taken."
+    },
+    {
+      "q": "What if my experience isn't funded yet?",
+      "a": "Plan anyway — lane leads help pitch sponsors and hold the vision until the block unlocks."
+    },
+    {
+      "q": "What's the difference between site & ops and program?",
+      "a": "Site & ops keeps the gates open, power on, and guests comfortable. Program & experience is what families come for — stage, procession, children's programming, and elder hospitality."
+    }
+  ],
+  "about": {
+    "headline": "About the Festival",
+    "sections": [
+      {
+        "title": "About Mid-Autumn / Trung Thu",
+        "paragraphs": [
+          "Mid-Autumn Festival, known as Tết Trung Thu in Vietnamese culture, is a cherished celebration when families gather under the full moon. Children carry lanterns, share mooncakes, and honor elders — a night of reunion, gratitude, and hope. For Vietnamese communities in America, the festival reconnects generations and keeps cultural traditions alive in a new homeland.",
+          "The lantern procession — children walking together at dusk — is the signature moment families remember. MAF 2026 brings that ritual back to Derr-Okamoto Park alongside food vendors, stage programming, and elder hospitality."
+        ]
+      },
+      {
+        "title": "Elk Grove & Derr-Okamoto Park",
+        "paragraphs": [
+          "Mid-Autumn Festival 2026 is a free, family-centered weekend at Derr-Okamoto Park in Elk Grove: Friday night market (Sep 25, 4–8 PM) and Saturday festival (Sep 26, 11 AM–8 PM) with lantern procession at dusk.",
+          "The festival is co-hosted by Vietnamese American Community of Sacramento (VACOS), Community Partners Advocate of Little Saigon Sacramento (cPALSs), Norcal Vietnamese Chamber of Commerce (NVCC), and Cosumnes Community Services District (CCSD), with support from sponsors, donors, and volunteers."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "coalitionLinks": [
+      { "label": "cPALSs", "href": "https://www.cpalss.com/" },
+      { "label": "VACOS", "href": "https://vacos.org/" },
+      { "label": "NVCC", "href": "https://www.facebook.com/norcalvietnamesechamber/" }
+    ]
+  }
+}

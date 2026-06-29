@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Join the team — open product lane roles for Mid-Autumn Festival 2026 at Derr-Okamoto Park, Elk Grove." />
+  <title>Team — Mid-Autumn Festival 2026</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("maf-theme") || localStorage.getItem("maf2026-theme") || localStorage.getItem("build-theme");
+        if (t === "light" || t === "dark" || t === "auto") document.documentElement.setAttribute("data-theme", t);
+      } catch (_) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="page-wrap" id="main">
+    <p class="muted">Loading…</p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
+  <script>
+    (async function () {
+      const {
+        initPageShell,
+        loadSiteData,
+        mountFooter,
+        setPageTitle,
+        renderApplyBlock,
+        renderCoChairs,
+        renderRoleCard,
+        escapeHtml,
+      } = window.MafSite;
+      initPageShell("team");
+      try {
+        const site = await loadSiteData();
+        setPageTitle(site, "Team");
+        const intro = site.directorIntro;
+        const lanesHtml = site.lanes
+          .map(
+            (lane) => `
+          <section class="lane-section" id="${escapeHtml(lane.id)}">
+            <div class="lane-header">
+              <h2>${escapeHtml(lane.title)}</h2>
+              <p><strong>${escapeHtml(lane.subtitle)}</strong>${lane.intro ? " — " + escapeHtml(lane.intro) : ""}</p>
+            </div>
+            ${lane.roles.map(renderRoleCard).join("")}
+          </section>`,
+          )
+          .join("");
+
+        const phase2 = site.phase2;
+        const phase2Html = `
+          <section class="panel">
+            <h2>${escapeHtml(phase2.title)}</h2>
+            <p>${escapeHtml(phase2.intro)}</p>
+            <ul>${phase2.roles.map((r) => `<li>${escapeHtml(r)}</li>`).join("")}</ul>
+            <p><a href="${escapeHtml(phase2.registryHref)}">See the registry →</a></p>
+          </section>`;
+
+        const faqHtml = site.faq
+          .map(
+            (f) => `
+          <div class="faq-item">
+            <h3>${escapeHtml(f.q)}</h3>
+            <p>${escapeHtml(f.a)}</p>
+          </div>`,
+          )
+          .join("");
+
+        document.getElementById("main").innerHTML = `
+          <section class="hero">
+            <h1>Team</h1>
+          </section>
+          <section class="panel">
+            <h2>Product Lanes — 2026 Festival</h2>
+            <h3>${escapeHtml(intro.title)}</h3>
+            ${intro.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
+            <ul>${intro.notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul>
+          </section>
+          ${lanesHtml}
+          ${phase2Html}
+          <section class="panel">
+            <h2>How to apply</h2>
+            ${renderApplyBlock(site)}
+            <div class="co-chairs">${renderCoChairs(site)}</div>
+          </section>
+          <section class="panel">
+            <h2>FAQ</h2>
+            ${faqHtml}
+          </section>
+        `;
+        mountFooter(site);
+      } catch (err) {
+        document.getElementById("main").innerHTML = `<p class="error-panel">${escapeHtml(err.message)}</p>`;
+      }
+    })();
+  </script>
+</body>
+</html>

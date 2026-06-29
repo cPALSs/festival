@@ -126,7 +126,17 @@ function giftsInCategory(gifts, category) {
 
 const FESTIVAL_ID_KEY = "build-festival-id";
 const THEME_STORAGE_KEY = "build-theme";
+const MAF_THEME_KEY = "maf-theme";
 const LEGACY_THEME_KEY = "maf2026-theme";
+
+/** festival.cpalss.com embed — site nav owns theme UI + maf-theme storage */
+function isSiteEmbed() {
+  return !!document.querySelector(".site-nav, .build-shell");
+}
+
+function activeThemeStorageKey() {
+  return isSiteEmbed() ? MAF_THEME_KEY : THEME_STORAGE_KEY;
+}
 
 function estimatedSponsorsStorageKey(festivalId) {
   return `build-estimated-sponsors:${festivalId}`;
@@ -157,8 +167,11 @@ function renderThemeIcon(theme) {
 
 function loadThemeFromStorage() {
   try {
+    const key = activeThemeStorageKey();
     const theme =
-      localStorage.getItem(THEME_STORAGE_KEY) || localStorage.getItem(LEGACY_THEME_KEY);
+      localStorage.getItem(key) ||
+      (isSiteEmbed() ? localStorage.getItem(THEME_STORAGE_KEY) : null) ||
+      localStorage.getItem(LEGACY_THEME_KEY);
     return VALID_THEMES.has(theme) ? theme : "auto";
   } catch {
     return "auto";
@@ -168,8 +181,9 @@ function loadThemeFromStorage() {
 function applyTheme(theme) {
   const next = VALID_THEMES.has(theme) ? theme : "auto";
   document.documentElement.setAttribute("data-theme", next);
+  if (isSiteEmbed()) return;
   renderThemeIcon(next);
-  const select = document.getElementById("theme-select");
+  const select = document.getElementById("btf-theme-select");
   if (select && select.value !== next) select.value = next;
 }
 
@@ -177,7 +191,7 @@ function setTheme(theme) {
   const next = VALID_THEMES.has(theme) ? theme : "auto";
   applyTheme(next);
   try {
-    localStorage.setItem(THEME_STORAGE_KEY, next);
+    localStorage.setItem(activeThemeStorageKey(), next);
   } catch {
     /* ignore */
   }
@@ -185,7 +199,18 @@ function setTheme(theme) {
 
 function initTheme() {
   applyTheme(loadThemeFromStorage());
-  const select = document.getElementById("theme-select");
+
+  if (isSiteEmbed()) {
+    window.addEventListener("storage", (e) => {
+      if (e.key === EGLNY_THEME_KEY && VALID_THEMES.has(e.newValue)) applyTheme(e.newValue);
+    });
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+      if (loadThemeFromStorage() === "auto") applyTheme("auto");
+    });
+    return;
+  }
+
+  const select = document.getElementById("btf-theme-select") || document.getElementById("theme-select");
   if (!select) return;
   select.onchange = () => setTheme(select.value);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
@@ -1138,7 +1163,15 @@ function persistFestivalId() {
 function syncFestivalSelect() {
   const select = document.getElementById("festival-select");
   if (!select || !state.manifest) return;
-  select.innerHTML = state.manifest.festivals
+  const festivals = state.manifest.festivals ?? [];
+  if (festivals.length <= 1) {
+    select.hidden = true;
+    select.setAttribute("aria-hidden", "true");
+    return;
+  }
+  select.hidden = false;
+  select.removeAttribute("aria-hidden");
+  select.innerHTML = festivals
     .map((f) => `<option value="${f.id}">${f.label}</option>`)
     .join("");
   select.value = state.festivalId;
@@ -1212,7 +1245,7 @@ async function init() {
   }
 
   try {
-    const manifestRes = await fetch("festivals.json", { cache: "no-store" });
+    const manifestRes = await fetch("../data/festivals.json", { cache: "no-store" });
     if (!manifestRes.ok) throw new Error(`HTTP ${manifestRes.status} loading festivals.json`);
     state.manifest = await manifestRes.json();
 
@@ -1227,8 +1260,8 @@ async function init() {
   } catch (err) {
     document.querySelector(".page").innerHTML = `
       <p class="error">Could not load festival data. Run from a local server:<br>
-      <code>cd "Projects - Mid-Autumn Festival/2026/Marketing/Build the Festival" && python3 -m http.server 8765</code><br>
-      Then open http://localhost:8765<br><br>${err.message}</p>`;
+      <code>cd "Projects - Mid-Autumn Festival/2026/Marketing/maf-site" && python3 -m http.server 8765</code><br>
+      Then open http://localhost:8765/build/?festival=maf2026<br><br>${err.message}</p>`;
   }
 }
 

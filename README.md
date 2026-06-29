@@ -1,14 +1,35 @@
-# Build the Festival
+# festival.cpalss.com — site source (monorepo)
 
-Interactive sponsorship builder for cPALSs festivals — **https://festival.cpalss.com**
+**Public site:** https://festival.cpalss.com · GitHub Pages repo [`cPALSs/festival`](https://github.com/cPALSs/festival)
 
-Toggle between **Mid-Autumn Festival 2026** and **Lunar New Year 2027** from the header dropdown.
+Unified MAF hub — home, team, about, **Build the Festival (MAF only)** at `/build/`.
 
-## Source (monorepo)
+## Pages
 
-- App shell: `Projects - Mid-Autumn Festival/2026/Marketing/Build the Festival/`
-- MAF data: `Projects - Mid-Autumn Festival/2026/Finance & Administration/festival_registry.json` → `build_maf_budget.py`
-- LNY data: `Projects - Lunar New Year/2027/Finance & Administration/festival_registry.json` → `build_lny_budget.py`
+| Path | File |
+|------|------|
+| `/` | `index.html` |
+| `/team.html` | Product lane recruitment (from `data/site.json`) |
+| `/about.html` | Trung Thu + coalition |
+| `/build/?festival=maf2026` | Interactive sponsor builder (MAF only) |
+
+## Content
+
+- **`data/site.json`** — recruitment + about copy ([Open Leadership Roles](../Open%20Leadership%20Roles%20-%20Recruitment%20Copy.md))
+- **`data/maf-2026.json`** — Build the Festival data (from `build_maf_budget.py`)
+- **`data/festivals.json`** — BTF manifest — MAF only
+
+## Local preview
+
+```bash
+cd "Projects - Mid-Autumn Festival/2026/Marketing/maf-site"
+python3 -m http.server 8765
+```
+
+- http://localhost:8765/
+- http://localhost:8765/team.html
+- http://localhost:8765/build/?festival=maf2026
+- http://localhost:8765/about.html
 
 ## Publish
 
@@ -18,21 +39,8 @@ git clone git@github.com:cPALSs/festival.git ~/festival   # once
 cd ~/festival && git add -A && git commit -m "Update site" && git push
 ```
 
-## Local preview
+Regenerates MAF JSON via `build_maf_budget.py`, then rsyncs this folder to the publish repo.
 
-```bash
-cd "Projects - Mid-Autumn Festival/2026/Marketing/Build the Festival"
-python3 -m http.server 8765
-```
+## Link policy
 
-Open http://localhost:8765 — use `?festival=maf2026` or `?festival=lny2027` to deep-link.
-
-## Public copy / links
-
-Registry `description`, `tagline`, and `benefits` export **verbatim** to sponsors on festival.cpalss.com. **No monorepo paths or relative `.md` links** — see [.cursor/rules/github-pages-public-sites.mdc](../../../../.cursor/rules/github-pages-public-sites.mdc). External `https://` only, or plain text for internal docs.
-
-## GitHub Pages
-
-- Custom domain: **festival.cpalss.com** (CNAME `festival` → `cpalss.github.io` at cpalss.com DNS host)
-- Files served from repo root
-- After DNS propagates, enable **Enforce HTTPS** in repo Settings → Pages
+No monorepo paths in public JSON or HTML — [.cursor/rules/github-pages-public-sites.mdc](../../../../.cursor/rules/github-pages-public-sites.mdc)

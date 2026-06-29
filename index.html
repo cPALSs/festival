@@ -3,206 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Build the Festival</title>
+  <meta name="description" content="Mid-Autumn Festival 2026 — Sep 25–26 at Derr-Okamoto Park, Elk Grove. Free admission, lantern procession, director recruitment, and sponsorship." />
+  <title>Mid-Autumn Festival 2026</title>
   <script>
     (function () {
       try {
-        var theme = localStorage.getItem("build-theme") || localStorage.getItem("maf2026-theme");
-        if (theme === "light" || theme === "dark" || theme === "auto") {
-          document.documentElement.setAttribute("data-theme", theme);
-        }
-      } catch (_) {
-        /* ignore */
+        var t = localStorage.getItem("maf-theme") || localStorage.getItem("maf2026-theme") || localStorage.getItem("build-theme");
+        if (t === "light" || t === "dark" || t === "auto") document.documentElement.setAttribute("data-theme", t);
+      } catch (_) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="page-wrap" id="main">
+    <p class="muted">Loading…</p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
+  <script>
+    (async function () {
+      const { initPageShell, loadSiteData, mountFooter, renderEventSummary, setPageTitle, escapeHtml } = window.MafSite;
+      initPageShell("home");
+      try {
+        const site = await loadSiteData();
+        setPageTitle(site);
+        const e = site.event;
+        const h = site.hero;
+        const c = site.cta;
+        document.getElementById("main").innerHTML = `
+          <section class="hero">
+            <h1>${escapeHtml(e.name)}</h1>
+            ${renderEventSummary(site)}
+          </section>
+          <p class="home-intro">${escapeHtml(h.intro)}</p>
+          <section class="panel">
+            <h2>${escapeHtml(h.headline)}</h2>
+            <p>${escapeHtml(h.subhead)}</p>
+            <p class="muted">${escapeHtml(h.body)}</p>
+            <a class="btn btn-primary" href="${escapeHtml(c.primaryHref)}">${escapeHtml(c.primaryLabel)}</a>
+          </section>
+          <section class="panel">
+            <h2>Sponsor the experience</h2>
+            <p>Vendor fees fund baseline operations. Sponsors unlock the blocks families remember — lantern procession, children's programming, Honor our Elders, and site lighting.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="${escapeHtml(c.buildHref)}">${escapeHtml(c.buildLabel)}</a>
+            </div>
+          </section>
+        `;
+        mountFooter(site);
+      } catch (err) {
+        document.getElementById("main").innerHTML = `<p class="error-panel">${escapeHtml(err.message)}</p>`;
       }
     })();
   </script>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="page">
-    <header class="header header-bar">
-      <div class="header-text">
-        <h1 class="title-row">
-          <span class="title-text">Build the Festival</span>
-          <select id="festival-select" class="festival-select" aria-label="Festival"></select>
-        </h1>
-        <p class="subtitle" id="event-meta">Loading…</p>
-      </div>
-      <div class="theme-control">
-        <span class="theme-icon" id="theme-icon" aria-hidden="true"></span>
-        <label for="theme-select" class="sr-only">Color theme</label>
-        <select id="theme-select" class="theme-select" aria-label="Color theme">
-          <option value="auto">Auto</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-      </div>
-    </header>
-
-    <div class="progress-row">
-    <section class="panel progress-panel" aria-labelledby="core-progress-title">
-      <h2 id="core-progress-title">Core ops funded</h2>
-      <div class="progress-wrap">
-        <div class="progress-labels">
-          <div class="progress-label-group">
-            <span id="core-label"></span>
-            <button type="button" class="progress-info-btn" id="revenue-info-btn" aria-label="Estimated revenue breakdown" title="Estimated revenue breakdown">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="M12 10v6"/>
-                <path d="M12 7h.01"/>
-              </svg>
-            </button>
-          </div>
-          <span id="core-target-label"></span>
-        </div>
-        <div class="progress-bar progress-bar--core" id="core-progress-bar" role="progressbar" aria-labelledby="core-progress-title"></div>
-        <div class="progress-footnote" id="core-footnote">
-          <div class="progress-metric progress-metric--start">
-            <span class="progress-metric-value" id="core-funded-value"></span>
-            <span class="progress-metric-label">Running total</span>
-          </div>
-          <div class="progress-metric progress-metric--center">
-            <span class="progress-metric-value" id="core-sponsored-value"></span>
-            <span class="progress-metric-label">Core sponsored</span>
-          </div>
-          <div class="progress-metric progress-metric--end">
-            <span class="progress-metric-value" id="core-needed-value"></span>
-            <span class="progress-metric-label">To full target</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel progress-panel" aria-labelledby="progress-title">
-      <h2 id="progress-title">Full festival vision</h2>
-      <div class="progress-wrap">
-        <div class="progress-labels">
-          <span id="vision-label"></span>
-          <span id="target-label"></span>
-        </div>
-        <div class="progress-bar progress-bar--vision" id="progress-bar"></div>
-        <div class="progress-footnote" id="vision-footnote">
-          <div class="progress-metric progress-metric--start">
-            <span class="progress-metric-value" id="vision-total-value"></span>
-            <span class="progress-metric-label">Running total</span>
-          </div>
-          <div class="progress-metric progress-metric--center">
-            <span class="progress-metric-value" id="registry-funded-value"></span>
-            <span class="progress-metric-label">Registry funded</span>
-          </div>
-          <div class="progress-metric progress-metric--end">
-            <span class="progress-metric-value" id="to-vision-value"></span>
-            <span class="progress-metric-label">To full target</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
-
-    <details class="panel collapsible" open>
-      <summary><span class="caret" aria-hidden="true"></span>Core ops</summary>
-      <p class="hint collapsible-desc" id="core-desc"></p>
-      <div class="gift-grid gift-grid--3" id="core-grid"></div>
-    </details>
-
-    <details class="panel collapsible" open>
-      <summary><span class="caret" aria-hidden="true"></span>Gift registry</summary>
-      <p class="hint collapsible-desc" id="registry-desc"></p>
-      <div class="gift-grid" id="registry-grid"></div>
-    </details>
-
-    <details class="panel collapsible" open>
-      <summary><span class="caret" aria-hidden="true"></span>Perks and options</summary>
-      <p class="hint collapsible-desc" id="options-desc"></p>
-      <div class="gift-grid" id="options-grid"></div>
-    </details>
-
-    <details class="panel collapsible" id="secondary-panel" hidden>
-      <summary><span class="caret" aria-hidden="true"></span>Draft registry stories</summary>
-      <p class="hint collapsible-desc">Draft ideas for future registry — click a card to read details.</p>
-      <div class="gift-grid" id="secondary-grid"></div>
-    </details>
-
-    <footer class="page-footer" id="page-footer" hidden>
-      <label class="footer-toggle">
-        <input type="checkbox" id="estimated-sponsors-toggle" />
-        <span>Estimated sponsors</span>
-      </label>
-      <p class="footer-hint" id="estimated-sponsors-hint" hidden>
-        2026 renewal baselines — view only. Cards sort by impact for our family market (top = flagship). Estimated sponsors fund in that same order — pooling allowed; the last card is least likely to be covered. <strong>Green</strong> = covered · <strong>Dashed</strong> = still open.
-      </p>
-    </footer>
-  </div>
-
-  <button type="button" class="cart-fab" id="cart-btn" aria-label="View sponsorship build">
-    <svg class="cart-fab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <circle cx="9" cy="21" r="1"/>
-      <circle cx="20" cy="21" r="1"/>
-      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-    </svg>
-    <span class="cart-badge" id="cart-count" hidden>0</span>
-  </button>
-
-  <dialog id="cart-modal">
-    <form method="dialog" class="modal-inner">
-      <header class="modal-header">
-        <h3>Your sponsorship build</h3>
-      </header>
-      <div class="modal-tab-row">
-        <div class="modal-tabs">
-          <button type="button" class="cart-tab active" data-cart-tab="selection">Selection</button>
-          <button type="button" class="cart-tab" data-cart-tab="perks">Perks</button>
-        </div>
-        <span id="cart-total" class="modal-amount"></span>
-      </div>
-      <div class="modal-body" id="cart-selection">
-        <div id="cart-selection-list"></div>
-      </div>
-      <div class="modal-body hidden" id="cart-perks"></div>
-      <footer class="modal-footer modal-footer--split">
-        <button type="button" class="btn btn-clear" id="cart-clear" disabled>Clear selection</button>
-        <button type="submit" class="btn">Close</button>
-      </footer>
-    </form>
-  </dialog>
-
-  <dialog id="gift-modal">
-    <form method="dialog" class="modal-inner">
-      <header class="modal-header">
-        <h3 id="modal-title"></h3>
-        <label class="toggle-wrap" id="modal-toggle-wrap">
-          <span>Funded</span>
-          <input type="checkbox" id="modal-toggle" />
-        </label>
-      </header>
-      <div class="modal-tab-row">
-        <div class="modal-tabs">
-          <button type="button" class="gift-tab active" data-gift-tab="guest">What guests see</button>
-          <button type="button" class="gift-tab" data-gift-tab="funds">What it funds</button>
-        </div>
-        <span id="modal-amount" class="modal-amount"></span>
-      </div>
-      <div class="modal-body" id="modal-guest"></div>
-      <div class="modal-body hidden" id="modal-funds"></div>
-      <footer class="modal-footer">
-        <button type="submit" class="btn">Close</button>
-      </footer>
-    </form>
-  </dialog>
-
-  <dialog id="revenue-modal">
-    <form method="dialog" class="modal-inner">
-      <header class="modal-header">
-        <h3>Estimated revenue</h3>
-      </header>
-      <div class="modal-body" id="revenue-modal-body"></div>
-      <footer class="modal-footer">
-        <button type="submit" class="btn">Close</button>
-      </footer>
-    </form>
-  </dialog>
-
-  <script src="app.js"></script>
 </body>
 </html>
