@@ -6,17 +6,17 @@
   },
   "event": {
     "name": "Mid-Autumn Festival 2026",
-    "dates": "Fri Sep 25 (4–8 PM) + Sat Sep 26 (11 AM–8 PM)",
+    "dates": "Sat Sep 26 (4–9 PM)",
     "venue": "Derr-Okamoto Park, Elk Grove, California",
     "city": "Elk Grove, CA",
-    "tagline": "free admission · Friday night market · Saturday festival",
+    "tagline": "free admission · Saturday afternoon & evening · lantern procession at dusk",
     "hosts": "VACOS · cPALSs · NVCC · CCSD",
     "attendanceNote": "Planning baseline ~2,500 attendees"
   },
   "hero": {
     "headline": "Join the festival team",
-    "intro": "Mid-Autumn Festival returns Sep 25–26 at Derr-Okamoto Park — free admission, Friday night market, Saturday festival, lantern procession at dusk.",
-    "subhead": "We're recruiting directors and committee members for Sep 25–26.",
+    "intro": "Mid-Autumn Festival returns Saturday, Sep 26 at Derr-Okamoto Park — free admission from 4 PM, food vendors and stage programming, lantern procession at dusk.",
+    "subhead": "We're recruiting directors and committee members for the Sep 25–28 event window.",
     "body": "Hosted by VACOS, cPALSs, and NVCC with CCSD. Festival Co-Chairs already hold permits, site, and vendor baseline — now we're building the team. Browse open roles on the Team page, then apply on Idealist when you're ready.",
     "ctaNote": "See the full roster on the Team page before you apply."
   },
@@ -80,13 +80,13 @@
         {
           "title": "Operations & Logistics Director",
           "test": "How can one choreograph everyone so they know how to get to the site and load-in without causing a traffic jam?",
-          "ship": "Site map, load-in/out plan, and day-of ops radio for Fri market + Sat festival",
+          "ship": "Site map, load-in/out plan, and day-of ops radio for Fri load-in through Mon load-out",
           "fit": "Love maps, timelines, and where does the truck go?"
         },
         {
           "title": "Security Director",
           "test": "How can one ensure safety for everyone on a sliding scale of available funds — and plan for contingency conditions?",
-          "ship": "Guard schedule scaled to budget, contingency plan, and Golden Protection liaison (Fri night + Sat festival hours)",
+          "ship": "Guard schedule scaled to budget, contingency plan, and Golden Protection liaison (Fri load-in + Sat festival 4–9 PM)",
           "fit": "Are calm under pressure; can right-size coverage to the budget, plan for what-if scenarios, and liaise with Golden Protection"
         },
         {
@@ -269,7 +269,7 @@
       {
         "title": "Elk Grove & Derr-Okamoto Park",
         "paragraphs": [
-          "Mid-Autumn Festival 2026 is a free, family-centered weekend at Derr-Okamoto Park in Elk Grove: Friday night market (Sep 25, 4–8 PM) and Saturday festival (Sep 26, 11 AM–8 PM) with lantern procession at dusk.",
+          "Mid-Autumn Festival 2026 is a free, family-centered afternoon and evening at Derr-Okamoto Park in Elk Grove: Saturday, Sep 26, 4–9 PM, with food vendors, stage programming, and lantern procession at dusk.",
           "The festival is co-hosted by Vietnamese American Community of Sacramento (VACOS), Community Partners Advocate of Little Saigon Sacramento (cPALSs), Norcal Vietnamese Chamber of Commerce (NVCC), and Cosumnes Community Services District (CCSD), with support from sponsors, donors, and volunteers."
         ]
       }

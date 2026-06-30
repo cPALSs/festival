@@ -2,10 +2,10 @@
   "event": {
     "name": "MAF 2026",
     "venue": "Derr-Okamoto Park",
-    "dates": "Fri Sep 25 4\u20138 PM + Sat Sep 26 11 AM\u20138 PM",
-    "mvpCap": 10580,
+    "dates": "Sat Sep 26 4\u20139 PM",
+    "mvpCap": 10855,
     "vendorRev100": 10575,
-    "registryFull": 31170,
+    "registryFull": 31445,
     "vendorSlots": 28,
     "attendance": 2500
   },
@@ -15,9 +15,9 @@
     "fillRate": 1.0,
     "parkFee": 0,
     "attendance": 2500,
-    "mvpCap": 10580,
+    "mvpCap": 10855,
     "vendorRevenue": 10575,
-    "headroomOrGap": -5,
+    "headroomOrGap": -280,
     "vendorSlots": 28,
     "estimatedRevenue": {
       "total": 10575,
@@ -26,7 +26,7 @@
         {
           "label": "Vendor booth fees",
           "amount": 10575,
-          "note": "Fri night market + Sat festival @ planning mix"
+          "note": "Sat festival @ planning mix"
         }
       ]
     }
@@ -73,11 +73,11 @@
     {
       "id": "festival_stage",
       "name": "Festival Stage",
-      "amount": 2400,
+      "amount": 2675,
       "category": "core",
       "sortOrder": 1,
       "tagline": "The stage where Mid-Autumn Festival comes alive.",
-      "description": "30\u00d730 stage tent, portable PA + mic, and two lion dances \u2014 the cultural heart of Saturday at Derr-Okamoto.",
+      "description": "40\u00d730 stage tent, portable PA + mic, and two lion dances \u2014 the cultural heart of Saturday at Derr-Okamoto.",
       "benefits": [
         "Stage naming credit",
         "MC thank-you",
@@ -85,8 +85,8 @@
       ],
       "lineItems": [
         {
-          "label": "30\u00d730 stage tent + weights",
-          "amount": 900
+          "label": "40\u00d730 stage tent + weights",
+          "amount": 1175
         },
         {
           "label": "Portable speaker + playlist + basic mic",
@@ -105,7 +105,7 @@
       "category": "core",
       "sortOrder": 2,
       "tagline": "A safe place for children to run with lanterns at dusk.",
-      "description": "Security coverage Fri 4\u20138 PM and Sat festival hours.",
+      "description": "Security coverage during Fri load-in, Sat festival hours (4\u20139 PM), and egress.",
       "benefits": [
         "Safety sponsor recognition on website + email"
       ],
@@ -123,7 +123,7 @@
       "category": "core",
       "sortOrder": 3,
       "tagline": "Restrooms, hand-wash, and pro porter service \u2014 units stay stocked all weekend.",
-      "description": "Portable restrooms, ADA unit, and hand-wash stations for Fri night market and Sat festival, plus hired porters to restock toilet paper, refill hand-wash water, and keep units clean during event hours.",
+      "description": "Portable restrooms, ADA unit, and hand-wash stations for festival weekend (Fri load-in through Sat close), plus hired porters to restock toilet paper, refill hand-wash water, and keep units clean during event hours.",
       "benefits": [
         "Named amenity sponsor on website + digital sponsor slide"
       ],
@@ -347,8 +347,8 @@
       "category": "registry",
       "sortOrder": 7,
       "impactOrder": 4,
-      "tagline": "Trees, stage, and night market lit for MAF \u2014 the park glows at dusk.",
-      "description": "Functional power and light for stage + night market, plus tree uplights, string lights, and stage flowers \u2014 Mid-Autumn Festival atmosphere before the procession.",
+      "tagline": "Trees, stage, and vendor row lit for MAF \u2014 the park glows at dusk.",
+      "description": "Functional power and light for stage and vendor row, plus tree uplights, string lights, and stage flowers \u2014 Mid-Autumn Festival atmosphere before the procession.",
       "benefits": [
         "Named lighting sponsor",
         "website + Facebook/Instagram unlock post"
@@ -459,7 +459,7 @@
       "sortOrder": 0,
       "variableAmount": true,
       "tagline": "Top up your package toward the next tier.",
-      "description": "Add any dollar amount on top of your selected gifts \u2014 for example, $100 on top of Festival Stage ($2,400) to reach Gold ($2,500+) and unlock sponsor booth spot. Does not fund a named registry feature.",
+      "description": "Add any dollar amount on top of your selected gifts \u2014 for example, $100 on top of Festival Stage ($2,675) to reach Gold ($2,500+) and unlock sponsor booth spot. Does not fund a named registry feature.",
       "benefits": [
         "Counts toward Gold tier sponsorship minimum"
       ],
@@ -498,7 +498,7 @@
       "sortOrder": 2,
       "requiresBoothSpot": true,
       "tagline": "Optional \u2014 we rent the 10\u00d710 for your sponsor booth.",
-      "description": "Capitol Tent City 10\u00d710 tent + weights for Fri night market and Sat festival. Add alongside sponsor booth spot if you prefer not to bring your own tent.",
+      "description": "Capitol Tent City 10\u00d710 tent + weights for Sat festival. Add alongside sponsor booth spot if you prefer not to bring your own tent.",
       "benefits": [
         "Delivery + pickup handled by festival ops",
         "Same 10\u00d710 spec as sponsor booth footprint"
