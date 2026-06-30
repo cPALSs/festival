@@ -4,29 +4,33 @@
     "venue": "Derr-Okamoto Park",
     "dates": "Sat Sep 26 4\u20139 PM",
     "mvpCap": 9944,
-    "vendorRev100": 10575,
+    "vendorRev100": 8370,
+    "vendorRev100Target": 10170,
     "registryFull": 29829,
-    "vendorSlots": 28,
-    "attendance": 2500
+    "vendorSlots": 44,
+    "vendorSlotsTarget": 56,
+    "vendorScenario": "layout-02a-carryover",
+    "attendance": 2000
   },
   "scenario": {
-    "id": "planning",
-    "label": "Planning baseline",
+    "id": "layout-02a-carryover",
+    "label": "Layout 02A \u2014 Carryover (LNY rebook)",
     "fillRate": 1.0,
     "parkFee": 0,
-    "attendance": 2500,
+    "attendance": 2000,
     "mvpCap": 9944,
-    "vendorRevenue": 10575,
-    "headroomOrGap": 631,
-    "vendorSlots": 28,
+    "vendorRevenue": 8370,
+    "headroomOrGap": -1574,
+    "vendorSlots": 44,
+    "vendorScenario": "layout-02a-carryover",
     "estimatedRevenue": {
-      "total": 10575,
-      "summary": "28 vendor slots \u00b7 2,500 attendance \u00b7 100% fill",
+      "total": 8370,
+      "summary": "44 vendor slots (02A carryover) \u00b7 2,000 attendance \u00b7 100% fill",
       "lines": [
         {
           "label": "Vendor booth fees",
-          "amount": 10575,
-          "note": "Sat festival @ planning mix"
+          "amount": 8370,
+          "note": "LNY rebook @ Layout 02A \u2014 no gap-fill outreach"
         }
       ]
     }
