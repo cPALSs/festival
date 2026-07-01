@@ -2,17 +2,19 @@
 
 **Public site:** https://festival.cpalss.com · GitHub Pages repo [`cPALSs/festival`](https://github.com/cPALSs/festival)
 
-Unified MAF hub — home, team, about, **Fund the Festival** at `/build/`, **Custom Zones** at `/host.html`.
+Unified MAF hub — clean URLs, no `.html` in public paths.
 
 ## Pages
 
-| Path | File |
-|------|------|
-| `/` | `index.html` |
-| `/team.html` | Product lane recruitment (from `data/site.json`) |
-| `/host.html` | **Custom Zones** — hero, prompts, examples, desktop TOC (`data/site.json` + `data/sku-catalog.json`) |
-| `/about.html` | Trung Thu + coalition |
-| `/build/` | **Fund the Festival** — interactive sponsor registry (MAF only) |
+| URL | Source |
+|-----|--------|
+| `/` | `index.html` (redirects `/index.html` → `/`) |
+| `/team/` | `team/index.html` |
+| `/about/` | `about/index.html` |
+| `/custom-zones/` | **Custom Zones** — hero, prompts, examples, desktop TOC |
+| `/fund-the-festival/` | **Fund the Festival** — interactive sponsor registry (MAF only) |
+
+Legacy redirects (via `clean-urls.js`): `/host.html` → `/custom-zones/`, `/build/` → `/fund-the-festival/`, `/about.html` → `/about/`, `/team.html` → `/team/`.
 
 ## Content
 
@@ -30,8 +32,8 @@ python3 -m http.server 8765
 ```
 
 - http://localhost:8765/
-- http://localhost:8765/host.html
-- http://localhost:8765/build/
+- http://localhost:8765/custom-zones/
+- http://localhost:8765/fund-the-festival/
 
 ## Publish
 

@@ -137,14 +137,8 @@
   }
 
   function navPrefix() {
-    const inSubdir =
-      window.location.pathname.includes("/build/") ||
-      window.location.pathname.includes("/2026/");
-    if (
-      inSubdir ||
-      window.location.pathname.endsWith("/build") ||
-      window.location.pathname.endsWith("/2026")
-    ) {
+    const path = window.location.pathname;
+    if (/\/(custom-zones|fund-the-festival|about|team|build|2026)(\/|$)/.test(path)) {
       return "../";
     }
     return "";
@@ -167,18 +161,18 @@
       .join("");
   }
 
-  function getNavPages(prefix) {
+  function getNavPages() {
     return [
-      { id: "home", label: "Home", href: `${prefix}index.html` },
-      { id: "about", label: "About", href: `${prefix}about.html` },
-      { id: "team", label: "Team", href: `${prefix}team.html` },
+      { id: "home", label: "Home", href: "/" },
+      { id: "about", label: "About", href: "/about/" },
+      { id: "team", label: "Team", href: "/team/" },
       {
         id: "production",
         label: "Production",
-        href: `${prefix}host.html`,
+        href: "/custom-zones/",
         children: [
-          { id: "host", label: "Custom Zones", href: `${prefix}host.html` },
-          { id: "build", label: "Fund the Festival", href: `${prefix}build/` },
+          { id: "host", label: "Custom Zones", href: "/custom-zones/" },
+          { id: "build", label: "Fund the Festival", href: "/fund-the-festival/" },
         ],
       },
     ];
@@ -206,15 +200,14 @@
   }
 
   function renderNav(activePage) {
-    const prefix = navPrefix();
-    const pages = getNavPages(prefix);
+    const pages = getNavPages();
 
     const links = renderNavLinks(pages, activePage);
 
     return `
     <nav class="site-nav" aria-label="Main">
       <div class="site-nav-bar">
-        <a class="site-nav-brand" href="${prefix}index.html">
+        <a class="site-nav-brand" href="/">
           <span class="site-nav-brand-full">Mid-Autumn <span>Festival 2026</span></span>
           <span class="site-nav-brand-short">MAF <span>2026</span></span>
         </a>
@@ -317,8 +310,7 @@
   }
 
   function renderFooter(site) {
-    const prefix = navPrefix();
-    const navLinks = renderFooterNavLinks(getNavPages(prefix));
+    const navLinks = renderFooterNavLinks(getNavPages());
     const footer = site?.footer ?? {};
     const coalition = (footer.coalitionLinks ?? [])
       .map((link) => `<a href="${escapeHtml(link.href)}" target="_blank" rel="noopener">${escapeHtml(link.label)}</a>`)

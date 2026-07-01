@@ -22,11 +22,11 @@
   },
   "cta": {
     "primaryLabel": "See open roles & committees",
-    "primaryHref": "team.html",
+    "primaryHref": "/team/",
     "secondaryLabel": "Apply on Idealist",
     "secondaryHref": "https://ideali.st/h9P2PJ",
     "buildLabel": "Fund the Festival",
-    "buildHref": "build/"
+    "buildHref": "/fund-the-festival/",
   },
   "apply": {
     "email": "midautumn@cpalss.com",
@@ -220,7 +220,7 @@
       "Amenities+ Director — How can one scale restrooms and sinks for a busy Saturday crowd?",
       "Spread the Word Director — How can one turn sponsor dollars into paid Meta / Instagram reach that fills the park?"
     ],
-    "registryHref": "build/"
+    "registryHref": "/fund-the-festival/"
   },
   "faq": [
     {
@@ -436,7 +436,7 @@
       "title": "Already host a Mid-Autumn event?",
       "body": "Bring your community to ours — a Custom Zone on the Mid-Autumn Festival 2026 map.",
       "buttonLabel": "Custom Zones",
-      "href": "host.html"
+      "href": "/custom-zones/"
     }
   },
   "footer": {

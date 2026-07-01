@@ -1261,7 +1261,7 @@ async function init() {
     document.querySelector(".page").innerHTML = `
       <p class="error">Could not load festival data. Run from a local server:<br>
       <code>cd "Projects - Mid-Autumn Festival/2026/Marketing/maf-site" && python3 -m http.server 8765</code><br>
-      Then open http://localhost:8765/build/<br><br>${err.message}</p>`;
+      Then open http://localhost:8765/fund-the-festival/<br><br>${err.message}</p>`;
   }
 }
 

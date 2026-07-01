@@ -1,47 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Custom Zones at Mid-Autumn Festival 2026 — your name on the map. Decorate your corner yourself or ask us to help bring it to life." />
-  <title>Custom Zones — Mid-Autumn Festival 2026</title>
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem("maf-theme") || localStorage.getItem("maf2026-theme") || localStorage.getItem("build-theme");
-        if (t === "light" || t === "dark" || t === "auto") document.documentElement.setAttribute("data-theme", t);
-      } catch (_) {}
-    })();
-  </script>
-  <link rel="stylesheet" href="site.css" />
+  <title>Redirecting…</title>
+  <link rel="canonical" href="/custom-zones/" />
+  <script src="clean-urls.js"></script>
 </head>
 <body>
-  <div id="site-nav"></div>
-  <main class="page-wrap page-wrap--host" id="main">
-    <p class="muted">Loading…</p>
-  </main>
-  <div id="site-footer"></div>
-  <script src="site.js"></script>
-  <script>
-    (async function () {
-      const { initPageShell, loadSiteData, loadSkuCatalog, mountFooter, renderHostActivations, initHostPageToc, initZoneCarousel, setPageTitle, escapeHtml } =
-        window.MafSite;
-      initPageShell("host");
-      try {
-        const [site, catalog] = await Promise.all([loadSiteData(), loadSkuCatalog()]);
-        const ha = site.hostActivations;
-        setPageTitle(site, ha?.meta?.pageTitle ?? "Custom Zones");
-        if (ha?.meta?.description) {
-          document.querySelector('meta[name="description"]').setAttribute("content", ha.meta.description);
-        }
-        document.getElementById("main").innerHTML = renderHostActivations(site, catalog);
-        initHostPageToc(ha?.apply, ha?.prompts);
-        initZoneCarousel();
-        mountFooter(site);
-      } catch (err) {
-        document.getElementById("main").innerHTML = `<p class="error-panel">${escapeHtml(err.message)}</p>`;
-      }
-    })();
-  </script>
+  <p>Redirecting to <a href="/custom-zones/">Custom Zones</a>…</p>
 </body>
 </html>
