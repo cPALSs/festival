@@ -1478,16 +1478,6 @@ body.nav-open {
     align-items: start;
   }
 
-  .host-hero-inner {
-    display: grid;
-    grid-template-columns: 200px minmax(0, 1fr);
-    gap: 2.5rem;
-  }
-
-  .host-hero-copy {
-    grid-column: 2;
-  }
-
   .host-doc-toc {
     display: block;
     position: sticky;
