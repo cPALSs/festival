@@ -49,24 +49,26 @@
             </div>
             ${h.ctaNote ? `<p class="muted">${escapeHtml(h.ctaNote)}</p>` : ""}
           </section>
-          <section class="content-section">
-            <h2>Fund the experience</h2>
-            <p>Vendor fees fund baseline operations. Sponsors unlock the blocks families remember — lantern procession, children's programming, Honor our Elders, and site lighting.</p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="${escapeHtml(c.buildHref)}">${escapeHtml(c.buildLabel)}</a>
-            </div>
-          </section>
-          ${site.hostActivations?.homepageCta ? (() => {
-            const hc = site.hostActivations.homepageCta;
-            return `
-          <section class="content-section home-host-cta">
-            <h2>${escapeHtml(hc.title)}</h2>
-            <p>${escapeHtml(hc.body)}</p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="${escapeHtml(hc.href)}">${escapeHtml(hc.buttonLabel)}</a>
-            </div>
-          </section>`;
-          })() : ""}
+          <div class="home-cta-columns">
+            <section class="content-section home-cta-column home-fund-cta">
+              <h2>Fund the experience</h2>
+              <p>Vendor fees fund baseline operations. Sponsors unlock the blocks families remember — lantern procession, children's programming, Honor our Elders, and site lighting.</p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="${escapeHtml(c.buildHref)}">${escapeHtml(c.buildLabel)}</a>
+              </div>
+            </section>
+            ${site.hostActivations?.homepageCta ? (() => {
+              const hc = site.hostActivations.homepageCta;
+              return `
+            <section class="content-section home-cta-column home-host-cta">
+              <h2>${escapeHtml(hc.title)}</h2>
+              <p>${escapeHtml(hc.body)}</p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="${escapeHtml(hc.href)}">${escapeHtml(hc.buttonLabel)}</a>
+              </div>
+            </section>`;
+            })() : ""}
+          </div>
         `;
         mountFooter(site);
       } catch (err) {

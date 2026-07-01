@@ -2158,3 +2158,39 @@ body.nav-open {
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--gold) 8%, var(--surface));
 }
+
+.home-cta-columns {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.home-cta-columns > .content-section {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+}
+
+.home-cta-columns > .content-section + .content-section {
+  border-top: none;
+}
+
+@media (min-width: 720px) {
+  .home-cta-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  .home-fund-cta {
+    padding: 2rem 1.5rem 2rem 0;
+  }
+}
+
+@media (max-width: 719px) {
+  .home-cta-columns > .content-section + .content-section {
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+}
