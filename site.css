@@ -2153,6 +2153,8 @@ body.nav-open {
 }
 
 .home-host-cta {
-  border-color: color-mix(in srgb, var(--gold) 40%, var(--border));
+  padding: 2rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--gold) 40%, var(--border));
+  border-radius: var(--radius);
   background: color-mix(in srgb, var(--gold) 8%, var(--surface));
 }
