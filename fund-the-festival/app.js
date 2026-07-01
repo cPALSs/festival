@@ -734,9 +734,14 @@ function setCartTab(tab) {
 
 function renderMeta() {
   const e = state.data.event;
-  const attendance = e.attendance?.toLocaleString() ?? "—";
-  document.getElementById("event-meta").textContent =
-    `${e.venue} · ${e.dates} · ~${attendance} attendees`;
+  const datesEl = document.getElementById("event-summary-dates");
+  const metaEl = document.getElementById("event-summary-meta");
+  const attendance = e.attendance != null ? `~${e.attendance.toLocaleString()} attendees` : null;
+
+  if (datesEl) datesEl.textContent = e.dates ?? "";
+  if (metaEl) {
+    metaEl.textContent = [e.venue, e.tagline ?? attendance].filter(Boolean).join(" · ");
+  }
   document.title = `Fund the Festival — ${e.name}`;
 }
 
