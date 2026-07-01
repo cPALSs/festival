@@ -335,9 +335,9 @@
       "intro": "Pick only what you need — we quote shade, tables, identity, lighting, hosted activities, and microstage on top of your zone. Festival staff install and strike rigged items."
     },
     "toc": [
+      { "id": "examples", "label": "Examples" },
       { "id": "decorate-yourself", "label": "Decorate it yourself" },
       { "id": "bring-to-life", "label": "Bring it to life" },
-      { "id": "examples", "label": "Examples" },
       { "id": "contact", "label": "Contact" },
       { "id": "faq", "label": "FAQ" }
     ],

@@ -965,13 +965,14 @@
     <div class="host-doc-layout">
       ${renderHostToc(ha.toc)}
       <div class="host-doc-main">
-        ${renderDiySection(ha.diySection, catalog)}
-        ${renderHelpSection(ha.helpSection, ha, catalog)}
         <section id="examples" class="host-doc-section" data-host-section>
           <h2>${escapeHtml(ha.storiesSection?.title ?? "Examples")}</h2>
           <p class="muted">${escapeHtml(ha.storiesSection?.intro ?? "")}</p>
           <div class="host-story-grid">${featuredHtml}</div>
         </section>
+
+        ${renderDiySection(ha.diySection, catalog)}
+        ${renderHelpSection(ha.helpSection, ha, catalog)}
 
         <section id="contact" class="host-doc-section" data-host-section>
           <h2>${escapeHtml(ha.apply?.title ?? "Email us to start")}</h2>
