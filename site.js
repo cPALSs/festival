@@ -851,18 +851,56 @@
       });
     });
 
-    if ("IntersectionObserver" in window && sections.length) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const visible = entries
-            .filter((e) => e.isIntersecting)
-            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-          if (visible[0]) setActiveSection(visible[0].target.id);
-        },
-        { rootMargin: "-20% 0px -55% 0px", threshold: [0, 0.25, 0.5, 1] },
-      );
-      sections.forEach((section) => observer.observe(section));
+    function getScrollSpyOffsetPx() {
+      const styles = getComputedStyle(document.documentElement);
+      const navHeight = parseFloat(styles.getPropertyValue("--nav-height")) || 52;
+      const rem = parseFloat(styles.fontSize) || 16;
+      return navHeight + rem;
     }
+
+    function pickActiveSection(sectionList) {
+      if (!sectionList.length) return null;
+
+      const offset = getScrollSpyOffsetPx();
+      const doc = document.documentElement;
+      const nearBottom = window.scrollY + window.innerHeight >= doc.scrollHeight - offset;
+
+      if (nearBottom) {
+        return sectionList[sectionList.length - 1].id;
+      }
+
+      let activeId = sectionList[0].id;
+      for (const section of sectionList) {
+        if (section.getBoundingClientRect().top <= offset + 1) {
+          activeId = section.id;
+        }
+      }
+      return activeId;
+    }
+
+    const sectionList = [...sections];
+    let scrollSpyScheduled = false;
+
+    function updateScrollSpy() {
+      const activeId = pickActiveSection(sectionList);
+      if (activeId) setActiveSection(activeId);
+    }
+
+    function scheduleScrollSpyUpdate() {
+      if (scrollSpyScheduled) return;
+      scrollSpyScheduled = true;
+      requestAnimationFrame(() => {
+        scrollSpyScheduled = false;
+        updateScrollSpy();
+      });
+    }
+
+    window.addEventListener("scroll", scheduleScrollSpyUpdate, { passive: true });
+    window.addEventListener("resize", scheduleScrollSpyUpdate, { passive: true });
+    if ("onscrollend" in window) {
+      window.addEventListener("scrollend", scheduleScrollSpyUpdate, { passive: true });
+    }
+    scheduleScrollSpyUpdate();
 
     const hash = window.location.hash.replace("#", "");
     if (hash === "diy" || hash === "decorate-yourself") {
