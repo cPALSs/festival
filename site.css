@@ -2152,13 +2152,6 @@ body.nav-open {
   pointer-events: none;
 }
 
-.home-host-cta {
-  padding: 2rem 1.5rem;
-  border: 1px solid color-mix(in srgb, var(--gold) 40%, var(--border));
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--gold) 8%, var(--surface));
-}
-
 .home-cta-columns {
   display: grid;
   gap: 1.5rem;
@@ -2183,8 +2176,12 @@ body.nav-open {
     align-items: stretch;
   }
 
-  .home-fund-cta {
-    padding: 2rem 1.5rem 2rem 0;
+  .home-cta-columns > .home-cta-column:first-child {
+    padding-right: 1rem;
+  }
+
+  .home-cta-columns > .home-cta-column:last-child {
+    padding-left: 1rem;
   }
 }
 
