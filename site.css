@@ -1372,8 +1372,15 @@ body.nav-open {
   flex-direction: column;
   justify-content: flex-end;
   min-height: inherit;
-  padding: clamp(2rem, 6vw, 4rem) clamp(1.25rem, 4vw, 3rem);
+  padding: clamp(2rem, 6vw, 4rem) 0;
   background: linear-gradient(to top, color-mix(in srgb, var(--bg) 92%, transparent) 0%, color-mix(in srgb, var(--bg) 35%, transparent) 55%, transparent 100%);
+}
+
+.host-hero-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem);
 }
 
 .host-hero-title {
@@ -1469,6 +1476,16 @@ body.nav-open {
     grid-template-columns: 200px minmax(0, 1fr);
     gap: 2.5rem;
     align-items: start;
+  }
+
+  .host-hero-inner {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .host-hero-copy {
+    grid-column: 2;
   }
 
   .host-doc-toc {

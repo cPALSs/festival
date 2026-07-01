@@ -911,8 +911,12 @@
     return `
     <div class="host-hero" style="background-image:url('${escapeHtml(heroImage ?? "")}')">
       <div class="host-hero-overlay">
-        <h1 class="host-hero-title">${escapeHtml(ha.hero?.displayTitle ?? "Custom Zones")}</h1>
-        ${ha.hero?.tagline ? `<p class="host-hero-tagline">${escapeHtml(ha.hero.tagline)}</p>` : ""}
+        <div class="host-hero-inner">
+          <div class="host-hero-copy">
+            <h1 class="host-hero-title">${escapeHtml(ha.hero?.displayTitle ?? "Custom Zones")}</h1>
+            ${ha.hero?.tagline ? `<p class="host-hero-tagline">${escapeHtml(ha.hero.tagline)}</p>` : ""}
+          </div>
+        </div>
       </div>
     </div>
 
