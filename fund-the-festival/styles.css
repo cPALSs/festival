@@ -105,6 +105,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
+  margin-bottom: 1.25rem;
 }
 
 .header-text {
@@ -177,8 +178,7 @@ body {
   border-radius: 0;
 }
 
-.panel + .panel,
-.progress-row > .progress-panel + .progress-panel {
+.panel + .panel {
   border-top: 1px solid var(--border);
   padding-top: 2rem;
 }
@@ -186,7 +186,7 @@ body {
 .progress-row {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 2rem;
   margin-top: 0;
   border-top: 1px solid var(--border);
   padding-top: 2rem;
@@ -199,6 +199,9 @@ body {
 
 .progress-row > .progress-panel {
   margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: none;
 }
 
 .progress-panel h2 {
@@ -209,6 +212,7 @@ body {
   .progress-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     align-items: stretch;
   }
 }
