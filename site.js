@@ -1054,18 +1054,19 @@
   }
 
   function eventMetaLine1(event) {
-    return [event.zodiacYear, event.dates].filter(Boolean).join(" · ");
+    return [event.zodiacYear, event.dates, event.venue].filter(Boolean).join(" · ");
   }
 
   function eventMetaLine2(event) {
-    return [event.venue, event.tagline].filter(Boolean).join(" · ");
+    return event.tagline ?? "";
   }
 
   function renderEventSummary(site) {
     const e = site.event;
+    const line2 = eventMetaLine2(e);
     return `<div class="event-summary">
       <p class="event-summary-dates">${escapeHtml(eventMetaLine1(e))}</p>
-      <p class="event-summary-meta">${escapeHtml(eventMetaLine2(e))}</p>
+      ${line2 ? `<p class="event-summary-meta">${escapeHtml(line2)}</p>` : ""}
     </div>`;
   }
 
