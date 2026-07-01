@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "festival": "MAF 2026",
+    "version": "2026-07-01",
+    "sourceOfTruth": "Inventory master for vendor Eventeny sync and zone Partnerships quotes"
+  },
+  "vendors": [
+    {
+      "id": "MAF-VENDOR-FT",
+      "skuType": "catalog-vendor",
+      "name": "Food truck / trailer",
+      "footprint": "10×30 truck pad",
+      "slotCap": 5,
+      "publicDescription": "Licensed mobile food unit on wheels — vehicle access to the north truck row. Self-contained power on truck/trailer typical.",
+      "requirements": ["MFF on vehicle", "Vendor generator typical", "Vehicle length disclosure on apply"],
+      "eventeny": {
+        "applyQuestionValue": "food_truck",
+        "tags": ["food-truck", "maf-vendor-ft"],
+        "lineItems": [
+          { "role": "booth_fee", "tier": "standard", "titleTemplate": "Food Truck / Trailer (10×30) – Sat Sep 26 – ${amount}", "amount": 370 },
+          { "role": "booth_fee", "tier": "early_bird", "titleTemplate": "Food Truck / Trailer Early Bird – Sat Sep 26 – ${amount}", "amount": 320 },
+          { "role": "booth_fee", "tier": "late", "titleTemplate": "Food Truck / Trailer Late – Sat Sep 26 – ${amount}", "amount": 400 }
+        ],
+        "depositApply": 75,
+        "depositApproval": 100,
+        "tffSku": "TFF-TRUCK"
+      }
+    },
+    {
+      "id": "MAF-VENDOR-OC",
+      "skuType": "catalog-vendor",
+      "name": "Open cooking",
+      "footprint": "10×30 deep pad",
+      "slotCap": 6,
+      "publicDescription": "Cook line under tenant tent on a deep pad — foot load-in only, no vehicle in cook area. Portable generator behind cook line with rear setback.",
+      "requirements": ["MFF + TFF open-tier", "Tenant tent + cooking equipment", "Generator setback disclosure"],
+      "eventeny": {
+        "applyQuestionValue": "open_cooking",
+        "tags": ["open-cooking", "maf-vendor-oc"],
+        "lineItems": [
+          { "role": "booth_fee", "tier": "standard", "titleTemplate": "Open Cooking (10×30 deep pad) – Sat Sep 26 – ${amount}", "amount": 370 },
+          { "role": "booth_fee", "tier": "early_bird", "titleTemplate": "Open Cooking Early Bird – Sat Sep 26 – ${amount}", "amount": 320 },
+          { "role": "booth_fee", "tier": "late", "titleTemplate": "Open Cooking Late – Sat Sep 26 – ${amount}", "amount": 400 }
+        ],
+        "depositApply": 75,
+        "depositApproval": 100,
+        "tffSku": "TFF-OPEN"
+      }
+    },
+    {
+      "id": "MAF-VENDOR-PF",
+      "skuType": "catalog-vendor",
+      "name": "Prepackaged food",
+      "footprint": "10×10 flex",
+      "slotCap": 10,
+      "publicDescription": "Prepackaged or sealed food for retail — no open flame on pad.",
+      "requirements": ["County health compliance for prepack sales"],
+      "eventeny": {
+        "applyQuestionValue": "prepack_food",
+        "tags": ["prepack", "maf-vendor-pf"],
+        "lineItems": [
+          { "role": "booth_fee", "tier": "standard", "titleTemplate": "Prepackaged Food (10×10) – Sat Sep 26 – ${amount}", "amount": 150 },
+          { "role": "booth_fee", "tier": "early_bird", "titleTemplate": "Prepackaged Food Early Bird – Sat Sep 26 – ${amount}", "amount": 125 },
+          { "role": "booth_fee", "tier": "late", "titleTemplate": "Prepackaged Food Late – Sat Sep 26 – ${amount}", "amount": 175 }
+        ],
+        "depositApply": 50,
+        "depositApproval": 25,
+        "tffSku": null
+      }
+    },
+    {
+      "id": "MAF-VENDOR-GEN",
+      "skuType": "catalog-vendor",
+      "name": "General exhibitor",
+      "footprint": "10×10 flex",
+      "slotCap": 25,
+      "publicDescription": "Retail, services, or tabling in the flex vendor ring.",
+      "requirements": ["No open flame without separate vendor path"],
+      "eventeny": {
+        "applyQuestionValue": "general_exhibitor",
+        "tags": ["general", "maf-vendor-gen"],
+        "lineItems": [
+          { "role": "booth_fee", "tier": "standard", "titleTemplate": "General Exhibitor (10×10) – Sat Sep 26 – ${amount}", "amount": 150 },
+          { "role": "booth_fee", "tier": "early_bird", "titleTemplate": "General Exhibitor Early Bird – Sat Sep 26 – ${amount}", "amount": 125 },
+          { "role": "booth_fee", "tier": "late", "titleTemplate": "General Exhibitor Late – Sat Sep 26 – ${amount}", "amount": 175 }
+        ],
+        "depositApply": 50,
+        "depositApproval": 25,
+        "tffSku": null
+      }
+    },
+    {
+      "id": "MAF-VENDOR-NP",
+      "skuType": "catalog-vendor",
+      "name": "Nonprofit",
+      "footprint": "10×10 flex",
+      "slotCap": 10,
+      "publicDescription": "501(c) or equivalent nonprofit tabling — mission-first, not primary commerce.",
+      "requirements": ["Nonprofit proof on apply"],
+      "eventeny": {
+        "applyQuestionValue": "nonprofit",
+        "tags": ["nonprofit", "maf-vendor-np"],
+        "lineItems": [
+          { "role": "booth_fee", "tier": "standard", "titleTemplate": "Nonprofit (10×10) – Sat Sep 26 – ${amount}", "amount": 85 },
+          { "role": "booth_fee", "tier": "early_bird", "titleTemplate": "Nonprofit Early Bird – Sat Sep 26 – ${amount}", "amount": 70 },
+          { "role": "booth_fee", "tier": "late", "titleTemplate": "Nonprofit Late – Sat Sep 26 – ${amount}", "amount": 100 }
+        ],
+        "depositApply": 0,
+        "depositApproval": 0,
+        "tffSku": null
+      }
+    }
+  ],
+  "zoneBaselines": [
+    {
+      "id": "MAF-ZONE-S",
+      "skuType": "catalog-zone",
+      "name": "Small custom zone",
+      "sizeLabel": "Small",
+      "standardSpaceCount": 3,
+      "flexSlotsConsumed": 3,
+      "openCookingSpotCap": 0,
+      "inventory": {
+        "siteCap": 2,
+        "zonesRemaining": 2
+      },
+      "guestCapacityGuide": "50–150 of your community",
+      "included": ["Named map placement", "Insurance umbrella", "Load-in window", "Website listing", "Map legend entry", "Plaza in front of your spot row"],
+      "publicDescription": "Three adjacent spots plus a front plaza — an intimate named corner. Bring popup shade or add frame tent rental.",
+      "amenities": {
+        "tables": "BYO or MAF-ADD-TABLES",
+        "shade": "BYO popups OK or MAF-ADD-TENT-10X10 (Capitol frame tent)",
+        "power": "Shared festival power tower · MAF-ADD-GEN-PORTABLE optional",
+        "loadIn": "Saturday load-in from 2 PM"
+      },
+      "commerce": "Partnerships quote"
+    },
+    {
+      "id": "MAF-ZONE-M",
+      "skuType": "catalog-zone",
+      "name": "Medium custom zone",
+      "sizeLabel": "Medium",
+      "standardSpaceCount": 5,
+      "flexSlotsConsumed": 5,
+      "openCookingSpotCap": 1,
+      "inventory": {
+        "siteCap": 1,
+        "zonesRemaining": 1
+      },
+      "guestCapacityGuide": "150–250 of your community",
+      "included": ["Named map placement", "Insurance umbrella", "Load-in window", "Website listing", "Map legend entry", "Plaza in front of your spot row"],
+      "publicDescription": "Five adjacent spots plus plaza — family home base or program block.",
+      "amenities": {
+        "tables": "BYO or MAF-ADD-TABLES",
+        "shade": "BYO popups OK or MAF-ADD-TENT-10X10 (Capitol frame tent)",
+        "power": "Shared festival power tower · MAF-ADD-GEN-PORTABLE optional",
+        "loadIn": "Saturday load-in from 2 PM"
+      },
+      "commerce": "Partnerships quote"
+    },
+    {
+      "id": "MAF-ZONE-L",
+      "skuType": "catalog-zone",
+      "name": "Large custom zone",
+      "sizeLabel": "Large",
+      "standardSpaceCount": 8,
+      "flexSlotsConsumed": 8,
+      "openCookingSpotCap": 2,
+      "inventory": {
+        "siteCap": 1,
+        "zonesRemaining": 1
+      },
+      "guestCapacityGuide": "250–400 of your community",
+      "included": ["Named map placement", "Insurance umbrella", "Load-in window", "Website listing", "Map legend entry", "Plaza in front of your spot row"],
+      "publicDescription": "Eight adjacent spots plus plaza — village-scale identity with room for welcome arch, crafts, and linger area.",
+      "amenities": {
+        "tables": "BYO or MAF-ADD-TABLES",
+        "shade": "BYO popups OK or MAF-ADD-TENT-10X10 (Capitol frame tent)",
+        "power": "Shared festival power tower · MAF-ADD-GEN-PORTABLE optional",
+        "loadIn": "Saturday load-in from 2 PM"
+      },
+      "commerce": "Partnerships quote"
+    }
+  ],
+  "hosted": [
+    {
+      "id": "MAF-HOSTED-STATION",
+      "skuType": "catalog-hosted",
+      "name": "Children's Village anchor station",
+      "footprint": "Meetup corral station",
+      "slotCap": "3–4",
+      "tenantFacing": false,
+      "publicDescription": "Coalition-programmed anchor in Children's Village meetup corral — not a public tenant rental. Parent networks and PTAs → small activation zone with name on map.",
+      "included": ["Activity from coalition menu", "Shade and supplies", "Map pin in corral", "Forwardable newsletter blurb"],
+      "commerce": "Partnerships quote"
+    }
+  ],
+  "packageTemplates": [
+    {
+      "id": "MAF-PKG-CORNER",
+      "skuType": "package-template",
+      "name": "Corner activation",
+      "recommendedBaseline": "MAF-ZONE-S",
+      "description": "Intimate mini-festival — three adjacent spots; BYO shade and volunteers, coalition holds the crowd."
+    },
+    {
+      "id": "MAF-PKG-VILLAGE",
+      "skuType": "package-template",
+      "name": "Village activation",
+      "recommendedBaseline": "MAF-ZONE-M",
+      "alternateBaseline": "MAF-ZONE-L",
+      "description": "Family home base — crafts, photo, identity signage. Medium or large baseline."
+    },
+    {
+      "id": "MAF-PKG-PROGRAM",
+      "skuType": "package-template",
+      "name": "Program block",
+      "recommendedBaseline": "MAF-ZONE-M",
+      "alternateBaseline": "MAF-ZONE-L",
+      "description": "Stage-adjacent microstage — coalition sets up PA + plaza seating; you bring performers."
+    }
+  ],
+  "addons": [
+    {
+      "id": "MAF-ADD-TENT-10X10",
+      "skuType": "addon",
+      "category": "setup",
+      "name": "10×10 frame tent rental",
+      "publicDescription": "Capitol Tent City frame tent + weights — sturdy 10×10 suitable for festival rigging (not popup canopy)."
+    },
+    {
+      "id": "MAF-ADD-GEN-PORTABLE",
+      "skuType": "addon",
+      "category": "setup",
+      "name": "Portable generator + fuel",
+      "publicDescription": "Zone power beyond shared festival tower — Power & Lighting sign-off."
+    },
+    {
+      "id": "MAF-ADD-LIGHT-ZONE",
+      "skuType": "addon",
+      "category": "decor",
+      "name": "Zone lighting",
+      "publicDescription": "Dusk zone lighting — installed and struck by festival staff. Rigged to Capitol frame tent(s), festival pole kit, or ground uplights — not tenant popups."
+    },
+    {
+      "id": "MAF-ADD-LIGHT-POLE-KIT",
+      "skuType": "addon",
+      "category": "decor",
+      "name": "Lighting pole kit",
+      "publicDescription": "Weighted poles at plaza edge for string lighting when you BYO popup shade — pairs with zone lighting add-on."
+    },
+    {
+      "id": "MAF-ADD-TABLES",
+      "skuType": "addon",
+      "category": "setup",
+      "name": "Tables & chairs",
+      "publicDescription": "Table and chair rental for your zone — popular with parent groups who don't want to haul gear from the parking lot."
+    },
+    {
+      "id": "MAF-ADD-SIGNAGE-ZONE",
+      "skuType": "addon",
+      "category": "decor",
+      "name": "Zone signage",
+      "publicDescription": "Map legend + A-frames so families find your block."
+    },
+    {
+      "id": "MAF-ADD-BANNER-WELCOME",
+      "skuType": "addon",
+      "category": "decor",
+      "name": "Welcome banner",
+      "publicDescription": "Entrance banner with your artwork — e.g. Welcome to Little Manila."
+    },
+    {
+      "id": "MAF-ADD-PHOTO-BACKDROP",
+      "skuType": "addon",
+      "category": "decor",
+      "name": "Photo backdrop",
+      "publicDescription": "Step-and-repeat structure + mount — festival installs; you supply print art."
+    },
+    {
+      "id": "MAF-ADD-SOUND-MICROSTAGE",
+      "skuType": "addon",
+      "category": "microstage",
+      "name": "Zone sound / microstage",
+      "publicDescription": "Portable PA + line-in on one spot — you bring performers and run-of-show."
+    },
+    {
+      "id": "MAF-ADD-MICROSTAGE-SEATING",
+      "skuType": "addon",
+      "category": "microstage",
+      "name": "Microstage plaza seating",
+      "publicDescription": "Chair ring in the plaza facing your microstage pad (~24 seats)."
+    },
+    {
+      "id": "MAF-ADD-ACT-LANTERN-CRAFT",
+      "skuType": "addon",
+      "category": "programming",
+      "name": "Lantern craft activity",
+      "publicDescription": "Make a lantern before procession — supplies + runbook."
+    },
+    {
+      "id": "MAF-ADD-ACT-STORY-CIRCLE",
+      "skuType": "addon",
+      "category": "programming",
+      "name": "Story circle",
+      "publicDescription": "Bilingual story time under shade."
+    },
+    {
+      "id": "MAF-ADD-ACT-PHOTO-BOOTH",
+      "skuType": "addon",
+      "category": "programming",
+      "name": "Photo booth activity",
+      "publicDescription": "Family photos at your backdrop — best with the photo backdrop in your zone."
+    },
+    {
+      "id": "MAF-ADD-ACT-GROUP-GAME",
+      "skuType": "addon",
+      "category": "programming",
+      "name": "Group game",
+      "publicDescription": "Short festival game — scavenger, relay, or similar."
+    },
+    {
+      "id": "MAF-ADD-FACILITATOR-SLOT",
+      "skuType": "addon",
+      "category": "programming",
+      "name": "Facilitator slot",
+      "publicDescription": "Festival volunteer runs a 30-minute activity window in your zone."
+    }
+  ]
+}

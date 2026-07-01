@@ -25,7 +25,7 @@
     "primaryHref": "team.html",
     "secondaryLabel": "Apply on Idealist",
     "secondaryHref": "https://ideali.st/h9P2PJ",
-    "buildLabel": "Build the Festival",
+    "buildLabel": "Fund the Festival",
     "buildHref": "build/"
   },
   "apply": {
@@ -107,7 +107,7 @@
       "id": "program",
       "title": "Program & experience",
       "subtitle": "What families see and remember",
-      "intro": "Stage, schedule, and signature moments — including sponsor-funded features from Build the Festival.",
+      "intro": "Stage, schedule, and signature moments — including sponsor-funded features from Fund the Festival.",
       "roles": [
         {
           "title": "Stage Director",
@@ -175,7 +175,7 @@
       "roles": [
         {
           "title": "Sponsorship Director",
-          "experience": "Registry stories funded on Build the Festival — lantern procession, children's programming, Honor our Elders, and site lighting unlock when sponsors claim a block",
+          "experience": "Registry stories funded on Fund the Festival — lantern procession, children's programming, Honor our Elders, and site lighting unlock when sponsors claim a block",
           "test": "How can one create win-win-win situations — great guest experiences, producers who make it happen, and sponsors growing their business?",
           "ship": "Pipeline active, registry asks out, sponsor deliverables tracked through event weekend",
           "get": "Business development network — coalition merchants and regional sponsors",
@@ -205,7 +205,7 @@
         {
           "title": "Partnerships & Grants Director",
           "test": "How can one position MAF as a pillar of the community-at-large — and build mutually beneficial relationships with every organization around it?",
-          "ship": "Community partnership map; CCSD liaison, cross-promo allies (e.g. Giant Pumpkin), grant language and renewals; outreach log separating confirmed partners from exploratory threads; festival design advisory — when a grant opens a door we hadn't considered, rough-shape the idea on the Build the Festival gift registry until a lane director owns and details it",
+          "ship": "Community partnership map; CCSD liaison, cross-promo allies (e.g. Giant Pumpkin), grant language and renewals; outreach log separating confirmed partners from exploratory threads; festival design advisory — when a grant opens a door we hadn't considered, rough-shape the idea on the Fund the Festival gift registry until a lane director owns and details it",
           "fit": "Think in mutual benefit across the local ecosystem — not just sponsorship asks; comfortable building institutional relationships and advising on festival design; can give grant-born ideas basic registry shape before handing off to a lane director"
         }
       ]
@@ -213,7 +213,7 @@
   ],
   "phase2": {
     "title": "Sponsor unlocks — Phase 2",
-    "intro": "These lanes activate when sponsors fund the matching Build the Festival gift. Plan with the base lane lead in the meantime; hold the vision until the block unlocks.",
+    "intro": "These lanes activate when sponsors fund the matching Fund the Festival gift. Plan with the base lane lead in the meantime; hold the vision until the block unlocks.",
     "roles": [
       "Stage+ Director — How can one upgrade to concert-quality sound and basic stage lights beyond MVP?",
       "Security+ Director — How can one add guards at peak hours when sponsors fund the block?",
@@ -284,6 +284,159 @@
         { "year": 2021, "venue": "Florin Towne Centre", "image": "posters/2021.jpg" }
       ],
       "note": "2026 Derr-Okamoto Park flier coming soon. Past fliers originally published on cpalss.com/projects/mid-autumn-festival."
+    }
+  },
+  "hostActivations": {
+    "meta": {
+      "pageTitle": "Custom Zones",
+      "description": "Custom Zones at Mid-Autumn Festival 2026 — your name on the map. Decorate your corner yourself or ask us to help bring it to life."
+    },
+    "hero": {
+      "displayTitle": "Custom Zones",
+      "heroImage": "assets/custom-zones-hero.webp",
+      "tagline": "Your name on the map. Your community in the crowd."
+    },
+    "prompts": {
+      "diy": {
+        "label": "I want to decorate it myself",
+        "mode": "diy",
+        "scrollTo": "decorate-yourself",
+        "mailtoSubject": "MAF 2026 — Custom zone (decorate myself)"
+      },
+      "help": {
+        "label": "Help me bring it to life",
+        "mode": "help",
+        "scrollTo": "bring-to-life",
+        "mailtoSubject": "MAF 2026 — Custom zone (help bringing it to life)"
+      },
+      "vendor": {
+        "label": "I just want a booth spot",
+        "action": "modal"
+      }
+    },
+    "vendorSpot": {
+      "modal": {
+        "title": "Vendor spot",
+        "message": "Vendor registration will open later.",
+        "waitlistUrl": "https://docs.google.com/forms/d/1eN8ydyWLI_i4JeBDS2AoFM8KdCX8Dpwv7FlbGwXyn9g/viewform",
+        "waitlistLabel": "Join the vendor waitlist",
+        "closeLabel": "Close"
+      }
+    },
+    "diySection": {
+      "id": "decorate-yourself",
+      "title": "Decorate it yourself",
+      "intro": "You get a named corner of the festival — yours to decorate as you see fit. We assign the footprint on the map. You bring popup shade, your look, volunteers, and programming for your community.",
+      "plazaHint": "Tables, chairs, decor allowed"
+    },
+    "helpSection": {
+      "id": "bring-to-life",
+      "title": "Help me bring it to life",
+      "intro": "Pick only what you need — we quote shade, tables, identity, lighting, hosted activities, and microstage on top of your zone. Festival staff install and strike rigged items."
+    },
+    "toc": [
+      { "id": "decorate-yourself", "label": "Decorate it yourself" },
+      { "id": "bring-to-life", "label": "Bring it to life" },
+      { "id": "examples", "label": "Examples" },
+      { "id": "contact", "label": "Contact" },
+      { "id": "faq", "label": "FAQ" }
+    ],
+    "featuredStoryIds": ["open-mic-club", "toddler-meetup", "filipino-village"],
+    "storiesSection": {
+      "title": "Examples",
+      "intro": "What it can look like — not price quotes."
+    },
+    "caseStudies": [
+      {
+        "id": "open-mic-club",
+        "mode": "help",
+        "pathLabel": "Help bringing it to life",
+        "title": "Open mic, coffee-shop vibes",
+        "image": "assets/example-open-mic.webp",
+        "persona": "Music club or songwriter circle — acoustic sets, not a main-stage slot",
+        "baselineSku": "MAF-ZONE-M",
+        "addons": ["MAF-ADD-SOUND-MICROSTAGE", "MAF-ADD-MICROSTAGE-SEATING", "MAF-ADD-TENT-10X10", "MAF-ADD-LIGHT-ZONE", "MAF-ADD-SIGNAGE-ZONE"],
+        "tenantBrings": ["Performers and sign-up list", "Run-of-show", "Mailing list"],
+        "platformProvides": ["Portable PA on one spot", "Plaza chair ring", "Zone lighting and signage"],
+        "summary": "String lights, café tables, and a small plaza stage — members take five-minute sets while the crowd lingers with boba and acoustic sets."
+      },
+      {
+        "id": "toddler-meetup",
+        "mode": "help",
+        "pathLabel": "Help bringing it to life",
+        "title": "Toddler parents' meetup",
+        "image": "assets/example-toddler-meetup.webp",
+        "persona": "Parents' group — ages 1–4, busy families who need a clear home base",
+        "baselineSku": "MAF-ZONE-S",
+        "addons": ["MAF-ADD-TABLES", "MAF-ADD-TENT-10X10", "MAF-ADD-SIGNAGE-ZONE", "MAF-ADD-ACT-STORY-CIRCLE", "MAF-ADD-FACILITATOR-SLOT"],
+        "tenantBrings": ["Mailing list", "Volunteers to greet families"],
+        "platformProvides": ["Shade, tables, and chairs on arrival", "Toddler-ready activities and story time", "Your group's name on the map"],
+        "summary": "Shade, tables, and toddler activities ready when families arrive — bubble play, story mat, and a map pin so nobody hunts for each other in the crowd."
+      },
+      {
+        "id": "filipino-village",
+        "mode": "diy",
+        "pathLabel": "Decorate it myself — village scale",
+        "title": "Filipino Village",
+        "image": "assets/example-filipino-village.webp",
+        "persona": "Filipino cultural org — barangay-scale identity on the map",
+        "baselineSku": "MAF-ZONE-L",
+        "addons": ["MAF-ADD-BANNER-WELCOME", "MAF-ADD-SIGNAGE-ZONE", "MAF-ADD-LIGHT-ZONE"],
+        "tenantBrings": ["Parol-inspired décor", "Tinikling and cultural performers", "Community following"],
+        "platformProvides": ["Eight adjacent spots + plaza", "Welcome arch and map legend", "Insurance umbrella"],
+        "summary": "Parol-inspired lanterns over the plaza, a welcome arch, and tinikling in the open — the map says Filipino Village, not a single vendor table."
+      }
+    ],
+    "addonsIntro": "Add-ons stack in four tiers — decor, setup, hosted activities, and microstage. Rigged items (lighting, backdrop, PA) are install-inclusive — festival staff set up and strike; not for tenant self-install on popups. Partnerships quotes per deal; no public price list.",
+    "addonCategories": [
+      { "id": "decor", "label": "Identity & decor", "description": "Signage, welcome banner, photo backdrop, zone lighting — festival installs rigged decor; BYO popups are shade-only." },
+      { "id": "setup", "label": "Shade & setup", "description": "Frame tent rental, **tables & chairs** (popular with parent groups), portable power." },
+      { "id": "programming", "label": "Hosted activities", "description": "Crafts, story time, games, photo moments — optional facilitator slots." },
+      { "id": "microstage", "label": "Microstage setup", "description": "Portable PA + plaza seating — you bring performers. Festival organizers do not book zone talent for Mid-Autumn Festival 2026." }
+    ],
+    "apply": {
+      "title": "Start your inquiry",
+      "formUrl": "https://docs.google.com/forms/d/1lq0PmaKz11ilsksy6uVTcsDSBH8TaLtBy_PsYMwD0GY/viewform",
+      "formLabel": "Fill out the inquiry form",
+      "prefill": {
+        "diy": "https://docs.google.com/forms/d/1lq0PmaKz11ilsksy6uVTcsDSBH8TaLtBy_PsYMwD0GY/viewform?usp=pp_url&entry.72e95146=Custom+zone&entry.52624066=Decorate+it+myself",
+        "help": "https://docs.google.com/forms/d/1lq0PmaKz11ilsksy6uVTcsDSBH8TaLtBy_PsYMwD0GY/viewform?usp=pp_url&entry.72e95146=Custom+zone&entry.52624066=Help+me+bring+it+to+life"
+      },
+      "email": "midautumn@cpalss.com",
+      "emailSubject": "MAF 2026 — host inquiry",
+      "intro": "Tell us about your organization — Partnerships will follow up within a few business days with a recommended setup. They may ask about shade, lighting, and artwork; you don't need answers on day one."
+    },
+    "faq": [
+      {
+        "q": "What's a spot in a custom zone?",
+        "a": "One mapped 10×10 tent pad inside your zone. The baseline also includes the **plaza in front of the spot row** — open area for photos and mini programming. Bring popup shade (or add **Capitol frame tent** rental). A zone spot is not an assigned vendor spot."
+      },
+      {
+        "q": "Can I BYO popup tents and still get zone lighting?",
+        "a": "Yes — popup shade is fine. String lighting installs on **Capitol frame tents**, a **festival pole kit**, or **ground uplights** — festival staff rig and strike; we do not hang lights on popups."
+      },
+      {
+        "q": "Why rent a zone instead of three vendor spots?",
+        "a": "Three vendor registrations get you three commerce spots in the vendor ring. A custom zone gives you adjacent spots **plus the plaza in front** — a named corner where your community can linger."
+      },
+      {
+        "q": "Do festival organizers book singers for my zone?",
+        "a": "Not for Mid-Autumn Festival 2026. Microstage add-ons cover portable PA and plaza seating only. You bring your own performers and run-of-show — karaoke crew, church singers, community talent."
+      },
+      {
+        "q": "How is this different from showing up uninvited?",
+        "a": "A custom zone is a **named corner on the festival map** — adjacent spots plus a plaza in front where your community can find you, decorate, and linger. You go through intake so load-in, insurance, and map placement are coordinated with the rest of the event.\n\nShowing up without registering means no assigned footprint, no map pin, and no slot in the festival plan. The event runs Derr-Okamoto Park under a **special-event permit** with assigned vendor spots and custom zones. Unregistered setups in the festival footprint — including unauthorized food vendors — are not part of the layout. **Zone hosts do not personally enforce park rules or remove people from the park**; festival operations and park staff handle conflicts day-of."
+      },
+      {
+        "q": "Can we rent a zone if we're not Vietnamese-led?",
+        "a": "Yes — activation zones are for any tribe with a community and an identity to express. Cross-community villages (e.g. Chinese, Filipino, Russian) are welcome."
+      }
+    ],
+    "homepageCta": {
+      "title": "Already host a Mid-Autumn event?",
+      "body": "Bring your community to ours — a Custom Zone on the Mid-Autumn Festival 2026 map.",
+      "buttonLabel": "Custom Zones",
+      "href": "host.html"
     }
   },
   "footer": {

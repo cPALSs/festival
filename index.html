@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="auto">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,7 +38,7 @@
             ${renderEventSummary(site)}
           </section>
           <p class="home-intro">${escapeHtml(h.intro)}</p>
-          <section class="panel">
+          <section class="content-section">
             <h2>${escapeHtml(h.headline)}</h2>
             <p>${escapeHtml(h.subhead)}</p>
             <p class="muted">${escapeHtml(h.body)}</p>
@@ -48,13 +48,24 @@
             </div>
             ${h.ctaNote ? `<p class="muted">${escapeHtml(h.ctaNote)}</p>` : ""}
           </section>
-          <section class="panel">
-            <h2>Sponsor the experience</h2>
+          <section class="content-section">
+            <h2>Fund the experience</h2>
             <p>Vendor fees fund baseline operations. Sponsors unlock the blocks families remember — lantern procession, children's programming, Honor our Elders, and site lighting.</p>
             <div class="cta-row">
               <a class="btn btn-primary" href="${escapeHtml(c.buildHref)}">${escapeHtml(c.buildLabel)}</a>
             </div>
           </section>
+          ${site.hostActivations?.homepageCta ? (() => {
+            const hc = site.hostActivations.homepageCta;
+            return `
+          <section class="content-section home-host-cta">
+            <h2>${escapeHtml(hc.title)}</h2>
+            <p>${escapeHtml(hc.body)}</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="${escapeHtml(hc.href)}">${escapeHtml(hc.buttonLabel)}</a>
+            </div>
+          </section>`;
+          })() : ""}
         `;
         mountFooter(site);
       } catch (err) {

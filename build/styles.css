@@ -170,23 +170,31 @@ body {
 }
 
 .panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 20px;
-  margin-top: 20px;
+  margin: 0;
+  padding: 2rem 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
-.panel h2 {
-  margin: 0 0 12px;
-  font-size: 1.1rem;
+.panel + .panel,
+.progress-row > .progress-panel + .progress-panel {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
 }
 
 .progress-row {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 20px;
+  gap: 0;
+  margin-top: 0;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.panel h2 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
 }
 
 .progress-row > .progress-panel {

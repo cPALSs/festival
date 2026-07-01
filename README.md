@@ -2,7 +2,7 @@
 
 **Public site:** https://festival.cpalss.com · GitHub Pages repo [`cPALSs/festival`](https://github.com/cPALSs/festival)
 
-Unified MAF hub — home, team, about, **Build the Festival (MAF only)** at `/build/`.
+Unified MAF hub — home, team, about, **Fund the Festival** at `/build/`, **Custom Zones** at `/host.html`.
 
 ## Pages
 
@@ -10,14 +10,17 @@ Unified MAF hub — home, team, about, **Build the Festival (MAF only)** at `/bu
 |------|------|
 | `/` | `index.html` |
 | `/team.html` | Product lane recruitment (from `data/site.json`) |
+| `/host.html` | **Custom Zones** — hero, prompts, examples, desktop TOC (`data/site.json` + `data/sku-catalog.json`) |
 | `/about.html` | Trung Thu + coalition |
-| `/build/` | Interactive sponsor builder (MAF only) |
+| `/build/` | **Fund the Festival** — interactive sponsor registry (MAF only) |
 
 ## Content
 
-- **`data/site.json`** — recruitment + about copy ([Open Leadership Roles](../Open%20Leadership%20Roles%20-%20Recruitment%20Copy.md))
-- **`data/maf-2026.json`** — Build the Festival data (from `build_maf_budget.py`)
+- **`data/site.json`** — recruitment + about + Custom Zones copy
+- **`data/sku-catalog.json`** — SKU inventory master (vendor Eventeny sync + zone Partnerships quotes)
+- **`data/maf-2026.json`** — Fund the Festival data (from `build_maf_budget.py`)
 - **`data/festivals.json`** — BTF manifest — MAF only
+- **`assets/custom-zones-hero.webp`** — Custom Zones hero image (replace with photography when ready)
 
 ## Local preview
 
@@ -27,20 +30,15 @@ python3 -m http.server 8765
 ```
 
 - http://localhost:8765/
-- http://localhost:8765/team.html
+- http://localhost:8765/host.html
 - http://localhost:8765/build/
-- http://localhost:8765/about.html
 
 ## Publish
 
+From repo root:
+
 ```bash
-git clone git@github.com:cPALSs/festival.git ~/festival   # once
-/Users/bao/cPALSs/scripts/publish_festival_site.sh ~/festival
-cd ~/festival && git add -A && git commit -m "Update site" && git push
+./scripts/publish_festival_site.sh /Users/bao/festival
 ```
 
-Regenerates MAF JSON via `build_maf_budget.py`, then rsyncs this folder to the publish repo.
-
-## Link policy
-
-No monorepo paths in public JSON or HTML — [.cursor/rules/github-pages-public-sites.mdc](../../../../.cursor/rules/github-pages-public-sites.mdc)
+Live: https://festival.cpalss.com

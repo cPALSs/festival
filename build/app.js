@@ -1,4 +1,4 @@
-/** Build the Festival — multi-festival interactive model */
+/** Fund the Festival — multi-festival interactive model */
 
 const fmt = (n) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
@@ -737,7 +737,7 @@ function renderMeta() {
   const attendance = e.attendance?.toLocaleString() ?? "—";
   document.getElementById("event-meta").textContent =
     `${e.venue} · ${e.dates} · ~${attendance} attendees`;
-  document.title = `Build the Festival — ${e.name}`;
+  document.title = `Fund the Festival — ${e.name}`;
 }
 
 function renderSectionHints() {

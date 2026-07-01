@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="auto">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -54,7 +54,7 @@
 
         const phase2 = site.phase2;
         const phase2Html = `
-          <section class="panel">
+          <section class="content-section">
             <h2>${escapeHtml(phase2.title)}</h2>
             <p>${escapeHtml(phase2.intro)}</p>
             <ul>${phase2.roles.map((r) => `<li>${escapeHtml(r)}</li>`).join("")}</ul>
@@ -75,7 +75,7 @@
           <section class="hero">
             <h1>Team</h1>
           </section>
-          <section class="panel">
+          <section class="content-section">
             <h2>Open roles &amp; committees</h2>
             <h3>${escapeHtml(intro.title)}</h3>
             ${intro.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
@@ -83,13 +83,13 @@
           </section>
           ${lanesHtml}
           ${phase2Html}
-          <section class="panel">
+          <section class="content-section">
             <h2>How to apply</h2>
             ${site.apply.intro ? `<p>${escapeHtml(site.apply.intro)}</p>` : ""}
             ${renderApplyBlock(site)}
             <div class="co-chairs">${renderCoChairs(site)}</div>
           </section>
-          <section class="panel">
+          <section class="content-section">
             <h2>FAQ</h2>
             ${faqHtml}
           </section>
