@@ -1882,6 +1882,7 @@ body.nav-open {
   font-size: 0.9rem;
   color: var(--muted);
   line-height: 1.4;
+  white-space: nowrap;
 }
 
 .zone-tier-diagram {
@@ -1896,6 +1897,39 @@ body.nav-open {
   width: 100%;
   height: 100%;
   max-width: 100%;
+}
+
+.zone-tier-price {
+  margin: 0.35rem 0 0.15rem;
+  padding: 0.65rem 0 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.zone-tier-price-main {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.zone-tier-price-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.zone-tier-price-amount {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.zone-tier-price-detail {
+  margin: 0.25rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
 }
 
 .zone-tier-stats {

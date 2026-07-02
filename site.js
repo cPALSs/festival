@@ -410,7 +410,7 @@
     const remaining = zoneZonesRemaining(zone);
     if (remaining === null) return "";
     if (remaining <= 0) return "Sold out";
-    return `${remaining} remaining`;
+    return `${remaining} left`;
   }
 
   function formatZoneFoodLine(zone) {
@@ -425,7 +425,47 @@
     return [...zones].sort((a, b) => (order[a.sizeLabel] ?? 99) - (order[b.sizeLabel] ?? 99));
   }
 
-  function renderZoneTierCard(zone, diy) {
+  function formatUsd(amount) {
+    return Number(amount).toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+    });
+  }
+
+  function vendorBoothFeeStandard(catalog, applyQuestionValue) {
+    const vendor = (catalog.vendors ?? []).find((v) => v.eventeny?.applyQuestionValue === applyQuestionValue);
+    const line = (vendor?.eventeny?.lineItems ?? []).find(
+      (item) => item.role === "booth_fee" && item.tier === "standard",
+    );
+    return line?.amount ?? null;
+  }
+
+  function zoneByoStartingPrices(catalog, zone) {
+    const count = zoneStandardSpaceCount(zone);
+    const generalPerSpace = vendorBoothFeeStandard(catalog, "general_exhibitor");
+    const nonprofitPerSpace = vendorBoothFeeStandard(catalog, "nonprofit");
+    if (!count || generalPerSpace == null || nonprofitPerSpace == null) return null;
+    return {
+      nonprofit: nonprofitPerSpace * count,
+      general: generalPerSpace * count,
+    };
+  }
+
+  function renderZoneByoPrice(zone, catalog) {
+    const prices = zoneByoStartingPrices(catalog, zone);
+    if (!prices) return "";
+    return `
+      <div class="zone-tier-price">
+        <p class="zone-tier-price-main">
+          <span class="zone-tier-price-label">Starting at</span>
+          <span class="zone-tier-price-amount">${escapeHtml(formatUsd(prices.general))}</span>
+        </p>
+        <p class="zone-tier-price-detail muted">${escapeHtml(formatUsd(prices.nonprofit))} nonprofit</p>
+      </div>`;
+  }
+
+  function renderZoneTierCard(zone, diy, catalog) {
     const count = zoneStandardSpaceCount(zone);
     const remaining = formatZoneRemainingShort(zone);
     const soldOut = zoneZonesRemaining(zone) !== null && zoneZonesRemaining(zone) <= 0;
@@ -443,6 +483,7 @@
         ${badge}
       </header>
       <div class="zone-tier-diagram">${renderZoneDiagramSvg(zone, diy?.plazaHint, { layout: "tier" })}</div>
+      ${renderZoneByoPrice(zone, catalog)}
       <dl class="zone-tier-stats">
         <div><dt>Spots</dt><dd>${escapeHtml(formatStandardSpaces(count))}</dd></div>
         <div><dt>Food</dt><dd>${escapeHtml(formatZoneFoodLine(zone))}</dd></div>
@@ -450,10 +491,10 @@
     </article>`;
   }
 
-  function renderZonePricingTiers(zones, diy) {
+  function renderZonePricingTiers(zones, diy, catalog) {
     const sorted = sortZonesBySize(zones);
     const cards = sorted
-      .map((zone) => renderZoneTierCard(zone, diy))
+      .map((zone) => renderZoneTierCard(zone, diy, catalog))
       .join("");
 
     return `<div class="zone-pricing-grid" role="list">${cards}</div>`;
@@ -598,7 +639,7 @@
     <section id="${escapeHtml(sectionId)}" class="host-doc-section host-diy-section" data-host-section data-path="diy">
       <h2>${escapeHtml(diy.title ?? "Decorate it yourself")}</h2>
       <p class="host-diy-lead">${escapeHtml(diy.intro ?? "")}</p>
-      ${renderZonePricingTiers(zones, diy)}
+      ${renderZonePricingTiers(zones, diy, catalog)}
       ${diy.inventoryNote ? `<p class="muted host-diy-inventory-note">${escapeHtml(diy.inventoryNote)}</p>` : ""}
     </section>`;
   }

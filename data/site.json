@@ -326,7 +326,7 @@
     "diySection": {
       "id": "decorate-yourself",
       "title": "Decorate it yourself",
-      "intro": "You get a named corner of the festival — yours to decorate as you see fit. We assign the footprint on the map. You bring popup shade, your look, volunteers, and programming for your community.",
+      "intro": "You get a named corner of the festival — yours to decorate as you see fit. We assign the footprint on the map. You bring popup shade, your look, volunteers, and programming for your community. Baseline BYO pricing is below; add-ons quoted separately.",
       "plazaHint": "Tables, chairs, decor allowed"
     },
     "helpSection": {
@@ -376,7 +376,7 @@
       {
         "id": "filipino-village",
         "mode": "diy",
-        "pathLabel": "Decorate it myself — village scale",
+        "pathLabel": "DIY Village Scale",
         "title": "Filipino Village",
         "image": "assets/example-filipino-village.webp",
         "persona": "Filipino cultural org — barangay-scale identity on the map",
