@@ -124,7 +124,7 @@
         "siteCap": 2,
         "zonesRemaining": 2
       },
-      "guestCapacityGuide": "50–150 of your community",
+      "guestCapacityGuide": "50–150 people",
       "included": ["Named map placement", "Insurance umbrella", "Load-in window", "Website listing", "Map legend entry", "Plaza in front of your spot row"],
       "publicDescription": "Three adjacent spots plus a front plaza — an intimate named corner. Bring popup shade or add frame tent rental.",
       "amenities": {
@@ -147,7 +147,7 @@
         "siteCap": 1,
         "zonesRemaining": 1
       },
-      "guestCapacityGuide": "150–250 of your community",
+      "guestCapacityGuide": "150–250 people",
       "included": ["Named map placement", "Insurance umbrella", "Load-in window", "Website listing", "Map legend entry", "Plaza in front of your spot row"],
       "publicDescription": "Five adjacent spots plus plaza — family home base or program block.",
       "amenities": {
@@ -170,7 +170,7 @@
         "siteCap": 1,
         "zonesRemaining": 1
       },
-      "guestCapacityGuide": "250–400 of your community",
+      "guestCapacityGuide": "250–400 people",
       "included": ["Named map placement", "Insurance umbrella", "Load-in window", "Website listing", "Map legend entry", "Plaza in front of your spot row"],
       "publicDescription": "Eight adjacent spots plus plaza — village-scale identity with room for welcome arch, crafts, and linger area.",
       "amenities": {
