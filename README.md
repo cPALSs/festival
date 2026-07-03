@@ -4,6 +4,8 @@ Open-source assets for **Lunar New Year & Autumn Festivals** season coordination
 
 **Site:** [cpalss.github.io/festival-network](https://cpalss.github.io/festival-network/) (human-friendly guides) · **Repo:** [github.com/cPALSs/festival-network](https://github.com/cPALSs/festival-network) (clone for AI agents and structured assets)
 
+**Pages deploy:** GitHub Actions workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) — Jekyll build from `docs/` on every push to `main` (same pattern as EGLNY / GLF site repos). Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
 > **Phase 0 (current):** Stub scaffold — structure, sheet registry, and placeholders. Live research data is in Google Sheets.
 
 ## What this is
