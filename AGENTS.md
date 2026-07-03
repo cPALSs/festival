@@ -62,7 +62,7 @@ Registry ID: `autumn-market-landscape` in [assets/sheets-registry.json](assets/s
 3. **Ecosystem graph** — `assets/lny/graphs/ecosystem-graph.json` or `assets/autumn/graphs/ecosystem-graph.json` + schema (until graph moves to Sheets)
 4. **Calendar** — `assets/autumn/calendars/rules/calendar-rules.json` + `schema.md` + `2027-season-path-grid.md`
 5. **Case studies** — `assets/case-studies/*.md`
-6. **Playbooks & kits** — `assets/autumn/playbooks/`, `assets/autumn/group-activities/`, `assets/shared/group-activities/`
+6. **Playbooks & kits** — `assets/autumn/playbooks/`, `assets/autumn/group-activities/`, `assets/shared/group-activities/`, `assets/shared/playbooks/`
 7. **Simulations** — `assets/autumn/simulations/PLANNING.md`, `scenarios/`, `plans/`
 
 Human guides: `docs/` (published as GitHub Pages for people; agents may read the same markdown from the clone).
@@ -101,6 +101,7 @@ Paths below are for agents after `git clone` — not surfaced on GitHub Pages.
 |-------|------|
 | Case studies | `assets/case-studies/` |
 | Shared kits | `assets/shared/group-activities/` |
+| Shared playbooks | `assets/shared/playbooks/` — [child cohort product design](assets/shared/playbooks/child-cohort-product-design.md) (stub) |
 
 ## Principles (constraints)
 

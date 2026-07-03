@@ -45,6 +45,8 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 ### Recruitment (cross-season)
 
 - [Volunteer staff recruitment checklist](volunteer-staff-recruitment-checklist.html) — capstone director intake, triage, and placement
+- [Reaching the Vietnamese American community](vietnamese-community-outreach.html) — segmented outreach · channel matrix · campaign framework
+- [Child audience product design](child-audience-product-design.html) — age & access cohort stubs · hyper-focus programming (stub)
 
 ## Live research
 

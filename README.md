@@ -49,6 +49,7 @@ cd festival-network
 |---------|------|--------|
 | LNY | [docs/lny/](docs/lny/) | Stub scaffold (Phase 4 substance) |
 | Autumn | [docs/autumn/](docs/autumn/) | Stub scaffold |
+| Cross-season | [docs/child-audience-product-design.md](docs/child-audience-product-design.md) · [assets/shared/playbooks/](assets/shared/playbooks/) | Child cohort product design stub |
 
 ## Contribute
 
