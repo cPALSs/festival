@@ -45,7 +45,7 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 ### Recruitment (cross-season)
 
 - [Volunteer staff recruitment checklist](volunteer-staff-recruitment-checklist.html) — capstone director intake, triage, and placement
-- [Child audience product design](child-audience-product-design.html) — age & access cohort stubs · hyper-focus programming (stub)
+- [Child audience design](child-audience/overview.html) — cohort guide (0–17) · fit tags · walkthroughs *(stub)*
 
 ## Live research
 

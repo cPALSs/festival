@@ -29,5 +29,4 @@ season: cross
 
 ## Publish
 
-<!-- TODO -->
-
+Before publishing `docs/` pages, check [content patterns](content-patterns.html) for table layout (avoid 4+ narrow prose columns).

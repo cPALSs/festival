@@ -101,7 +101,7 @@ Paths below are for agents after `git clone` — not surfaced on GitHub Pages.
 |-------|------|
 | Case studies | `assets/case-studies/` |
 | Shared kits | `assets/shared/group-activities/` |
-| Shared playbooks | `assets/shared/playbooks/` — [child cohort product design](assets/shared/playbooks/child-cohort-product-design.md) (stub) |
+| Shared playbooks | `assets/shared/playbooks/` — [child audience index](assets/shared/playbooks/child-cohort-product-design.md) → `docs/child-audience/` topic pages |
 
 ## Principles (constraints)
 
@@ -115,13 +115,13 @@ Paths below are for agents after `git clone` — not surfaced on GitHub Pages.
 - **Season naming:** Together → **Lunar New Year & Autumn Festivals** (LNY always before Autumn when listing both); alone → LNY / EGLNY or Autumn / Mid-Autumn / MAF ([tone of voice](docs/tone-of-voice.md))
 - **Events:** `event_id` slug on every landscape row — e.g. `cpalss-maf`, `cpalss-lny-capstone`, `caaps-lantern`
 - **Occurrences:** one row per `event_id` + `Season year`; use `Row status` (`planning`, `held`, `historical`, …)
-- **Schedule confidence** (autumn landscape): `Confirmed` · `Tentative` · `Estimated` — steward-verified; see [autumn market-research.md](docs/autumn/market-research.md)
+- **Schedule confidence** (autumn landscape): `Confirmed` · `Tentative` · `Estimated` — steward-verified; see [autumn market-research.md](docs/autumn/market-research.md). **Estimated** lunar-aligned dates use **MAF Saturday ± N weekends** from the prior held occurrence (not same Gregorian date); non-lunar rows keep calendar patterns — [schema](assets/autumn/research/market-landscape-schema.md)
 - **Stakeholder involvement:** Community Activity Calendar → **Stakeholder event involvement** tab; sync via `scripts/sync-stakeholder-involvements.mjs`
 - **Lanes:** `L1`–`L7`
 - Arcs: `arc-moon`, `arc-fall`, `arc-lantern`, `ambient`
 - Weekend slots: `2027-wk-sep-26`
 
-See [docs/ai-asset-conventions.md](docs/ai-asset-conventions.md).
+See [docs/ai-asset-conventions.md](docs/ai-asset-conventions.md) and [docs/content-patterns.md](docs/content-patterns.md) for table layout in published guides.
 
 ## Graph edge types
 

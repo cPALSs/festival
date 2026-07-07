@@ -79,3 +79,7 @@ YAML scenarios in `assets/autumn/simulations/scenarios/` reference `event_id` va
 ## Tone and wording
 
 Public pages use plain language. When both seasons appear together, say **Lunar New Year & Autumn Festivals** ([tone of voice](tone-of-voice.html)). Sheet columns may use short enum labels (`Direct comp - same city`). Every enum needs a gloss in the schema and in [tone of voice](tone-of-voice.html).
+
+## Markdown layout
+
+Published `docs/` pages use a narrow column (especially with the on-page TOC). Before adding tables, follow [content patterns](content-patterns.html) — record blocks and two-column summaries instead of 4+ prose columns; `{: .table-scroll}` for true matrices.

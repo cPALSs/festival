@@ -95,4 +95,5 @@ When listing both seasons (tables, navigation, links), always put **Lunar New Ye
 
 - [Principles](principles.html) — P1–P4 in public language
 - [AI asset conventions](ai-asset-conventions.html) — IDs, frontmatter, sheet registry
+- [Content patterns](content-patterns.html) — table readability, record blocks, scrollable matrices
 - [Contributing](contribute.html)

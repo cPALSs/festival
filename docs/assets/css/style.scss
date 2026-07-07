@@ -95,3 +95,201 @@
   font-weight: bold;
   color: $section-headings-color;
 }
+
+// Doc layout with sticky TOC (GLF / LNY pattern)
+.main-content--doc {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.doc-layout {
+  display: block;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media screen and (min-width: 42em) {
+    padding: 0 4rem;
+  }
+
+  @media screen and (min-width: 64em) {
+    padding: 0 6rem;
+  }
+}
+
+.doc-toc {
+  display: none;
+}
+
+.doc-main {
+  min-width: 0;
+
+  table {
+    width: 100%;
+  }
+
+  // Wide matrices — add {: .table-scroll} in kramdown (see docs/content-patterns.md)
+  table.table-scroll {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  // Pattern A record blocks (#### + labeled bullets)
+  h4 + ul {
+    margin-top: 0.35rem;
+  }
+
+  h3 + h4,
+  h4 + h4 {
+    margin-top: 1.25rem;
+  }
+}
+
+// Narrative walkthrough pages (child-audience/walkthroughs/)
+.walkthrough {
+  .zone-meta {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.88rem;
+    color: $blockquote-text-color;
+    font-weight: normal;
+  }
+
+  table.zone-map {
+    margin: 1.25rem 0;
+
+    th,
+    td {
+      vertical-align: top;
+      line-height: 1.45;
+    }
+
+    td:first-child {
+      width: 28%;
+      min-width: 9rem;
+    }
+  }
+
+  .wayfinding-note {
+    margin: 0.75rem 0 0;
+    font-size: 0.95rem;
+    color: $blockquote-text-color;
+  }
+
+  // Age-band sections: breathing room between cohorts
+  h2 {
+    margin-top: 2.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid $hr-border-color;
+  }
+
+  h2:first-of-type {
+    margin-top: 1.5rem;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  // Time-led narrative paragraphs
+  p strong:first-child {
+    color: $section-headings-color;
+  }
+
+  details.organizer-note {
+    margin: 1.25rem 0 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid $hr-border-color;
+    border-radius: 4px;
+    background: #f6f8fa;
+
+    summary {
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $blockquote-text-color;
+
+      &:hover {
+        color: $body-link-color;
+      }
+    }
+
+    &[open] summary {
+      margin-bottom: 0.65rem;
+      color: $body-text-color;
+    }
+
+    ul {
+      margin-bottom: 0;
+      font-size: 0.92rem;
+    }
+  }
+
+  // Lead blockquote — softer draft label
+  > blockquote:first-of-type {
+    font-size: 0.95rem;
+  }
+}
+
+.doc-section {
+  scroll-margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .doc-layout--with-toc {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .doc-layout--with-toc .doc-toc {
+    display: block;
+    position: sticky;
+    top: 1.5rem;
+    padding: 0.5rem 0;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+  }
+
+  .doc-toc-label {
+    margin: 0 0 0.75rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $blockquote-text-color;
+    font-weight: 600;
+  }
+
+  .doc-toc-link {
+    display: block;
+    padding: 0.45rem 0 0.45rem 0.65rem;
+    margin-left: -0.65rem;
+    color: $blockquote-text-color;
+    text-decoration: none;
+    font-size: 0.92rem;
+    line-height: 1.25;
+    border-left: 2px solid transparent;
+
+    &:hover {
+      color: $body-text-color;
+    }
+
+    &.is-active {
+      color: $body-link-color;
+      border-left-color: $body-link-color;
+      font-weight: 600;
+    }
+  }
+
+  .main-content--doc .site-footer {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+  }
+}

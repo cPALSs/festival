@@ -20,6 +20,12 @@
               {% when 'autumn' %}
                 {% assign section_label = 'Autumn Season' %}
                 {% assign section_href = crumb_path | append: '/overview.html' %}
+              {% when 'child-audience' %}
+                {% assign section_label = 'Child audience' %}
+                {% assign section_href = crumb_path | append: '/overview.html' %}
+              {% when 'walkthroughs' %}
+                {% assign section_label = 'Walkthroughs' %}
+                {% assign section_href = crumb_path | append: '/index.html' %}
               {% else %}
                 {% assign section_label = part | replace: '-', ' ' | capitalize %}
                 {% assign section_href = crumb_path %}

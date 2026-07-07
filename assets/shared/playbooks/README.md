@@ -11,7 +11,7 @@ season: cross
 
 | Playbook | Status | Summary |
 |----------|--------|---------|
-| [child-cohort-product-design.md](child-cohort-product-design.md) | **stub (cohorts + teen peer discoverability seeded)** | Hyper-focused children's audience design — mobility, engagement mode, access, menu-style fit annotations, facilitated crew |
+| [child-cohort-product-design.md](child-cohort-product-design.md) | **index** — links to `docs/child-audience/` topic pages | Age 0–17 cohort design · walkthroughs stub |
 
 ## TODO
 
