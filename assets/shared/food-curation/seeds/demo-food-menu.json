@@ -1,0 +1,483 @@
+{
+  "festival": "LNY 2026 \u2014 engine curated (demo)",
+  "published_at": "2026-07-05",
+  "disclaimer": "Menu subject to change. Filters reflect vendor self-report \u2014 not medical advice.",
+  "vendors": [
+    {
+      "id": "my-lumpia-lady",
+      "name": "MY LUMPIA LADY",
+      "booth_label": "F07",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "veggie lumpia",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "veggie lumpia",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "all veggie lumpia",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "beef Queso Birria Lumpia w",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "jalepeno Crawfish lumpia",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "xd-jerky-kingz",
+      "name": "XD JERKY KINGZ",
+      "booth_label": "F13",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Spam musubi",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "laos sausage musubi",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "lemongrass steak sandwich",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "bomb azz tacos",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "potato-swirl-world",
+      "name": "POTATO SWIRL WORLD",
+      "booth_label": "F02",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "boba drinks",
+          "price": null,
+          "category": "drinks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Potato swirls",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "funnel cakes",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "pad Thai",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "orange chicken bowls",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "sugarcane-hut",
+      "name": "SUGARCANE HUT",
+      "booth_label": "F03",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "sugarcane juice",
+          "price": null,
+          "category": "drinks",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "baboy-boys",
+      "name": "BABOY BOYS",
+      "booth_label": "FOOD TRUCK 05",
+      "booth_kind": "food_truck",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Lechon",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "oxtail adobo",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "grilled balut",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "sisig",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "aroma-concessions",
+      "name": "Aroma Concessions",
+      "booth_label": "F05",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Smoked turkey legs",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Tri Tip sandwich",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "garlic fries",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "sausages (polish",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "cajun",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "d-t-kitchen",
+      "name": "D&T KITCHEN",
+      "booth_label": "F16",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Noodle Soup",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Pad Thai",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Chowmein",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Korean Corn Dogs",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "BBQ Short Ribs",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "stockton-s-best-papaya-salad",
+      "name": "STOCKTON'S BEST PAPAYA SALAD",
+      "booth_label": "F14",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Khao Poon",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Pad Thai",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Fried Banana",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Egg Rolls",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Papaya Salad",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "myzz-piggy-z-tiger-bite",
+      "name": "Myzz Piggy'z Tiger Bite",
+      "booth_label": "F18",
+      "booth_kind": "open_cooking",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Curry Noodle Soup",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Some Tom Papaya",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Rainbow Tapioca Dessert Drink",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Asian Sausage",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Pork Kabob Sticks",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "ray-s-kitchen",
+      "name": "RAY's Kitchen",
+      "booth_label": "FOOD TRUCK 03",
+      "booth_kind": "open_cooking",
+      "dietary": [
+        "halal_certified"
+      ],
+      "items": [
+        {
+          "name": "including chicken over rice",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "lamb over rice",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "Mediterranean dishes",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "gyros",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "cheeseburgers and loaded fries.",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "pinorrito-food-truck",
+      "name": "PINORRITO FOOD TRUCK",
+      "booth_label": "FOOD TRUCK 02",
+      "booth_kind": "food_truck",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Pork tocino rice plate",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "sisig rice plate",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "tacos",
+          "price": null,
+          "category": "meals",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "loaded fries",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "lumpia",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    },
+    {
+      "id": "jerky-jerky",
+      "name": "JERKY JERKY",
+      "booth_label": "V03",
+      "booth_kind": "prepack",
+      "dietary": [],
+      "items": [
+        {
+          "name": "Pre packaged beef & wild game jerky",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        },
+        {
+          "name": "pre packaged freeze dried candies and snacks",
+          "price": null,
+          "category": "snacks",
+          "allergens": [],
+          "dietary_tags": []
+        }
+      ]
+    }
+  ],
+  "filter_facets": [
+    "nut_free",
+    "gluten_free",
+    "dairy_free",
+    "vegan",
+    "vegetarian",
+    "halal",
+    "pork_free"
+  ]
+}

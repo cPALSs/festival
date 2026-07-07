@@ -1,0 +1,25 @@
+{
+  "festival_id": "lny-2027",
+  "festival_name": "Elk Grove Lunar New Year 2027",
+  "attendance": 6000,
+  "audience_preset": "family_general",
+  "festival_days": 2,
+  "hours_per_day": 6,
+  "food_buy_rate": 0.40,
+  "items_per_buyer": 1.1,
+  "avg_ticket": 15,
+  "policy": {
+    "elk_grove_local_bonus": true,
+    "signature_limits": {
+      "open_cooking": 5,
+      "food_truck": 5,
+      "prepack": 8
+    }
+  },
+  "snack_vendors": {
+    "coverage_first": true,
+    "coverage_floor_slots": 4,
+    "booth_fee": 400,
+    "viability_mult": 2.0
+  }
+}

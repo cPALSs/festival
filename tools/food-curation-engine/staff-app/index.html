@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Curation Engine — Staff</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Food Curation Engine</h1>
+    <p class="subtitle">Internal — vendor committee · Festival Network</p>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button type="button" class="tab" data-tab="scenario">Scenario</button>
+    <button type="button" class="tab" data-tab="applicants">Applicants</button>
+    <button type="button" class="tab" data-tab="needs-coverage">Needs-based coverage</button>
+    <button type="button" class="tab" data-tab="menu-preview">Menu preview</button>
+  </nav>
+
+  <main>
+    <section id="panel-scenario" class="panel">
+      <div class="scenario-form">
+        <div class="field">
+          <label for="preset-select">Festival preset</label>
+          <select id="preset-select">
+            <option value="lny-2026-backtest" selected>LNY 2026 backtest</option>
+            <option value="lny-2027">LNY 2027</option>
+            <option value="maf-2026">MAF 2026</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="attendance">Attendance <span id="attendance-out" class="field-value">6000</span></label>
+          <input type="range" id="attendance" min="2000" max="20000" step="500" value="6000" />
+        </div>
+        <div class="field">
+          <span class="field-label" id="audience-label">Audience</span>
+          <div class="radio-group" role="radiogroup" aria-labelledby="audience-label">
+            <label class="radio-option">
+              <input type="radio" name="audience" value="family_general" checked />
+              Family / general
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="audience" value="campus_foodie" />
+              Campus / foodie
+            </label>
+          </div>
+        </div>
+      </div>
+      <div id="scenario-capacity" class="scenario-capacity"></div>
+    </section>
+
+    <section id="panel-applicants" class="panel"></section>
+    <section id="panel-needs-coverage" class="panel"></section>
+    <section id="panel-menu-preview" class="panel"></section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+
+  <dialog id="score-help-modal" class="score-modal">
+    <form method="dialog">
+      <header class="score-modal-header">
+        <h2>How score is calculated</h2>
+        <button type="submit" class="score-modal-close" aria-label="Close">×</button>
+      </header>
+      <div id="score-help-body" class="score-modal-body"></div>
+      <footer class="score-modal-footer">
+        <button type="submit" class="secondary">Close</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <dialog id="score-detail-modal" class="score-modal score-detail-modal">
+    <form method="dialog">
+      <header class="score-modal-header">
+        <h2 id="score-detail-modal-title">Score breakdown</h2>
+        <button type="submit" class="score-modal-close" aria-label="Close">×</button>
+      </header>
+      <div id="score-detail-modal-body" class="score-modal-body"></div>
+      <footer class="score-modal-footer score-detail-modal-footer">
+        <button type="button" id="score-detail-help-link" class="secondary">How scoring works</button>
+        <button type="submit" class="secondary">Close</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <dialog id="capability-modal" class="score-modal capability-modal">
+    <form method="dialog">
+      <header class="score-modal-header">
+        <h2 id="capability-modal-title">Menu capability</h2>
+        <button type="submit" class="score-modal-close" aria-label="Close">×</button>
+      </header>
+      <div id="capability-modal-body" class="score-modal-body"></div>
+      <div id="capability-modal-offer" class="capability-modal-offer"></div>
+      <footer class="score-modal-footer">
+        <button type="submit" class="secondary">Close</button>
+      </footer>
+    </form>
+  </dialog>
+  <dialog id="score-compare-modal" class="score-modal score-compare-modal">
+    <form method="dialog">
+      <header class="score-modal-header">
+        <h2>Compare scores</h2>
+        <button type="submit" class="score-modal-close" aria-label="Close">×</button>
+      </header>
+      <div id="score-compare-modal-body" class="score-modal-body"></div>
+      <footer class="score-modal-footer">
+        <button type="submit" class="secondary">Close</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <div id="applicants-compare-bar" class="applicants-compare-bar" hidden>
+    <span id="applicants-compare-count" class="applicants-compare-count"></span>
+    <div class="applicants-compare-actions">
+      <button type="button" id="applicants-compare-btn">Compare scores</button>
+      <button type="button" id="applicants-compare-reset" class="secondary">Reset selection</button>
+    </div>
+  </div>
+</body>
+</html>

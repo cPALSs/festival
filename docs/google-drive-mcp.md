@@ -5,11 +5,11 @@ layout: default
 
 # Google Drive + Docs MCP Setup
 
-Google Docs and Drive folders for **specific festivals** live in each **project folder** in the coalition cPALSs monorepo — not in the public [festival-network](https://github.com/cPALSs/festival-network) repo. Cursor agents read and write via the **google-drive** MCP server (`@us-all/google-drive-mcp`).
+Google Docs and Drive folders for **specific festivals** live in each **project folder** in the coalition cPALSs monorepo — not in the public [festival](https://github.com/cPALSs/festival) repo. Cursor agents read and write via the **google-drive** MCP server (`@us-all/google-drive-mcp`).
 
 ## Drive registries (per festival)
 
-Festival Network holds an **index** only: [drive-registry.json](https://github.com/cPALSs/festival-network/blob/main/assets/drive-registry.json)
+Festival Network holds an **index** only: [drive-registry.json](https://github.com/cPALSs/festival/blob/main/assets/drive-registry.json)
 
 | Festival | Registry file (coalition monorepo) |
 |----------|-------------------------------------|
@@ -28,7 +28,7 @@ Reusable across festivals — copy or upload to Drive from project setup scripts
 | Post-event sponsor report | `Festival Network/scripts/content/post-event-sponsor-report-template.md` |
 | Post-event metrics inventory | `Festival Network/scripts/content/post-event-metrics-inventory.md` |
 
-Festival-specific seeds (packet copy, debrief templates, staff directory) belong in the **project repo**, not the public festival-network site.
+Festival-specific seeds (packet copy, debrief templates, staff directory) belong in the **project repo**, not the public festival site.
 
 ## One-time setup (OAuth)
 
@@ -55,6 +55,14 @@ Configure `google-drive` in `.cursor/mcp.json` (coalition monorepo) via `Festiva
 | `docs-get-document` / `docs-get-content` | Read Docs |
 | `docs-replace-text` / `docs-batch-update` | Edit sections and tables |
 | `export-file` | PDF export |
+
+**Policy docs:** Repo markdown is draft source; publish formatted copies with:
+
+```bash
+node "Corporate Administration/scripts/publish-volunteer-policy-docs.mjs"
+```
+
+Do **not** upload raw `.md` via Drive `text/markdown` — it renders as unformatted markdown in Docs.
 
 ## Markdown import gotchas
 

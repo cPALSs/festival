@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FestivalConfig",
+  "type": "object",
+  "required": ["attendance", "festival_days", "hours_per_day", "food_buy_rate", "items_per_buyer"],
+  "properties": {
+    "festival_id": { "type": "string" },
+    "festival_name": { "type": "string" },
+    "attendance": { "type": "integer", "minimum": 2000, "maximum": 50000 },
+    "audience_preset": { "enum": ["family_general", "campus_foodie"] },
+    "festival_days": { "type": "integer", "minimum": 1 },
+    "hours_per_day": { "type": "number", "minimum": 1 },
+    "food_buy_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+    "items_per_buyer": { "type": "number", "minimum": 0 },
+    "avg_ticket": { "type": "number" },
+    "archetypes": { "type": "array" },
+    "policy": {
+      "type": "object",
+      "properties": {
+        "scoring_weights": { "type": "object" },
+        "signature_limits": { "type": "object" },
+        "deposit_tiebreaker_weight": { "type": "number" }
+      }
+    }
+  }
+}

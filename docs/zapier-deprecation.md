@@ -23,7 +23,7 @@ Complete [zoom-mcp.html](zoom-mcp.html) setup and run the smoke test in [zoom-mc
 ## After disabling
 
 - New meetings will **not** appear in Notion Meeting Notes.
-- Historical Notion pages remain until you cancel Notion; substantive ops content was migrated to coalition-internal `Staff - Ops/` and `Staff - Meeting/` markdown.
+- Historical Notion pages remain until you cancel Notion; substantive ops content was migrated to coalition-internal project season folders and `Staff - Meeting/` markdown.
 - Use Cursor + Zoom MCP to query past meetings.
 
 ## Cancel Notion (optional)

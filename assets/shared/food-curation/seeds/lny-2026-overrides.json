@@ -1,0 +1,15 @@
+{
+  "bobette-tea": { "primary_archetype_id": "boba_milk_tea" },
+  "boba-meet-up": { "primary_archetype_id": "boba_milk_tea" },
+  "zummi-food-llc": { "primary_archetype_id": "fast_handheld", "vietnamese_anchor": true },
+  "d-t-kitchen": { "primary_archetype_id": "noodle_wok_soup", "weak_brand": true },
+  "bowli-bowli": { "primary_archetype_id": "rice_plates_bowls", "weak_brand": true },
+  "sugarcane-hut": { "primary_archetype_id": "sugarcane_fruit_refresher" },
+  "ray-s-kitchen": { "primary_archetype_id": "rice_plates_bowls", "dietary": ["halal_certified"] },
+  "lizetta-s-sourthern-soul-food": {
+    "primary_archetype_id": "bbq_smoke_carved"
+  },
+  "matcha-drinks-pre": { "primary_archetype_id": "boba_milk_tea" },
+  "boba-bros": { "primary_archetype_id": "boba_milk_tea", "vendor_class": "drinks" },
+  "brewtik-coffee-and-tea": { "primary_archetype_id": "boba_milk_tea", "vendor_class": "drinks" }
+}

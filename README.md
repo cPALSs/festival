@@ -2,7 +2,7 @@
 
 Open-source assets for **Lunar New Year & Autumn Festivals** season coordination in Greater Sacramento and beyond.
 
-**Site:** [cpalss.github.io/festival-network](https://cpalss.github.io/festival-network/) (human-friendly guides) · **Repo:** [github.com/cPALSs/festival-network](https://github.com/cPALSs/festival-network) (clone for AI agents and structured assets)
+**Site:** [festival.cpalss.com](https://festival.cpalss.com/) (human-friendly guides) · **Repo:** [github.com/cPALSs/festival](https://github.com/cPALSs/festival) (clone for AI agents and structured assets)
 
 **Pages deploy:** GitHub Actions workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) — Jekyll build from `docs/` on every push to `main` (same pattern as EGLNY / GLF site repos). Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
@@ -36,11 +36,11 @@ AGENTS.md       → AI agent entry point after git clone
 ## Quick start
 
 ```bash
-git clone https://github.com/cPALSs/festival-network.git
-cd festival-network
+git clone https://github.com/cPALSs/festival.git
+cd festival
 ```
 
-1. Browse [docs/getting-started.md](docs/getting-started.md) or the [GitHub Pages site](https://cpalss.github.io/festival-network/) (humans)
+1. Browse [docs/getting-started.md](docs/getting-started.md) or the [GitHub Pages site](https://festival.cpalss.com/) (humans)
 2. Or `git clone` and open [AGENTS.md](AGENTS.md) (AI agents)
 3. Configure [Google Sheets MCP](docs/google-sheets-mcp.md) in Cursor (optional — for AI read/write)
 4. Load: **sheets registry → MCP read research → graph → calendar → kits / case studies**

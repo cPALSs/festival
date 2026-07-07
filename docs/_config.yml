@@ -2,9 +2,9 @@ title: Festival Season Network
 tagline: Open-source coordination for Lunar New Year & Autumn Festivals in Greater Sacramento and beyond
 description: Open-source coordination for Lunar New Year & Autumn Festivals in Greater Sacramento and beyond
 theme: jekyll-theme-cayman
-repository: cPALSs/festival-network
-baseurl: "/festival-network"
-url: "https://cpalss.github.io"
+repository: cPALSs/festival
+baseurl: ""
+url: "https://festival.cpalss.com"
 
 header_pages:
   - index.md

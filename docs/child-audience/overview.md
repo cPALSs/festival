@@ -12,7 +12,7 @@ Community festivals often label everything **“family-friendly.”** That hides
 
 **Hyper-focus** means naming **cohorts**, assigning **owners**, and designing **spatial + programming + product** per cohort — not one undifferentiated kids zone.
 
-**Agent playbook index:** [child-cohort-product-design.md](https://github.com/cPALSs/festival-network/blob/main/assets/shared/playbooks/child-cohort-product-design.md)
+**Agent playbook index:** [child-cohort-product-design.md](https://github.com/cPALSs/festival/blob/main/assets/shared/playbooks/child-cohort-product-design.md)
 
 **Local discovery comps:** [Sacramento4Kids](https://sacramento4kids.com/) · [Sactown Supermom](https://sactownsupermom.com/)
 

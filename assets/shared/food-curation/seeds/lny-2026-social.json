@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "updated": "2026-07-05",
+    "source": "tools/social-metadata ig-profile.sh + Chrome MCP (Instagram web) for rate-limited handles",
+    "notes": "All 20 handles have follower counts as of 2026-07-05. CLI missed 5 due to HTTP 401 rate limit; Chrome MCP verified those on instagram.com."
+  },
+  "vendors": {
+    "fusion-bites": { "instagram_handle": "@fusionbites", "instagram_followers": 75 },
+    "potato-swirl-world": { "instagram_handle": "@potatoswirlworld", "instagram_followers": 594 },
+    "sugarcane-hut": { "instagram_handle": "@sugarcanehut", "instagram_followers": 3 },
+    "my-lumpia-lady": { "instagram_handle": "@mylumpialady916", "instagram_followers": 2587 },
+    "lizetta-s-sourthern-soul-food": { "instagram_handle": "@lizettas_soul_food", "instagram_followers": 2242 },
+    "bobette-tea": { "instagram_handle": "@bobettetea", "instagram_followers": 144 },
+    "bowli-bowli": { "instagram_handle": "@bowlibowli", "instagram_followers": 42 },
+    "pitayas-locas": { "instagram_handle": "@pitayaslocas", "instagram_followers": 3326 },
+    "xd-jerky-kingz": { "instagram_handle": "@xd_jerkykingz", "instagram_followers": 1083 },
+    "rhome-s-bistro": { "instagram_handle": "@rhomes_bistro", "instagram_followers": 1446 },
+    "d-t-kitchen": { "instagram_handle": "@d_and_t_kitchen", "instagram_followers": 187 },
+    "boba-meet-up": { "instagram_handle": "@boba_meetup", "instagram_followers": 289 },
+    "zummi-food-llc": { "instagram_handle": "@zummifood.llc", "instagram_followers": 241 },
+    "pinorrito-food-truck": { "instagram_handle": "@pinorritofoodtruck", "instagram_followers": 3216 },
+    "wonton-crunchies": { "instagram_handle": "@wonton_crunchies", "instagram_followers": 115 },
+    "baboy-boys": { "instagram_handle": "@baboyboys", "instagram_followers": 5375 },
+    "maiz-restaurant": { "instagram_handle": "@maiz_mexican_catering", "instagram_followers": 1706 },
+    "matcha-drinks-pre": { "instagram_handle": "@shibainccafe", "instagram_followers": 2003 },
+    "brewtik-coffee-and-tea": { "instagram_handle": "@brewtik_sips", "instagram_followers": 1849 },
+    "hot-boi-chili-oil": { "instagram_handle": "@hotboi.co", "instagram_followers": 43 },
+    "low-slow-bbq": { "instagram_handle": "@low_slow_rowe", "instagram_followers": 497 },
+    "boba-bros": { "instagram_handle": "@the_boba_bros", "instagram_followers": 248 },
+    "pizza-lovers-sacramento": { "instagram_handle": "@_pizzaloverssac_", "instagram_followers": 11000 },
+    "ray-s-kitchen": { "instagram_handle": "@rayskitchen645", "instagram_followers": 324 },
+    "aroma-concessions": { "instagram_handle": "@aromaconcessionsinc", "instagram_followers": 2454 },
+    "hs-sugarcane-caf": { "instagram_handle": "@hssugarcanecafe", "instagram_followers": 583 },
+    "stockton-s-best-papaya-salad": { "instagram_handle": "@stocktonbestpapayasalad", "instagram_followers": 64 },
+    "glammeme": { "instagram_handle": "@glammeme_sweettreats", "instagram_followers": 252 },
+    "jerky-jerky": { "instagram_handle": "@jerkyjerkyfresno", "instagram_followers": 3195 },
+    "mr-pops": { "instagram_handle": "@mrpopspopcorn", "instagram_followers": 216 },
+    "root-and-cane": { "instagram_handle": "@rootandcane", "instagram_followers": 58 },
+    "truckee-meadows-gourmet-express": { "instagram_handle": "@tmg.express", "instagram_followers": 101 }
+  },
+  "not_found": [
+    "lien-s-chinese",
+    "myzz-piggy-z-tiger-bite"
+  ]
+}

@@ -103,6 +103,23 @@
   padding-right: 0;
 }
 
+.main-content--doc > .site-footer {
+  max-width: 72rem;
+  margin: 2rem auto 0;
+  padding: 0 1rem 2rem;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 42em) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media screen and (min-width: 64em) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
 .doc-layout {
   display: block;
   max-width: 72rem;
@@ -286,10 +303,5 @@
       border-left-color: $body-link-color;
       font-weight: 600;
     }
-  }
-
-  .main-content--doc .site-footer {
-    grid-column: 1 / -1;
-    margin-top: 2rem;
   }
 }

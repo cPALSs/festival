@@ -6,13 +6,13 @@ season: cross
 
 # AI-readable conventions
 
-**AI-readable** means an agent can `git clone` this repository and work from structured files — `AGENTS.md`, `assets/sheets-registry.json`, schemas, JSON graphs, markdown kits — without scraping GitHub Pages. **Human-friendly** copy lives in `docs/` and is published at [cpalss.github.io/festival-network](https://cpalss.github.io/festival-network/).
+**AI-readable** means an agent can `git clone` this repository and work from structured files — `AGENTS.md`, `assets/sheets-registry.json`, schemas, JSON graphs, markdown kits — without scraping GitHub Pages. **Human-friendly** copy lives in `docs/` and is published at [festival.cpalss.com](https://festival.cpalss.com/).
 
 ## Source of truth
 
 | Data type | Canonical store | Repo holds |
 |-----------|-----------------|------------|
-| Tabular research (market landscape, etc.) | **Google Sheets** | [sheets-registry.json](https://github.com/cPALSs/festival-network/blob/main/assets/sheets-registry.json), column schema |
+| Tabular research (market landscape, etc.) | **Google Sheets** | [sheets-registry.json](https://github.com/cPALSs/festival/blob/main/assets/sheets-registry.json), column schema |
 | Graphs, calendars, kits (for now) | Repo JSON/Markdown | `assets/` |
 | Private organizer notes | Staging folder | `assets/autumn/staging/` (not all published) |
 
@@ -23,12 +23,12 @@ Agents **read and write live sheets via MCP** (`google-sheets`). See [google-she
 GitHub Pages publishes `docs/` only. On human-facing pages:
 
 - Link to other site pages with **`.html`** (e.g. [research.html](research.html)).
-- Link to repo files with **GitHub blob/tree URLs** on [cPALSs/festival-network](https://github.com/cPALSs/festival-network) — not relative `../assets/` paths.
+- Link to repo files with **GitHub blob/tree URLs** on [cPALSs/festival](https://github.com/cPALSs/festival) — not relative `../assets/` paths.
 - Do **not** link to coalition-internal monorepo paths (private cPALSs repo, `Staff - Meeting/`, project folders) — name them in plain text instead.
 
 ## Sheet registry
 
-Add a new spreadsheet to [assets/sheets-registry.json](https://github.com/cPALSs/festival-network/blob/main/assets/sheets-registry.json):
+Add a new spreadsheet to [assets/sheets-registry.json](https://github.com/cPALSs/festival/blob/main/assets/sheets-registry.json):
 
 ```json
 {
@@ -66,7 +66,7 @@ season: lny | autumn | cross
 
 ## Column dictionaries
 
-Each canonical sheet has a schema doc (e.g. [market-landscape-schema.md](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/research/market-landscape-schema.md)). Sheet row 1 must match schema headers exactly.
+Each canonical sheet has a schema doc (e.g. [market-landscape-schema.md](https://github.com/cPALSs/festival/blob/main/assets/autumn/research/market-landscape-schema.md)). Sheet row 1 must match schema headers exactly.
 
 ## Rules as data
 

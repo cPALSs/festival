@@ -114,7 +114,7 @@ Wired in `.cursor/mcp.json` (coalition monorepo) via `Festival Network/scripts/s
 | System | Role |
 |--------|------|
 | **Zoom MCP** | Source meeting recordings, transcripts, AI summaries (replaces Zapier → Notion) |
-| **Repo (`Staff - Meeting/`, `Staff - Ops/`)** | Pinned meeting notes, prep agendas, operational checklists |
+| **Repo (`Staff - Meeting/`, project season folders)** | Pinned meeting notes, prep agendas, operational checklists |
 | **Google Drive / Docs** | Official festival sponsorship packets and coalition docs |
 | **Google Sheets** | Market landscape research rows |
 

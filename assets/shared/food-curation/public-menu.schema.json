@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PublicFoodMenu",
+  "type": "object",
+  "required": ["festival", "published_at", "vendors", "disclaimer"],
+  "properties": {
+    "festival": { "type": "string" },
+    "published_at": { "type": "string", "format": "date" },
+    "disclaimer": { "type": "string" },
+    "vendors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "items"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "booth_label": { "type": "string" },
+          "booth_kind": { "type": "string" },
+          "items": { "type": "array" }
+        }
+      }
+    },
+    "filter_facets": { "type": "array", "items": { "type": "string" } }
+  }
+}

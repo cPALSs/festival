@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FoodCurationApplicant",
+  "type": "object",
+  "required": ["id", "business_name", "booth_kind", "capability_menu_items", "signature_menu_items"],
+  "properties": {
+    "id": { "type": "string" },
+    "business_name": { "type": "string" },
+    "deposit_applied_at": { "type": "string", "format": "date-time" },
+    "booth_kind": {
+      "enum": ["open_cooking", "food_truck", "food_trailer", "prepack", "prepack_snacks"]
+    },
+    "setup_type": {
+      "enum": [
+        "open_food_canopy",
+        "open_food_truck",
+        "open_food_trailer",
+        "prepack_booth",
+        "open_cooking",
+        "food_truck",
+        "food_trailer"
+      ]
+    },
+    "vendor_class": { "enum": ["open_prep", "drinks", "snack", "merchant", "meal", "food", "take_home"] },
+    "vendor_role": { "enum": ["open_prep", "drinks", "snack", "merchant", "meal", "food", "take_home"], "description": "Legacy alias for vendor_class" },
+    "requires_tff_pre_pkg": { "type": "boolean", "description": "Merchant selling sealed take-home food — requires TFF PRE-PKG permit" },
+    "booth_label": { "type": "string" },
+    "capability_menu_items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/menuItem" }
+    },
+    "signature_menu_items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/menuItem" }
+    },
+    "conditional_offer": { "$ref": "#/$defs/conditionalOffer" },
+    "primary_archetype_id": { "type": "string" },
+    "dietary": { "type": "array", "items": { "type": "string" } },
+    "status": {
+      "enum": ["submitted", "under_review", "offer_pending", "offer_accepted", "accepted", "waitlisted", "rejected"]
+    }
+  },
+  "$defs": {
+    "menuItem": {
+      "type": "object",
+      "required": ["item_id", "name"],
+      "properties": {
+        "item_id": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "category": { "enum": ["meals", "snacks", "drinks"] },
+        "allergens": { "type": "array", "items": { "type": "string" } },
+        "dietary_tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Vendor best-guess + festival review. Dietary: halal, vegan, vegetarian, nut_free, gluten_free, dairy_free. Experience: mild_spice, kid_friendly, easy_chew, lower_sugar. Engine may infer missing tags from item names (conservative for lower_sugar)."
+        },
+        "dietary_warnings": { "type": "array", "items": { "type": "string" } },
+        "tags_vendor_confirmed": {
+          "type": "boolean",
+          "description": "True when vendor checked tags on application; false when staff/engine inferred only"
+        }
+      }
+    },
+    "conditionalOffer": {
+      "type": "object",
+      "properties": {
+        "status": { "enum": ["draft", "sent", "accepted", "declined", "expired"] },
+        "offered_menu_items": { "type": "array" },
+        "conditions": { "type": "array", "items": { "type": "string" } },
+        "offer_letter_md": { "type": "string" }
+      }
+    }
+  }
+}

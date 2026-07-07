@@ -18,7 +18,7 @@ cPALSs no longer exports Zoom AI summaries to Notion via Zapier. Agents and huma
 ## Before a meeting
 
 - Update the relevant agenda in `Staff - Meeting/` (e.g. `Festival Projects Weekly agenda.md`).
-- Operational finance checklists stay in `Staff - Ops/`.
+- Operational finance checklists stay in the relevant project season folder (e.g. `Projects - Lunar New Year/2026/Finance & Administration/`).
 
 ## Where things live
 
@@ -26,7 +26,7 @@ cPALSs no longer exports Zoom AI summaries to Notion via Zapier. Agents and huma
 |---------|----------|
 | AI summary, transcript, recording | Zoom (via MCP) |
 | Pinned meeting notes | `Staff - Meeting/*.md` |
-| Finance / sponsor checklists | `Staff - Ops/*.md` |
+| Finance / sponsor checklists | `Projects - Lunar New Year/2026/Finance & Administration/LNY-2026-*.md` |
 | Tabular research | Google Sheets |
 | Official coalition docs | Google Drive |
 

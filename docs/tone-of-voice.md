@@ -49,7 +49,7 @@ For people browsing [the site](index.html). Plain English only. AI agents should
 
 ### Internal (Google Sheets, schemas, AGENTS.md)
 
-Short **column values** and **stable enums** for sorting and AI tools. Abbreviations are OK here when defined in the [schema](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/research/market-landscape-schema.md).
+Short **column values** and **stable enums** for sorting and AI tools. Abbreviations are OK here when defined in the [schema](https://github.com/cPALSs/festival/blob/main/assets/autumn/research/market-landscape-schema.md).
 
 Example: sheet cell `Direct comp - same day capstone` = public phrase **direct competitor on capstone Saturday**.
 

@@ -1,0 +1,18 @@
+{
+  "festival_id": "maf-2026",
+  "festival_name": "Great Lantern Festival 2026",
+  "attendance": 2000,
+  "audience_preset": "family_general",
+  "festival_days": 1,
+  "hours_per_day": 5,
+  "food_buy_rate": 0.68,
+  "items_per_buyer": 1.0,
+  "avg_ticket": 24,
+  "policy": {
+    "signature_limits": {
+      "open_cooking": 5,
+      "food_truck": 5,
+      "prepack": 8
+    }
+  }
+}

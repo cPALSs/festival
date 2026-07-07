@@ -1,0 +1,122 @@
+{
+  "count": 14,
+  "items": [
+    {
+      "severity": "info",
+      "type": "name_mismatch",
+      "resolved": true,
+      "booth": "F02",
+      "kenrick_name": "POTATO SWIRL WORLD",
+      "zeffy_name": "SR THAI BBQ & POTATO SWIRL WORLD",
+      "action": "Using Kenrick business name for fielded vendor."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "F04",
+      "business_name": "Lien's Chinese",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "F08",
+      "business_name": "Lizetta's Sourthern Soul Food",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "F09",
+      "business_name": "LOW & SLOW BBQ",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "F12",
+      "business_name": "Pitayas locas",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "F14",
+      "business_name": "STOCKTON'S BEST PAPAYA SALAD",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "F15",
+      "business_name": "Rhome's Bistro",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "name_mismatch",
+      "resolved": true,
+      "booth": "FOOD TRUCK 02",
+      "kenrick_name": "PINORRITO FOOD TRUCK",
+      "zeffy_name": "Pinorrito",
+      "action": "Using Kenrick business name for fielded vendor."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "FOOD TRUCK 03",
+      "business_name": "RAY's Kitchen",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "name_mismatch",
+      "resolved": true,
+      "booth": "FOOD TRUCK 09",
+      "kenrick_name": "PIZZA LOVERS SACRAMENTO",
+      "zeffy_name": "Pizza Lovers LLC",
+      "action": "Using Kenrick business name for fielded vendor."
+    },
+    {
+      "severity": "info",
+      "type": "name_mismatch",
+      "resolved": true,
+      "booth": "V01",
+      "kenrick_name": "matcha drinks, pre",
+      "zeffy_name": "SHIBAINC Cafe",
+      "action": "Using Kenrick business name for fielded vendor."
+    },
+    {
+      "severity": "info",
+      "type": "name_mismatch",
+      "resolved": true,
+      "booth": "V04",
+      "kenrick_name": "Mr Pops",
+      "zeffy_name": "Mr. Pops Concession Co.",
+      "action": "Using Kenrick business name for fielded vendor."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "V05",
+      "business_name": "GlamMeMe",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    },
+    {
+      "severity": "info",
+      "type": "kenrick_only",
+      "resolved": true,
+      "booth": "V08",
+      "business_name": "Root and Cane",
+      "action": "Paper-form application \u2014 Kenrick menu authoritative (staff approved)."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "_comment": "Prior-season food vendor rosters for legacy scoring. Rebuild vendor-festival-legacy.json via scripts/build_vendor_legacy.py.",
+  "meta": {
+    "updated": "2026-07-05",
+    "notes": "LNY 2024 food roster not located on Drive or locally. MAF 2024/2025 food vendor lists not found — MAF 2023 budget only.",
+    "sources": [
+      {
+        "season": "lny_2023",
+        "title": "2023 LNY Vendors",
+        "drive_id": "1TV_Q8ZmtM-C7GJa-40k2SGVm4csWLK2_VBQdbM68vG0",
+        "tab": "Sheet1",
+        "section": "FOOD VENDORS"
+      },
+      {
+        "season": "lny_2025",
+        "title": "LNY 2025 Food Vendors.tsv",
+        "drive_id": "1x1zcU4faMRaekXiw8vKKidFie_LmBhhI"
+      },
+      {
+        "season": "lny_2025",
+        "title": "2025 LNY Vendor Booth Registration — Detail1-Food/Drinks (paid)",
+        "drive_id": "190GaOI7SUu8HMZRV9ir07Ix3OdFM4LPNs8CWxQ9pSWo",
+        "tab": "Detail1-Food/Drinks",
+        "filter": "Amount Paid contains $ and not Cancelled"
+      },
+      {
+        "season": "maf_2023",
+        "title": "MAF 2023 - FINAL BUDGET SHEET",
+        "local": "Projects - Mid-Autumn Festival/2026/scripts/data/maf-2023-sponsors-internal.json"
+      }
+    ],
+    "exclude_from_prior": ["lny_2026"]
+  },
+  "seasons": {
+    "lny_2023": [
+      { "name": "Hung: Vietnamese Food _ Hot Food", "email": "hongloc2008@yahoo.com" },
+      { "name": "The Orient" },
+      { "name": "Asian BBQ and ICEE" },
+      { "name": "Best Papaya Salad", "email": "sithiphonemmsn@gmail.com" },
+      { "name": "Boba Meet Up", "email": "bobameetup@gmail.com" },
+      { "name": "Taezas Bottomline BBQ", "email": "taezasbottomlinebbq@gmail.com" },
+      { "name": "Kona Ice", "email": "northsac22@kona-ice.com" },
+      { "name": "Pinorrito Food Truck", "email": "pinorritofoodtruck@gmail.com" },
+      { "name": "Mr. Pop (Popcorn Food Truck)" },
+      { "name": "916 Hawt Foods & Dranks", "email": "aquatics916@yahoo.com" },
+      { "name": "Sugarcane Hut", "email": "bvorabouth84@gmail.com" },
+      { "name": "Lucky Lotus", "email": "mastercx70@gmail.com" }
+    ],
+    "lny_2025": [
+      { "name": "Aroma Concessions", "email": "aromaconcessions@gmail.com" },
+      { "name": "Baboy Boys", "email": "baboyboyscatering@gmail.com" },
+      { "name": "Bobetta Tea", "email": "bobettetea@gmail.com" },
+      { "name": "Boba Bros", "email": "bobabros916@gmail.com" },
+      { "name": "Bowli Bowli", "email": "nyhia.lor@gmail.com" },
+      { "name": "Cousins Maine Lobster", "email": "sacramento@cousinsmainelobster.com" },
+      { "name": "D&T's Kitchen", "email": "mfireweed@yahoo.com" },
+      { "name": "Fusion Bites", "email": "asianfusionbbq@gmail.com" },
+      { "name": "Hefty Gyros", "email": "heftygyros@gmail.com" },
+      { "name": "Kabob to go", "email": "kabob2go.sac@gmail.com" },
+      { "name": "My Lumpia Lady", "email": "mylumpialady916@gmail.com" },
+      { "name": "Pizza Lovers", "email": "pizzaloverssacramento@gmail.com" },
+      { "name": "Pinorrito Food Truck", "email": "pinorritofoodtruck@gmail.com" },
+      { "name": "Stockton best papaya", "email": "leolee831@hotmail.com" },
+      { "name": "Sugarcane Hut", "email": "bvorabouth84@gmail.com" },
+      { "name": "Taiyaki Loving Cooks", "email": "taiyakilovingcooks@gmail.com" },
+      { "name": "The Orient", "name_alt": "Efren Narag diba The orient" },
+      { "name": "Tri Foods Distributor Inc", "email": "lindale@tri-foods.com" }
+    ],
+    "maf_2023": [
+      { "name": "P&K Kitchen" },
+      { "name": "Gold Pop Ice Cream" },
+      { "name": "Mama Pam" },
+      { "name": "Huynh Ho" },
+      { "name": "Bambu Che & Dessert" },
+      { "name": "D&T Kitchen", "email": "mfireweed@yahoo.com" },
+      { "name": "Lee Jay's Smokehouse" },
+      { "name": "Taiyaki Loving Cooking", "email": "taiyakilovingcooks@gmail.com" },
+      { "name": "Pinorrito", "email": "pinorritofoodtruck@gmail.com" },
+      { "name": "Cousins Maine Lobster", "email": "sacramento@cousinsmainelobster.com" },
+      { "name": "The Orient" }
+    ]
+  },
+  "id_aliases": {
+    "bobette-tea": ["bobetta tea", "bobetta"],
+    "d-t-kitchen": ["d&t kitchen", "d&t's kitchen", "dts kitchen"],
+    "mr-pops": ["mr pop", "mr. pop", "mr pop popcorn food truck"],
+    "stockton-s-best-papaya-salad": ["best papaya salad", "stockton best papaya", "stockton's best papaya salad"],
+    "pizza-lovers-sacramento": ["pizza lovers"],
+    "my-lumpia-lady": ["my lumpia lady"],
+    "pinorrito-food-truck": ["pinorrito", "pinorrito food truck"]
+  }
+}

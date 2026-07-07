@@ -18,13 +18,14 @@ Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts,
 
 | When | Event | Where |
 |------|-------|-------|
-| Early Sep | California Is My Home Mid-Autumn Fair | District 56, Elk Grove |
+| 2nd weekend Sep (est. Fri Sep 11) | California Is My Home Mid-Autumn Fair | District 56, Elk Grove |
+| MAF −2 weekends (est. Sep 13) | Sac State Harvest Moon (JSSCC, if recurring) | Sac State campus |
+| MAF −1 weekend (est. Sep 19) | Riverside UMC community fair | Parish / neighborhood |
 | **Sep 19** (tent.) | CAAPS Autumn Lantern Festival | Sacramento region |
-| Late Sep | Sac State Harvest Moon / APIDA Mid-Autumn | Sacramento State campus |
-| Late Sep | Riverside UMC community fair | Parish / neighborhood |
+| **Sep 21** | **APIDA Night Lights — Illuminating the Hive** (`sac-state-maf` inaugural) | Acorn Amphitheatre, Sac State campus |
 | **Sep 25–26** | **VACOS/cPALSs/NVCC MAF** | **Derr-Okamoto Park, Elk Grove** |
-| Oct 3–4 | Giant Pumpkin Festival | Elk Grove Regional Park |
-| Oct 4–5 (est.) | SF Supermarket Mid-Autumn activation | Rancho Cordova |
+| Oct 3–4 | Giant Pumpkin Festival | Elk Grove Park |
+| First Oct weekend (est.) | SF Supermarket Mid-Autumn activation | Rancho Cordova |
 | Nov (est.) | Creative Space Autumn Craft Fair | SASF, Elk Grove |
 
 That's a lot of weekends — and several events that look like the same product if you squint.
@@ -54,7 +55,7 @@ I wouldn't try to merge everything into one mega-festival. I wouldn't chase the 
 |-------|---------------|-------------------|
 | Riverside UMC | Parish / neighborhood | Warm-up — build a lantern, bring community together |
 | California Is My Home | Elk Grove producers | Parallel fair — vendors, stage, local press |
-| Sac State (APIDA + JSSCC) | Campus / Gen Z | Different audience — heritage + mainstream on campus, not the family park product |
+| Sac State (APIDA Night Lights + JSSCC) | Campus / Gen Z | Different audience — heritage + mainstream on campus, not the family park product |
 | **CAAPS** (Sep 19 est.) | Spectacle / night market | Hoi An install — different product, different weekend than family capstone |
 | **VACOS/cPALSs/NVCC MAF** | **Elk Grove families** | **Capstone — lantern contest, procession, regional haul-in moment** |
 | Giant Pumpkin Festival | Civic / regional fall | October destination — pumpkin weigh-off; room for a lantern exhibition after MAF |

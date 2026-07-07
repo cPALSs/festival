@@ -57,6 +57,7 @@ Post the same core message everywhere; adapt length to the channel.
 Within **48 hours** of first contact:
 
 - [ ] Log lead — name, channel, date received, role interest
+- [ ] **Idealist:** applicant already received **auto-response** on submit (if enabled in listing admin) — your reply is the **personal** follow-up, not the first acknowledgment
 - [ ] Send a short reply — thank you, co-chair intro, next step (15-min call or async questions)
 - [ ] Capture **preferred contact method** and **preferred contact times** (if phone/text)
 - [ ] Ask **events already committed this season** — note declared conflicts; coordinate, don’t surprise
@@ -69,6 +70,7 @@ Within **48 hours** of first contact:
 After first conversation:
 
 - [ ] **Role target** confirmed — one primary director lane (or explicit co-director plan)
+- [ ] **Director vs Member** — no prior event/production experience → default **Member** path unless strong plan + co-chair support; do not place as director on receipt alone
 - [ ] **Scope honest** — unfunded scopes explained up front; plan anyway, hold vision until funding is secured
 - [ ] **Experience gap** named — co-chairs and prior runbooks back new directors
 - [ ] **Season collision** resolved — other events on same weekends acknowledged
@@ -81,6 +83,7 @@ After first conversation:
 
 When someone accepts a director role:
 
+- [ ] Co-chairs confirmed placement after **triage** — not on Idealist apply alone
 - [ ] Add to **staff directory** (or equivalent roster) — Director name, role, contact prefs
 - [ ] Introduce to **vendor partners, co-directors, or committee** for that lane
 - [ ] Schedule **first check-in** — two weeks before peak workload at latest
@@ -112,6 +115,20 @@ Track leads in your host’s internal intake workbook — not on public calendar
 
 ---
 
+## Rolling placement (director roles)
+
+Listings stay open until lanes fill or a published **placement cutoff** — review is continuous, not batch-at-listing-end.
+
+| Practice | Detail |
+|----------|--------|
+| **Acknowledge fast** | 48h personal reply; Idealist **auto-response** on submit if configured in listing admin |
+| **Place when ready** | Strong fit + empty critical lane → place after triage; don't wait for more applicants |
+| **Compare when crowded** | Multiple applicants same lane → triage each, then decide within ~2 weeks |
+| **Cutoffs** | Publish minimum lead time (MAF 2026: **Aug 1** site/finance/vendor; **Aug 15** program/outreach) — after cutoff, **Member** or **Deferred** for new director applicants |
+| **No experience** | **Member** path or deferred director — warm tone; not director on first apply |
+
+---
+
 ## Questions
 
-Open a [GitHub issue](https://github.com/cPALSs/festival-network/issues) or email [contact@cpalss.com](mailto:contact@cpalss.com) about using this checklist in your region or fork.
+Open a [GitHub issue](https://github.com/cPALSs/festival/issues) or email [contact@cpalss.com](mailto:contact@cpalss.com) about using this checklist in your region or fork.

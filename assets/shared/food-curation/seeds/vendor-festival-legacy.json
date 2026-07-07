@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "updated": "2026-07-05",
+    "notes": "LNY 2024 food roster not located on Drive or locally. MAF 2024/2025 food vendor lists not found — MAF 2023 budget only.",
+    "sources": [
+      {
+        "season": "lny_2023",
+        "title": "2023 LNY Vendors",
+        "drive_id": "1TV_Q8ZmtM-C7GJa-40k2SGVm4csWLK2_VBQdbM68vG0",
+        "tab": "Sheet1",
+        "section": "FOOD VENDORS"
+      },
+      {
+        "season": "lny_2025",
+        "title": "LNY 2025 Food Vendors.tsv",
+        "drive_id": "1x1zcU4faMRaekXiw8vKKidFie_LmBhhI"
+      },
+      {
+        "season": "lny_2025",
+        "title": "2025 LNY Vendor Booth Registration — Detail1-Food/Drinks (paid)",
+        "drive_id": "190GaOI7SUu8HMZRV9ir07Ix3OdFM4LPNs8CWxQ9pSWo",
+        "tab": "Detail1-Food/Drinks",
+        "filter": "Amount Paid contains $ and not Cancelled"
+      },
+      {
+        "season": "maf_2023",
+        "title": "MAF 2023 - FINAL BUDGET SHEET",
+        "local": "Projects - Mid-Autumn Festival/2026/scripts/data/maf-2023-sponsors-internal.json"
+      }
+    ],
+    "exclude_from_prior": [
+      "lny_2026"
+    ],
+    "sources_file": "vendor-festival-legacy-sources.json",
+    "applicants_file": "lny-2026-applicants.json",
+    "matched_applicants": 14,
+    "unmatched_vendor_rows": 22
+  },
+  "by_id": {
+    "stockton-s-best-papaya-salad": {
+      "seasons": [
+        "lny_2023",
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2023",
+          "source_name": "Best Papaya Salad",
+          "method": "name:name"
+        },
+        {
+          "season": "lny_2025",
+          "source_name": "Stockton best papaya",
+          "method": "name:name"
+        }
+      ],
+      "prior_count": 2
+    },
+    "boba-meet-up": {
+      "seasons": [
+        "lny_2023"
+      ],
+      "matches": [
+        {
+          "season": "lny_2023",
+          "source_name": "Boba Meet Up",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    },
+    "pinorrito-food-truck": {
+      "seasons": [
+        "lny_2023",
+        "lny_2025",
+        "maf_2023"
+      ],
+      "matches": [
+        {
+          "season": "lny_2023",
+          "source_name": "Pinorrito Food Truck",
+          "method": "email"
+        },
+        {
+          "season": "lny_2025",
+          "source_name": "Pinorrito Food Truck",
+          "method": "email"
+        },
+        {
+          "season": "maf_2023",
+          "source_name": "Pinorrito",
+          "method": "email"
+        }
+      ],
+      "prior_count": 3
+    },
+    "mr-pops": {
+      "seasons": [
+        "lny_2023"
+      ],
+      "matches": [
+        {
+          "season": "lny_2023",
+          "source_name": "Mr. Pop (Popcorn Food Truck)",
+          "method": "name:name"
+        }
+      ],
+      "prior_count": 1
+    },
+    "sugarcane-hut": {
+      "seasons": [
+        "lny_2023",
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2023",
+          "source_name": "Sugarcane Hut",
+          "method": "email"
+        },
+        {
+          "season": "lny_2025",
+          "source_name": "Sugarcane Hut",
+          "method": "email"
+        }
+      ],
+      "prior_count": 2
+    },
+    "aroma-concessions": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "Aroma Concessions",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    },
+    "baboy-boys": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "Baboy Boys",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    },
+    "bobette-tea": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "Bobetta Tea",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    },
+    "boba-bros": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "Boba Bros",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    },
+    "bowli-bowli": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "Bowli Bowli",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    },
+    "d-t-kitchen": {
+      "seasons": [
+        "lny_2025",
+        "maf_2023"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "D&T's Kitchen",
+          "method": "email"
+        },
+        {
+          "season": "maf_2023",
+          "source_name": "D&T Kitchen",
+          "method": "email"
+        }
+      ],
+      "prior_count": 2
+    },
+    "fusion-bites": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "Fusion Bites",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    },
+    "my-lumpia-lady": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "My Lumpia Lady",
+          "method": "name:name"
+        }
+      ],
+      "prior_count": 1
+    },
+    "pizza-lovers-sacramento": {
+      "seasons": [
+        "lny_2025"
+      ],
+      "matches": [
+        {
+          "season": "lny_2025",
+          "source_name": "Pizza Lovers",
+          "method": "email"
+        }
+      ],
+      "prior_count": 1
+    }
+  },
+  "unmatched": [
+    {
+      "season": "lny_2023",
+      "name": "Hung: Vietnamese Food _ Hot Food",
+      "email": "hongloc2008@yahoo.com"
+    },
+    {
+      "season": "lny_2023",
+      "name": "The Orient"
+    },
+    {
+      "season": "lny_2023",
+      "name": "Asian BBQ and ICEE"
+    },
+    {
+      "season": "lny_2023",
+      "name": "Taezas Bottomline BBQ",
+      "email": "taezasbottomlinebbq@gmail.com"
+    },
+    {
+      "season": "lny_2023",
+      "name": "Kona Ice",
+      "email": "northsac22@kona-ice.com"
+    },
+    {
+      "season": "lny_2023",
+      "name": "916 Hawt Foods & Dranks",
+      "email": "aquatics916@yahoo.com"
+    },
+    {
+      "season": "lny_2023",
+      "name": "Lucky Lotus",
+      "email": "mastercx70@gmail.com"
+    },
+    {
+      "season": "lny_2025",
+      "name": "Cousins Maine Lobster",
+      "email": "sacramento@cousinsmainelobster.com"
+    },
+    {
+      "season": "lny_2025",
+      "name": "Hefty Gyros",
+      "email": "heftygyros@gmail.com"
+    },
+    {
+      "season": "lny_2025",
+      "name": "Kabob to go",
+      "email": "kabob2go.sac@gmail.com"
+    },
+    {
+      "season": "lny_2025",
+      "name": "Taiyaki Loving Cooks",
+      "email": "taiyakilovingcooks@gmail.com"
+    },
+    {
+      "season": "lny_2025",
+      "name": "The Orient",
+      "name_alt": "Efren Narag diba The orient"
+    },
+    {
+      "season": "lny_2025",
+      "name": "Tri Foods Distributor Inc",
+      "email": "lindale@tri-foods.com"
+    },
+    {
+      "season": "maf_2023",
+      "name": "P&K Kitchen"
+    },
+    {
+      "season": "maf_2023",
+      "name": "Gold Pop Ice Cream"
+    },
+    {
+      "season": "maf_2023",
+      "name": "Mama Pam"
+    },
+    {
+      "season": "maf_2023",
+      "name": "Huynh Ho"
+    },
+    {
+      "season": "maf_2023",
+      "name": "Bambu Che & Dessert"
+    },
+    {
+      "season": "maf_2023",
+      "name": "Lee Jay's Smokehouse"
+    },
+    {
+      "season": "maf_2023",
+      "name": "Taiyaki Loving Cooking",
+      "email": "taiyakilovingcooks@gmail.com"
+    },
+    {
+      "season": "maf_2023",
+      "name": "Cousins Maine Lobster",
+      "email": "sacramento@cousinsmainelobster.com"
+    },
+    {
+      "season": "maf_2023",
+      "name": "The Orient"
+    }
+  ]
+}

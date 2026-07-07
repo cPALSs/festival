@@ -10,21 +10,21 @@ related_seasons: [lny, autumn]
 
 ## Human entry
 
-**Overview:** [child-audience/overview.html](https://cpalss.github.io/festival-network/child-audience/overview.html)
+**Overview:** [child-audience/overview.html](https://festival.cpalss.com/child-audience/overview.html)
 
 ## Page map
 
 | Topic | Repo path | Published |
 |-------|-----------|-----------|
-| Overview · north star · veto timeline | [docs/child-audience/overview.md](../../docs/child-audience/overview.md) | [overview.html](https://cpalss.github.io/festival-network/child-audience/overview.html) |
-| Fit tags (menu model) | [docs/child-audience/fit-tags.md](../../docs/child-audience/fit-tags.md) | [fit-tags.html](https://cpalss.github.io/festival-network/child-audience/fit-tags.html) |
-| Cohorts C0–C3 (≈0–12) | [docs/child-audience/cohorts-young.md](../../docs/child-audience/cohorts-young.md) | [cohorts-young.html](https://cpalss.github.io/festival-network/child-audience/cohorts-young.html) |
-| Cohort C4 — teens | [docs/child-audience/cohorts-teens.md](../../docs/child-audience/cohorts-teens.md) | [cohorts-teens.html](https://cpalss.github.io/festival-network/child-audience/cohorts-teens.html) |
-| Access SN-* | [docs/child-audience/cohorts-access.md](../../docs/child-audience/cohorts-access.md) | [cohorts-access.html](https://cpalss.github.io/festival-network/child-audience/cohorts-access.html) |
-| Site plan & programming | [docs/child-audience/site-and-zoning.md](../../docs/child-audience/site-and-zoning.md) | [site-and-zoning.html](https://cpalss.github.io/festival-network/child-audience/site-and-zoning.html) |
-| Local synergies | [docs/child-audience/local-synergies.md](../../docs/child-audience/local-synergies.md) | [local-synergies.html](https://cpalss.github.io/festival-network/child-audience/local-synergies.html) |
-| Implementation | [docs/child-audience/implementation.md](../../docs/child-audience/implementation.md) | [implementation.html](https://cpalss.github.io/festival-network/child-audience/implementation.html) |
-| **Walkthrough — LNY 2027** *(stub)* | [docs/child-audience/walkthroughs/lny-2027.md](../../docs/child-audience/walkthroughs/lny-2027.md) | [lny-2027.html](https://cpalss.github.io/festival-network/child-audience/walkthroughs/lny-2027.html) |
+| Overview · north star · veto timeline | [docs/child-audience/overview.md](../../docs/child-audience/overview.md) | [overview.html](https://festival.cpalss.com/child-audience/overview.html) |
+| Fit tags (menu model) | [docs/child-audience/fit-tags.md](../../docs/child-audience/fit-tags.md) | [fit-tags.html](https://festival.cpalss.com/child-audience/fit-tags.html) |
+| Cohorts C0–C3 (≈0–12) | [docs/child-audience/cohorts-young.md](../../docs/child-audience/cohorts-young.md) | [cohorts-young.html](https://festival.cpalss.com/child-audience/cohorts-young.html) |
+| Cohort C4 — teens | [docs/child-audience/cohorts-teens.md](../../docs/child-audience/cohorts-teens.md) | [cohorts-teens.html](https://festival.cpalss.com/child-audience/cohorts-teens.html) |
+| Access SN-* | [docs/child-audience/cohorts-access.md](../../docs/child-audience/cohorts-access.md) | [cohorts-access.html](https://festival.cpalss.com/child-audience/cohorts-access.html) |
+| Site plan & programming | [docs/child-audience/site-and-zoning.md](../../docs/child-audience/site-and-zoning.md) | [site-and-zoning.html](https://festival.cpalss.com/child-audience/site-and-zoning.html) |
+| Local synergies | [docs/child-audience/local-synergies.md](../../docs/child-audience/local-synergies.md) | [local-synergies.html](https://festival.cpalss.com/child-audience/local-synergies.html) |
+| Implementation | [docs/child-audience/implementation.md](../../docs/child-audience/implementation.md) | [implementation.html](https://festival.cpalss.com/child-audience/implementation.html) |
+| **Walkthrough — LNY 2027** *(stub)* | [docs/child-audience/walkthroughs/lny-2027.md](../../docs/child-audience/walkthroughs/lny-2027.md) | [lny-2027.html](https://festival.cpalss.com/child-audience/walkthroughs/lny-2027.html) |
 
 ## Maintenance
 

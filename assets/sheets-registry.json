@@ -2,8 +2,8 @@
   "version": 1,
   "source_of_truth": "google_sheets",
   "mcp_server": "google-sheet-mcp",
-  "repository": "https://github.com/cPALSs/festival-network",
-  "site": "https://cpalss.github.io/festival-network/",
+  "repository": "https://github.com/cPALSs/festival",
+  "site": "https://festival.cpalss.com/",
   "drive": {
     "shared_drive": "Festival Network",
     "docs_registry": "assets/drive-registry.json",

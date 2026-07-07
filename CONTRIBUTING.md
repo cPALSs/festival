@@ -4,7 +4,7 @@
 
 ## How to contribute
 
-1. Fork [cPALSs/festival-network](https://github.com/cPALSs/festival-network) or open a PR from cPALSs staging (`Festival Network/shared/`)
+1. Fork [cPALSs/festival](https://github.com/cPALSs/festival) or open a PR from cPALSs staging (`Festival Network/shared/`)
 2. Follow stub → substance norms: mark `status: stub` until peer-reviewed
 3. Never publish private competitor intelligence — public sources + attributed field observations only
 

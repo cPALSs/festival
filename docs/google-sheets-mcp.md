@@ -9,7 +9,7 @@ Live research data is stored in **Google Sheets** (source of truth). Cursor agen
 
 ## Sheet registry
 
-Canonical links live in [sheets-registry.json](https://github.com/cPALSs/festival-network/blob/main/assets/sheets-registry.json).
+Canonical links live in [sheets-registry.json](https://github.com/cPALSs/festival/blob/main/assets/sheets-registry.json).
 
 | Dataset | Spreadsheet |
 |---------|-------------|
@@ -42,7 +42,7 @@ OAuth lets the agent act **as you** — no service account, no sharing the sheet
 1. Open [Google Cloud Console](https://console.cloud.google.com/)
 2. Click the **project dropdown** (top bar, next to “Google Cloud”)
 3. **New project**
-4. Name it e.g. `festival-network-mcp` → **Create**
+4. Name it e.g. `festival-mcp` → **Create**
 5. Wait for creation, then **select** that project from the dropdown
 
 ### 2. Enable Google Sheets API
@@ -80,7 +80,7 @@ OAuth lets the agent act **as you** — no service account, no sharing the sheet
 ```bash
 cd "/Users/bao/cPALSs"
 npm install
-npm run mcp:oauth -w festival-network
+npm run mcp:oauth -w festival
 ```
 
 Or run the wizard directly:
@@ -93,7 +93,7 @@ npx google-sheet-mcp init --auth oauth
 **Public clone** — install MCP in your clone root if you use Sheets MCP locally:
 
 ```bash
-cd festival-network
+cd festival
 npm install
 npx -y google-sheet-mcp init --auth oauth
 ```
@@ -233,5 +233,5 @@ npx -y google-sheet-mcp test
 
 - **Sheets = source of truth** — humans edit in Google Sheets; agents update via MCP
 - **Repo** holds `sheets-registry.json`, column schema, and guides — **not** live rows (no CSV)
-- Match columns in [LNY schema](https://github.com/cPALSs/festival-network/blob/main/assets/lny/research/market-landscape-schema.md) or [Autumn schema](https://github.com/cPALSs/festival-network/blob/main/assets/autumn/research/market-landscape-schema.md)
+- Match columns in [LNY schema](https://github.com/cPALSs/festival/blob/main/assets/lny/research/market-landscape-schema.md) or [Autumn schema](https://github.com/cPALSs/festival/blob/main/assets/autumn/research/market-landscape-schema.md)
 - Protect row 1 (headers) in the Sheet

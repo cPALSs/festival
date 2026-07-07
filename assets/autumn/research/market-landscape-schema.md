@@ -78,7 +78,7 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 ## Occurrence rows (one row per year)
 
 - **Do not overwrite** last year's row when next year's date is announced — add a row (or copy → edit → set prior row to `held`).
-- **Latest season only when dated:** For the current planning year, **Estimated rows are allowed** with projected dates from prior year + **Data gap** until organizer confirms.
+- **Latest season only when dated:** For the current planning year, **Estimated rows are allowed** with projected dates (see **How to estimate dates** below) + **Data gap** until organizer confirms.
 - **Filter views** (recommended in Google Sheets):
   - **Current planning** — `Season year` = 2026 or 2027 · `Row status` = `planning` or `confirmed`
   - **Last held** — `Row status` = `held` · sort `Season year` descending
@@ -101,9 +101,47 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 |-------|-------------|
 | **Confirmed** | **Calendar steward** verified the date. Auto-signal: public listing (FB, Eventbrite, Sacramento365, organizer site). Steward may confirm **before** public post when organizer gave final date in conversation. |
 | **Tentative** | Spoken to organizer; committed date but not finalized |
-| **Estimated** | No organizer contact; date projected from prior year assuming recurrence |
+| **Estimated** | No organizer contact; date projected from prior held occurrence (see below). Apply only to **planning-year** rows — not `held` / `historical`. |
 
 **Confidence source:** `Steward confirmed` · `Public listing` · `Organizer conversation (pre-public)` · `Coalition internal`
+
+### How to estimate dates
+
+Do **not** copy the prior Gregorian calendar date (e.g. “Sep 12 last year → Sep 12 this year”). Mid-Autumn moves on the solar calendar; weekend slots move with it.
+
+**Anchor — lunar Mid-Autumn date** (15th day of the 8th lunar month) for the planning year.
+
+**MAF Saturday** — Saturday nearest that lunar date: prefer the Saturday **on or after** when lunar falls Fri–Sun; prefer the Saturday **before** when lunar falls Mon–Thu.
+
+| Year | Lunar MAF | MAF Saturday |
+|------|-----------|--------------|
+| 2025 | Mon Oct 6 | Sat Oct 4 |
+| 2026 | Fri Sep 25 | Sat Sep 26 |
+
+**Lunar-aligned events** (`Lunar aligned` = Yes, or Yes with a qualifier):
+
+1. Take the most recent **held** occurrence for that `event_id`.
+2. Weekend offset = `(event Saturday − prior-year MAF Saturday) / 7` (negative = before MAF).
+3. Projected Saturday = `planning-year MAF Saturday + (offset × 7 days)`.
+4. Keep the prior occurrence’s **day of week** and typical hours.
+5. Record the offset in **Notes for reviewers** or **Data gap**, e.g. `Est. MAF −3 weekends (from 2025 Fri Sep 12)`.
+
+**2026 examples — lunar-aligned (from 2025 held):**
+
+| event_id | 2025 held | Offset | 2026 estimate |
+|----------|-----------|--------|---------------|
+| `sac-state-harvest-moon` | Sun Sep 21 | MAF −2 weekends | Sun Sep 13 |
+| `riverside-umc-mid-autumn` | Sat Sep 27 | MAF −1 weekend | Sat Sep 19 |
+
+**Non-lunar / calendar-pattern events** (`Lunar aligned` = No, or Partial with an explicit calendar pattern such as “first October weekend” or “2nd Friday of September”):
+
+- Project from the prior-year **calendar** pattern (same month, same weekend-of-month, Nth weekday of month, late November, etc.).
+- **Multi-year check:** if lunar offsets disagree across held years, prefer the calendar pattern.
+- Examples:
+  - SF Supermarket 2025 Oct 4–5 → 2026 first October weekend (Oct 3–4), not MAF weekend.
+  - **CAIMH / District 56:** 2024 Fri Sep 13 (City; weekend before MAF) and 2025 Fri Sep 12 (CAIMH; MAF −3) — lunar offsets disagree; both land on the **2nd weekend of September** (likely **District 56 availability** more than lunar). Estimate 2026 **Fri Sep 11**, not MAF −3.
+
+When in doubt for Mid-Autumn / Moon / Lantern rows **with consistent lunar offsets**, prefer **MAF ± weekends**. When offsets conflict year-to-year, prefer **calendar pattern**.
 
 **Colleague shortcuts (June 2026):**
 

@@ -1,0 +1,280 @@
+{
+  "_comment": "Human cleanup for Kenrick/Zeffy parse failures. capability replaces parsed list; item_labels patch by item_id or normalized name.",
+  "lien-s-chinese": {
+    "primary_archetype_id": "fast_handheld",
+    "capability_menu_items": [
+      { "name": "Pork, chicken & beef skewers", "category": "snacks" },
+      { "name": "Pork & chicken skewers", "category": "meals" },
+      { "name": "Beef sausages", "category": "snacks" },
+      { "name": "Bottled water", "category": "drinks" },
+      { "name": "Soda", "category": "drinks" }
+    ],
+    "signature_item_ids": [
+      "lien-s-chinese-item-0",
+      "lien-s-chinese-item-1",
+      "lien-s-chinese-item-2"
+    ]
+  },
+  "my-lumpia-lady": {
+    "capability_menu_items": [
+      { "name": "US beef with veggie lumpia", "category": "meals" },
+      { "name": "Chicken with veggie lumpia", "category": "meals" },
+      { "name": "All-veggie lumpia", "category": "snacks" },
+      { "name": "Beef queso birria lumpia with consommé", "category": "snacks" },
+      { "name": "Jalapeño crawfish lumpia", "category": "snacks" }
+    ]
+  },
+  "d-t-kitchen": {
+    "item_labels": {
+      "d-t-kitchen-item-3": "Chicken basil with fried egg & steamed rice",
+      "d-t-kitchen-item-18": "Coconut juice"
+    },
+    "signature_item_ids": [
+      "d-t-kitchen-item-1",
+      "d-t-kitchen-item-2",
+      "d-t-kitchen-item-6",
+      "d-t-kitchen-item-0",
+      "d-t-kitchen-item-9"
+    ]
+  },
+  "bowli-bowli": {
+    "item_labels": {
+      "legs": "Chicken legs",
+      "eggrolls": "Egg rolls"
+    },
+    "signature_item_ids": [
+      "bowli-bowli-item-4",
+      "bowli-bowli-item-5",
+      "bowli-bowli-item-0",
+      "bowli-bowli-item-1",
+      "bowli-bowli-item-2"
+    ]
+  },
+  "zummi-food-llc": {
+    "capability_menu_items": [
+      { "name": "Bánh mì", "category": "meals" },
+      { "name": "Bánh tráng trộn (rice paper salad)", "category": "meals" },
+      { "name": "Bún thịt nướng", "category": "meals" },
+      { "name": "Garlic noodles", "category": "meals" },
+      { "name": "Coffee", "category": "drinks" }
+    ],
+    "signature_item_ids": [
+      "zummi-food-llc-item-0",
+      "zummi-food-llc-item-1",
+      "zummi-food-llc-item-2",
+      "zummi-food-llc-item-3"
+    ]
+  },
+  "matcha-drinks-pre": {
+    "business_name": "Shibainc Cafe",
+    "_menu_source_note": "i801 LLC — https://ca.shibainc.cafe/ · Kenrick V01 description was a product list (matcha, pre-pack cookies, merch). Onsite drinks only; cookies/merch are TFF PRE-PKG retail.",
+    "vendor_class": "drinks",
+    "capability_menu_items": [
+      { "name": "Matcha drinks", "category": "drinks" },
+      { "name": "Boba / milk tea", "category": "drinks" },
+      { "name": "Coffee", "category": "drinks" }
+    ]
+  },
+  "mr-pops": {
+    "_menu_source_note": "Fresh-spun treats — optional snack lane (not meal throughput)",
+    "vendor_class": "snack",
+    "capability_menu_items": [
+      { "name": "Caramel corn", "category": "snacks" },
+      { "name": "Kettle corn", "category": "snacks" },
+      { "name": "Cheddar corn", "category": "snacks" },
+      { "name": "Caramel apple & lightly salted popcorn", "category": "snacks" },
+      { "name": "Fluffy cotton candy", "category": "snacks" }
+    ]
+  },
+  "aroma-concessions": {
+    "capability_menu_items": [
+      { "name": "Smoked turkey legs", "category": "meals" },
+      { "name": "Tri-tip sandwich", "category": "meals" },
+      { "name": "Garlic fries", "category": "snacks" },
+      { "name": "Sausages (Polish, Cajun, hot dog)", "category": "snacks" }
+    ]
+  },
+  "stockton-s-best-papaya-salad": {
+    "item_labels": {
+      "sushi?": "Sushi roll",
+      "phat pa phao": "Phat paa pao"
+    }
+  },
+  "bobette-tea": {
+    "vendor_class": "drinks",
+    "capability_menu_items": [
+      { "name": "Boba teas", "category": "drinks" },
+      { "name": "Coffee", "category": "drinks" },
+      { "name": "Cotton candy", "category": "snacks" },
+      { "name": "Vietnamese coffee", "category": "drinks" },
+      { "name": "Hazelnut Latte", "category": "drinks" },
+      { "name": "Ube Coconut Latte", "category": "drinks" }
+    ]
+  },
+  "boba-meet-up": {
+    "_menu_source_note": "Kenrick field menu was boba-only; Zeffy listed snacks but not fielded. Capability/sigs from @boba_meetup IG (Menu highlight + post captions, Jul 2026).",
+    "vendor_class": "drinks",
+    "capability_menu_items": [
+      { "name": "Taro milk tea", "category": "drinks", "item_id": "boba-meet-up-item-0" },
+      { "name": "Thai milk tea", "category": "drinks", "item_id": "boba-meet-up-item-1" },
+      { "name": "Coconut milk tea", "category": "drinks", "item_id": "boba-meet-up-item-2" },
+      { "name": "Strawberry milk", "category": "drinks", "item_id": "boba-meet-up-item-3" },
+      { "name": "Avocado milk tea", "category": "drinks", "item_id": "boba-meet-up-item-4" }
+    ],
+    "signature_item_ids": [
+      "boba-meet-up-item-0",
+      "boba-meet-up-item-1",
+      "boba-meet-up-item-2",
+      "boba-meet-up-item-3",
+      "boba-meet-up-item-4"
+    ]
+  },
+  "low-slow-bbq": {
+    "_menu_source_note": "Kenrick menu spanned CSV newline — mac & cheese / baked potato options split incorrectly. Primary = smoke/rib line (bottleneck), not sandwiches.",
+    "primary_archetype_id": "bbq_smoke_carved",
+    "capability_menu_items": [
+      { "name": "Barbecue pork spareribs", "category": "meals" },
+      { "name": "Brisket sandwich", "category": "meals" },
+      { "name": "Pulled pork sandwich", "category": "meals" },
+      { "name": "Hotlink sandwich", "category": "meals" },
+      { "name": "Loaded mac & cheese", "category": "meals" },
+      { "name": "Loaded baked potato", "category": "meals" },
+      { "name": "Baked potato", "category": "meals" }
+    ]
+  },
+  "pitayas-locas": {
+    "vendor_class": "drinks",
+    "capability_menu_items": [
+      { "name": "Aguas frescas", "category": "drinks" },
+      { "name": "Fruit cups", "category": "snacks" },
+      { "name": "Corn cups", "category": "snacks" }
+    ]
+  },
+  "ray-s-kitchen": {
+    "capability_menu_items": [
+      { "name": "Chicken over rice", "category": "meals" },
+      { "name": "Lamb over rice", "category": "meals" },
+      { "name": "Gyros", "category": "meals" },
+      { "name": "Cheeseburgers", "category": "meals" },
+      { "name": "Loaded fries", "category": "snacks" }
+    ]
+  },
+  "rhome-s-bistro": {
+    "capability_menu_items": [
+      { "name": "Pork belly adobo", "category": "meals" },
+      { "name": "Musubi lumpia", "category": "snacks" },
+      { "name": "Cheeseburger lumpia", "category": "snacks" },
+      { "name": "Pork belly chips", "category": "snacks" },
+      { "name": "The gang wangs", "category": "meals" },
+      { "name": "Dynamite lumpia", "category": "snacks" },
+      { "name": "Cheese sticks", "category": "snacks" },
+      { "name": "Ube sago", "category": "snacks" },
+      { "name": "Buko pandan sago", "category": "snacks" },
+      { "name": "Melon refresher", "category": "drinks" },
+      { "name": "Puto pao", "category": "snacks" }
+    ]
+  },
+  "stockton-s-best-papaya-salad": {
+    "item_labels": {
+      "sushi?": "Sushi roll",
+      "phat pa phao": "Phat paa pao",
+      "phat kengo": "Phat kengo"
+    }
+  },
+  "xd-jerky-kingz": {
+    "capability_menu_items": [
+      { "name": "Spam musubi", "category": "snacks" },
+      { "name": "Lao sausage musubi", "category": "snacks" },
+      { "name": "Lemongrass steak sandwich", "category": "meals" },
+      { "name": "Bomb azz tacos", "category": "meals" },
+      { "name": "Bottled water & canned soda", "category": "drinks" }
+    ]
+  },
+  "myzz-piggy-z-tiger-bite": {
+    "item_labels": {
+      "some tom papaya": "Som tum papaya"
+    }
+  },
+  "jerky-jerky": {
+    "_menu_source_note": "Optional packaged snack — snack vendor cap, not meal throughput",
+    "vendor_class": "snack",
+    "capability_menu_items": [
+      { "name": "Pre-packaged beef & wild game jerky", "category": "snacks" },
+      { "name": "Pre-packaged freeze-dried candies and snacks", "category": "snacks" }
+    ]
+  },
+  "truckee-meadows-gourmet-express": {
+    "_menu_source_note": "Frozen retail meats — take-home retail",
+    "take_home_only": true,
+    "capability_menu_items": [
+      { "name": "Pre-packaged meats & seafood (sold frozen)", "category": "snacks" }
+    ]
+  },
+  "root-and-cane": {
+    "_menu_source_note": "Packaged candy — optional snack lane",
+    "vendor_class": "snack",
+    "capability_menu_items": [
+      { "name": "Colombian candy", "category": "snacks" }
+    ]
+  },
+  "glammeme": {
+    "_menu_source_note": "Packaged dessert treats — optional snack lane",
+    "vendor_class": "snack"
+  },
+  "pizza-lovers-sacramento": {
+    "_menu_source_note": "Wood-fired Neapolitan truck (Toast/IG). Festival 2026 ops limited offer to Cajun sausage; capability lists full truck menu for fair menu-fit scoring.",
+    "primary_archetype_id": "fast_handheld",
+    "capability_menu_items": [
+      { "name": "Cajun sausage pizza", "category": "meals" },
+      { "name": "Margherita pizza", "category": "meals" },
+      { "name": "Hawaiian lover pizza", "category": "meals" },
+      { "name": "Soppressata lover pizza", "category": "meals" },
+      { "name": "Classic pepperoni pizza", "category": "meals" }
+    ],
+    "signature_item_ids": [
+      "pizza-lovers-sacramento-item-0"
+    ]
+  },
+  "potato-swirl-world": {
+    "_menu_source_note": "SR Thai BBQ + potato swirls — boba is add-on; primary is handheld fair food + Thai plates",
+    "primary_archetype_id": "fast_handheld",
+    "signature_item_ids": [
+      "potato-swirl-world-item-0",
+      "potato-swirl-world-item-1",
+      "potato-swirl-world-item-3",
+      "potato-swirl-world-item-4",
+      "potato-swirl-world-item-5"
+    ]
+  },
+  "sugarcane-hut": {
+    "_menu_source_note": "Kenrick MEV 10×20 — fresh-pressed sugarcane; staff note said prepack in error",
+    "vendor_class": "drinks",
+    "setup_type": "open_food_canopy"
+  },
+  "hot-boi-chili-oil": {
+    "_menu_source_note": "Jarred chili oil — take-home retail; not subject to food vendor caps",
+    "take_home_only": true
+  },
+  "lizetta-s-sourthern-soul-food": {
+    "_menu_source_note": "Paper app — festival subset from lizettassoulfood.com/menus + eglny Food & Beer Garden (Jul 2026): fried fish/shrimp, ribs, jambalaya, hot links, fried chicken. Food truck (IG category + field ops).",
+    "setup_type": "open_food_truck",
+    "capability_menu_items": [
+      { "name": "BBQ beef or pork ribs", "category": "meals" },
+      { "name": "BBQ tri-tip or brisket", "category": "meals" },
+      { "name": "Pulled pork plate", "category": "meals" },
+      { "name": "Fried or baked chicken", "category": "meals" },
+      { "name": "Southern fried fish/shrimp", "category": "meals" },
+      { "name": "BBQ mild or hot links", "category": "snacks" },
+      { "name": "Jambalaya or dirty rice", "category": "meals" },
+      { "name": "Mac & cheese", "category": "snacks" },
+      { "name": "Collard greens", "category": "snacks" }
+    ],
+    "signature_item_ids": [
+      "lizetta-s-sourthern-soul-food-item-4",
+      "lizetta-s-sourthern-soul-food-item-0",
+      "lizetta-s-sourthern-soul-food-item-3",
+      "lizetta-s-sourthern-soul-food-item-6",
+      "lizetta-s-sourthern-soul-food-item-5"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+---
+description: Festival Network GitHub Pages — link policy for docs/ (no local-only paths)
+globs:
+  - "docs/**"
+alwaysApply: false
+---
+
+# Festival Network — public site links
+
+Human-facing pages in `docs/` publish to [festival.cpalss.com](https://festival.cpalss.com/). **GitHub Pages renders `docs/` only.**
+
+## Link rules
+
+| Target | Use |
+|--------|-----|
+| Another page on this site | **`.html`** relative path |
+| Repo file (`assets/`, `AGENTS.md`) | `https://github.com/cPALSs/festival/blob/main/...` |
+| Coalition-internal paths | **Plain text only** |
+
+See [ai-asset-conventions.md](../docs/ai-asset-conventions.md) § Public site links.

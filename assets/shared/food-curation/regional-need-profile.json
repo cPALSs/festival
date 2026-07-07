@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "status": "phase_1",
+    "region": "Greater Sacramento",
+    "source": "Sac County QuickFacts + coalition APIDA estimates + LNY family-fair programming",
+    "enrichment_policy": "Vendor tags at application are best-effort. Festival staff and engine inference fill gaps on review. Repeat vendors accumulate richer metadata each season — more data improves roster fit and public menu filters."
+  },
+  "population_shares": {
+    "apida": 0.22,
+    "latino": 0.29,
+    "black": 0.11,
+    "mena_adjacent": 0.04
+  },
+  "dietary_need_weights": {
+    "halal_certified": 0.08,
+    "vegetarian_options": 0.06,
+    "vegan_options": 0.05,
+    "gluten_free_options": 0.04,
+    "dairy_free_options": 0.04,
+    "nut_free": 0.03
+  },
+  "experience_need_weights": {
+    "mild_spice": 0.07,
+    "kid_friendly": 0.06,
+    "easy_chew": 0.04,
+    "lower_sugar": 0.05
+  },
+  "need_catalog": [
+    {
+      "id": "halal_certified",
+      "label": "Halal certified",
+      "category": "dietary",
+      "vendor_level": true,
+      "application_hint": "Upload cert or attest whole booth is Halal-certified."
+    },
+    {
+      "id": "vegetarian_options",
+      "label": "Vegetarian options",
+      "category": "dietary",
+      "vendor_level": false,
+      "application_hint": "Tag signature items that contain no meat or fish."
+    },
+    {
+      "id": "vegan_options",
+      "label": "Vegan options",
+      "category": "dietary",
+      "vendor_level": false,
+      "application_hint": "No animal products (meat, dairy, egg, honey)."
+    },
+    {
+      "id": "gluten_free_options",
+      "label": "Gluten-free options",
+      "category": "dietary",
+      "vendor_level": false,
+      "application_hint": "Vendor best guess; festival confirms on review — not medical certification."
+    },
+    {
+      "id": "dairy_free_options",
+      "label": "Dairy-free options",
+      "category": "dietary",
+      "vendor_level": false,
+      "application_hint": "No milk, cheese, butter in this item as served."
+    },
+    {
+      "id": "nut_free",
+      "label": "Nut-free",
+      "category": "dietary",
+      "vendor_level": false,
+      "application_hint": "No peanuts/tree nuts in this item; cross-contact possible in shared kitchens."
+    },
+    {
+      "id": "mild_spice",
+      "label": "Mild (no hot chili)",
+      "category": "experience",
+      "vendor_level": false,
+      "application_hint": "Suitable for guests avoiding hot chili — not necessarily zero spice."
+    },
+    {
+      "id": "kid_friendly",
+      "label": "Good for young children",
+      "category": "experience",
+      "vendor_level": false,
+      "application_hint": "Familiar, handheld or easy to eat, mild — think ages ~3–10."
+    },
+    {
+      "id": "easy_chew",
+      "label": "Soft / easy to chew",
+      "category": "experience",
+      "vendor_level": false,
+      "application_hint": "Soups, rice plates, steamed items — helpful for seniors and dental issues."
+    },
+    {
+      "id": "lower_sugar",
+      "label": "Lower sugar / no added sugar",
+      "category": "experience",
+      "vendor_level": false,
+      "application_hint": "Unsweetened drinks, sugar-free boba, savory plates without sugary glaze/sauce as served. Vendor attestation — not medical or diabetic certification. Staff confirm on review."
+    }
+  ]
+}

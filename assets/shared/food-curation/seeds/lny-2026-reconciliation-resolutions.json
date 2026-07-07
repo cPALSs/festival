@@ -1,0 +1,46 @@
+{
+  "_comment": "Staff-approved resolutions (Jul 2026). Applied by build_lny_2026_seed.py after Zeffy/Kenrick merge.",
+  "exclude_vendor_ids": ["vorwerk-thermomix"],
+  "force_menu_source": {
+    "d-t-kitchen": "kenrick",
+    "pizza-lovers-sacramento": "kenrick"
+  },
+  "merge_kenrick_menu_detail": ["bobette-tea"],
+  "signature_menu_from_kenrick": ["boba-meet-up"],
+  "canonical_email": {
+    "pinorritofoodtruck@gmail.com": "pinorritofoodtruck@gmail.com"
+  },
+  "extra_pool": [
+    {
+      "zeffy_email": "brewtik.coffee.tea@gmail.com",
+      "status": "waitlisted",
+      "application_outcome": "cap_decline",
+      "primary_archetype_id": "boba_milk_tea"
+    },
+    {
+      "zeffy_email": "chiameco@msn.com",
+      "status": "waitlisted",
+      "application_outcome": "cap_decline",
+      "dedupe_by_email": true
+    },
+    {
+      "zeffy_email": "alex@hotboi.co",
+      "status": "rejected",
+      "application_outcome": "withdrew"
+    },
+    {
+      "zeffy_email": "bobabros916@gmail.com",
+      "status": "waitlisted",
+      "application_outcome": "cap_decline",
+      "primary_archetype_id": "boba_milk_tea"
+    }
+  ],
+  "approved_notes": {
+    "kenrick_only_vendors": "Paper-form applications — Kenrick menu is authoritative.",
+    "boba-meet-up": "Zeffy capability (fries, corn dogs, etc.); Kenrick field menu was boba-only — signatures from Kenrick.",
+    "vorwerk-thermomix": "Excluded — appliance demo, not food vendor.",
+    "d-t-kitchen": "Kenrick open-cooking MEV is correct; Zeffy prepack ticket was misapplied.",
+    "lizetta-s-sourthern-soul-food": "Paper app — menu from lizettassoulfood.com + eglny Food & Beer Garden field list; signatures: fried fish/shrimp, ribs, chicken, jambalaya, hot links; name typo Sourthern corrected.",
+    "matcha-drinks-pre": "Kenrick description was a product list — canonical name Shibainc Cafe (i801 LLC, ca.shibainc.cafe); booth V01 TFF PRE-PKG."
+  }
+}

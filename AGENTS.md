@@ -2,7 +2,7 @@
 
 Instructions for AI agents working with this repository.
 
-**Clone this repo.** Agents use the git tree (`assets/`, schemas, `AGENTS.md`) — not the rendered GitHub Pages HTML. Humans read [cpalss.github.io/festival-network](https://cpalss.github.io/festival-network/).
+**Clone this repo.** Agents use the git tree (`assets/`, schemas, `AGENTS.md`) — not the rendered GitHub Pages HTML. Humans read [festival.cpalss.com](https://festival.cpalss.com/).
 
 ## Phase notice
 

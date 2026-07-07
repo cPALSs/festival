@@ -1,0 +1,5774 @@
+{
+  "meta": {
+    "source_primary": "/Users/bao/cPALSs/Projects - Lunar New Year/2026/Business Development/2026 Lunar New Year Tet Festival & Parade — Vendor_7-5-2026.xlsx",
+    "source_reconcile": "/Users/bao/cPALSs/Projects - Lunar New Year/2026/Finance & Administration/Vendor Reconciliation/2026 LNY vendor list/food vendor-Table 1.csv",
+    "resolutions": "/Users/bao/cPALSs/Festival Network/shared/assets/shared/food-curation/seeds/lny-2026-reconciliation-resolutions.json",
+    "vendor_names": "/Users/bao/cPALSs/Festival Network/shared/assets/shared/food-curation/seeds/lny-2026-vendor-names.json",
+    "count": 34,
+    "fielded_2026": 31,
+    "pool_total": 34,
+    "signatures_note": "Q1=capability · Q2=simulated signatures · see resolutions file",
+    "festival_legacy": "vendor-festival-legacy.json"
+  },
+  "applicants": [
+    {
+      "id": "fusion-bites",
+      "business_name": "Fusion Bites",
+      "booth_label": "F01",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "fusion-bites-item-0",
+          "name": "Wings",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "fusion-bites-item-1",
+          "name": "Loaded fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "fusion-bites-item-2",
+          "name": "Loaded nachos & chips",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "fusion-bites-item-3",
+          "name": "Elote",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "fusion-bites-item-4",
+          "name": "Gumbo",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "fusion-bites-item-5",
+          "name": "Rice plates",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "fusion-bites-item-3",
+          "name": "Elote",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "fusion-bites-item-0",
+          "name": "Wings",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "fusion-bites-item-1",
+          "name": "Loaded fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "fusion-bites-item-2",
+          "name": "Loaded nachos & chips",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "fusion-bites-item-4",
+          "name": "Gumbo",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "asianfusionbbq@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "asianfusionbbq@gmail.com",
+        "canonical_email": "asianfusionbbq@gmail.com",
+        "kenrick_contact": "Pao Hep"
+      },
+      "instagram_handle": "@fusionbites",
+      "instagram_followers": 75,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "Fusion Bites",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "potato-swirl-world",
+      "business_name": "Potato Swirl World",
+      "booth_label": "F02",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "potato-swirl-world-item-0",
+          "name": "Potato swirls",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "potato-swirl-world-item-1",
+          "name": "Funnel cakes",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "potato-swirl-world-item-2",
+          "name": "Boba drinks",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "potato-swirl-world-item-3",
+          "name": "Pad thai",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free"
+          ],
+          "dietary_warnings": [
+            "contains_nuts"
+          ]
+        },
+        {
+          "item_id": "potato-swirl-world-item-4",
+          "name": "Orange chicken bowls",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "potato-swirl-world-item-5",
+          "name": "Teriyaki chicken bowls",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "potato-swirl-world-item-0",
+          "name": "Potato swirls",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "potato-swirl-world-item-1",
+          "name": "Funnel cakes",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "potato-swirl-world-item-3",
+          "name": "Pad thai",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free"
+          ],
+          "dietary_warnings": [
+            "contains_nuts"
+          ]
+        },
+        {
+          "item_id": "potato-swirl-world-item-4",
+          "name": "Orange chicken bowls",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "potato-swirl-world-item-5",
+          "name": "Teriyaki chicken bowls",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "fast_handheld",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "yummysnrbbq@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "yummysnrbbq@gmail.com",
+        "canonical_email": "yummysnrbbq@gmail.com",
+        "kenrick_contact": "Mimi or Ashley Sinnolai  (SR THAI BBQ & POTATO SWIRL)\nAshley RATANASIM (Mimi?)"
+      },
+      "instagram_handle": "@potatoswirlworld",
+      "instagram_followers": 594,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "sugarcane-hut",
+      "business_name": "Sugarcane Hut",
+      "booth_label": "F03",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "sugarcane-hut-item-0",
+          "name": "Sugarcane juice",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "sugarcane-hut-item-0",
+          "name": "Sugarcane juice",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "sugarcane_fruit_refresher",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "bvorabouth84@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "bvorabouth84@gmail.com",
+        "canonical_email": "bvorabouth84@gmail.com",
+        "kenrick_contact": "Bounchanh Vorabouth"
+      },
+      "instagram_handle": "@sugarcanehut",
+      "instagram_followers": 3,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "drinks",
+      "vendor_role": "drinks",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2023",
+          "lny_2025"
+        ],
+        "prior_count": 2,
+        "matches": [
+          {
+            "season": "lny_2023",
+            "source_name": "Sugarcane Hut",
+            "method": "email"
+          },
+          {
+            "season": "lny_2025",
+            "source_name": "Sugarcane Hut",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lien-s-chinese",
+      "business_name": "Lien's Chinese",
+      "booth_label": "F04",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "lien-s-chinese-item-0",
+          "name": "Pork, chicken & beef skewers",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "lien-s-chinese-item-1",
+          "name": "Pork & chicken skewers",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "lien-s-chinese-item-2",
+          "name": "Beef sausages",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "lien-s-chinese-item-3",
+          "name": "Bottled water",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "lien-s-chinese-item-4",
+          "name": "Soda",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "lien-s-chinese-item-0",
+          "name": "Pork, chicken & beef skewers",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "lien-s-chinese-item-1",
+          "name": "Pork & chicken skewers",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "lien-s-chinese-item-2",
+          "name": "Beef sausages",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "fast_handheld",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "bigevilmonkey@gmail.com",
+        "canonical_email": "bigevilmonkey@gmail.com",
+        "kenrick_contact": "Si Nguyen"
+      },
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "aroma-concessions",
+      "business_name": "Aroma Concessions",
+      "booth_label": "F05",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "aroma-concessions-item-0",
+          "name": "Smoked turkey legs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "aroma-concessions-item-1",
+          "name": "Tri-tip sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "aroma-concessions-item-2",
+          "name": "Garlic fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "aroma-concessions-item-3",
+          "name": "Sausages (polish, cajun, hot dog)",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "aroma-concessions-item-1",
+          "name": "Tri-tip sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "aroma-concessions-item-3",
+          "name": "Sausages (polish, cajun, hot dog)",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "aroma-concessions-item-0",
+          "name": "Smoked turkey legs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "aroma-concessions-item-2",
+          "name": "Garlic fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "aromaconcessions@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "aromaconcessions@gmail.com",
+        "canonical_email": "aromaconcessions@gmail.com",
+        "kenrick_contact": "Humberto Mireles Romo"
+      },
+      "instagram_handle": "@aromaconcessionsinc",
+      "instagram_followers": 2454,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "Aroma Concessions",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "my-lumpia-lady",
+      "business_name": "My Lumpia Lady",
+      "booth_label": "F07",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "my-lumpia-lady-item-0",
+          "name": "US beef with veggie lumpia",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-1",
+          "name": "Chicken with veggie lumpia",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-2",
+          "name": "All-veggie lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-3",
+          "name": "Beef queso birria lumpia with consommé",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_dairy",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-4",
+          "name": "Jalapeño crawfish lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "my-lumpia-lady-item-0",
+          "name": "US beef with veggie lumpia",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-1",
+          "name": "Chicken with veggie lumpia",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-2",
+          "name": "All-veggie lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-3",
+          "name": "Beef queso birria lumpia with consommé",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_dairy",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "my-lumpia-lady-item-4",
+          "name": "Jalapeño crawfish lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "krapisura@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "krapisura@gmail.com",
+        "canonical_email": "krapisura@gmail.com",
+        "kenrick_contact": "Kathleen Rapisura-Pardo"
+      },
+      "instagram_handle": "@mylumpialady916",
+      "instagram_followers": 2587,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "My Lumpia Lady",
+            "method": "name:name"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lizetta-s-sourthern-soul-food",
+      "business_name": "Lizetta's Southern Soul Food",
+      "booth_label": "F08",
+      "booth_kind": "food_truck",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-0",
+          "name": "BBQ beef or pork ribs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-1",
+          "name": "BBQ tri-tip or brisket",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-2",
+          "name": "Pulled pork plate",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-3",
+          "name": "Fried or baked chicken",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-4",
+          "name": "Southern fried fish/shrimp",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-5",
+          "name": "BBQ mild or hot links",
+          "category": "snacks",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-6",
+          "name": "Jambalaya or dirty rice",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-7",
+          "name": "Mac & cheese",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-8",
+          "name": "Collard greens",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-4",
+          "name": "Southern fried fish/shrimp",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-0",
+          "name": "BBQ beef or pork ribs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-3",
+          "name": "Fried or baked chicken",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-6",
+          "name": "Jambalaya or dirty rice",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "lizetta-s-sourthern-soul-food-item-5",
+          "name": "BBQ mild or hot links",
+          "category": "snacks",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "bbq_smoke_carved",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "lizettassoulfood@yahoo.com",
+        "canonical_email": "lizettassoulfood@yahoo.com",
+        "kenrick_contact": "Adriena Groves"
+      },
+      "instagram_handle": "@lizettas_soul_food",
+      "instagram_followers": 2242,
+      "setup_type": "open_food_truck",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "low-slow-bbq",
+      "business_name": "Rowe's Low & Slow BBQ",
+      "booth_label": "F09",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "low-slow-bbq-item-0",
+          "name": "Barbecue pork spareribs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-1",
+          "name": "Brisket sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-2",
+          "name": "Pulled pork sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-3",
+          "name": "Hotlink sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-4",
+          "name": "Loaded mac & cheese",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-5",
+          "name": "Loaded baked potato",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "low-slow-bbq-item-6",
+          "name": "Baked potato",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "low-slow-bbq-item-0",
+          "name": "Barbecue pork spareribs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-1",
+          "name": "Brisket sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-2",
+          "name": "Pulled pork sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-3",
+          "name": "Hotlink sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "low-slow-bbq-item-4",
+          "name": "Loaded mac & cheese",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "bbq_smoke_carved",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "lowslowbbq75@gmail.com",
+        "canonical_email": "lowslowbbq75@gmail.com",
+        "kenrick_contact": "Kenneth Rowe"
+      },
+      "instagram_handle": "@low_slow_rowe",
+      "instagram_followers": 497,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "bobette-tea",
+      "business_name": "Bobette Tea",
+      "booth_label": "F10",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "bobette-tea-item-0",
+          "name": "Boba teas",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-1",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-2",
+          "name": "Cotton candy",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-3",
+          "name": "Vietnamese coffee",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-4",
+          "name": "Hazelnut latte",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_nuts",
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "bobette-tea-item-5",
+          "name": "Ube coconut latte",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "bobette-tea-item-0",
+          "name": "Boba teas",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-3",
+          "name": "Vietnamese coffee",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-2",
+          "name": "Cotton candy",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-1",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bobette-tea-item-4",
+          "name": "Hazelnut latte",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_nuts",
+            "contains_dairy"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "boba_milk_tea",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "bobettetea@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "bobettetea@gmail.com",
+        "canonical_email": "bobettetea@gmail.com",
+        "kenrick_contact": "Linda Thao"
+      },
+      "instagram_handle": "@bobettetea",
+      "instagram_followers": 144,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "drinks",
+      "vendor_role": "drinks",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "Bobetta Tea",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bowli-bowli",
+      "business_name": "Bowli Bowli",
+      "booth_label": "F11",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "bowli-bowli-item-0",
+          "name": "Korean cheesedog",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-1",
+          "name": "Egg rolls",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bowli-bowli-item-2",
+          "name": "Chicken wings",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-3",
+          "name": "Chicken legs",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-4",
+          "name": "Drumstick bowl and plates",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-5",
+          "name": "Pork belly & sweet BBQ pork skewer rice plate",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-6",
+          "name": "Thai tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bowli-bowli-item-7",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bowli-bowli-item-8",
+          "name": "Fruit refresher",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "bowli-bowli-item-4",
+          "name": "Drumstick bowl and plates",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-5",
+          "name": "Pork belly & sweet BBQ pork skewer rice plate",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-0",
+          "name": "Korean cheesedog",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "bowli-bowli-item-1",
+          "name": "Egg rolls",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "bowli-bowli-item-2",
+          "name": "Chicken wings",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "rice_plates_bowls",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "nyhia.lor@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "nyhia.lor@gmail.com",
+        "canonical_email": "nyhia.lor@gmail.com",
+        "kenrick_contact": "nyhia lor"
+      },
+      "weak_brand": true,
+      "instagram_handle": "@bowlibowli",
+      "instagram_followers": 42,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "Bowli Bowli",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pitayas-locas",
+      "business_name": "Pitayas Locas",
+      "booth_label": "F12",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "pitayas-locas-item-0",
+          "name": "Aguas frescas",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pitayas-locas-item-1",
+          "name": "Fruit cups",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pitayas-locas-item-2",
+          "name": "Corn cups",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "pitayas-locas-item-0",
+          "name": "Aguas frescas",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pitayas-locas-item-1",
+          "name": "Fruit cups",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pitayas-locas-item-2",
+          "name": "Corn cups",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "alondramac97@gmail.com",
+        "canonical_email": "alondramac97@gmail.com",
+        "kenrick_contact": "Alondra Macias"
+      },
+      "instagram_handle": "@pitayaslocas",
+      "instagram_followers": 3326,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "drinks",
+      "vendor_role": "drinks"
+    },
+    {
+      "id": "xd-jerky-kingz",
+      "business_name": "XD Jerky Kingz",
+      "booth_label": "F13",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "xd-jerky-kingz-item-0",
+          "name": "Spam musubi",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "xd-jerky-kingz-item-1",
+          "name": "Lao sausage musubi",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "xd-jerky-kingz-item-2",
+          "name": "Lemongrass steak sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "xd-jerky-kingz-item-3",
+          "name": "Bomb azz tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "xd-jerky-kingz-item-4",
+          "name": "Bottled water & canned soda",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "xd-jerky-kingz-item-0",
+          "name": "Spam musubi",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "xd-jerky-kingz-item-1",
+          "name": "Lao sausage musubi",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "xd-jerky-kingz-item-2",
+          "name": "Lemongrass steak sandwich",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "xd-jerky-kingz-item-3",
+          "name": "Bomb azz tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "sales@xdjerkykingz.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "sales@xdjerkykingz.com",
+        "canonical_email": "sales@xdjerkykingz.com",
+        "kenrick_contact": "Mack Xaysana"
+      },
+      "instagram_handle": "@xd_jerkykingz",
+      "instagram_followers": 1083,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "stockton-s-best-papaya-salad",
+      "business_name": "Stockton's Best Papaya Salad",
+      "booth_label": "F14",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-0",
+          "name": "Fried banana",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-1",
+          "name": "Khao poon",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-2",
+          "name": "Egg rolls",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-3",
+          "name": "Papaya salad",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-4",
+          "name": "Khao piak",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-5",
+          "name": "Meatballs",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-6",
+          "name": "Pad thai",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free"
+          ],
+          "dietary_warnings": [
+            "contains_nuts"
+          ]
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-7",
+          "name": "Phat kengo",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-8",
+          "name": "Sushi roll",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-9",
+          "name": "Phat paa pao",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-10",
+          "name": "BBQ dragon roll",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-1",
+          "name": "Khao poon",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-6",
+          "name": "Pad thai",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free"
+          ],
+          "dietary_warnings": [
+            "contains_nuts"
+          ]
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-0",
+          "name": "Fried banana",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-2",
+          "name": "Egg rolls",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "stockton-s-best-papaya-salad-item-3",
+          "name": "Papaya salad",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "kenrick",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "FB",
+        "canonical_email": "FB",
+        "kenrick_contact": "Pam Phanthaamat"
+      },
+      "instagram_handle": "@stocktonbestpapayasalad",
+      "instagram_followers": 64,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2023",
+          "lny_2025"
+        ],
+        "prior_count": 2,
+        "matches": [
+          {
+            "season": "lny_2023",
+            "source_name": "Best Papaya Salad",
+            "method": "name:name"
+          },
+          {
+            "season": "lny_2025",
+            "source_name": "Stockton best papaya",
+            "method": "name:name"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhome-s-bistro",
+      "business_name": "Rhome's Bistro",
+      "booth_label": "F15",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "rhome-s-bistro-item-0",
+          "name": "Pork belly adobo",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-1",
+          "name": "Musubi lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-2",
+          "name": "Cheeseburger lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-3",
+          "name": "Pork belly chips",
+          "category": "snacks",
+          "archetype_id": "packaged_savory",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-4",
+          "name": "The gang wangs",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "rhome-s-bistro-item-5",
+          "name": "Dynamite lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-6",
+          "name": "Cheese sticks",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-7",
+          "name": "Ube sago",
+          "category": "snacks",
+          "archetype_id": "ice_treat",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "rhome-s-bistro-item-8",
+          "name": "Buko pandan sago",
+          "category": "snacks",
+          "archetype_id": "ice_treat",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "rhome-s-bistro-item-9",
+          "name": "Melon refresher",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "rhome-s-bistro-item-10",
+          "name": "Puto pao",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "rhome-s-bistro-item-1",
+          "name": "Musubi lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-2",
+          "name": "Cheeseburger lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-5",
+          "name": "Dynamite lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-0",
+          "name": "Pork belly adobo",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "rhome-s-bistro-item-3",
+          "name": "Pork belly chips",
+          "category": "snacks",
+          "archetype_id": "packaged_savory",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "Rhomesbistro@gmail.com",
+        "canonical_email": "Rhomesbistro@gmail.com",
+        "kenrick_contact": "Susan Lapena"
+      },
+      "instagram_handle": "@rhomes_bistro",
+      "instagram_followers": 1446,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "d-t-kitchen",
+      "business_name": "D&T Kitchen",
+      "booth_label": "F16",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "d-t-kitchen-item-0",
+          "name": "Korean corn dogs",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-1",
+          "name": "Noodle soup",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-2",
+          "name": "Pad thai",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free"
+          ],
+          "dietary_warnings": [
+            "contains_nuts"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-3",
+          "name": "Chicken basil with fried egg & steamed rice",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-4",
+          "name": "Fried egg & steamed rice",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-5",
+          "name": "Fried rice",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-6",
+          "name": "Chow mein",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-7",
+          "name": "Fried chicken wings",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-8",
+          "name": "Pork belly",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-9",
+          "name": "BBQ short ribs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-11",
+          "name": "Papaya salad",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-12",
+          "name": "Fried banana",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-13",
+          "name": "French fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-14",
+          "name": "Soda",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-15",
+          "name": "Water",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "lower_sugar"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-16",
+          "name": "Thai ice tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-17",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-18",
+          "name": "Coconut juice",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "d-t-kitchen-item-1",
+          "name": "Noodle soup",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-2",
+          "name": "Pad thai",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free"
+          ],
+          "dietary_warnings": [
+            "contains_nuts"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-6",
+          "name": "Chow mein",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "d-t-kitchen-item-0",
+          "name": "Korean corn dogs",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "d-t-kitchen-item-9",
+          "name": "BBQ short ribs",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "noodle_wok_soup",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "kenrick_resolved",
+        "zeffy_email": "mfireweed@yahoo.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "mfireweed@yahoo.com",
+        "canonical_email": "mfireweed@yahoo.com",
+        "kenrick_contact": "Thy Hep or Saengdee (Dee) Meesai"
+      },
+      "weak_brand": true,
+      "instagram_handle": "@d_and_t_kitchen",
+      "instagram_followers": 187,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025",
+          "maf_2023"
+        ],
+        "prior_count": 2,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "D&T's Kitchen",
+            "method": "email"
+          },
+          {
+            "season": "maf_2023",
+            "source_name": "D&T Kitchen",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boba-meet-up",
+      "business_name": "Boba Meet Up",
+      "booth_label": "F17",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "boba-meet-up-item-0",
+          "name": "Taro milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-1",
+          "name": "Thai milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-2",
+          "name": "Coconut milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-3",
+          "name": "Strawberry milk",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-4",
+          "name": "Avocado milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "boba-meet-up-item-0",
+          "name": "Taro milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-1",
+          "name": "Thai milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-2",
+          "name": "Coconut milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-3",
+          "name": "Strawberry milk",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-meet-up-item-4",
+          "name": "Avocado milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "boba_milk_tea",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "bobameetup@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "bobameetup@gmail.com",
+        "canonical_email": "bobameetup@gmail.com",
+        "kenrick_contact": "Bee Thao"
+      },
+      "instagram_handle": "@boba_meetup",
+      "instagram_followers": 289,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "drinks",
+      "vendor_role": "drinks",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2023"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2023",
+            "source_name": "Boba Meet Up",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "myzz-piggy-z-tiger-bite",
+      "business_name": "Myzz Piggy'z Tiger Bite",
+      "booth_label": "F18",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-0",
+          "name": "Som tum papaya",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-1",
+          "name": "Rainbow tapioca dessert drink",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-2",
+          "name": "Curry noodle soup",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-3",
+          "name": "Asian sausage",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-4",
+          "name": "Pork kabob sticks",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-5",
+          "name": "Chicken wings kabob sticks",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-6",
+          "name": "Sticky rice",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-2",
+          "name": "Curry noodle soup",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-0",
+          "name": "Som tum papaya",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-1",
+          "name": "Rainbow tapioca dessert drink",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-3",
+          "name": "Asian sausage",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "myzz-piggy-z-tiger-bite-item-4",
+          "name": "Pork kabob sticks",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "myzz_susan@hotmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "myzz_susan@hotmail.com",
+        "canonical_email": "myzz_susan@hotmail.com",
+        "kenrick_contact": "Susan Vue"
+      },
+      "setup_type": "open_food_canopy",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "zummi-food-llc",
+      "business_name": "Zummi Food LLC",
+      "booth_label": "FOOD TRUCK 01",
+      "booth_kind": "food_truck",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "zummi-food-llc-item-0",
+          "name": "Bánh mì",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "zummi-food-llc-item-1",
+          "name": "Bánh tráng trộn (rice paper salad)",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "zummi-food-llc-item-2",
+          "name": "Bún thịt nướng",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "zummi-food-llc-item-3",
+          "name": "Garlic noodles",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "zummi-food-llc-item-4",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "zummi-food-llc-item-0",
+          "name": "Bánh mì",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "zummi-food-llc-item-1",
+          "name": "Bánh tráng trộn (rice paper salad)",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "zummi-food-llc-item-2",
+          "name": "Bún thịt nướng",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "zummi-food-llc-item-3",
+          "name": "Garlic noodles",
+          "category": "meals",
+          "archetype_id": "noodle_wok_soup",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "fast_handheld",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "zummifood678@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "zummifood678@gmail.com",
+        "canonical_email": "zummifood678@gmail.com",
+        "kenrick_contact": "Thanhchi Dzip"
+      },
+      "vietnamese_anchor": true,
+      "elk_grove_based": true,
+      "instagram_handle": "@zummifood.llc",
+      "instagram_followers": 241,
+      "setup_type": "open_food_truck",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "pinorrito-food-truck",
+      "business_name": "Pinorrito Food Truck",
+      "booth_label": "FOOD TRUCK 02",
+      "booth_kind": "food_truck",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "pinorrito-food-truck-item-0",
+          "name": "Pork tocino rice plate",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-1",
+          "name": "Sisig rice plate",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-2",
+          "name": "Tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-3",
+          "name": "Loaded fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-4",
+          "name": "Lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-5",
+          "name": "Calamansi juice",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "pinorrito-food-truck-item-0",
+          "name": "Pork tocino rice plate",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-1",
+          "name": "Sisig rice plate",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-2",
+          "name": "Tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-3",
+          "name": "Loaded fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "pinorrito-food-truck-item-4",
+          "name": "Lumpia",
+          "category": "snacks",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "rbimatong@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "pinorritofoodtruck@gmail.com",
+        "canonical_email": "pinorritofoodtruck@gmail.com",
+        "kenrick_contact": "Ralph Imatong"
+      },
+      "instagram_handle": "@pinorritofoodtruck",
+      "instagram_followers": 3216,
+      "setup_type": "open_food_truck",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2023",
+          "lny_2025",
+          "maf_2023"
+        ],
+        "prior_count": 3,
+        "matches": [
+          {
+            "season": "lny_2023",
+            "source_name": "Pinorrito Food Truck",
+            "method": "email"
+          },
+          {
+            "season": "lny_2025",
+            "source_name": "Pinorrito Food Truck",
+            "method": "email"
+          },
+          {
+            "season": "maf_2023",
+            "source_name": "Pinorrito",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ray-s-kitchen",
+      "business_name": "Ray's Kitchen",
+      "booth_label": "FOOD TRUCK 03",
+      "booth_kind": "food_trailer",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "ray-s-kitchen-item-0",
+          "name": "Chicken over rice",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "ray-s-kitchen-item-1",
+          "name": "Lamb over rice",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "ray-s-kitchen-item-2",
+          "name": "Gyros",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "ray-s-kitchen-item-3",
+          "name": "Cheeseburgers",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "ray-s-kitchen-item-4",
+          "name": "Loaded fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "ray-s-kitchen-item-0",
+          "name": "Chicken over rice",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "ray-s-kitchen-item-1",
+          "name": "Lamb over rice",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "easy_chew"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "ray-s-kitchen-item-2",
+          "name": "Gyros",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "ray-s-kitchen-item-3",
+          "name": "Cheeseburgers",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "ray-s-kitchen-item-4",
+          "name": "Loaded fries",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "halal_certified",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "rice_plates_bowls",
+      "dietary": [
+        "halal_certified"
+      ],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "calif_girl916@yahoo.com",
+        "canonical_email": "calif_girl916@yahoo.com",
+        "kenrick_contact": "Faiza Ghous"
+      },
+      "instagram_handle": "@rayskitchen645",
+      "instagram_followers": 324,
+      "setup_type": "open_food_trailer",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "wonton-crunchies",
+      "business_name": "Wonton Crunchies",
+      "booth_label": "FOOD TRUCK 04",
+      "booth_kind": "food_trailer",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "wonton-crunchies-item-0",
+          "name": "Chicken wonton tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "wonton-crunchies-item-1",
+          "name": "Teriyaki chicken with rice and veggies",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "wonton-crunchies-item-2",
+          "name": "Fruit infused ice teas",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "wonton-crunchies-item-3",
+          "name": "Thai tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "wonton-crunchies-item-0",
+          "name": "Chicken wonton tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "wonton-crunchies-item-1",
+          "name": "Teriyaki chicken with rice and veggies",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "chervang123@yahoo.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "chervang123@yahoo.com",
+        "canonical_email": "chervang123@yahoo.com",
+        "kenrick_contact": "Cher Vang"
+      },
+      "instagram_handle": "@wonton_crunchies",
+      "instagram_followers": 115,
+      "setup_type": "open_food_trailer",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "baboy-boys",
+      "business_name": "Baboy Boys",
+      "booth_label": "FOOD TRUCK 05",
+      "booth_kind": "food_truck",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "baboy-boys-item-0",
+          "name": "Lechon",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "baboy-boys-item-1",
+          "name": "Sisig",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "baboy-boys-item-2",
+          "name": "Oxtail adobo",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "baboy-boys-item-3",
+          "name": "Grilled balut",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "baboy-boys-item-0",
+          "name": "Lechon",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        },
+        {
+          "item_id": "baboy-boys-item-2",
+          "name": "Oxtail adobo",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "baboy-boys-item-3",
+          "name": "Grilled balut",
+          "category": "meals",
+          "archetype_id": "bbq_smoke_carved",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "baboy-boys-item-1",
+          "name": "Sisig",
+          "category": "meals",
+          "archetype_id": "rice_plates_bowls",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": [
+            "contains_pork"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "baboyboyscatering@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "baboyboyscatering@gmail.com",
+        "canonical_email": "baboyboyscatering@gmail.com",
+        "kenrick_contact": "John Montuya"
+      },
+      "instagram_handle": "@baboyboys",
+      "instagram_followers": 5375,
+      "setup_type": "open_food_truck",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "Baboy Boys",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maiz-restaurant",
+      "business_name": "Maiz Restaurant",
+      "booth_label": "FOOD TRUCK 08",
+      "booth_kind": "food_truck",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "maiz-restaurant-item-0",
+          "name": "Huaraches",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "maiz-restaurant-item-1",
+          "name": "Tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "maiz-restaurant-item-2",
+          "name": "Nachos",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "maiz-restaurant-item-3",
+          "name": "Quesadillas",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "maiz-restaurant-item-4",
+          "name": "Soda",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "maiz-restaurant-item-1",
+          "name": "Tacos",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "maiz-restaurant-item-0",
+          "name": "Huaraches",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "maiz-restaurant-item-2",
+          "name": "Nachos",
+          "category": "snacks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "maiz-restaurant-item-3",
+          "name": "Quesadillas",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "cgaje@maizrestaurant.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "cgaje@maizrestaurant.com & jcedillo@maizrestaurant.com",
+        "canonical_email": "cgaje@maizrestaurant.com",
+        "kenrick_contact": "Christine Gaje"
+      },
+      "instagram_handle": "@maiz_mexican_catering",
+      "instagram_followers": 1706,
+      "setup_type": "open_food_truck",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep"
+    },
+    {
+      "id": "pizza-lovers-sacramento",
+      "business_name": "Pizza Lovers Sacramento",
+      "booth_label": "FOOD TRUCK 09",
+      "booth_kind": "food_trailer",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "pizza-lovers-sacramento-item-0",
+          "name": "Cajun sausage pizza",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "pizza-lovers-sacramento-item-1",
+          "name": "Margherita pizza",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "pizza-lovers-sacramento-item-2",
+          "name": "Hawaiian lover pizza",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "pizza-lovers-sacramento-item-3",
+          "name": "Soppressata lover pizza",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        },
+        {
+          "item_id": "pizza-lovers-sacramento-item-4",
+          "name": "Classic pepperoni pizza",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten"
+          ]
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "pizza-lovers-sacramento-item-0",
+          "name": "Cajun sausage pizza",
+          "category": "meals",
+          "archetype_id": "fast_handheld",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": [
+            "contains_gluten",
+            "contains_meat"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "fast_handheld",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "pizzaloverssacramento@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "pizzaloverssacramento@gmail.com",
+        "canonical_email": "pizzaloverssacramento@gmail.com",
+        "kenrick_contact": "Stacy Cisneros"
+      },
+      "instagram_handle": "@_pizzaloverssac_",
+      "instagram_followers": 11000,
+      "elk_grove_based": true,
+      "business_city": "Elk Grove",
+      "setup_type": "open_food_trailer",
+      "vendor_class": "open_prep",
+      "vendor_role": "open_prep",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "Pizza Lovers",
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "matcha-drinks-pre",
+      "business_name": "Shibainc Cafe",
+      "booth_label": "V01",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "matcha-drinks-pre-item-0",
+          "name": "Matcha drinks",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "matcha-drinks-pre-item-1",
+          "name": "Boba / milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "matcha-drinks-pre-item-2",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "matcha-drinks-pre-item-0",
+          "name": "Matcha drinks",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "matcha-drinks-pre-item-1",
+          "name": "Boba / milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "matcha-drinks-pre-item-2",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 8,
+      "primary_archetype_id": "boba_milk_tea",
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "shibainccafe@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "shibainccafe@gmail.com",
+        "canonical_email": "shibainccafe@gmail.com",
+        "kenrick_contact": "Ron Lim"
+      },
+      "instagram_handle": "@shibainccafe",
+      "instagram_followers": 2003,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "drinks",
+      "vendor_role": "drinks"
+    },
+    {
+      "id": "hs-sugarcane-caf",
+      "business_name": "HS Sugarcane Café",
+      "booth_label": "V02",
+      "booth_kind": "open_cooking",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "hs-sugarcane-caf-item-0",
+          "name": "Sugarcane juice",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "hs-sugarcane-caf-item-0",
+          "name": "Sugarcane juice",
+          "category": "drinks",
+          "archetype_id": "sugarcane_fruit_refresher",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 8,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "huynhho1984@hotmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "huynhho1984@hotmail.com",
+        "canonical_email": "huynhho1984@hotmail.com",
+        "kenrick_contact": "Huynh Ho"
+      },
+      "instagram_handle": "@hssugarcanecafe",
+      "instagram_followers": 583,
+      "setup_type": "open_food_canopy",
+      "vendor_class": "drinks",
+      "vendor_role": "drinks"
+    },
+    {
+      "id": "jerky-jerky",
+      "business_name": "Jerky Jerky",
+      "booth_label": "V03",
+      "booth_kind": "prepack",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "jerky-jerky-item-0",
+          "name": "Pre-packaged beef & wild game jerky",
+          "category": "snacks",
+          "archetype_id": "packaged_savory",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "jerky-jerky-item-1",
+          "name": "Pre-packaged freeze-dried candies and snacks",
+          "category": "snacks",
+          "archetype_id": "packaged_sweets",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "jerky-jerky-item-0",
+          "name": "Pre-packaged beef & wild game jerky",
+          "category": "snacks",
+          "archetype_id": "packaged_savory",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_meat"
+          ]
+        },
+        {
+          "item_id": "jerky-jerky-item-1",
+          "name": "Pre-packaged freeze-dried candies and snacks",
+          "category": "snacks",
+          "archetype_id": "packaged_sweets",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 8,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "jerkyjerkyjerky31@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "jerkyjerkyjerky31@gmail.com",
+        "canonical_email": "jerkyjerkyjerky31@gmail.com",
+        "kenrick_contact": "Michael Eng"
+      },
+      "instagram_handle": "@jerkyjerkyfresno",
+      "instagram_followers": 3195,
+      "setup_type": "prepack_booth",
+      "vendor_class": "snack",
+      "vendor_role": "snack"
+    },
+    {
+      "id": "mr-pops",
+      "business_name": "Mr Pops",
+      "booth_label": "V04",
+      "booth_kind": "prepack",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "mr-pops-item-0",
+          "name": "Caramel corn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-1",
+          "name": "Kettle corn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-2",
+          "name": "Cheddar corn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-3",
+          "name": "Caramel apple & lightly salted popcorn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-4",
+          "name": "Fluffy cotton candy",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "mr-pops-item-1",
+          "name": "Kettle corn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-3",
+          "name": "Caramel apple & lightly salted popcorn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-4",
+          "name": "Fluffy cotton candy",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "mild_spice",
+            "kid_friendly"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-0",
+          "name": "Caramel corn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "mr-pops-item-2",
+          "name": "Cheddar corn",
+          "category": "snacks",
+          "archetype_id": "popcorn_fair",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 8,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "redjordans1990@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "redjordans1990@gmail.com",
+        "canonical_email": "redjordans1990@gmail.com",
+        "kenrick_contact": "Ryan Larkin-Hsbon"
+      },
+      "instagram_handle": "@mrpopspopcorn",
+      "instagram_followers": 216,
+      "setup_type": "prepack_booth",
+      "vendor_class": "snack",
+      "vendor_role": "snack",
+      "festival_legacy": {
+        "seasons": [
+          "lny_2023"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2023",
+            "source_name": "Mr. Pop (Popcorn Food Truck)",
+            "method": "name:name"
+          }
+        ]
+      }
+    },
+    {
+      "id": "truckee-meadows-gourmet-express",
+      "business_name": "Truckee Meadows Gourmet Express",
+      "booth_label": "V06",
+      "booth_kind": "prepack",
+      "deposit_applied_at": null,
+      "capability_menu_items": [],
+      "signature_menu_items": [],
+      "signature_limit": 8,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": "truckeegourmet@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": "truckeegourmet@gmail.com",
+        "canonical_email": "truckeegourmet@gmail.com",
+        "kenrick_contact": "TRUE NETHERBY"
+      },
+      "instagram_handle": "@tmg.express",
+      "instagram_followers": 101,
+      "setup_type": "prepack_booth",
+      "vendor_class": "merchant",
+      "vendor_role": "merchant",
+      "requires_tff_pre_pkg": true
+    },
+    {
+      "id": "glammeme",
+      "business_name": "Glam MeMe",
+      "booth_label": "V05",
+      "booth_kind": "prepack",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "glammeme-item-0",
+          "name": "Prepackaged dessert treats",
+          "category": "snacks",
+          "archetype_id": "packaged_sweets",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "glammeme-item-0",
+          "name": "Prepackaged dessert treats",
+          "category": "snacks",
+          "archetype_id": "packaged_sweets",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 8,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "kenrick",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "gmsweetstreatsandcatering22@gmail.com",
+        "canonical_email": "gmsweetstreatsandcatering22@gmail.com",
+        "kenrick_contact": "Tara Henry"
+      },
+      "instagram_handle": "@glammeme_sweettreats",
+      "instagram_followers": 252,
+      "setup_type": "prepack_booth",
+      "vendor_class": "snack",
+      "vendor_role": "snack"
+    },
+    {
+      "id": "root-and-cane",
+      "business_name": "Root & Cane",
+      "booth_label": "V08",
+      "booth_kind": "prepack",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "root-and-cane-item-0",
+          "name": "Colombian candy",
+          "category": "snacks",
+          "archetype_id": "packaged_sweets",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "root-and-cane-item-0",
+          "name": "Colombian candy",
+          "category": "snacks",
+          "archetype_id": "packaged_sweets",
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 8,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "submitted",
+      "manual_accepted_2026": true,
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "cleanup_resolved",
+        "zeffy_email": null,
+        "zeffy_status": null,
+        "kenrick_email": "idbarrero@gmail.com",
+        "canonical_email": "idbarrero@gmail.com",
+        "kenrick_contact": "Ivan Barrero"
+      },
+      "instagram_handle": "@rootandcane",
+      "instagram_followers": 58,
+      "setup_type": "prepack_booth",
+      "vendor_class": "snack",
+      "vendor_role": "snack"
+    },
+    {
+      "id": "brewtik-coffee-and-tea",
+      "business_name": "Brewtik Coffee and Tea",
+      "booth_label": null,
+      "booth_kind": "prepack",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "brewtik-coffee-and-tea-item-0",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "brewtik-coffee-and-tea-item-1",
+          "name": "Tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "brewtik-coffee-and-tea-item-2",
+          "name": "Vietnamese snacks (sticky rice",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "brewtik-coffee-and-tea-item-3",
+          "name": "Rice paper salad)",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "brewtik-coffee-and-tea-item-2",
+          "name": "Vietnamese snacks (sticky rice",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "brewtik-coffee-and-tea-item-3",
+          "name": "Rice paper salad)",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "vegetarian_options",
+            "pork_free",
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "brewtik-coffee-and-tea-item-0",
+          "name": "Coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "brewtik-coffee-and-tea-item-1",
+          "name": "Tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_limit": 8,
+      "primary_archetype_id": "boba_milk_tea",
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "waitlisted",
+      "manual_accepted_2026": false,
+      "application_outcome": "cap_decline",
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "brewtik.coffee.tea@gmail.com",
+        "zeffy_status": "Not checked-in",
+        "kenrick_email": null,
+        "pool": "extra_cap_decline_or_withdrew"
+      },
+      "vendor_class": "drinks",
+      "setup_type": "prepack_booth",
+      "vendor_role": "drinks",
+      "instagram_handle": "@brewtik_sips",
+      "instagram_followers": 1849
+    },
+    {
+      "id": "hot-boi-chili-oil",
+      "business_name": "Hot Boi Chili Oil",
+      "booth_label": null,
+      "booth_kind": "prepack",
+      "deposit_applied_at": null,
+      "capability_menu_items": [],
+      "signature_menu_items": [],
+      "signature_limit": 8,
+      "primary_archetype_id": null,
+      "dietary": [],
+      "booth_fee": 500,
+      "status": "rejected",
+      "manual_accepted_2026": false,
+      "application_outcome": "withdrew",
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "alex@hotboi.co",
+        "zeffy_status": "Canceled",
+        "kenrick_email": null,
+        "pool": "extra_cap_decline_or_withdrew"
+      },
+      "setup_type": "prepack_booth",
+      "vendor_class": "merchant",
+      "vendor_role": "merchant",
+      "requires_tff_pre_pkg": true,
+      "instagram_handle": "@hotboi.co",
+      "instagram_followers": 43
+    },
+    {
+      "id": "boba-bros",
+      "business_name": "Boba Bros",
+      "booth_label": null,
+      "booth_kind": "food_truck",
+      "deposit_applied_at": null,
+      "capability_menu_items": [
+        {
+          "item_id": "boba-bros-item-0",
+          "name": "Milk teas",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-1",
+          "name": "Brown sugar milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-2",
+          "name": "Coconut milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-3",
+          "name": "Classic milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-4",
+          "name": "Honey dew milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-5",
+          "name": "Jasmine milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-6",
+          "name": "Lychee milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-7",
+          "name": "Mango milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-8",
+          "name": "Strawberry milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-9",
+          "name": "Taro milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-10",
+          "name": "Thai milk tea ⸻ green teas",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-11",
+          "name": "Green tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-12",
+          "name": "Honey dew green tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-13",
+          "name": "Lychee green tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-14",
+          "name": "Mango green tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-15",
+          "name": "Passion fruit green tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-16",
+          "name": "Peach green tea",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-17",
+          "name": "Strawberry green tea ⸻ specials",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-18",
+          "name": "Cookies & cream",
+          "category": "snacks",
+          "archetype_id": "packaged_sweets",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-19",
+          "name": "Green color drink",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-20",
+          "name": "Oreo delight",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-21",
+          "name": "Pink color drink",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-22",
+          "name": "Pink lemonade",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-23",
+          "name": "Strawberry delight",
+          "category": "meals",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "pork_free",
+            "nut_free"
+          ],
+          "dietary_warnings": []
+        },
+        {
+          "item_id": "boba-bros-item-24",
+          "name": "Vietnamese iced coffee",
+          "category": "drinks",
+          "archetype_id": null,
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "dairy_free_options"
+          ],
+          "dietary_warnings": []
+        }
+      ],
+      "signature_menu_items": [
+        {
+          "item_id": "boba-bros-item-0",
+          "name": "Milk teas",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-1",
+          "name": "Brown sugar milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-2",
+          "name": "Coconut milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-3",
+          "name": "Classic milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        },
+        {
+          "item_id": "boba-bros-item-4",
+          "name": "Honey dew milk tea",
+          "category": "drinks",
+          "archetype_id": "boba_milk_tea",
+          "allergens": [],
+          "dietary_tags": [
+            "nut_free",
+            "gluten_free_options",
+            "mild_spice"
+          ],
+          "dietary_warnings": [
+            "contains_dairy"
+          ]
+        }
+      ],
+      "signature_limit": 5,
+      "primary_archetype_id": "boba_milk_tea",
+      "dietary": [],
+      "booth_fee": 750,
+      "status": "waitlisted",
+      "manual_accepted_2026": false,
+      "application_outcome": "cap_decline",
+      "signatures_simulated_q2": true,
+      "provenance": {
+        "menu_source": "zeffy",
+        "zeffy_email": "bobabros916@gmail.com",
+        "zeffy_status": "Canceled",
+        "kenrick_email": null,
+        "pool": "extra_cap_decline_or_withdrew"
+      },
+      "vendor_class": "drinks",
+      "setup_type": "open_food_truck",
+      "vendor_role": "drinks",
+      "instagram_handle": "@the_boba_bros",
+      "instagram_followers": 248,
+      "festival_legacy": {
+        "seasons": [
+          "lny_2025"
+        ],
+        "prior_count": 1,
+        "matches": [
+          {
+            "season": "lny_2025",
+            "source_name": "Boba Bros",
+            "method": "email"
+          }
+        ]
+      }
+    }
+  ]
+}

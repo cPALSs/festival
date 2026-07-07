@@ -1,0 +1,31 @@
+@import url("../menu-viewer.css");
+
+:root {
+  --bg: #fff8f0;
+  --surface: #ffffff;
+  --accent: #b91c1c;
+  --text: #1c1917;
+  --muted: #78716c;
+  --border: #e7e5e4;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); }
+
+#content > header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+}
+
+#content .menu-title {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.75rem;
+}
+
+#content > header .muted {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
