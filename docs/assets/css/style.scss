@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+.page-header .project-tagline {
+  max-width: 42rem;
+  margin-inline: auto;
+  text-wrap: balance;
+}
+
 .site-footer-links {
   display: block;
   margin-bottom: 0.75rem;
