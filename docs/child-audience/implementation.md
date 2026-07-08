@@ -63,6 +63,8 @@ season: cross
 - [ ] Sensory-friendly hour vs lion drum / firecracker conflict
 - [ ] Minimum viable fit-tag directory on festival site (build vs PDF)
 
+Per–age-band rally checklists (public): [Director rally checklists](director-rally-checklists.html)
+
 ---
 
 ## Status & contribute

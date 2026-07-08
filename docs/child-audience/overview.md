@@ -29,6 +29,7 @@ Community festivals often label everything **“family-friendly.”** That hides
 | [Site plan & programming](site-and-zoning.html) | Modalities matrix · village vs teen lane · staffing |
 | [Local synergies](local-synergies.html) | Theme dressing · Sacramento comps · marketing · metrics |
 | [Implementation](implementation.html) | Checklists · product gaps · open questions |
+| [Director rally checklists](director-rally-checklists.html) | Per age band — infrastructure · assets · activators to rally |
 
 ### Walkthroughs *(coming)*
 

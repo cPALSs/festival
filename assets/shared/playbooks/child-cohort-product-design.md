@@ -24,6 +24,7 @@ related_seasons: [lny, autumn]
 | Site plan & programming | [docs/child-audience/site-and-zoning.md](../../docs/child-audience/site-and-zoning.md) | [site-and-zoning.html](https://festival.cpalss.com/child-audience/site-and-zoning.html) |
 | Local synergies | [docs/child-audience/local-synergies.md](../../docs/child-audience/local-synergies.md) | [local-synergies.html](https://festival.cpalss.com/child-audience/local-synergies.html) |
 | Implementation | [docs/child-audience/implementation.md](../../docs/child-audience/implementation.md) | [implementation.html](https://festival.cpalss.com/child-audience/implementation.html) |
+| **Director rally checklists** | [docs/child-audience/director-rally-checklists.md](../../docs/child-audience/director-rally-checklists.md) | [director-rally-checklists.html](https://festival.cpalss.com/child-audience/director-rally-checklists.html) |
 | **Walkthrough — LNY 2027** *(stub)* | [docs/child-audience/walkthroughs/lny-2027.md](../../docs/child-audience/walkthroughs/lny-2027.md) | [lny-2027.html](https://festival.cpalss.com/child-audience/walkthroughs/lny-2027.html) |
 
 ## Maintenance
