@@ -264,6 +264,105 @@
   scroll-margin-top: 1.5rem;
 }
 
+// Heading permalinks — click # to copy section URL (doc-toc-init.html)
+.doc-main {
+  h2[id],
+  h3[id],
+  h4[id] {
+    scroll-margin-top: 1.5rem;
+  }
+
+  .doc-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.5rem;
+  }
+
+  .doc-heading-anchor {
+    order: 2;
+    position: relative;
+    margin-left: 0.15rem;
+    padding: 0.1rem 0.35rem;
+    color: $blockquote-text-color;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: normal;
+    opacity: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity 0.15s ease, color 0.15s ease, background 0.15s ease;
+
+    &:hover,
+    &:focus {
+      color: $body-link-color;
+      background: #f0f3f5;
+    }
+
+    &.is-copied,
+    &.is-copy-failed {
+      opacity: 1;
+    }
+
+    &.is-copied {
+      color: #137333;
+      background: #e6f4ea;
+
+      &::after {
+        content: "Copied!";
+        position: absolute;
+        left: calc(100% + 0.35rem);
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0.12rem 0.45rem;
+        font-size: 0.72rem;
+        font-weight: 600;
+        line-height: 1.2;
+        white-space: nowrap;
+        color: #137333;
+        background: #e6f4ea;
+        border: 1px solid #b7dfc2;
+        border-radius: 4px;
+      }
+    }
+
+    &.is-copy-failed {
+      color: #b42318;
+      background: #fdecea;
+
+      &::after {
+        content: "Copy failed";
+        position: absolute;
+        left: calc(100% + 0.35rem);
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0.12rem 0.45rem;
+        font-size: 0.72rem;
+        font-weight: 600;
+        line-height: 1.2;
+        white-space: nowrap;
+        color: #b42318;
+        background: #fdecea;
+        border: 1px solid #f5c2c0;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .doc-heading:hover .doc-heading-anchor,
+  .doc-heading-anchor:focus,
+  .doc-heading-anchor.is-copied,
+  .doc-heading-anchor.is-copy-failed {
+    opacity: 1;
+  }
+
+  @media (hover: none) {
+    .doc-heading-anchor {
+      opacity: 0.55;
+    }
+  }
+}
+
 @media screen and (min-width: 1100px) {
   .doc-layout--with-toc {
     display: grid;

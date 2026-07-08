@@ -3,61 +3,265 @@
   var toc = document.getElementById("doc-toc");
   var main = document.querySelector(".doc-main");
   var layout = document.querySelector(".doc-layout");
-  if (!toc || !main || !layout) return;
+  if (!main) return;
 
-  var headings = main.querySelectorAll("h2[id]");
-  if (!headings.length) return;
+  var headingSelector = "h2[id], h3[id], h4[id]";
+  var h2Headings = main.querySelectorAll("h2[id]");
+  var allHeadings = main.querySelectorAll(headingSelector);
+  var h2List = Array.prototype.slice.call(h2Headings);
 
-  layout.classList.add("doc-layout--with-toc");
-  toc.hidden = false;
+  var activeSectionId = null;
+  var scrollLockId = null;
+  var pinnedSectionId = null;
+  var isProgrammaticScroll = false;
+  var scrollSettleTimer = null;
+  var scrollSpyTimer = null;
 
-  headings.forEach(function (heading) {
-    var link = document.createElement("a");
-    link.className = "doc-toc-link";
-    link.href = "#" + heading.id;
-    link.setAttribute("data-toc-target", heading.id);
-    link.textContent = heading.textContent.replace(/\s+/g, " ").trim();
-    toc.appendChild(link);
-  });
+  var VIEWPORT_ACTIVE_LINE = 0.25;
 
-  var links = toc.querySelectorAll("[data-toc-target]");
-  var sections = Array.prototype.slice.call(headings);
+  function sectionUrl(id) {
+    return location.origin + location.pathname + location.search + "#" + encodeURIComponent(id);
+  }
 
-  function scrollToSection(id) {
+  function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        resolve();
+      } catch (err) {
+        reject(err);
+      }
+      document.body.removeChild(ta);
+    });
+  }
+
+  function scrollToSection(id, behavior) {
     var el = document.getElementById(id);
     if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    el.scrollIntoView({ behavior: behavior || "smooth", block: "start" });
   }
 
-  function setActive(id) {
-    links.forEach(function (link) {
-      link.classList.toggle("is-active", link.getAttribute("data-toc-target") === id);
-    });
+  function setLocationHash(id) {
+    var hash = "#" + encodeURIComponent(id);
+    if (history.replaceState) {
+      history.replaceState(null, "", hash);
+    } else {
+      location.hash = hash;
+    }
   }
 
-  links.forEach(function (link) {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      scrollToSection(link.getAttribute("data-toc-target"));
-    });
-  });
+  function headingLabel(heading) {
+    return heading.textContent.replace(/\s+/g, " ").trim();
+  }
 
-  if (!("IntersectionObserver" in window)) return;
+  function currentHashId() {
+    var raw = location.hash.slice(1);
+    return raw ? decodeURIComponent(raw) : null;
+  }
 
-  var observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) setActive(entry.target.id);
+  function sectionFromViewport() {
+    if (!h2List.length) return null;
+
+    var activeY = window.innerHeight * VIEWPORT_ACTIVE_LINE;
+    var chosen = h2List[0];
+
+    for (var i = 0; i < h2List.length; i++) {
+      if (h2List[i].getBoundingClientRect().top <= activeY) {
+        chosen = h2List[i];
+      }
+    }
+
+    return chosen.id;
+  }
+
+  function setActive(id, updateHash, force) {
+    if (!id) return;
+    if (!force && scrollLockId && id !== scrollLockId) return;
+    if (!force && pinnedSectionId && id !== pinnedSectionId) return;
+
+    if (id !== activeSectionId) {
+      activeSectionId = id;
+      if (toc) {
+        toc.querySelectorAll("[data-toc-target]").forEach(function (link) {
+          link.classList.toggle("is-active", link.getAttribute("data-toc-target") === id);
+        });
+      }
+    }
+
+    if (updateHash && currentHashId() !== id) {
+      setLocationHash(id);
+    }
+  }
+
+  function syncActiveFromViewport() {
+    if (scrollLockId) return;
+
+    if (pinnedSectionId) {
+      setActive(pinnedSectionId, true, true);
+      return;
+    }
+
+    var id = sectionFromViewport();
+    if (id) setActive(id, true);
+  }
+
+  function finalizeProgrammaticScroll() {
+    if (!scrollLockId) return;
+    var id = scrollLockId;
+    scrollLockId = null;
+    isProgrammaticScroll = false;
+    pinnedSectionId = id;
+    setActive(id, true, true);
+  }
+
+  function onScrollSettled(callback) {
+    clearTimeout(scrollSettleTimer);
+
+    if ("onscrollend" in window) {
+      var done = false;
+      var finish = function () {
+        if (done) return;
+        done = true;
+        window.removeEventListener("scrollend", finish);
+        clearTimeout(fallbackTimer);
+        callback();
+      };
+      var fallbackTimer = setTimeout(finish, 1000);
+      window.addEventListener("scrollend", finish, { once: true });
+      return;
+    }
+
+    scrollSettleTimer = setTimeout(callback, 150);
+  }
+
+  function navigateToSection(id, behavior) {
+    scrollLockId = id;
+    pinnedSectionId = null;
+    isProgrammaticScroll = true;
+    setActive(id, true, true);
+    scrollToSection(id, behavior);
+
+    if (behavior === "auto") {
+      requestAnimationFrame(function () {
+        requestAnimationFrame(finalizeProgrammaticScroll);
       });
+      return;
+    }
+
+    onScrollSettled(finalizeProgrammaticScroll);
+  }
+
+  function onUserScrollIntent() {
+    if (isProgrammaticScroll || scrollLockId) return;
+    pinnedSectionId = null;
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (isProgrammaticScroll || scrollLockId) return;
+
+      clearTimeout(scrollSpyTimer);
+      scrollSpyTimer = setTimeout(syncActiveFromViewport, 50);
     },
-    { rootMargin: "-20% 0px -60% 0px", threshold: 0 }
+    { passive: true }
   );
 
-  sections.forEach(function (section) {
-    section.classList.add("doc-section");
-    observer.observe(section);
+  window.addEventListener("wheel", onUserScrollIntent, { passive: true });
+  window.addEventListener("touchstart", onUserScrollIntent, { passive: true });
+  window.addEventListener("keydown", function (e) {
+    var keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "];
+    if (keys.indexOf(e.key) === -1) return;
+    onUserScrollIntent();
   });
 
-  if (sections[0]) setActive(sections[0].id);
+  if (toc && layout && h2List.length) {
+    layout.classList.add("doc-layout--with-toc");
+    toc.hidden = false;
+
+    h2List.forEach(function (heading) {
+      var link = document.createElement("a");
+      link.className = "doc-toc-link";
+      link.href = "#" + heading.id;
+      link.setAttribute("data-toc-target", heading.id);
+      link.textContent = headingLabel(heading);
+      toc.appendChild(link);
+    });
+
+    toc.querySelectorAll("[data-toc-target]").forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        navigateToSection(link.getAttribute("data-toc-target"), "smooth");
+      });
+    });
+
+    h2List.forEach(function (section) {
+      section.classList.add("doc-section");
+    });
+
+    if (!location.hash) syncActiveFromViewport();
+  }
+
+  allHeadings.forEach(function (heading) {
+    if (heading.querySelector(".doc-heading-anchor")) return;
+
+    heading.classList.add("doc-heading");
+
+    var anchor = document.createElement("a");
+    anchor.className = "doc-heading-anchor";
+    anchor.href = "#" + heading.id;
+    anchor.setAttribute("aria-label", "Copy link to this section");
+    anchor.innerHTML = "#";
+
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      copyToClipboard(sectionUrl(heading.id))
+        .then(function () {
+          anchor.classList.remove("is-copy-failed");
+          anchor.classList.add("is-copied");
+          anchor.textContent = "\u2713";
+          anchor.setAttribute("aria-label", "Link copied");
+          setTimeout(function () {
+            anchor.classList.remove("is-copied");
+            anchor.textContent = "#";
+            anchor.setAttribute("aria-label", "Copy link to this section");
+          }, 2000);
+        })
+        .catch(function () {
+          anchor.classList.remove("is-copied");
+          anchor.classList.add("is-copy-failed");
+          anchor.setAttribute("aria-label", "Copy failed");
+          setTimeout(function () {
+            anchor.classList.remove("is-copy-failed");
+            anchor.setAttribute("aria-label", "Copy link to this section");
+          }, 2000);
+        });
+      setLocationHash(heading.id);
+    });
+
+    heading.appendChild(anchor);
+  });
+
+  function scrollFromHash(behavior) {
+    var raw = location.hash.slice(1);
+    if (!raw) return;
+    navigateToSection(decodeURIComponent(raw), behavior || "auto");
+  }
+
+  scrollFromHash("auto");
+
+  window.addEventListener("hashchange", function () {
+    scrollFromHash("smooth");
+  });
 })();
 </script>
