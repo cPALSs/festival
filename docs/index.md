@@ -1,5 +1,4 @@
 ---
-status: stub
 title: Festival Season Network
 layout: default
 ---
@@ -10,8 +9,6 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 |----------|------------|
 | **People** | **You are here** — these GitHub Pages are human-friendly guides (principles, research, getting started). |
 | **AI agents** | **Clone the [repo](https://github.com/cPALSs/festival)** and start at [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md). Structured markdown, JSON, and the sheet registry live in the tree — agents work from the clone, not from scraped HTML. |
-
-> **Stub scaffold (Phase 0)** — structure only; not finished research.
 
 ## What this is / is not
 
@@ -36,16 +33,13 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 
 ### Autumn
 
-- [Overview](autumn/overview.html)
 - [Market research](autumn/market-research.html)
 - [Season coordination](autumn/season-coordination.html)
-- [Calendar & registry](autumn/calendar.html)
-- [Group activity kits](autumn/group-activities.html)
 
 ### Recruitment (cross-season)
 
 - [Volunteer staff recruitment checklist](volunteer-staff-recruitment-checklist.html) — capstone director intake, triage, and placement
-- [Child audience design](child-audience/overview.html) — cohort guide (0–17) · fit tags · walkthroughs *(stub)*
+- [Child audience design](child-audience/overview.html) — cohort guide (0–17) · fit tags · walkthroughs
 
 ## Live research
 

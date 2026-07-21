@@ -113,7 +113,7 @@ Festival Season Network is a **coordination library**, not an event owner. These
 - Separate **coalition capstone** economics from **network member** events (different P&L, same season story)
 - Debrief templates that include a **P4 check** (vendor/sponsor/partner)
 
-**Assets:** [stakeholder sustainability playbook](https://github.com/cPALSs/festival/blob/main/assets/autumn/playbooks/stakeholder-sustainability.md), [pilot debrief template](https://github.com/cPALSs/festival/blob/main/assets/autumn/playbooks/pilot-debrief-template.md), [case studies](case-studies.html).
+**Assets:** [stakeholder sustainability playbook](https://github.com/cPALSs/festival/blob/main/assets/autumn/playbooks/stakeholder-sustainability.md), [pilot debrief template](https://github.com/cPALSs/festival/blob/main/assets/autumn/playbooks/pilot-debrief-template.md), [case studies](https://github.com/cPALSs/festival/tree/main/assets/case-studies).
 
 ---
 
@@ -149,7 +149,7 @@ Playbooks + case studies       →  tested patterns and cautions (P2–P4)
 Simulations (future)           →  what-if before committing dates (P1, P3)
 ```
 
-Start with [ecosystem harmony](ecosystem-harmony.html) for how research and relationships merge. Agents: see [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) for load order and machine-readable conventions.
+Agents: see [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) for load order and machine-readable conventions.
 
 ---
 

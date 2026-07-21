@@ -21,7 +21,7 @@ layout: default
 | Lunar New Year | [Greater Sacramento LNY Season — Market Landscape](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link) |
 | Autumn | [Greater Sacramento Autumn Season — Market Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link) |
 
-How to read and contribute: [Using market research](research.html). Season overviews: [LNY](lny/overview.html), [Autumn](autumn/overview.html).
+How to read and contribute: [Using market research](research.html). Season guides: [LNY overview](lny/overview.html), [Autumn market research](autumn/market-research.html), [Autumn season coordination](autumn/season-coordination.html).
 
 Shared Drive layout: **`Festival Network / Research`** (not Marketing) for market research sheets.
 
@@ -30,7 +30,7 @@ Shared Drive layout: **`Festival Network / Research`** (not Marketing) for marke
 - [Principles (P1–P4)](principles.html)
 - [Using market research](research.html)
 - [Volunteer staff recruitment checklist](volunteer-staff-recruitment-checklist.html)
-- Season overviews: [LNY](lny/overview.html), [Autumn](autumn/overview.html)
+- Season guides: [LNY](lny/overview.html), [Autumn research](autumn/market-research.html), [Autumn coordination](autumn/season-coordination.html)
 
 ## Planning with AI {#planning-with-ai}
 
@@ -41,4 +41,4 @@ git clone https://github.com/cPALSs/festival.git
 cd festival
 ```
 
-**cPALSs staging:** public repo lives in `Festival Network/shared/`; local MCP tooling and scripts stay in parent `Festival Network/` (not published).
+**cPALSs staging:** public repo lives in `Operations/Festival Network/shared/`; local MCP tooling and scripts stay in parent `Operations/Festival Network/` (not published).

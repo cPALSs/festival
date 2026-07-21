@@ -25,7 +25,6 @@ Seeded from the 2026 **Lunar New Year Season** flyer (12 events Jan 24–Mar 7).
 
 - [Autumn market research](autumn/market-research.html) — season guide on this site
 - [Autumn season coordination](autumn/season-coordination.html) — lane assignment essay
-- [Autumn season overview](autumn/overview.html)
 
 ## Planning with AI
 
@@ -48,4 +47,4 @@ Each market landscape row is **one year of one event**. Filter `Season year` + `
 2. Match existing column headers; protect the header row
 3. For agent-assisted updates: [Plan with AI](plan-with-ai.html) and [Google Sheets MCP](google-sheets-mcp.html)
 
-See also [Contribute](contribute.html).
+See also [Contributing](https://github.com/cPALSs/festival/blob/main/CONTRIBUTING.md) · [contact@cpalss.com](mailto:contact@cpalss.com).

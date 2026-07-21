@@ -112,4 +112,4 @@ One record per age band — see [content patterns](content-patterns.html#pattern
 
 ## Related
 
-[Principles P2 — group attendance](../principles.html#p2--group-attendance) · [Group activity kits (Autumn)](../autumn/group-activities.html) · [Contribute](../contribute.html)
+[Principles P2 — group attendance](../principles.html#p2--group-attendance) · [Autumn group-activity kits](https://github.com/cPALSs/festival/tree/main/assets/autumn/group-activities) · [Contributing](https://github.com/cPALSs/festival/blob/main/CONTRIBUTING.md)

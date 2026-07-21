@@ -6,7 +6,7 @@ Open-source assets for **Lunar New Year & Autumn Festivals** season coordination
 
 **Pages deploy:** GitHub Actions workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) — Jekyll build from `docs/` on every push to `main` (same pattern as EGLNY / GLF site repos). Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-> **Phase 0 (current):** Stub scaffold — structure, sheet registry, and placeholders. Live research data is in Google Sheets.
+> Live research data is in Google Sheets. Site pages publish substance only — empty stubs are not kept on GitHub Pages.
 
 ## What this is
 
@@ -49,13 +49,13 @@ cd festival
 
 | Network | Path | Status |
 |---------|------|--------|
-| LNY | [docs/lny/](docs/lny/) | Stub scaffold (Phase 4 substance) |
-| Autumn | [docs/autumn/](docs/autumn/) | Stub scaffold |
+| LNY | [docs/lny/](docs/lny/) | Overview + market research guide |
+| Autumn | [docs/autumn/](docs/autumn/) | Market research + season coordination |
 | Cross-season | [docs/child-audience/](docs/child-audience/) · [assets/shared/playbooks/child-cohort-product-design.md](assets/shared/playbooks/child-cohort-product-design.md) | Child audience design — split topic pages |
 
 ## Contribute
 
-See [docs/contribute.md](docs/contribute.md) and [CONTRIBUTING-RESEARCH.md](assets/autumn/research/CONTRIBUTING-RESEARCH.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [CONTRIBUTING-RESEARCH.md](assets/autumn/research/CONTRIBUTING-RESEARCH.md).
 
 **Reach out:** [contact@cpalss.com](mailto:contact@cpalss.com) — questions about the network, season research, or partnering on these assets.
 

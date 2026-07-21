@@ -71,7 +71,7 @@ Per–age-band rally checklists (public): [Director rally checklists](director-r
 
 **Phase 0 stub** — cohort pages and Sacramento comps seeded. [LNY 2027 Saturday walkthrough](walkthroughs/lny-2027.html) drafted; Sunday narrative TBD.
 
-See [Contribute](../contribute.html) · [contact@cpalss.com](mailto:contact@cpalss.com)
+See [Contributing](https://github.com/cPALSs/festival/blob/main/CONTRIBUTING.md) · [contact@cpalss.com](mailto:contact@cpalss.com)
 
 ---
 

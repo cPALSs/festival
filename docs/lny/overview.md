@@ -20,5 +20,5 @@ The 2026 **Lunar New Year Season** calendar one-pager (12 events, capstone Feb 1
 
 ## Shared kits
 
-Group-activity kits and playbooks are in the repo for organizers who clone or fork — see [Getting started](../getting-started.html). (Stubs in Phase 0.)
+Group-activity kits and playbooks are in the repo for organizers who clone or fork — see [Getting started](../getting-started.html).
 

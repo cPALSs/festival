@@ -12,14 +12,10 @@ header_pages:
   - google-sheets-mcp.md
   - principles.md
   - research.md
-  - ecosystem-harmony.md
   - plan-with-ai.md
-  - case-studies.md
-  - content-workflow.md
   - lny/overview.md
   - lny/market-research.md
   - child-audience/overview.md
-  - contribute.md
   - tone-of-voice.md
 
 markdown: kramdown
