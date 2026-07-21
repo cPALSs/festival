@@ -6,7 +6,7 @@ asset_type: guide
 season: autumn
 ---
 
-*Bao Thien Ngo · cPALSs MAF Co-Chair · June 2026*
+*Bao Thien Ngo · cPALSs Festivals Chair · June 2026*
 
 Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts, parish fairs, campus events, civic fall festivals, and retail activations. This page is one organizer's read on how to **assign lanes** instead of treating the list like a turf war.
 
@@ -23,7 +23,7 @@ Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts,
 | MAF −1 weekend (est. Sep 19) | Riverside UMC community fair | Parish / neighborhood |
 | **Sep 19** (tent.) | CAAPS Autumn Lantern Festival | Sacramento region |
 | **Sep 21** | **APIDA Night Lights — Illuminating the Hive** (`sac-state-maf` inaugural) | Acorn Amphitheatre, Sac State campus |
-| **Sep 25–26** | **VACOS/cPALSs/NVCC MAF** | **Derr-Okamoto Park, Elk Grove** |
+| ~~Sep 25–26~~ | ~~Great Lantern Festival~~ (**canceled** — not hosting 2026) | ~~Derr-Okamoto Park, Elk Grove~~ |
 | Oct 3–4 | Giant Pumpkin Festival | Elk Grove Park |
 | First Oct weekend (est.) | SF Supermarket Mid-Autumn activation | Rancho Cordova |
 | Nov (est.) | Creative Space Autumn Craft Fair | SASF, Elk Grove |
@@ -56,15 +56,15 @@ I wouldn't try to merge everything into one mega-festival. I wouldn't chase the 
 | Riverside UMC | Parish / neighborhood | Warm-up — build a lantern, bring community together |
 | California Is My Home | Elk Grove producers | Parallel fair — vendors, stage, local press |
 | Sac State (APIDA Night Lights + JSSCC) | Campus / Gen Z | Different audience — heritage + mainstream on campus, not the family park product |
-| **CAAPS** (Sep 19 est.) | Spectacle / night market | Hoi An install — different product, different weekend than family capstone |
-| **VACOS/cPALSs/NVCC MAF** | **Elk Grove families** | **Capstone — lantern contest, procession, regional haul-in moment** |
-| Giant Pumpkin Festival | Civic / regional fall | October destination — pumpkin weigh-off; room for a lantern exhibition after MAF |
+| **CAAPS** (Sep 19 est.) | Spectacle / night market | Hoi An install — different product, different weekend than family park fair |
+| Great Lantern Festival | Elk Grove families *(paused)* | **Canceled for 2026** — was planned as family capstone (lantern contest, procession); coalition diverting capacity to sister hosts |
+| Giant Pumpkin Festival | Civic / regional fall | October destination — pumpkin weigh-off; room for a lantern exhibition without a Derr-Okamoto weekend |
 | SF Supermarket | Retail / plaza | Foot traffic — mooncakes, kits, lantern museum for entries the park can't store |
 | Creative Space @ SASF | Craft / holiday shopping | Bookend — pre-Christmas makers, not moon programming |
 
 Same events. Different assignment: **who each one is for, what job it does, which weekend it owns.**
 
-A parish fair isn't trying to be Sac State. CAAPS spectacle isn't trying to be the family fair at the park. When each host knows its lane, cross-promo becomes honest — *Hoi An lights Sep 19 · capstone Sep 25–26 · pumpkins in October · makers in November* — instead of every flyer claiming to be "the only" or "the biggest."
+A parish fair isn't trying to be Sac State. CAAPS spectacle isn't trying to be the family fair at the park. When each host knows its lane, cross-promo becomes honest — *Hoi An lights Sep 19 · campus Night Lights Sep 21 · pumpkins in October · makers in November* — instead of every flyer claiming to be "the only" or "the biggest." With Great Lantern Festival paused for 2026, that honesty matters even more: support the hosts who *are* running, don't invent a competing capstone.
 
 ---
 
@@ -86,8 +86,8 @@ The line I keep coming back to: **If your vendors and core team can repeat next 
 
 ## Get involved
 
-**VACOS/cPALSs/NVCC MAF 2026** is Sep 25–26 at Derr-Okamoto Park — hosted by VACOS, cPALSs, and NVCC, with cPALSs also producing Lunar New Year in Elk Grove.
+**Great Lantern Festival** (VACOS / cPALSs / NVCC Mid-Autumn reboot) is **not hosting in 2026**. Public hub: [greatlantern.com](https://greatlantern.com). cPALSs continues producing Lunar New Year in Elk Grove.
 
-On this calendar and want to compare lanes? [contact@cpalss.com](mailto:contact@cpalss.com)
+On this calendar and want to compare lanes — or help sister autumn hosts? [contact@cpalss.com](mailto:contact@cpalss.com)
 
 **Related on this site:** [Autumn market research](market-research.html) · [Principles (P1–P4)](../principles.html) · [Using market research](../research.html)
