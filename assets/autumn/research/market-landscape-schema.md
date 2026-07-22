@@ -139,7 +139,7 @@ Do **not** copy the prior Gregorian calendar date (e.g. “Sep 12 last year → 
 - **Multi-year check:** if lunar offsets disagree across held years, prefer the calendar pattern.
 - Examples:
   - SF Supermarket 2025 Oct 4–5 → 2026 first October weekend (Oct 3–4), not MAF weekend.
-  - **CAIMH / District 56:** 2024 Fri Sep 13 (City; weekend before MAF) and 2025 Fri Sep 12 (CAIMH; MAF −3) — lunar offsets disagree; both land on the **2nd weekend of September** (likely **District 56 availability** more than lunar). Estimate 2026 **Fri Sep 11**, not MAF −3.
+  - **CAIMH / District 56:** 2024 Fri Sep 13 and 2025 Fri Sep 12 were both **2nd-weekend-of-Sep Fridays** — that calendar pattern **broke in 2026** (confirmed **Sun Sep 20** 2:00–8:30 PM via organizer flyer). Prefer steward/flyer confirmation over Fri 2nd-weekend extrapolation.
 
 When in doubt for Mid-Autumn / Moon / Lantern rows **with consistent lunar offsets**, prefer **MAF ± weekends**. When offsets conflict year-to-year, prefer **calendar pattern**.
 

@@ -30,5 +30,5 @@ Elk Grove runs two Lane A Mid-Autumn producers: **California Is My Home** @ Dist
 
 ## Related materials
 
-- [California Is My Home - Unified EG MAF Vision](../../../../Projects%20-%20Mid-Autumn%20Festival/2026/Partnerships/California%20Is%20My%20Home%20-%20Unified%20EG%20MAF%20Vision.md) (coalition internal)
+- [California Is My Home - Unified EG MAF Vision](../../../../../Programs/Mid-Autumn%20Festival/2026/Partnerships/California%20Is%20My%20Home%20-%20Unified%20EG%20MAF%20Vision.md) (coalition internal)
 - [Autumn market landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit)

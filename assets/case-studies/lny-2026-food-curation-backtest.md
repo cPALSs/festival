@@ -1,7 +1,7 @@
 # LNY 2026 food curation backtest
 
 **Status:** Case study · Festival Network  
-**Engine:** [food-curation-engine](../../tools/food-curation-engine/)  
+**Engine:** [food-curation-engine](../../../../../tools/food-curation-engine/)  
 **Seed:** [lny-2026-applicants.json](../assets/shared/food-curation/seeds/lny-2026-applicants.json)
 
 ---
@@ -27,7 +27,7 @@
 | Fleet utilization (model) | oversupplied | ~67% |
 | Modeled avg gross/booth | ~$1,110 | higher per slot (fewer vendors) |
 
-The engine recommends **~13 food slots** vs **33 actual** — consistent with [LNY 2026 Lessons](https://github.com/cPALSs/cPALSs/blob/main/Projects%20-%20Lunar%20New%20Year/2027/Business%20Development/LNY%202026%20Lessons%20%26%20Booth%20Caps.md) oversupply analysis.
+The engine recommends **~13 food slots** vs **33 actual** — consistent with [LNY 2026 Lessons](https://github.com/cPALSs/cPALSs/blob/main/Programs/Lunar%20New%20Year/2027/Business%20Development/LNY%202026%20Lessons%20%26%20Booth%20Caps.md) oversupply analysis.
 
 ---
 
@@ -68,7 +68,7 @@ Similar compression for rice plates, noodle/soup, and BBQ categories where 8+ ap
 ## Run locally
 
 ```bash
-cd "Festival Network/shared/tools/food-curation-engine"
+cd "Operations/Festival Network/shared/tools/food-curation-engine"
 python3 scripts/run_engine.py \
   --applicants ../../assets/shared/food-curation/seeds/lny-2026-applicants.json \
   --attendance 6000 --output /tmp/backtest.json

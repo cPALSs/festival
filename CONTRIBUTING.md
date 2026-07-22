@@ -4,7 +4,7 @@
 
 ## How to contribute
 
-1. Fork [cPALSs/festival](https://github.com/cPALSs/festival) or open a PR from cPALSs staging (`Festival Network/shared/`)
+1. Fork [cPALSs/festival](https://github.com/cPALSs/festival) or open a PR from cPALSs staging (`Operations/Festival Network/shared/`)
 2. Follow stub → substance norms: mark `status: stub` until peer-reviewed
 3. Never publish private competitor intelligence — public sources + attributed field observations only
 
@@ -18,7 +18,7 @@
 
 ## cPALSs staging layout
 
-Public assets live in this repo. **Do not commit** one-off local scripts, MCP `package.json`, or credentials — those stay in parent `Festival Network/` when working in the cPALSs monorepo.
+Public assets live in this repo. **Do not commit** one-off local scripts, MCP `package.json`, or credentials — those stay in parent `Operations/Festival Network/` when working in the cPALSs monorepo.
 
 ## AI-readable conventions
 

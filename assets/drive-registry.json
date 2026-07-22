@@ -5,20 +5,20 @@
   "projects": {
     "maf-2026": {
       "title": "Mid-Autumn Festival 2026",
-      "registry": "Projects - Mid-Autumn Festival/2026/drive-registry.json"
+      "registry": "Programs/Mid-Autumn Festival/2026/drive-registry.json"
     },
     "lny-2026": {
       "title": "Lunar New Year 2026",
-      "registry": "Projects - Lunar New Year/2026/drive-registry.json"
+      "registry": "Programs/Lunar New Year/2026/drive-registry.json"
     },
     "little-saigon-krewe": {
       "title": "Little Saigon Krewe",
-      "registry": "Committee - Little Saigon Krewe/drive-registry.json"
+      "registry": "Operations/Little Saigon Krewe/drive-registry.json"
     }
   },
   "generic_templates": {
-    "sponsorship_packet_standard": "Festival Network/scripts/content/sponsorship-packet-standard.md",
-    "post_event_sponsor_report": "Festival Network/scripts/content/post-event-sponsor-report-template.md",
-    "post_event_metrics_inventory": "Festival Network/scripts/content/post-event-metrics-inventory.md"
+    "sponsorship_packet_standard": "Operations/Festival Network/scripts/content/sponsorship-packet-standard.md",
+    "post_event_sponsor_report": "Operations/Festival Network/scripts/content/post-event-sponsor-report-template.md",
+    "post_event_metrics_inventory": "Operations/Festival Network/scripts/content/post-event-metrics-inventory.md"
   }
 }

@@ -20,7 +20,7 @@ Riverside United Methodist Church runs a **neighborhood Mid-Autumn fair** (2025:
 
 ## Lesson
 
-**Small warm-up hosts need portable identity, not coalition merge.** Parish cohesion > cPALSs branding. Best help: **supplier lists** + **pickup-haulable centerpiece lantern** → enter at **capstone lantern contest** (featured in dusk procession). See [Capstone Lantern Contest program](../../../../Projects%20-%20Mid-Autumn%20Festival/2026/Program%20&%20Entertainment/Capstone%20Lantern%20Contest%20-%20Roll-up%20Program.md).
+**Small warm-up hosts need portable identity, not coalition merge.** Parish cohesion > cPALSs branding. Best help: **supplier lists** + **pickup-haulable centerpiece lantern** → enter at **capstone lantern contest** (featured in dusk procession). See [Capstone Lantern Contest program](../../../../../Programs/Mid-Autumn%20Festival/2026/Program%20&%20Entertainment/Capstone%20Lantern%20Contest%20-%20Roll-up%20Program.md).
 
 ## What to do differently
 
@@ -30,4 +30,4 @@ Riverside United Methodist Church runs a **neighborhood Mid-Autumn fair** (2025:
 
 ## Related materials
 
-- [Riverside UMC - Parish MAF Warm-up](../../../../Projects%20-%20Mid-Autumn%20Festival/2026/Partnerships/Riverside%20UMC%20-%20Parish%20MAF%20Warm-up.md) (coalition internal)
+- [Riverside UMC - Parish MAF Warm-up](../../../../../Programs/Mid-Autumn%20Festival/2026/Partnerships/Riverside%20UMC%20-%20Parish%20MAF%20Warm-up.md) (coalition internal)

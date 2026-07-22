@@ -24,7 +24,7 @@ GitHub Pages publishes `docs/` only. On human-facing pages:
 
 - Link to other site pages with **`.html`** (e.g. [research.html](research.html)).
 - Link to repo files with **GitHub blob/tree URLs** on [cPALSs/festival](https://github.com/cPALSs/festival) — not relative `../assets/` paths.
-- Do **not** link to coalition-internal monorepo paths (private cPALSs repo, `Staff - Meeting/`, project folders) — name them in plain text instead.
+- Do **not** link to coalition-internal monorepo paths (private cPALSs repo, `Operations/Board Desk/`, project folders) — name them in plain text instead.
 
 ## Sheet registry
 

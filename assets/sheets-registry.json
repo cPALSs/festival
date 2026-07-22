@@ -10,7 +10,7 @@
     "docs_setup": "docs/google-drive-mcp.md",
     "recommended_folders": {
       "Research": "Market research, market landscape, analyses",
-      "Calendars": "Community Activity Calendar — public list, Community Matrix, archive",
+      "Calendars": "Community Activity Calendar — public list, Org Lifecycle, archive",
       "Graphs": "Ecosystem relationship data (future)",
       "Operations": "Steering trackers, debriefs (future)"
     },
@@ -76,11 +76,11 @@
       "title": "Community Activity Calendar",
       "spreadsheet_id": "1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg",
       "url": "https://docs.google.com/spreadsheets/d/1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg/edit?ouid=117520336769674993102",
-      "schema": "Corporate Administration/community-activity-calendar-schema.md",
-      "registry": "Corporate Administration/drive-registry.json",
+      "schema": "Governance/Partnerships/calendar/community-activity-calendar-schema.md",
+      "registry": "Governance/Partnerships/calendar/drive-registry.json",
       "tab": "Public events",
       "view_tabs": [
-        "Community Matrix",
+        "Org Lifecycle",
         "Archive",
         "Event sources"
       ],
@@ -91,6 +91,25 @@
       },
       "internal_companion": "season-producer-roster",
       "note": "Public-facing calendar only — PII tabs hidden; producer contacts on season-producer-roster"
+    },
+    {
+      "id": "inflatable-carnival-games-model",
+      "title": "cPALSs Research — Inflatable Carnival Games Rental Model",
+      "spreadsheet_id": "1WDueuaZNWmrL_dYX0xxusfOx3EZksHacT-wHUFcq1EA",
+      "url": "https://docs.google.com/spreadsheets/d/1WDueuaZNWmrL_dYX0xxusfOx3EZksHacT-wHUFcq1EA/edit?usp=drivesdk",
+      "season": [
+        "network"
+      ],
+      "visibility": "coalition_staff_only",
+      "schema": "Research/Inflatable Carnival Games/Inflatable Carnival Games - Rental Model.md",
+      "tab": "Storage",
+      "view_tabs": [
+        "SellToday",
+        "Model",
+        "Scenarios",
+        "README"
+      ],
+      "note": "KEEP vs SELL paths; paid vs volunteer labor; cap-ex payback; community wages; wear/repair."
     }
   ],
   "deprecated_spreadsheets": [
@@ -100,7 +119,7 @@
       "spreadsheet_id": "1Qe6KyqeTv9VUe4Ff1LYyO34jTML5YutGCFceuPia2gc",
       "url": "https://docs.google.com/spreadsheets/d/1Qe6KyqeTv9VUe4Ff1LYyO34jTML5YutGCFceuPia2gc/edit",
       "replaced_by": "community-activity-calendar",
-      "replaced_by_tab": "Community Matrix"
+      "replaced_by_tab": "Org Lifecycle"
     }
   ]
 }

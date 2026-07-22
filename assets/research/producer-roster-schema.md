@@ -82,7 +82,7 @@ Network rows use **`Product lane`** for specialization (Mardi Gras, Reggae / Pol
 
 ## Deprecated location
 
-Do **not** store producer email/phone on [Community Activity Calendar](../../../Corporate%20Administration/community-activity-calendar-schema.md). Former **Season stakeholders** / **Stakeholder event involvement** tabs on the calendar are retired in favor of this roster + public landscapes.
+Do **not** store producer email/phone on [Community Activity Calendar](../../../../../Governance/Partnerships/calendar/community-activity-calendar-schema.md). Former **Season stakeholders** / **Stakeholder event involvement** tabs on the calendar are retired in favor of this roster + public landscapes.
 
 **Legacy registry id:** `autumn-producer-roster` → `season-producer-roster`.  
 **Legacy sheet titles:** *Festival Season - Producer Roster*, *Autumn Season - Producer Roster* → **Event Producer Roster**.

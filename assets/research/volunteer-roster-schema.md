@@ -7,7 +7,7 @@ visibility: coalition_staff_only
 
 # Volunteer roster — internal schema
 
-**Local files:** [`Projects - Lunar New Year/2026/Operations & Logistics/volunteer-roster/`](../../../../Projects%20-%20Lunar%20New%20Year/2026/Operations%20&%20Logistics/volunteer-roster/)
+**Local files:** [`Programs/Lunar New Year/2026/Operations & Logistics/volunteer-roster/`](../../../../../Programs/Lunar%20New%20Year/2026/Operations%20&%20Logistics/volunteer-roster/)
 
 **Not public.** Do not embed on cpalss.com, link from Festival Network GitHub Pages, or commit PII CSVs to git.
 
@@ -17,8 +17,8 @@ Unified, deduped volunteer contact list from LNY 2026 intake (Bugle shifts + Goo
 
 Pairs with:
 
-- [Recruitment pipeline](../../../../Corporate%20Administration/data/community-activity-calendar-config.json) — capstone director leads (`idealist-*`, email replies)
-- [Seasonal outreach playbook](../../../../Corporate%20Administration/seasonal-outreach-playbook.md)
+- [Recruitment pipeline](../../../../../Governance/Partnerships/data/community-activity-calendar-config.json) — capstone director leads (`idealist-*`, email replies)
+- [Seasonal outreach playbook](../../../../../Governance/Partnerships/outreach/seasonal-outreach-playbook.md)
 - [Event Producer Roster](producer-roster-schema.md) — season-shaping POCs (directors on placement)
 
 | Volunteer roster | Producer roster |
@@ -108,14 +108,14 @@ cd "Festival Network"
 node scripts/merge-volunteer-roster.mjs
 ```
 
-Implementation: [`scripts/merge-volunteer-roster.mjs`](../../scripts/merge-volunteer-roster.mjs)
+Implementation: [`scripts/merge-volunteer-roster.mjs`](../../../../../scripts/merge-volunteer-roster.mjs)
 
 ## Outreach rules
 
 ### Email
 
 - **Audience:** `volunteers-adults.csv` where `email_blast_ok = yes`
-- **Copy:** [Season Recruitment - LNY List Blast](../../../../Projects%20-%20Mid-Autumn%20Festival/2026/Marketing/Season%20Recruitment%20-%20LNY%20List%20Blast.md)
+- **Copy:** [Season Recruitment - LNY List Blast](../../../../../Programs/Mid-Autumn%20Festival/2026/Marketing/Season%20Recruitment%20-%20LNY%20List%20Blast.md)
 - **Apply link:** [ideali.st/h9P2PJ](https://ideali.st/h9P2PJ)
 - Include reply-to opt-out; log replies on Recruitment pipeline
 

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "source_primary": "/Users/bao/cPALSs/Projects - Lunar New Year/2026/Business Development/2026 Lunar New Year Tet Festival & Parade — Vendor_7-5-2026.xlsx",
-    "source_reconcile": "/Users/bao/cPALSs/Projects - Lunar New Year/2026/Finance & Administration/Vendor Reconciliation/2026 LNY vendor list/food vendor-Table 1.csv",
-    "resolutions": "/Users/bao/cPALSs/Festival Network/shared/assets/shared/food-curation/seeds/lny-2026-reconciliation-resolutions.json",
-    "vendor_names": "/Users/bao/cPALSs/Festival Network/shared/assets/shared/food-curation/seeds/lny-2026-vendor-names.json",
+    "source_primary": "/Users/bao/cPALSs/Programs/Lunar New Year/2026/Business Development/2026 Lunar New Year Tet Festival & Parade — Vendor_7-5-2026.xlsx",
+    "source_reconcile": "/Users/bao/cPALSs/Programs/Lunar New Year/2026/Finance & Administration/Vendor Reconciliation/2026 LNY vendor list/food vendor-Table 1.csv",
+    "resolutions": "/Users/bao/cPALSs/Operations/Festival Network/shared/assets/shared/food-curation/seeds/lny-2026-reconciliation-resolutions.json",
+    "vendor_names": "/Users/bao/cPALSs/Operations/Festival Network/shared/assets/shared/food-curation/seeds/lny-2026-vendor-names.json",
     "count": 34,
     "fielded_2026": 31,
     "pool_total": 34,

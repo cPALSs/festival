@@ -14,14 +14,14 @@ Composition-first food vendor curation for cPALSs festivals.
 ## Quick start
 
 ```bash
-cd "Festival Network/shared/tools/food-curation-engine"
+cd "Operations/Festival Network/shared/tools/food-curation-engine"
 python3 -m unittest tests/test_engine.py -v
 python3 scripts/compare_py_js_scores.py   # Python ↔ JS score + selection parity
 ./scripts/build_lny_2026_seed.sh
 python3 -m http.server 8765 --directory staff-app
 ```
 
-Presets and seeds: `Festival Network/shared/assets/shared/food-curation/`
+Presets and seeds: `Operations/Festival Network/shared/assets/shared/food-curation/`
 
 Rebuild LNY 2026 backtest seed (simulates Eventeny Q1 capability + Q2 signature split). First run creates `.venv` and installs `openpyxl` from `requirements.txt`:
 

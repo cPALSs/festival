@@ -59,7 +59,7 @@ ZOOM_MCP_REDIRECT_URI=https://webhook.site/your-unique-id
 ### 3. Authorize once (manual OAuth)
 
 ```bash
-node "Festival Network/scripts/zoom-mcp-authorize.mjs"
+node "Operations/Festival Network/scripts/zoom-mcp-authorize.mjs"
 ```
 
 1. Script prints a Zoom authorize URL — open it in your browser
@@ -75,7 +75,7 @@ Tokens save to `.zoom-mcp-tokens.json` (gitignored). Re-run when expired if refr
 
 ## Cursor MCP config
 
-Wired in `.cursor/mcp.json` (coalition monorepo) via `Festival Network/scripts/start-zoom-mcp.mjs`:
+Wired in `.cursor/mcp.json` (coalition monorepo) via `Operations/Festival Network/scripts/start-zoom-mcp.mjs`:
 
 ```json
 {
@@ -83,7 +83,7 @@ Wired in `.cursor/mcp.json` (coalition monorepo) via `Festival Network/scripts/s
     "zoom-workspace": {
       "command": "node",
       "args": [
-        "/Users/bao/cPALSs/Festival Network/scripts/start-zoom-mcp.mjs"
+        "/Users/bao/cPALSs/Operations/Festival Network/scripts/start-zoom-mcp.mjs"
       ],
       "cwd": "/Users/bao/cPALSs"
     }
@@ -114,7 +114,7 @@ Wired in `.cursor/mcp.json` (coalition monorepo) via `Festival Network/scripts/s
 | System | Role |
 |--------|------|
 | **Zoom MCP** | Source meeting recordings, transcripts, AI summaries (replaces Zapier → Notion) |
-| **Repo (`Staff - Meeting/`, project season folders)** | Pinned meeting notes, prep agendas, operational checklists |
+| **Repo (`Operations/Board Desk/`, project season folders)** | Pinned meeting notes, prep agendas, operational checklists |
 | **Google Drive / Docs** | Official festival sponsorship packets and coalition docs |
 | **Google Sheets** | Market landscape research rows |
 
@@ -136,7 +136,7 @@ Agent rules: `.cursor/rules/zoom-mcp.mdc` and `.cursor/rules/local-ops.mdc` in t
 
 ### zoom-workspace errored
 
-- Run `node "Festival Network/scripts/zoom-mcp-authorize.mjs"` if `.zoom-mcp-tokens.json` is missing
+- Run `node "Operations/Festival Network/scripts/zoom-mcp-authorize.mjs"` if `.zoom-mcp-tokens.json` is missing
 - Confirm `ZOOM_MCP_REDIRECT_URI` in `.zoom-mcp.env` matches Zoom exactly
 - Re-authorize if token expired: delete `.zoom-mcp-tokens.json` and run authorize script again
 

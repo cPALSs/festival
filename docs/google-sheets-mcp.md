@@ -24,7 +24,7 @@ Canonical links live in [sheets-registry.json](https://github.com/cPALSs/festiva
 Recommended structure under your **Festival Network** Shared Drive:
 
 ```
-Festival Network/
+Operations/Festival Network/
   Research/       ← market landscape, market analyses (use this, not Marketing)
   Calendars/      ← future: roll-up paths, scheduling
   Graphs/         ← future: ecosystem edges
@@ -139,7 +139,7 @@ npx -y google-sheet-mcp token-status
     "google-sheets": {
       "command": "node",
       "args": [
-        "/Users/bao/cPALSs/Festival Network/scripts/start-google-sheet-mcp.mjs"
+        "/Users/bao/cPALSs/Operations/Festival Network/scripts/start-google-sheet-mcp.mjs"
       ],
       "cwd": "/Users/bao/cPALSs"
     }
@@ -199,13 +199,13 @@ Share the sheet with the service account `client_email` from the JSON as **Edito
 ### 4. Store credentials
 
 ```bash
-cp ~/Downloads/your-key.json "Festival Network/.credentials/google-service-account.json"
+cp ~/Downloads/your-key.json "Operations/Festival Network/.credentials/google-service-account.json"
 ```
 
 Add to `.cursor/mcp.json` `env`:
 
 ```json
-"GOOGLE_APPLICATION_CREDENTIALS": "/Users/bao/cPALSs/Festival Network/.credentials/google-service-account.json"
+"GOOGLE_APPLICATION_CREDENTIALS": "/Users/bao/cPALSs/Operations/Festival Network/.credentials/google-service-account.json"
 ```
 
 ### 5. Google Drive + Docs (sponsorship packets)

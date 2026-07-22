@@ -19,4 +19,4 @@ Agents: read and write the **Google Sheet** via MCP. See [docs/google-sheets-mcp
 
 ## Related research (cPALSs workspace, not Festival Network SOT)
 
-Deeper narrative and benchmarks live under `Projects - Lunar New Year/Research/` — cite in **Notes** and **Source URL** columns when adding rows; do not duplicate as CSV here.
+Deeper narrative and benchmarks live under `Programs/Lunar New Year/Research/` — cite in **Notes** and **Source URL** columns when adding rows; do not duplicate as CSV here.

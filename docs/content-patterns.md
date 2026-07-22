@@ -136,7 +136,7 @@ Before committing a table in `docs/`:
 - [ ] Read one row aloud — if it feels like a form with four fields, use **record blocks**
 - [ ] Matrix with 5+ columns? → add `{: .table-scroll}`
 - [ ] Preview at [local Jekyll](getting-started.html) with TOC visible (~1100px+ width)
-- [ ] Run `npm run lint:md:strict -- "Festival Network/shared/docs/…"` from repo root
+- [ ] Run `npm run lint:md:strict -- "Operations/Festival Network/shared/docs/…"` from repo root
 
 ---
 

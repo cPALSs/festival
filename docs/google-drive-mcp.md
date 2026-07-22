@@ -13,10 +13,10 @@ Festival Network holds an **index** only: [drive-registry.json](https://github.c
 
 | Festival | Registry file (coalition monorepo) |
 |----------|-------------------------------------|
-| MAF 2026 | `Projects - Mid-Autumn Festival/2026/drive-registry.json` |
-| LNY 2026 | `Projects - Lunar New Year/2026/drive-registry.json` |
+| MAF 2026 | `Programs/Mid-Autumn Festival/2026/drive-registry.json` |
+| LNY 2026 | `Programs/Lunar New Year/2026/drive-registry.json` |
 
-Project scripts (export PDF, sync sheets, etc.) live under each project's `scripts/` folder and import shared OAuth helpers from `Festival Network/scripts/lib/` in the monorepo.
+Project scripts (export PDF, sync sheets, etc.) live under each project's `scripts/` folder and import shared OAuth helpers from `Operations/Festival Network/scripts/lib/` in the monorepo.
 
 ## Generic templates (Festival Network monorepo)
 
@@ -24,9 +24,12 @@ Reusable across festivals — copy or upload to Drive from project setup scripts
 
 | Template | Path (coalition monorepo) |
 |----------|---------------------------|
-| Sponsorship packet standard | `Festival Network/scripts/content/sponsorship-packet-standard.md` |
-| Post-event sponsor report | `Festival Network/scripts/content/post-event-sponsor-report-template.md` |
-| Post-event metrics inventory | `Festival Network/scripts/content/post-event-metrics-inventory.md` |
+| Sponsorship packet standard (cash PDF) | `Operations/Festival Network/scripts/content/sponsorship-packet-standard.md` |
+| Sponsorship PDF generation (portrait, margins) | `Operations/Festival Network/scripts/content/sponsorship-pdf-generation.md` |
+| Media sponsor brief standard | `Operations/Festival Network/scripts/content/media-sponsor-brief-standard.md` |
+| Online sponsorship & crowdfunding | `Operations/Festival Network/scripts/content/online-sponsorship-crowdfunding-standard.md` |
+| Post-event sponsor report | `Operations/Festival Network/scripts/content/post-event-sponsor-report-template.md` |
+| Post-event metrics inventory | `Operations/Festival Network/scripts/content/post-event-metrics-inventory.md` |
 
 Festival-specific seeds (packet copy, debrief templates, staff directory) belong in the **project repo**, not the public festival site.
 
@@ -45,7 +48,7 @@ Tokens save to `.google-workspace-oauth.json` at the cPALSs root (gitignored).
 
 ## Cursor MCP config
 
-Configure `google-drive` in `.cursor/mcp.json` (coalition monorepo) via `Festival Network/scripts/start-google-drive-mcp.mjs`.
+Configure `google-drive` in `.cursor/mcp.json` (coalition monorepo) via `Operations/Festival Network/scripts/start-google-drive-mcp.mjs`.
 
 ## Agent tools (google-drive MCP)
 
@@ -59,7 +62,7 @@ Configure `google-drive` in `.cursor/mcp.json` (coalition monorepo) via `Festiva
 **Policy docs:** Repo markdown is draft source; publish formatted copies with:
 
 ```bash
-node "Corporate Administration/scripts/publish-volunteer-policy-docs.mjs"
+node "Governance/People/scripts/publish-volunteer-policy-docs.mjs"
 ```
 
 Do **not** upload raw `.md` via Drive `text/markdown` — it renders as unformatted markdown in Docs.
@@ -70,6 +73,7 @@ When pushing `.md` to Google Docs via Drive (`media: text/markdown`):
 
 - **`~` (tilde)** — paired tildes become strikethrough. Use `about 2,000` instead of `~2,000`.
 - **`*` / `_`** — mid-word emphasis can become bold/italic unintentionally.
+- **Tables** — native import does not set readable column widths. After every Markdown→Doc sync, run `optimizeDocumentTables` from `scripts/lib/markdown-to-google-doc.mjs`. If preferred width exceeds the body content column, ask before switching to landscape / wider page.
 
 ## Operating rules
 
@@ -79,7 +83,7 @@ When pushing `.md` to Google Docs via Drive (`media: text/markdown`):
 
 ## Example: MAF 2026 project scripts
 
-From `Projects - Mid-Autumn Festival/2026/` in the coalition monorepo:
+From `Programs/Mid-Autumn Festival/2026/` in the coalition monorepo:
 
 ```bash
 npm run export-sponsorship-pdf   # after Google Doc edits

@@ -18,7 +18,7 @@ Greater Sacramento runs a crowded autumn calendar — multiple Mid-Autumn hosts,
 
 | When | Event | Where |
 |------|-------|-------|
-| 2nd weekend Sep (est. Fri Sep 11) | California Is My Home Mid-Autumn Fair | District 56, Elk Grove |
+| **Sep 20** (conf.) Sun 2:00–8:30 PM | California Is My Home Mid-Autumn Festival | District 56, Elk Grove |
 | MAF −2 weekends (est. Sep 13) | Sac State Harvest Moon (JSSCC, if recurring) | Sac State campus |
 | MAF −1 weekend (est. Sep 19) | Riverside UMC community fair | Parish / neighborhood |
 | **Sep 19** (tent.) | CAAPS Autumn Lantern Festival | Sacramento region |
@@ -64,7 +64,7 @@ I wouldn't try to merge everything into one mega-festival. I wouldn't chase the 
 
 Same events. Different assignment: **who each one is for, what job it does, which weekend it owns.**
 
-A parish fair isn't trying to be Sac State. CAAPS spectacle isn't trying to be the family fair at the park. When each host knows its lane, cross-promo becomes honest — *Hoi An lights Sep 19 · campus Night Lights Sep 21 · pumpkins in October · makers in November* — instead of every flyer claiming to be "the only" or "the biggest." With Great Lantern Festival paused for 2026, that honesty matters even more: support the hosts who *are* running, don't invent a competing capstone.
+A parish fair isn't trying to be Sac State. CAAPS spectacle isn't trying to be the family fair at the park. When each host knows its lane, cross-promo becomes honest — *Hoi An lights Sep 19 · CAIMH District 56 Sep 20 · campus Night Lights Sep 21 · pumpkins in October · makers in November* — instead of every flyer claiming to be "the only" or "the biggest." With Great Lantern Festival paused for 2026, that honesty matters even more: support the hosts who *are* running, don't invent a competing capstone.
 
 ---
 
