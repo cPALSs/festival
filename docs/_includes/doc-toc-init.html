@@ -60,6 +60,15 @@
     }
   }
 
+  function clearLocationHash() {
+    if (!currentHashId()) return;
+    if (history.replaceState) {
+      history.replaceState(null, "", location.pathname + location.search);
+    } else {
+      location.hash = "";
+    }
+  }
+
   function headingLabel(heading) {
     return heading.textContent.replace(/\s+/g, " ").trim();
   }
@@ -73,7 +82,7 @@
     if (!h2List.length) return null;
 
     var activeY = window.innerHeight * VIEWPORT_ACTIVE_LINE;
-    var chosen = h2List[0];
+    var chosen = null;
 
     for (var i = 0; i < h2List.length; i++) {
       if (h2List[i].getBoundingClientRect().top <= activeY) {
@@ -81,11 +90,22 @@
       }
     }
 
-    return chosen.id;
+    return chosen ? chosen.id : null;
   }
 
   function setActive(id, updateHash, force) {
-    if (!id) return;
+    if (!id) {
+      if (activeSectionId !== null) {
+        activeSectionId = null;
+        if (toc) {
+          toc.querySelectorAll("[data-toc-target]").forEach(function (link) {
+            link.classList.remove("is-active");
+          });
+        }
+      }
+      if (updateHash) clearLocationHash();
+      return;
+    }
     if (!force && scrollLockId && id !== scrollLockId) return;
     if (!force && pinnedSectionId && id !== pinnedSectionId) return;
 
@@ -106,13 +126,19 @@
   function syncActiveFromViewport() {
     if (scrollLockId) return;
 
+    var id = sectionFromViewport();
+    if (!id) {
+      pinnedSectionId = null;
+      setActive(null, true);
+      return;
+    }
+
     if (pinnedSectionId) {
       setActive(pinnedSectionId, true, true);
       return;
     }
 
-    var id = sectionFromViewport();
-    if (id) setActive(id, true);
+    setActive(id, true);
   }
 
   function finalizeProgrammaticScroll() {
@@ -208,8 +234,6 @@
     h2List.forEach(function (section) {
       section.classList.add("doc-section");
     });
-
-    if (!location.hash) syncActiveFromViewport();
   }
 
   allHeadings.forEach(function (heading) {
@@ -254,7 +278,13 @@
 
   function scrollFromHash(behavior) {
     var raw = location.hash.slice(1);
-    if (!raw) return;
+    if (!raw) {
+      // Only highlight / update hash after scroll spy has a real match.
+      // Do not run this before hash handling — setting a hash then scrolling
+      // caused cold loads of / to jump to the first H2.
+      if (!currentHashId()) syncActiveFromViewport();
+      return;
+    }
     navigateToSection(decodeURIComponent(raw), behavior || "auto");
   }
 
