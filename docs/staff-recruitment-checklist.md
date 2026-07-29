@@ -1,20 +1,23 @@
 ---
-title: Volunteer Staff Recruitment Checklist
+title: Staff Recruitment Checklist
 asset_type: guide
 season: cross
 status: published
 layout: default
+redirect_from:
+  - /volunteer-staff-recruitment-checklist.html
+  - /volunteer-staff-recruitment-checklist/
 ---
 
-# Volunteer staff recruitment checklist
+Use this when recruiting **capstone staff** — festival **directors** and other season-shaping roles with a named owner, a bounded scope, and a check-in rhythm. Any host can fork and adapt it; pair with your season’s [market research](research.html) and [principles](principles.html).
 
-Use this when recruiting **capstone volunteer staff** — festival **directors** and other season-shaping roles with a named owner, a bounded scope, and a check-in rhythm. Any host can fork and adapt it; pair with your season’s [market research](research.html) and [principles](principles.html).
+**Compensation:** Staff may be **pro bono** or **compensated** (stipend, contract, or payroll) — say which in the listing. The intake and placement steps below are the same either way.
 
 **Related:** [Principles (P3 — stakeholder sustainability)](principles.html) · [Using market research](research.html)
 
 ---
 
-## What “volunteer staff” means here
+## What “staff” means here
 
 | Term | Meaning |
 |------|---------|
@@ -22,13 +25,14 @@ Use this when recruiting **capstone volunteer staff** — festival **directors**
 | **Member / support** | Helps a director; not the primary DRI |
 | **Day-of volunteer** | Shift-based help — recruited *after* directors are in place |
 
-Directors are **unpaid leadership**. Sponsor-funded features may pay performers or vendors — not director salaries. One name on the roster as Director; co-leads listed as Members is fine.
+One name on the roster as Director; co-leads listed as Members is fine. Sponsor-funded features may still pay performers or vendors separately from staff roles.
 
 ---
 
 ## Before you post
 
 - [ ] **Role is bounded** — written “you’d own” statement, not “help with everything”
+- [ ] **Compensation clear** — pro bono, stipend, contract, or payroll named in the listing
 - [ ] **Co-chair DRI** assigned for recruitment replies (who answers in 48h?)
 - [ ] **Listing copy** names the event, dates, location, free/paid admission, and **one role per ask**
 - [ ] **Preferred contact ask** is in the listing — email, text, or phone; plus **events already committed this season**
@@ -72,6 +76,7 @@ After first conversation:
 - [ ] **Role target** confirmed — one primary director lane (or explicit co-director plan)
 - [ ] **Director vs Member** — no prior event/production experience → default **Member** path unless strong plan + co-chair support; do not place as director on receipt alone
 - [ ] **Scope honest** — unfunded scopes explained up front; plan anyway, hold vision until funding is secured
+- [ ] **Compensation confirmed** — pro bono vs paid terms match what was listed (or a clear change is agreed in writing)
 - [ ] **Experience gap** named — co-chairs and prior runbooks back new directors
 - [ ] **Season collision** resolved — other events on same weekends acknowledged
 - [ ] **Declined / Deferred** paths clear — warm close; invite for next season if deferred
@@ -84,7 +89,7 @@ After first conversation:
 When someone accepts a director role:
 
 - [ ] Co-chairs confirmed placement after **triage** — not on Idealist apply alone
-- [ ] Add to **staff directory** (or equivalent roster) — Director name, role, contact prefs
+- [ ] Add to **staff directory** (or equivalent roster) — Director name, role, contact prefs, compensation type
 - [ ] Introduce to **vendor partners, co-directors, or committee** for that lane
 - [ ] Schedule **first check-in** — two weeks before peak workload at latest
 - [ ] Hand off **runbook / prior-year notes** if the role existed last season

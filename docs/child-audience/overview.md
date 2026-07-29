@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Child audience product design
-
 > **Stub** — hyper-focused cohort design for capstone festivals. Split into topic pages below; narrative walkthroughs coming later.
 
 Community festivals often label everything **“family-friendly.”** That hides incompatible needs: a stroller-bound infant, a parallel-play toddler, a school-age contest entrant, a sensory-sensitive sibling, and a teen who wants boba and photos are **different products** sharing one field.

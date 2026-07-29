@@ -3,8 +3,6 @@ title: Zoom MCP smoke test
 layout: default
 ---
 
-# Zoom MCP smoke test
-
 Run after completing [zoom-mcp.html](zoom-mcp.html) setup.
 
 **Verified 2026-06-25:** `search_meetings` + `get_meeting_assets` for Festival Projects Weekly (2026-06-23) returned Mid-Autumn Festival budget summary — replaces former Zapier → Notion export.

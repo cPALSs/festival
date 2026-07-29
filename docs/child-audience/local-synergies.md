@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Theme dressing & Greater Sacramento comps
-
 Without Disney IP, **theme** is how disparate Sacramento vendors read as one world.
 
 ---

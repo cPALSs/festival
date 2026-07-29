@@ -3,8 +3,6 @@ title: Zoom Workspace MCP Setup
 layout: default
 ---
 
-# Zoom Workspace MCP Setup
-
 Cursor agents can search cPALSs Zoom meetings, pull AI summaries/transcripts/recordings, and read or create Zoom Docs via Zoom's **hosted Workspace MCP server**.
 
 This covers the same assets surfaced in **Zoom Hub** (recordings, meeting summaries, Docs, My Notes) — there is no separate Hub MCP endpoint.

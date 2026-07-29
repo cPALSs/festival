@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Age-band director rally checklists
-
 > **Stub** — per–age-band checklists for programming directors: what to **rally into your zone** (infrastructure, owned assets, booked activators, schedule grammar). Each activation should earn **cohort credits** when zone, time window, and [fit tags](fit-tags.html) align — not a single “family-friendly” label for the whole site.
 
 See also: [Site plan & programming](site-and-zoning.html) · [Cohorts C0–C3](cohorts-young.html) · [Cohort C4 — teens](cohorts-teens.html) · [Implementation](implementation.html)

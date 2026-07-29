@@ -20,7 +20,8 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 - [Getting started](getting-started.html)
 - [Principles (P1–P4)](principles.html)
 - [Using market research](research.html)
-- [Volunteer staff recruitment checklist](volunteer-staff-recruitment-checklist.html)
+- [Season coordination](season-coordination.html)
+- [Staff recruitment checklist](staff-recruitment-checklist.html)
 
 **Planning with AI?** See [Getting started → Planning with AI](getting-started.html#planning-with-ai) or clone the repo and open [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md).
 
@@ -28,17 +29,16 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 
 ### Lunar New Year
 
-- [Overview](lny/overview.html)
 - [Market research](lny/market-research.html)
 
 ### Autumn
 
 - [Market research](autumn/market-research.html)
-- [Season coordination](autumn/season-coordination.html)
 
-### Recruitment (cross-season)
+### Cross-season
 
-- [Volunteer staff recruitment checklist](volunteer-staff-recruitment-checklist.html) — capstone director intake, triage, and placement
+- [Season coordination](season-coordination.html) — lane assignment (any season; autumn 2026 worked example)
+- [Staff recruitment checklist](staff-recruitment-checklist.html) — capstone director intake, triage, and placement
 - [Child audience design](child-audience/overview.html) — cohort guide (0–17) · fit tags · walkthroughs
 
 ## Live research

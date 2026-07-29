@@ -4,8 +4,6 @@ asset_type: conventions
 season: cross
 ---
 
-# AI-readable conventions
-
 **AI-readable** means an agent can `git clone` this repository and work from structured files — `AGENTS.md`, `assets/sheets-registry.json`, schemas, JSON graphs, markdown kits — without scraping GitHub Pages. **Human-friendly** copy lives in `docs/` and is published at [festival.cpalss.com](https://festival.cpalss.com/).
 
 ## Source of truth

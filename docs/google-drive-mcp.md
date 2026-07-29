@@ -3,8 +3,6 @@ title: Google Drive + Docs MCP Setup
 layout: default
 ---
 
-# Google Drive + Docs MCP Setup
-
 Google Docs and Drive folders for **specific festivals** live in each **project folder** in the coalition cPALSs monorepo — not in the public [festival](https://github.com/cPALSs/festival) repo. Cursor agents read and write via the **google-drive** MCP server (`@us-all/google-drive-mcp`).
 
 ## Drive registries (per festival)

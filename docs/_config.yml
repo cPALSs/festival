@@ -13,7 +13,6 @@ header_pages:
   - principles.md
   - research.md
   - plan-with-ai.md
-  - lny/overview.md
   - lny/market-research.md
   - child-audience/overview.md
   - tone-of-voice.md
@@ -23,6 +22,9 @@ markdown: kramdown
 kramdown:
   auto_ids: true
   auto_id_stripping: true
+
+plugins:
+  - jekyll-redirect-from
 
 defaults:
   - scope:

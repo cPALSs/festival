@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Walkthroughs
-
 Narrative pages that walk a reader through a **proposed capstone program** — how cohort design, fit tags, and site zoning compose into a real day for families. Reference tables live on the other guide pages; walkthroughs are **story-driven**.
 
 | Walkthrough | Status |

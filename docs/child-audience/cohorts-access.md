@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Access cohorts — SN-A · SN-D · SN-W
-
 Special-needs rows **cross-cut** age bands — one family may need C1 + SN-A simultaneously. Design **parallel zones**, not one compromise tent.
 
 Sacramento4Kids maintains a **Special Needs** category (ABA · OT · PT · sensory resources) — tag activations accordingly on [fit tags](fit-tags.html).

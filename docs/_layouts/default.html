@@ -16,7 +16,7 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <h1 class="project-name"><a href="{{ '/' | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
       <h2 class="project-tagline">{{ site.tagline | default: site.description }}</h2>
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
@@ -32,6 +32,9 @@
           <p class="doc-toc-label">On this page</p>
         </nav>
         <div class="doc-main">
+          {% if page.title and page.url != '/' and page.hide_title != true %}
+          <h1 class="doc-page-title">{{ page.title }}</h1>
+          {% endif %}
           {{ content }}
         </div>
       </div>

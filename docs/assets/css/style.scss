@@ -3,10 +3,48 @@
 
 @import "{{ site.theme }}";
 
+// Cayman sets .main-content to 1.1rem on wide screens; keep body copy at 16px
+html {
+  font-size: 16px;
+}
+
+.main-content {
+  font-size: 16px;
+
+  @media screen and (min-width: 42em) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 64em) {
+    font-size: 16px;
+  }
+}
+
+.page-header {
+  // Cayman wide: padding 5rem — cut vertical height by 25%
+  @media screen and (min-width: 64em) {
+    padding: 3.75rem 6rem;
+  }
+
+  .project-name a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}
+
 .page-header .project-tagline {
   max-width: 42rem;
   margin-inline: auto;
   text-wrap: balance;
+
+  @media screen and (min-width: 64em) {
+    margin-bottom: 1.5rem; // was 2rem — match 25% height cut
+  }
 }
 
 .site-footer-links {
@@ -73,6 +111,20 @@
 
 .breadcrumb-item--current {
   color: $body-text-color;
+}
+
+// GFM task lists (`- [ ]`) — Cayman keeps disc bullets; hide them so only the checkbox shows
+.task-list {
+  padding-left: 0;
+}
+
+.task-list-item {
+  list-style: none;
+}
+
+.task-list-item-checkbox {
+  margin: 0 0.5em 0.15em 0;
+  vertical-align: middle;
 }
 
 // Doc layout with sticky TOC (GLF / LNY pattern)
@@ -239,6 +291,10 @@
 
 // Heading permalinks — click # to copy section URL (doc-toc-init.html)
 .doc-main {
+  .doc-page-title {
+    margin-top: 0;
+  }
+
   h2[id],
   h3[id],
   h4[id] {

@@ -3,8 +3,6 @@ title: Zapier deprecation (Zoom → Notion)
 layout: default
 ---
 
-# Zapier deprecation
-
 **Status (2026-06-25):** Zapier connections removed. Zoom Workspace MCP is the meeting-summary source. Notion MCP removed from `.cursor/mcp.json`.
 
 The **Zoom → Notion** Zap (and any related CSV export to `Operations/Board Desk/`) is **disabled**. Meeting summaries are retrieved on demand via **Zoom Workspace MCP**.

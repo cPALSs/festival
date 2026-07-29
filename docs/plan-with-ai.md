@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Plan with AI
-
 For agents: **clone the repo** first. GitHub Pages is for humans; agents work from the repository files.
 
 ## Load AGENTS.md

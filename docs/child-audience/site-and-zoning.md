@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Site plan, modalities & staffing
-
 ---
 
 ## Programming modalities matrix

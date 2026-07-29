@@ -1,4 +1,7 @@
-# Google Calendar MCP (coalition monorepo)
+---
+title: Google Calendar MCP (coalition monorepo)
+layout: default
+---
 
 Cursor talks to Google Calendar via **`google-calendar`** in `.cursor/mcp.json`, which runs:
 
@@ -39,5 +42,5 @@ npm run mcp:calendar:auth -w festival
 
 ## Related
 
-- Drive/Docs: [google-drive-mcp.md](google-drive-mcp.md)
-- Sheets: [google-sheets-mcp.md](google-sheets-mcp.md)
+- Drive/Docs: [google-drive-mcp.html](google-drive-mcp.html)
+- Sheets: [google-sheets-mcp.html](google-sheets-mcp.html)

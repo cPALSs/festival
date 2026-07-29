@@ -3,8 +3,6 @@ title: Getting Started
 layout: default
 ---
 
-# Getting Started
-
 ## Humans vs AI agents
 
 | | Humans | AI agents |
@@ -21,7 +19,7 @@ layout: default
 | Lunar New Year | [Greater Sacramento LNY Season — Market Landscape](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link) |
 | Autumn | [Greater Sacramento Autumn Season — Market Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link) |
 
-How to read and contribute: [Using market research](research.html). Season guides: [LNY overview](lny/overview.html), [Autumn market research](autumn/market-research.html), [Autumn season coordination](autumn/season-coordination.html).
+How to read and contribute: [Using market research](research.html). Season guides: [LNY market research](lny/market-research.html), [Autumn market research](autumn/market-research.html). Cross-season: [Season coordination](season-coordination.html).
 
 Shared Drive layout: **`Festival Network / Research`** (not Marketing) for market research sheets.
 
@@ -29,8 +27,9 @@ Shared Drive layout: **`Festival Network / Research`** (not Marketing) for marke
 
 - [Principles (P1–P4)](principles.html)
 - [Using market research](research.html)
-- [Volunteer staff recruitment checklist](volunteer-staff-recruitment-checklist.html)
-- Season guides: [LNY](lny/overview.html), [Autumn research](autumn/market-research.html), [Autumn coordination](autumn/season-coordination.html)
+- [Season coordination](season-coordination.html)
+- [Staff recruitment checklist](staff-recruitment-checklist.html)
+- Season guides: [LNY research](lny/market-research.html), [Autumn research](autumn/market-research.html)
 
 ## Planning with AI {#planning-with-ai}
 

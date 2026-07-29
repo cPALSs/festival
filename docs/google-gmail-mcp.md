@@ -1,4 +1,7 @@
-# Google Gmail MCP (coalition monorepo)
+---
+title: Google Gmail MCP (coalition monorepo)
+layout: default
+---
 
 Cursor talks to Gmail via **`google-gmail`** in `.cursor/mcp.json`, which runs:
 
@@ -6,7 +9,7 @@ Cursor talks to Gmail via **`google-gmail`** in `.cursor/mcp.json`, which runs:
 
 Same OAuth **client id / secret** as Drive/Sheets/Calendar (from `.google-workspace-oauth.json`). The start script writes Desktop-shaped keys at the cPALSs root: `.gmail-mcp.keys.json` (gitignored). Tokens: `.gmail-mcp-credentials.json`.
 
-Default auth scopes: **`gmail.readonly` · `gmail.send` · `gmail.compose`** (enough for Board reminder fan-out). Tools are filtered to match granted scopes.
+Default auth scopes: **`gmail.readonly` · `gmail.send` · `gmail.compose` · `gmail.modify`** (send/compose for Board reminder fan-out; modify for labels). Tools are filtered to match granted scopes.
 
 ## Prerequisites
 
@@ -42,6 +45,6 @@ After auth, agents can send the email leg of [Board Reminder Fan-out Process](..
 
 ## Related
 
-- Calendar: [google-calendar-mcp.md](google-calendar-mcp.md)
-- Drive/Docs: [google-drive-mcp.md](google-drive-mcp.md)
-- Sheets: [google-sheets-mcp.md](google-sheets-mcp.md)
+- Calendar: [google-calendar-mcp.html](google-calendar-mcp.html)
+- Drive/Docs: [google-drive-mcp.html](google-drive-mcp.html)
+- Sheets: [google-sheets-mcp.html](google-sheets-mcp.html)

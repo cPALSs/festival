@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Implementation checklist & backlog
-
 ---
 
 ## Product & procurement gaps

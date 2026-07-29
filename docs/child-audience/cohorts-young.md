@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Cohort registry — C0 through C3
-
 Each row is a **product lane**, not a marketing segment. Owner TBD per festival.
 
 **Teens (C4):** [separate page](cohorts-teens.html) — different fit-tag menu and social grammar.

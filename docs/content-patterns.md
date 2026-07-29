@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Content patterns — tables & readability
-
 GitHub Pages uses a **narrow main column** (especially with the on-page TOC at ≥1100px). Wide markdown tables collapse into skinny columns and ugly wraps. Use this guide before adding or editing tables in `docs/`.
 
 **Related:** [Tone of voice](tone-of-voice.html) · [AI-readable conventions](ai-asset-conventions.html)

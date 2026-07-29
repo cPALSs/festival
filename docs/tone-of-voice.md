@@ -5,8 +5,6 @@ season: cross
 layout: default
 ---
 
-# Tone of voice
-
 Festival Season Network writes for **community organizers, coalition partners, and volunteers** — not for investors, product managers, or AI researchers. The goal is clarity and trust, especially when we talk about money, attendance, and competition.
 
 ## Core voice

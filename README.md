@@ -49,9 +49,9 @@ cd festival
 
 | Network | Path | Status |
 |---------|------|--------|
-| LNY | [docs/lny/](docs/lny/) | Overview + market research guide |
-| Autumn | [docs/autumn/](docs/autumn/) | Market research + season coordination |
-| Cross-season | [docs/child-audience/](docs/child-audience/) · [assets/shared/playbooks/child-cohort-product-design.md](assets/shared/playbooks/child-cohort-product-design.md) | Child audience design — split topic pages |
+| LNY | [docs/lny/](docs/lny/) | Market research guide |
+| Autumn | [docs/autumn/](docs/autumn/) | Market research guide |
+| Cross-season | [docs/season-coordination.md](docs/season-coordination.md) · [docs/child-audience/](docs/child-audience/) · [staff recruitment checklist](docs/staff-recruitment-checklist.md) | Season coordination, child audience, recruitment |
 
 ## Contribute
 

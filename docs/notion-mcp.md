@@ -3,8 +3,6 @@ title: Notion MCP (deprecated)
 layout: default
 ---
 
-# Notion MCP — deprecated
-
 The personal cPALSs Notion workspace has been **retired** in favor of:
 
 - **Zoom Workspace MCP** — meeting summaries, transcripts, recordings ([zoom-mcp.html](zoom-mcp.html))

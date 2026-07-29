@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Cohort C4 — Teen / adolescent (≈13–17)
-
 | Field | Stub |
 |-------|------|
 | **Mobility** | Independent in crowd; may lack car/money — **schedule-bound to parent** anyway |

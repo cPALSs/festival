@@ -3,8 +3,6 @@ title: Meeting workflow (Zoom MCP + local repo)
 layout: default
 ---
 
-# Meeting workflow
-
 cPALSs no longer exports Zoom AI summaries to Notion via Zapier. Agents and humans use this flow instead.
 
 ## After a meeting

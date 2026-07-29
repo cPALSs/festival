@@ -3,8 +3,6 @@ title: Google Sheets MCP Setup
 layout: default
 ---
 
-# Google Sheets MCP Setup
-
 Live research data is stored in **Google Sheets** (source of truth). Cursor agents read and write via the **google-sheet-mcp** MCP server.
 
 ## Sheet registry

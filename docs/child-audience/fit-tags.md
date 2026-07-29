@@ -4,8 +4,6 @@ asset_type: guide
 season: cross
 ---
 
-# Fit annotations (menu model)
-
 **Not LEED-style certification.** Parents do not need bronze/silver/gold for a whole festival. They need **per-item labels** — the way food menus mark *gluten-free*, *contains nuts*, *halal*, *dairy-free*: discrete annotations on each activation, zone, and schedule block so families can **filter for intentional design and appropriateness**.
 
 | Food menu | Festival equivalent |

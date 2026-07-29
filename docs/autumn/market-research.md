@@ -16,7 +16,7 @@ Column schema: [Autumn market landscape schema](https://github.com/cPALSs/festiv
 
 ## Season coordination (essay)
 
-**[Same calendar, different story](season-coordination.html)** — how Greater Sacramento's autumn events look like competition without intentional lane assignment, and what changes when each host owns a role and market. Sustainability and coordination over headcount.
+**[Same calendar, different story](../season-coordination.html)** — cross-season lane assignment (autumn 2026 worked example). How crowded calendars look like competition without intention, and what changes when each host owns a role and market.
 
 ---
 
@@ -84,7 +84,7 @@ Full competitive landscape, three **moon lanes**, and honesty rules live in the 
 
 Coalition-facing mission + sustainability framing for autumn hosts: *MAF Season — Producer Brief* (coalition internal). Questions: [contact@cpalss.com](mailto:contact@cpalss.com).
 
-**Director recruitment:** [Volunteer staff recruitment checklist](../volunteer-staff-recruitment-checklist.html)
+**Director recruitment:** [Staff recruitment checklist](../staff-recruitment-checklist.html)
 
 ---
 
