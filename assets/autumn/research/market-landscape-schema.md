@@ -52,7 +52,7 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 | Kids / family center | Yes / Partial / No |
 | Lantern moment | Yes / Partial / No — procession, release, making |
 | MAF overlap | Relationship to VACOS/cPALSs/NVCC MAF — `Our event`, `Direct comp`, `Substitute`, `Reference only` |
-| Notes for reviewers | Steering context, honesty gaps, ecosystem notes |
+| Notes for reviewers | Steering context, honesty gaps, ecosystem notes. **When known, record host-claimed annual edition** (`Nth annual`) and the anchor citation (flyer/FB title) so later years can be inferred — e.g. Riverside UMC 2024 = 11th → 2026 = 13th. |
 | Source URL | Primary citation |
 | Data gap | What is still unknown or unverified |
 

@@ -1,0 +1,1135 @@
+{
+  "anchors": {
+    "LNY": {
+      "2024": "2024-02-10",
+      "2025": "2025-01-29",
+      "2026": "2026-02-17",
+      "2027": "2027-02-06"
+    },
+    "lnySaturday": {
+      "2024": "2024-02-10",
+      "2025": "2025-02-01",
+      "2026": "2026-02-21",
+      "2027": "2027-02-06"
+    },
+    "MAF": {
+      "2023": "2023-09-29",
+      "2024": "2024-09-17",
+      "2025": "2025-10-06",
+      "2026": "2026-09-25"
+    },
+    "MAF_SAT": {
+      "2023": "2023-09-30",
+      "2024": "2024-09-14",
+      "2025": "2025-10-04",
+      "2026": "2026-09-26"
+    }
+  },
+  "lny": {
+    "iu-mien-sacramento": {
+      "name": "Sacramento Iu Mien New Year",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-01-24",
+          "lead": "2026-01-24",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -24,
+          "weekendOffset": -4,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-01-16",
+          "lead": "2027-01-16",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": -21,
+          "weekendOffset": -3,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "ari-lny": {
+      "name": "ARI Lunar New Year Celebration",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-02-03",
+          "lead": "2024-02-03",
+          "dow": "Sat",
+          "fest": "2024-02-10",
+          "festDow": "Sat",
+          "dayOffset": -7,
+          "weekendOffset": -1,
+          "festSat": "2024-02-10",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-06",
+          "lead": "2026-02-06",
+          "dow": "Fri",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -11,
+          "weekendOffset": -3,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-01-23",
+          "lead": "2027-01-23",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": -14,
+          "weekendOffset": -2,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "creative-space-lny": {
+      "name": "Lunar New Year Celebration",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-01-27",
+          "lead": "2024-01-27",
+          "dow": "Sat",
+          "fest": "2024-02-10",
+          "festDow": "Sat",
+          "dayOffset": -14,
+          "weekendOffset": -2,
+          "festSat": "2024-02-10",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-01-25",
+          "lead": "2025-01-25",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": -4,
+          "weekendOffset": -1,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-07",
+          "lead": "2026-02-07",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -10,
+          "weekendOffset": -2,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-01-30",
+          "lead": "2027-01-30",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": -7,
+          "weekendOffset": -1,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "scncca-lny": {
+      "name": "Sacramento Chinese New Year Culture Association Festival",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-02-08",
+          "lead": "2025-02-08",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": 10,
+          "weekendOffset": 1,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-07",
+          "lead": "2026-02-07",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -10,
+          "weekendOffset": -2,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-01-30",
+          "lead": "2027-01-30",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": -7,
+          "weekendOffset": -1,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "arden-fair-lny": {
+      "name": "Lunar New Year Celebration",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-02-01 1-4 PM",
+          "lead": "2025-02-01",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": 3,
+          "weekendOffset": 0,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-07",
+          "lead": "2026-02-07",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -10,
+          "weekendOffset": -2,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-01-30",
+          "lead": "2027-01-30",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": -7,
+          "weekendOffset": -1,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "cpalss-lny-capstone": {
+      "name": "Lunar New Year Tết Festival & Parade (EGLNY)",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-02-10 — 2024-02-11 11 AM-8 PM",
+          "lead": "2024-02-10",
+          "dow": "Sat",
+          "fest": "2024-02-10",
+          "festDow": "Sat",
+          "dayOffset": 0,
+          "weekendOffset": 0,
+          "festSat": "2024-02-10",
+          "onFestDay": true,
+          "landed": "on"
+        },
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-02-01 — 2025-02-02 11 AM-7 PM",
+          "lead": "2025-02-01",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": 3,
+          "weekendOffset": 0,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-14 — 2026-02-15 11 AM-7 PM",
+          "lead": "2026-02-14",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -3,
+          "weekendOffset": -1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-13 Fri — 2027-02-14 Sat",
+          "lead": "2027-02-13",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 7,
+          "weekendOffset": 1,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "ca-is-my-home-lny": {
+      "name": "Lunar New Year Market Fair",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-01-25",
+          "lead": "2025-01-25",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": -4,
+          "weekendOffset": -1,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-14",
+          "lead": "2026-02-14",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -3,
+          "weekendOffset": -1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-06",
+          "lead": "2027-02-06",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 0,
+          "weekendOffset": 0,
+          "festSat": "2027-02-06",
+          "onFestDay": true,
+          "landed": "on"
+        }
+      ]
+    },
+    "locke-cny": {
+      "name": "Chinese New Year Celebration",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-02-18 noon-4 PM",
+          "lead": "2024-02-18",
+          "dow": "Sun",
+          "fest": "2024-02-10",
+          "festDow": "Sat",
+          "dayOffset": 8,
+          "weekendOffset": 1,
+          "festSat": "2024-02-10",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-02-22 noon-4 PM",
+          "lead": "2025-02-22",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": 24,
+          "weekendOffset": 3,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-14 noon-4 PM",
+          "lead": "2026-02-14",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -3,
+          "weekendOffset": -1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-06 noon-4 PM",
+          "lead": "2027-02-06",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 0,
+          "weekendOffset": 0,
+          "festSat": "2027-02-06",
+          "onFestDay": true,
+          "landed": "on"
+        }
+      ]
+    },
+    "vietnamese-martyrs-tet": {
+      "name": "Hội Chợ Tết Mừng Xuân",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-14 7-11 PM",
+          "lead": "2026-02-14",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -3,
+          "weekendOffset": -1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-06 7-11 PM",
+          "lead": "2027-02-06",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 0,
+          "weekendOffset": 0,
+          "festSat": "2027-02-06",
+          "onFestDay": true,
+          "landed": "on"
+        }
+      ]
+    },
+    "rice-bowl-tet-dance": {
+      "name": "Tết Dinner Dance (Rice Bowl)",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-20",
+          "lead": "2026-02-20",
+          "dow": "Fri",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": 3,
+          "weekendOffset": -1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-06",
+          "lead": "2027-02-06",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 0,
+          "weekendOffset": 0,
+          "festSat": "2027-02-06",
+          "onFestDay": true,
+          "landed": "on"
+        }
+      ]
+    },
+    "honor-kung-fu-lny": {
+      "name": "Lunar New Year Celebration",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-03-01",
+          "lead": "2026-03-01",
+          "dow": "Sun",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": 12,
+          "weekendOffset": 1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-21",
+          "lead": "2027-02-21",
+          "dow": "Sun",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 15,
+          "weekendOffset": 2,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "cache-creek-tet-concert": {
+      "name": "Mừng Xuân Concert",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-03-07",
+          "lead": "2026-03-07",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": 18,
+          "weekendOffset": 2,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-27",
+          "lead": "2027-02-27",
+          "dow": "Sat",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 21,
+          "weekendOffset": 3,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "city-of-trees-mardi-gras": {
+      "name": "City of Trees Parade and Mardi Gras Festival",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-28",
+          "lead": "2026-02-28",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": 11,
+          "weekendOffset": 1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "sactown-mardi-gras": {
+      "name": "SacTown Mardi Gras Parade and Party",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-28",
+          "lead": "2026-02-28",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": 11,
+          "weekendOffset": 1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "chasons-crab-stadium-lny": {
+      "name": "Chinese/Lunar New Year Celebration (Chason's Crab Stadium)",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-02-02 6:00 PM",
+          "lead": "2025-02-02",
+          "dow": "Sun",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": 4,
+          "weekendOffset": 0,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-03-01 7:00 PM",
+          "lead": "2026-03-01",
+          "dow": "Sun",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": 12,
+          "weekendOffset": 1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-07",
+          "lead": "2027-02-07",
+          "dow": "Sun",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 1,
+          "weekendOffset": 0,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "hook-reel-lny": {
+      "name": "Lunar New Year Celebrations (Hook & Reel)",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-02-01 6:00 PM",
+          "lead": "2025-02-01",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": 3,
+          "weekendOffset": 0,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "fairytale-town-lny": {
+      "name": "Lunar New Year Celebration (Fairytale Town)",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-02-01 10 AM-2 PM",
+          "lead": "2025-02-01",
+          "dow": "Sat",
+          "fest": "2025-01-29",
+          "festDow": "Wed",
+          "dayOffset": 3,
+          "weekendOffset": 0,
+          "festSat": "2025-02-01",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-15 10 AM-2 PM",
+          "lead": "2026-02-15",
+          "dow": "Sun",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": -2,
+          "weekendOffset": -1,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2027",
+          "status": "planning",
+          "dates": "2027-02-07 10 AM-2 PM",
+          "lead": "2027-02-07",
+          "dow": "Sun",
+          "fest": "2027-02-06",
+          "festDow": "Sat",
+          "dayOffset": 1,
+          "weekendOffset": 0,
+          "festSat": "2027-02-06",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "rooftop-macarons-lny": {
+      "name": "Lunar New Year Lion Dance (Rooftop Macarons)",
+      "series": [
+        {
+          "year": "2026",
+          "status": "held",
+          "dates": "2026-02-21 3:00 PM",
+          "lead": "2026-02-21",
+          "dow": "Sat",
+          "fest": "2026-02-17",
+          "festDow": "Tue",
+          "dayOffset": 4,
+          "weekendOffset": 0,
+          "festSat": "2026-02-21",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    }
+  },
+  "autumn": {
+    "caaps-lantern": {
+      "name": "Asian Fest + Music Fest",
+      "series": [
+        {
+          "year": "2023",
+          "status": "historical",
+          "dates": "2023-09-30 Sat 4–9 PM",
+          "lead": "2023-09-30",
+          "dow": "Sat",
+          "fest": "2023-09-29",
+          "festDow": "Fri",
+          "dayOffset": 1,
+          "weekendOffset": 0,
+          "festSat": "2023-09-30",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2026",
+          "status": "confirmed",
+          "dates": "2026-09-19 Sat 4–11 PM",
+          "lead": "2026-09-19",
+          "dow": "Sat",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": -6,
+          "weekendOffset": -1,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "sac-state-harvest-moon": {
+      "name": "Harvest Moon Festival",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-09-15 Sun 10 AM-2 PM",
+          "lead": "2024-09-15",
+          "dow": "Sun",
+          "fest": "2024-09-17",
+          "festDow": "Tue",
+          "dayOffset": -2,
+          "weekendOffset": 0,
+          "festSat": "2024-09-14",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "planning",
+          "dates": "2026-09-13 Sun 10 AM-3 PM (estimated)",
+          "lead": "2026-09-13",
+          "dow": "Sun",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": -12,
+          "weekendOffset": -2,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "scifa-mid-autumn": {
+      "name": "Mid-Autumn Festival Celebration",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-09-26 Fri evening",
+          "lead": "2025-09-26",
+          "dow": "Fri",
+          "fest": "2025-10-06",
+          "festDow": "Mon",
+          "dayOffset": -10,
+          "weekendOffset": -2,
+          "festSat": "2025-10-04",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "cpalss-maf": {
+      "name": "Mid-Autumn Festival (Tet Trung Thu)",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-09-20 Fri — 2024-09-21 Sat",
+          "lead": "2024-09-20",
+          "dow": "Fri",
+          "fest": "2024-09-17",
+          "festDow": "Tue",
+          "dayOffset": 3,
+          "weekendOffset": 0,
+          "festSat": "2024-09-14",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "vietnamese-martyrs-parish-maf": {
+      "name": "Mid-Autumn Festival (Tet Trung Thu)",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-09-28 Sat (promoted)",
+          "lead": "2024-09-28",
+          "dow": "Sat",
+          "fest": "2024-09-17",
+          "festDow": "Tue",
+          "dayOffset": 11,
+          "weekendOffset": 2,
+          "festSat": "2024-09-14",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "sircgr-mid-autumn": {
+      "name": "Mid-Autumn Festival",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-10-04 Sat — 2025-10-05 Sun 11 AM-4 PM",
+          "lead": "2025-10-04",
+          "dow": "Sat",
+          "fest": "2025-10-06",
+          "festDow": "Mon",
+          "dayOffset": -2,
+          "weekendOffset": 0,
+          "festSat": "2025-10-04",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "li-family-mid-autumn": {
+      "name": "Autumn Moon Festival (Li Family gathering)",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-09-27 Sat (~last weekend before Oct 3 recap)",
+          "lead": "2025-09-27",
+          "dow": "Sat",
+          "fest": "2025-10-06",
+          "festDow": "Mon",
+          "dayOffset": -9,
+          "weekendOffset": -1,
+          "festSat": "2025-10-04",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "gpf-elk-grove": {
+      "name": "Elk Grove Giant Pumpkin Festival",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-10-05 Sat — 2024-10-06 Sun",
+          "lead": "2024-10-05",
+          "dow": "Sat",
+          "fest": "2024-09-17",
+          "festDow": "Tue",
+          "dayOffset": 18,
+          "weekendOffset": 3,
+          "festSat": "2024-09-14",
+          "onFestDay": false,
+          "landed": "after"
+        },
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-10-04 Sat — 2025-10-05 Sun",
+          "lead": "2025-10-04",
+          "dow": "Sat",
+          "fest": "2025-10-06",
+          "festDow": "Mon",
+          "dayOffset": -2,
+          "weekendOffset": 0,
+          "festSat": "2025-10-04",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "planning",
+          "dates": "2026-10-03 Sat — 2026-10-04 Sun",
+          "lead": "2026-10-03",
+          "dow": "Sat",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": 8,
+          "weekendOffset": 1,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "ca-is-my-home-maf": {
+      "name": "Mid-Autumn Festival",
+      "series": [
+        {
+          "year": "2026",
+          "status": "confirmed",
+          "dates": "2026-09-20 Sun 2:00–8:30 PM",
+          "lead": "2026-09-20",
+          "dow": "Sun",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": -5,
+          "weekendOffset": -1,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "sac-state-maf": {
+      "name": "APIDA Night Lights — Illuminating the Hive",
+      "series": [
+        {
+          "year": "2026",
+          "status": "confirmed",
+          "dates": "2026-09-21 Mon 5-9 PM",
+          "lead": "2026-09-21",
+          "dow": "Mon",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": -4,
+          "weekendOffset": -1,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "sf-supermarket-maf-rancho": {
+      "name": "SF Supermarket Mid-Autumn Festival",
+      "series": [
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-10-04 Sat — 2025-10-05 Sun",
+          "lead": "2025-10-04",
+          "dow": "Sat",
+          "fest": "2025-10-06",
+          "festDow": "Mon",
+          "dayOffset": -2,
+          "weekendOffset": 0,
+          "festSat": "2025-10-04",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "planning",
+          "dates": "2026-10-03 Sat — 2026-10-04 Sun (estimated)",
+          "lead": "2026-10-03",
+          "dow": "Sat",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": 8,
+          "weekendOffset": 1,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "after"
+        }
+      ]
+    },
+    "riverside-umc-mid-autumn": {
+      "name": "13th Annual Mid-Autumn Festival (community)",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-09-14 Sat 5–8 PM",
+          "lead": "2024-09-14",
+          "dow": "Sat",
+          "fest": "2024-09-17",
+          "festDow": "Tue",
+          "dayOffset": -3,
+          "weekendOffset": 0,
+          "festSat": "2024-09-14",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "planning",
+          "dates": "2026-09-19 Sat 5-8:30 PM (estimated)",
+          "lead": "2026-09-19",
+          "dow": "Sat",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": -6,
+          "weekendOffset": -1,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "asm-nguyen-autumn-moon": {
+      "name": "Autumn Moon Movie Night",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-09-14 Sat 6:30–10 PM",
+          "lead": "2024-09-14",
+          "dow": "Sat",
+          "fest": "2024-09-17",
+          "festDow": "Tue",
+          "dayOffset": -3,
+          "weekendOffset": 0,
+          "festSat": "2024-09-14",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2025",
+          "status": "held",
+          "dates": "2025-09-20 Sat 6:30–10 PM",
+          "lead": "2025-09-20",
+          "dow": "Sat",
+          "fest": "2025-10-06",
+          "festDow": "Mon",
+          "dayOffset": -16,
+          "weekendOffset": -2,
+          "festSat": "2025-10-04",
+          "onFestDay": false,
+          "landed": "before"
+        },
+        {
+          "year": "2026",
+          "status": "planning",
+          "dates": "2026-09-12 Sat 6:30–10 PM",
+          "lead": "2026-09-12",
+          "dow": "Sat",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": -13,
+          "weekendOffset": -2,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "ari-autumn-moon": {
+      "name": "Autumn Moon Festival",
+      "series": [
+        {
+          "year": "2026",
+          "status": "confirmed",
+          "dates": "2026-09-24 Thu 6:00–8:00 PM",
+          "lead": "2026-09-24",
+          "dow": "Thu",
+          "fest": "2026-09-25",
+          "festDow": "Fri",
+          "dayOffset": -1,
+          "weekendOffset": -1,
+          "festSat": "2026-09-26",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    },
+    "ca-is-my-home-mid-autumn": {
+      "name": "Mid-Autumn Festival",
+      "series": [
+        {
+          "year": "2024",
+          "status": "held",
+          "dates": "2024-09-13 Fri 5-10 PM",
+          "lead": "2024-09-13",
+          "dow": "Fri",
+          "fest": "2024-09-17",
+          "festDow": "Tue",
+          "dayOffset": -4,
+          "weekendOffset": -1,
+          "festSat": "2024-09-14",
+          "onFestDay": false,
+          "landed": "before"
+        }
+      ]
+    }
+  }
+}
