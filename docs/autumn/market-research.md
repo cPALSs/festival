@@ -18,6 +18,12 @@ Column schema: [Autumn market landscape schema](https://github.com/cPALSs/festiv
 
 **[Same calendar, different story](../season-coordination.html)** — cross-season lane assignment (autumn 2026 worked example). How crowded calendars look like competition without intention, and what changes when each host owns a role and market.
 
+## Weekend booking
+
+**[Decision engine](weekend-booking-decision-engine.html)** — moon-relative Saturdays, draw-based collisions, heat vs rain, Saturday-only product.  
+**[2027 example](weekend-booking-2027-example.html)** — five candidates · provisional recommend Sep 18 · venue still open.  
+**[Venue factors](venue-factors.html)** — parking, buildings, shade, procession route; EG Regional Park GPF blackout.
+
 ---
 
 ## Schedule confidence — three tiers

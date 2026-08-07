@@ -36,6 +36,9 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 ### Autumn
 
 - [Market research](autumn/market-research.html)
+- [Weekend booking — decision engine](autumn/weekend-booking-decision-engine.html)
+- [Weekend booking — 2027 example](autumn/weekend-booking-2027-example.html)
+- [Venue factors](autumn/venue-factors.html)
 
 ### Cross-season
 
