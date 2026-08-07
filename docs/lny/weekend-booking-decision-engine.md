@@ -53,6 +53,12 @@ Near-Tet weekends usually carry more holiday energy. Week +3 often feels “too 
 
 Some weekends are peak **stay-home Tết**. That can starve a public fair even when the park is free. Test with guests; don’t treat organizer certainty as demand.
 
+### Family plans by age cohort (open research)
+
+A family-oriented festival competes for **whole households** — not only against other Tết fairs or private dinner. Across the ~six Tet-season weekends (week −2 through +3), what do families actually plan, **by age mix** (toddlers, elementary, teens, multi-gen / elders, young adults without kids)?
+
+That map is the competitive set: sports leagues, birthday parties, travel, other parks and malls, faith obligations, rest, gaming, dates. Until you have guest shares, leave this factor **unweighted** — and do not invent cohort behavior from lore. Date picks without it underweight how to **capture** (absorb into one outing) vs **displace** (win the calendar).
+
 ### Community collisions — by **draw**, not event count
 
 Map other public hosts on the same Tet-relative weekends: civic fairs, chamber/mall activations, kids parks, ticketed concerts, twin-season events (e.g. Mardi Gras), **and** faith-based fairs.

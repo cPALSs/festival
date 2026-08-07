@@ -49,6 +49,10 @@ Inventory already fixed the set. Soft factors only **rank** the two.
 - **A:** higher near-Tet risk (still untested with guests)  
 - **B:** lower near-Tet risk (still untested)
 
+### Family plans by age cohort
+
+**No data yet.** What households with toddlers vs elementary vs teens vs multi-gen actually do on week +1 vs +3 is unknown — sports, travel, parties, other parks, rest. A family-oriented product needs that competitive map to capture the market; it does **not** currently tip A vs B.
+
 ### Community collisions (draw intensity)
 
 Do not count events — use estimated draw. Prior season (2026) taught that **later is not quieter**:
@@ -108,6 +112,7 @@ Why, on current evidence:
 
 **Caveats (re-score when these land):**
 
+- Family weekend plans by **age cohort** across Tet-season weekends (research TODO — no data yet)  
 - Youth-org activity mode (VSA / TNTT / GDPT) still unverified  
 - Guest preference: park Tailgate vs home TV  
 - Peer 2027 dates (especially Cache Creek, Mardi Gras, District56 / SCNCCA) still estimates  
