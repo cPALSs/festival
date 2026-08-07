@@ -100,4 +100,4 @@ The line I keep coming back to: **If your vendors and core team can repeat next 
 
 On a season calendar and want to compare lanes — or help sister hosts? [contact@cpalss.com](mailto:contact@cpalss.com)
 
-**Related on this site:** [Principles (P1–P4)](principles.html) · [Using market research](research.html) · [Autumn market research](autumn/market-research.html) · [LNY market research](lny/market-research.html)
+**Related on this site:** [Principles (P1–P4)](principles.html) · [Using market research](research.html) · [Autumn market research](autumn/market-research.html) · [LNY market research](lny/market-research.html) · [LNY weekend booking](lny/weekend-booking-decision-engine.html)

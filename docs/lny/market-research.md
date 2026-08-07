@@ -22,6 +22,11 @@ See [Using market research](../research.html) for methodology and contributing.
 
 **[Lane assignment](../season-coordination.html)** — cross-season practice (crowded calendars, intentional roles). Autumn 2026 is the worked example; the same logic applies to LNY.
 
+## Weekend booking
+
+**[Decision engine](weekend-booking-decision-engine.html)** — reusable method: venue hard gate, Tet-relative labels, draw-based collisions, Super Bowl Sunday product mode.  
+**[2027 example (Elk Grove)](weekend-booking-2027-example.html)** — two weekends left after park inventory; provisional recommendation.
+
 ## Planning with AI
 
 Agents: clone [festival](https://github.com/cPALSs/festival) and follow [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) for column schema, sheet IDs, and MCP load order.

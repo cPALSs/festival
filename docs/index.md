@@ -30,6 +30,8 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 ### Lunar New Year
 
 - [Market research](lny/market-research.html)
+- [Weekend booking — decision engine](lny/weekend-booking-decision-engine.html)
+- [Weekend booking — 2027 example](lny/weekend-booking-2027-example.html)
 
 ### Autumn
 
