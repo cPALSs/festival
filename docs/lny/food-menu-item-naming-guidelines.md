@@ -164,6 +164,12 @@ Do **not** put the note in parentheses in the title. If a vendor submits `Bánh 
 >
 > Skip if your signature item names already make the booth obvious. Do **not** paste a full restaurant bio.
 
+### Instagram (required if you have one)
+
+> Your business Instagram handle or profile link (e.g. `@rhomes_bistro` or `instagram.com/rhomes_bistro`).  
+> We use this for menu scoring and occasional food highlight posts — **not** to post every menu item.  
+> No Instagram? Write **none**. Optional: add Facebook or TikTok on a second line.
+
 ### Q1 — Capability (scoring — not the public menu)
 
 > List what your kitchen can cook as a **guest would order it**. Specific names help us score menu fit.
@@ -196,6 +202,7 @@ Do **not** put the note in parentheses in the title. If a vendor submits `Bánh 
 ## Staff checklist (review)
 
 - [ ] Menu concept on file when item names are branded/generic (e.g. Filipino fusion for Rhome’s); use for staff cuisine hints — do **not** stamp commodity sides with it.
+- [ ] Instagram handle on file (`instagram_handle`) — or explicit **none**. Do not leave blank and hunt later.
 - [ ] Q2 count ≤ booth `signature_limit` (flag `SIGNATURE_OVER_LIMIT` if not).
 - [ ] Public publish = accepted offer items only — never full Q1 capability.
 - [ ] Reject or rewrite weak names before conditional offer / public publish (`lny-*-menu-cleanup.json` when needed).

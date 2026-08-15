@@ -172,6 +172,7 @@ Legacy `take_home` in seed data normalizes to `merchant`.
 | Question | Engine field |
 |----------|--------------|
 | **Menu concept** (optional — one short line) | `menu_concept` — booth cuisine cue for staff + optional By-vendor blurb. **Not** Stripe “business description.” |
+| **Instagram** (required if you have one — handle or profile URL) | `instagram_handle` — feeds social-reach scoring + highlight-reel coordination. Staff should not have to hunt IG after apply. Optional: Facebook / TikTok URLs in the same answer or a follow-up line. |
 | **Q1: Capability** (repeatable — scoring, **not** public menu) | `capability_menu_items[]` |
 | **Q2: Signatures / festival focus** (from Q1; **hard max 10** — signatures + sides) | `signature_menu_items[]` + `signature_limit` |
 | **Primary food category** (staff confirms on review) | `primary_archetype_id` — see [Food Flow Model § Primary archetype](Food%20Flow%20Model.md#primary-archetype--bottleneck-item) |
@@ -190,6 +191,12 @@ Legacy `take_home` in seed data normalizes to `merchant`.
 > **Too vague:** Amazing Asian food for the whole family.  
 >
 > Skip if your signature item names already make the booth obvious. Do **not** paste a full restaurant bio (that’s not this field).
+
+**Eventeny help text (Instagram):**
+
+> Your business Instagram handle or profile link (e.g. `@rhomes_bistro` or `instagram.com/rhomes_bistro`).  
+> We use this for menu scoring and occasional food highlight posts — **not** to post every menu item.  
+> No Instagram? Write **none**. Optional: add Facebook or TikTok on a second line.
 
 ### Menu item naming + public menu caps
 
