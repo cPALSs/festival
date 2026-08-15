@@ -23,6 +23,7 @@ from food_curation.classify import (  # noqa: E402
 )
 from food_curation.constants import BOOTH_KIND_MAP  # noqa: E402
 from food_curation.menu_enrichment import enrich_menu_items, load_label_overrides  # noqa: E402
+from food_curation.publish import normalize_booth_label  # noqa: E402
 from food_curation.vendor_taxonomy import apply_vendor_taxonomy, infer_setup_type  # noqa: E402
 
 CPALSS = ROOT.parents[3]
@@ -540,7 +541,7 @@ def build_seed() -> tuple[list[dict], list[dict]]:
         app = {
             "id": vid,
             "business_name": business_name,
-            "booth_label": k["assignment"],
+            "booth_label": normalize_booth_label(k["assignment"]),
             "booth_kind": booth_kind,
             "deposit_applied_at": None,
             "capability_menu_items": cap,

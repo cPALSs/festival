@@ -33,7 +33,7 @@ Shared Drive layout: **`Festival Network / Research`** (not Marketing) for marke
 
 ## Planning with AI {#planning-with-ai}
 
-If you use Cursor or another agent: [Plan with AI](plan-with-ai.html) and [Google Sheets MCP setup](google-sheets-mcp.html). Clone the repo and follow [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) — file paths, schemas, and JSON live in the clone, not on these pages.
+If you use Cursor or another agent: [Plan with AI](plan-with-ai.html) and [Google Workspace MCP](google-workspace-mcp.html). Clone the repo and follow [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) — file paths, schemas, and JSON live in the clone, not on these pages.
 
 ```bash
 git clone https://github.com/cPALSs/festival.git

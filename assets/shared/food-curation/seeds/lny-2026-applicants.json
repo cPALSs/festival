@@ -3427,7 +3427,7 @@
     {
       "id": "zummi-food-llc",
       "business_name": "Zummi Food LLC",
-      "booth_label": "FOOD TRUCK 01",
+      "booth_label": "FT01",
       "booth_kind": "food_truck",
       "deposit_applied_at": null,
       "capability_menu_items": [
@@ -3589,7 +3589,7 @@
     {
       "id": "pinorrito-food-truck",
       "business_name": "Pinorrito Food Truck",
-      "booth_label": "FOOD TRUCK 02",
+      "booth_label": "FT02",
       "booth_kind": "food_truck",
       "deposit_applied_at": null,
       "capability_menu_items": [
@@ -3810,7 +3810,7 @@
     {
       "id": "ray-s-kitchen",
       "business_name": "Ray's Kitchen",
-      "booth_label": "FOOD TRUCK 03",
+      "booth_label": "FT03",
       "booth_kind": "food_trailer",
       "deposit_applied_at": null,
       "capability_menu_items": [
@@ -3997,7 +3997,7 @@
     {
       "id": "wonton-crunchies",
       "business_name": "Wonton Crunchies",
-      "booth_label": "FOOD TRUCK 04",
+      "booth_label": "FT04",
       "booth_kind": "food_trailer",
       "deposit_applied_at": null,
       "capability_menu_items": [
@@ -4119,7 +4119,7 @@
     {
       "id": "baboy-boys",
       "business_name": "Baboy Boys",
-      "booth_label": "FOOD TRUCK 05",
+      "booth_label": "FT05",
       "booth_kind": "food_truck",
       "deposit_applied_at": null,
       "capability_menu_items": [
@@ -4267,7 +4267,7 @@
     {
       "id": "maiz-restaurant",
       "business_name": "Maiz Restaurant",
-      "booth_label": "FOOD TRUCK 08",
+      "booth_label": "FT08",
       "booth_kind": "food_truck",
       "deposit_applied_at": null,
       "capability_menu_items": [
@@ -4414,7 +4414,7 @@
     {
       "id": "pizza-lovers-sacramento",
       "business_name": "Pizza Lovers Sacramento",
-      "booth_label": "FOOD TRUCK 09",
+      "booth_label": "FT09",
       "booth_kind": "food_trailer",
       "deposit_applied_at": null,
       "capability_menu_items": [

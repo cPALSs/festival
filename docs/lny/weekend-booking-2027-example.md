@@ -25,7 +25,7 @@ After Cosumnes CSD confirmed park inventory (August 2026), only **two** Sat–Su
 |---|--------------|--------------|
 | **Weekend** | **Feb 13–14** | **Feb 27–28** |
 | Tet-relative | week +1 | ~week +3 |
-| **Saturday** | Story / youth day (Spirit Torrent) | Same |
+| **Saturday** | Story / youth day (Soul Torrent) | Same |
 | **Sunday** | **Tết Tailgate** (Super Bowl + Valentine’s) | Full Sunday — e.g. Relay Cup + Youth Culture Day |
 | Rain likelihood (ISO wk) | ~**31%** wet weekend (week 6) | ~**36%** wet weekend (week 8) |
 

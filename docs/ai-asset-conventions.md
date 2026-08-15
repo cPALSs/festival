@@ -14,7 +14,7 @@ season: cross
 | Graphs, calendars, kits (for now) | Repo JSON/Markdown | `assets/` |
 | Private organizer notes | Staging folder | `assets/autumn/staging/` (not all published) |
 
-Agents **read and write live sheets via MCP** (`google-sheets`). See [google-sheets-mcp.html](google-sheets-mcp.html).
+Agents **read and write live sheets via MCP** (`workspace-cpalss`). See [google-workspace-mcp.html](google-workspace-mcp.html) and [sheet registries](google-sheets-mcp.html).
 
 ## Public site links
 

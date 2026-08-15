@@ -7,6 +7,8 @@ Cursor agents can search cPALSs Zoom meetings, pull AI summaries/transcripts/rec
 
 This covers the same assets surfaced in **Zoom Hub** (recordings, meeting summaries, Docs, My Notes) — there is no separate Hub MCP endpoint.
 
+**Launcher (machine-local):** `~/tools/zoom-mcp` (Cursor server id `zoom-workspace`). Credentials stay in the cPALSs vault root (`.zoom-mcp.env` / `.zoom-mcp-tokens.json`).
+
 ## One-time setup
 
 ### 1. Create a Zoom OAuth app (user-managed)
@@ -40,6 +42,8 @@ This covers the same assets surfaced in **Zoom Hub** (recordings, meeting summar
 
 ### 2. Store credentials locally (never commit)
 
+In the **cPALSs vault root**:
+
 ```bash
 cp .zoom-mcp.env.example .zoom-mcp.env
 ```
@@ -57,7 +61,7 @@ ZOOM_MCP_REDIRECT_URI=https://webhook.site/your-unique-id
 ### 3. Authorize once (manual OAuth)
 
 ```bash
-node "Operations/Festival Network/scripts/zoom-mcp-authorize.mjs"
+node ~/tools/zoom-mcp/authorize.mjs
 ```
 
 1. Script prints a Zoom authorize URL — open it in your browser
@@ -65,7 +69,7 @@ node "Operations/Festival Network/scripts/zoom-mcp-authorize.mjs"
 3. Copy the `code` from webhook.site (query parameter on the redirect)
 4. Paste the code into the terminal
 
-Tokens save to `.zoom-mcp-tokens.json` (gitignored). Re-run when expired if refresh fails.
+Tokens save to `.zoom-mcp-tokens.json` at the vault root (gitignored). Re-run when expired if refresh fails.
 
 ### 4. Reload Cursor
 
@@ -73,17 +77,16 @@ Tokens save to `.zoom-mcp-tokens.json` (gitignored). Re-run when expired if refr
 
 ## Cursor MCP config
 
-Wired in `.cursor/mcp.json` (coalition monorepo) via `Operations/Festival Network/scripts/start-zoom-mcp.mjs`:
+Wired in the coalition monorepo `.cursor/mcp.json` via `~/tools/zoom-mcp/start.mjs`:
 
 ```json
 {
   "mcpServers": {
     "zoom-workspace": {
       "command": "node",
-      "args": [
-        "/Users/bao/cPALSs/Operations/Festival Network/scripts/start-zoom-mcp.mjs"
-      ],
-      "cwd": "/Users/bao/cPALSs"
+      "args": ["/Users/bao/tools/zoom-mcp/start.mjs"],
+      "cwd": "/Users/bao/cPALSs",
+      "env": { "ZOOM_MCP_HOME": "/Users/bao/cPALSs" }
     }
   }
 }
@@ -128,15 +131,15 @@ Agent rules: `.cursor/rules/zoom-mcp.mdc` and `.cursor/rules/local-ops.mdc` in t
 
 | Redirect in error | Cause | Fix |
 |-------------------|-------|-----|
-| `cursor://anysphere.cursor-mcp/oauth/callback` | Cursor Desktop OAuth | Don't use Connect — run `zoom-mcp-authorize.mjs` |
+| `cursor://anysphere.cursor-mcp/oauth/callback` | Cursor Desktop OAuth | Don't use Connect — run `~/tools/zoom-mcp/authorize.mjs` |
 | `http://localhost:3334/oauth/callback` | mcp-remote localhost | Use webhook.site HTTPS redirect + manual authorize |
 | Your webhook.site URL | Not in Zoom allow list | Add exact URL to redirect + allow list |
 
 ### zoom-workspace errored
 
-- Run `node "Operations/Festival Network/scripts/zoom-mcp-authorize.mjs"` if `.zoom-mcp-tokens.json` is missing
+- Run `node ~/tools/zoom-mcp/authorize.mjs` if `.zoom-mcp-tokens.json` is missing
 - Confirm `ZOOM_MCP_REDIRECT_URI` in `.zoom-mcp.env` matches Zoom exactly
-- Re-authorize if token expired: delete `.zoom-mcp-tokens.json` and run authorize script again
+- Re-authorize if token expired: delete `.zoom-mcp-tokens.json` and run authorize again
 
 ### Search returns empty results
 

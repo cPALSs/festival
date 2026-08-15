@@ -15,15 +15,16 @@ Instructions for AI agents working with this repository.
 | Registry | Path |
 |----------|------|
 | Sheet links + IDs | [assets/sheets-registry.json](assets/sheets-registry.json) |
-| MCP setup | [docs/google-sheets-mcp.md](docs/google-sheets-mcp.md) |
+| MCP setup | [docs/google-workspace-mcp.md](docs/google-workspace-mcp.md) |
+| Sheet registries | [docs/google-sheets-mcp.md](docs/google-sheets-mcp.md) |
 
-**MCP:** Use the `google-sheets` MCP server (`google-sheet-mcp`) to read and update sheets. If MCP is unavailable, ask the user to run setup in `docs/google-sheets-mcp.md` — do not treat repo CSV as canonical.
+**MCP:** Use official Google Workspace MCP servers (`workspace-cpalss`, `workspace-cpalss`, `workspace-cpalss`, `workspace-cpalss`, `workspace-cpalss`) configured in the cPALSs monorepo `.cursor/mcp.json`. Setup: [docs/google-workspace-mcp.md](docs/google-workspace-mcp.md). If MCP is unavailable, ask the user to run setup — do not treat repo CSV as canonical.
 
 ## Google Drive + Docs (sponsorship packets)
 
 **Per-festival** folder and document IDs live in each project's `drive-registry.json` — see [drive-registry index](assets/drive-registry.json). Generic templates: `scripts/content/sponsorship-packet-standard.md`, post-event report templates.
 
-**MCP:** Use the `google-drive` MCP server for sponsorship packet edits. Dollar amounts sync from each project's `festival_registry.json`.
+**MCP:** Use **`workspace-cpalss`** / **`workspace-cpalss`** for sponsorship packet edits. Dollar amounts sync from each project's `festival_registry.json`.
 
 ### LNY market landscape
 

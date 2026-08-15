@@ -9,6 +9,7 @@ url: "https://festival.cpalss.com"
 header_pages:
   - index.md
   - getting-started.md
+  - google-workspace-mcp.md
   - google-sheets-mcp.md
   - principles.md
   - research.md

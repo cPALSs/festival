@@ -25,7 +25,7 @@ Seeded from the 2026 **Lunar New Year Season** flyer (12 events Jan 24–Mar 7).
 
 ## Planning with AI
 
-[Plan with AI](plan-with-ai.html) · [Google Sheets MCP setup](google-sheets-mcp.html) — for agents that read or update sheets from Cursor. Column definitions, sheet IDs, and repo file paths are in [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) after `git clone`.
+[Plan with AI](plan-with-ai.html) · [Google Workspace MCP](google-workspace-mcp.html) · [Sheets registries](google-sheets-mcp.html) — for agents that read or update sheets from Cursor. Column definitions, sheet IDs, and repo file paths are in [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) after `git clone`.
 
 ## Occurrence rows
 
@@ -42,6 +42,6 @@ Each market landscape row is **one year of one event**. Filter `Season year` + `
 
 1. Request edit access to the sheet (or propose rows in a case study / issue)
 2. Match existing column headers; protect the header row
-3. For agent-assisted updates: [Plan with AI](plan-with-ai.html) and [Google Sheets MCP](google-sheets-mcp.html)
+3. For agent-assisted updates: [Plan with AI](plan-with-ai.html) and [Google Workspace MCP](google-workspace-mcp.html)
 
 See also [Contributing](https://github.com/cPALSs/festival/blob/main/CONTRIBUTING.md) · [contact@cpalss.com](mailto:contact@cpalss.com).

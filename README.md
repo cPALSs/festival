@@ -42,7 +42,7 @@ cd festival
 
 1. Browse [docs/getting-started.md](docs/getting-started.md) or the [GitHub Pages site](https://festival.cpalss.com/) (humans)
 2. Or `git clone` and open [AGENTS.md](AGENTS.md) (AI agents)
-3. Configure [Google Sheets MCP](docs/google-sheets-mcp.md) in Cursor (optional — for AI read/write)
+3. Configure [Google Workspace MCP](docs/google-workspace-mcp.md) in Cursor (optional — for AI read/write)
 4. Load: **sheets registry → MCP read research → graph → calendar → kits / case studies**
 
 ## Seasons

@@ -3,7 +3,7 @@ title: Google Sheets MCP Setup
 layout: default
 ---
 
-Live research data is stored in **Google Sheets** (source of truth). Cursor agents read and write via the **google-sheet-mcp** MCP server.
+Live research data is stored in **Google Sheets** (source of truth). Cursor agents read and write via **`workspace-cpalss`** — full setup: [Google Workspace MCP](google-workspace-mcp.html).
 
 ## Sheet registry
 
@@ -31,205 +31,17 @@ Operations/Festival Network/
 
 Move the market landscape spreadsheet from **Marketing** to **Research** — that sheet is coalition market research, not outbound marketing collateral.
 
-## One-time setup (OAuth — recommended)
+## Cursor / agent access
 
-OAuth lets the agent act **as you** — no service account, no sharing the sheet with a robot email. Good when you own the Shared Drive and the market landscape sheet.
+Use **`workspace-cpalss`**. Setup and auth: [Google Workspace MCP](google-workspace-mcp.html). Discover exact tool names with Cursor’s MCP tool list (`GetMcpTools`) — official Google Workspace MCP names differ from the retired `@dguido/google-workspace-mcp` tools.
 
-### 1. Create a Google Cloud project
+Script OAuth for Node pipelines (not Cursor MCP) still uses `.google-workspace-oauth.json` via `npm run mcp:oauth -w festival`.
 
-1. Open [Google Cloud Console](https://console.cloud.google.com/)
-2. Click the **project dropdown** (top bar, next to “Google Cloud”)
-3. **New project**
-4. Name it e.g. `festival-mcp` → **Create**
-5. Wait for creation, then **select** that project from the dropdown
-
-### 2. Enable Google Sheets API
-
-1. **APIs & Services** → **Library**
-2. Search **Google Sheets API**
-3. Open it → **Enable**
-
-### 3. Configure OAuth consent screen
-
-1. **APIs & Services** → **OAuth consent screen**
-2. **Get started** (or **Configure**)
-3. **User type:** External → **Create**
-4. **App information:**
-   - App name: `Festival Network MCP` (any name)
-   - User support email: your email
-   - Developer contact: your email
-5. **Scopes:** skip manual scopes for now (the CLI requests `spreadsheets` at login)
-6. **Test users:** add **your Google account** (required while app is in “Testing”)
-7. Save
-
-### 4. Create OAuth client ID
-
-1. **APIs & Services** → **Credentials**
-2. **Create credentials** → **OAuth client ID**
-3. If prompted, finish consent screen first
-4. **Application type:** **Desktop app**
-5. Name: `google-sheet-mcp` → **Create**
-6. Copy **Client ID** and **Client secret** (you’ll paste these in the wizard)
-
-### 5. Run the OAuth wizard
-
-**cPALSs staging** — run from the parent folder (local tooling, not in the public repo):
-
-```bash
-cd "/Users/bao/cPALSs"
-npm install
-npm run mcp:oauth -w festival
-```
-
-Or run the wizard directly:
-
-```bash
-cd "/Users/bao/cPALSs/Festival Network"
-npx google-sheet-mcp init --auth oauth
-```
-
-**Public clone** — install MCP in your clone root if you use Sheets MCP locally:
-
-```bash
-cd festival
-npm install
-npx -y google-sheet-mcp init --auth oauth
-```
-
-When prompted:
-
-| Prompt | Value |
-|--------|--------|
-| Google Sheet URL | `https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit` |
-| Client ID | from step 4 |
-| Client Secret | from step 4 |
-
-The wizard opens a browser → sign in → **Allow** access to Google Sheets. Tokens save to `.google-sheet-mcp.json` at the **cPALSs workspace root** (gitignored).
-
-### 6. Install MCP server package (local)
-
-**cPALSs staging:** from the workspace root:
-
-```bash
-cd "/Users/bao/cPALSs"
-npm install
-```
-
-This installs workspace packages (`Festival Network`, project scripts) and hoists shared deps like `googleapis`. The public repo does not ship `package.json`; MCP is optional local tooling.
-
-This installs `google-sheet-mcp` so Cursor can run the **server** entrypoint (not the CLI).
-
-### 7. Test CLI (optional)
-
-```bash
-cd "/Users/bao/cPALSs"
-npx -y google-sheet-mcp test
-npx -y google-sheet-mcp token-status
-```
-
-### 8. Cursor MCP config
-
-`.cursor/mcp.json` runs a small wrapper that resolves `google-sheet-mcp` via npm (works with workspace hoisting):
-
-```json
-{
-  "mcpServers": {
-    "google-sheets": {
-      "command": "node",
-      "args": [
-        "/Users/bao/cPALSs/Operations/Festival Network/scripts/start-google-sheet-mcp.mjs"
-      ],
-      "cwd": "/Users/bao/cPALSs"
-    }
-  }
-}
-```
-
-`cwd` must be the cPALSs root where `.google-sheet-mcp.json` lives.
-
-### 9. Restart Cursor
-
-Reload the window (**Developer: Reload Window**). In **Settings → MCP**, `google-sheets` should show green / connected.
-
----
-
-## Troubleshooting
-
-### MCP log shows CLI `Usage: google-sheet-mcp [options] [command]`
-
-The `google-sheet-mcp` npm **bin** points at the CLI, not the MCP server. Use the `node .../server.mjs` config above — already fixed in this repo's `.cursor/mcp.json`.
-
-### `No configuration found`
-
-Run the OAuth wizard from the cPALSs root, or confirm `.google-sheet-mcp.json` exists at `/Users/bao/cPALSs/.google-sheet-mcp.json`.
-
-### Success log (MCP server)
-
-When working, the server log should show:
-
-```
-[google-sheet-mcp] ✅ Configured: 1Va0oCv09nyW98-... (oauth2)
-[google-sheet-mcp] Server started (stdio) — waiting for IDE connection...
-```
-
-Not the CLI help text.
-
----
-
-## Service account alternative (teams / automation)
-
-Use when multiple people or CI need access without your personal OAuth token.
-
-### 1. Google Cloud
-
-Same project as above. Enable **Google Sheets API**.
-
-### 2. Service account
-
-1. **Credentials** → **Create credentials** → **Service account**
-2. Name: `sheets-mcp` → **Create and continue** → **Done**
-3. Open the service account → **Keys** → **Add key** → **JSON** → download
-
-### 3. Share the spreadsheet
-
-Share the sheet with the service account `client_email` from the JSON as **Editor**.
-
-### 4. Store credentials
-
-```bash
-cp ~/Downloads/your-key.json "Operations/Festival Network/.credentials/google-service-account.json"
-```
-
-Add to `.cursor/mcp.json` `env`:
-
-```json
-"GOOGLE_APPLICATION_CREDENTIALS": "/Users/bao/cPALSs/Operations/Festival Network/.credentials/google-service-account.json"
-```
-
-### 5. Google Drive + Docs (sponsorship packets)
-
-See [google-drive-mcp.html](google-drive-mcp.html) for Drive/Docs MCP setup. Uses the same OAuth client with expanded scopes (Drive + Docs + Sheets).
-
-### 6. Test
-
-```bash
-cd "/Users/bao/cPALSs/Festival Network"   # cPALSs staging
-npx -y google-sheet-mcp test
-```
-
-## Agent tools
-
-| Tool | Use |
-|------|-----|
-| `sheets_list_tabs` | List tabs in the spreadsheet |
-| `sheets_read_range` | Read rows (header-keyed objects) |
-| `sheets_write_range` | Update a range |
-| `sheets_append_row` | Add a row aligned to headers |
-| `sheets_get_sheet` | Spreadsheet metadata |
+Drive/Docs notes: [google-drive-mcp.html](google-drive-mcp.html).
 
 ## Operating rules
 
-- **Sheets = source of truth** — humans edit in Google Sheets; agents update via MCP
+- **Sheets = source of truth** — humans edit in Google Sheets; agents update via `workspace-cpalss`
 - **Repo** holds `sheets-registry.json`, column schema, and guides — **not** live rows (no CSV)
 - Match columns in [LNY schema](https://github.com/cPALSs/festival/blob/main/assets/lny/research/market-landscape-schema.md) or [Autumn schema](https://github.com/cPALSs/festival/blob/main/assets/autumn/research/market-landscape-schema.md)
 - Protect row 1 (headers) in the Sheet

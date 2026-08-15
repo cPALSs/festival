@@ -10,7 +10,7 @@ For agents: **clone the repo** first. GitHub Pages is for humans; agents work fr
 
 Point your agent at [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md). Load [sheets-registry.json](https://github.com/cPALSs/festival/blob/main/assets/sheets-registry.json) first.
 
-**Requires:** [Google Sheets MCP](google-sheets-mcp.html) configured in Cursor (`.cursor/mcp.json`).
+**Requires:** [Google Workspace MCP](google-workspace-mcp.html) (`workspace-cpalss` and related `workspace-cpalss` servers) configured in Cursor (`.cursor/mcp.json`).
 
 ## Load order
 

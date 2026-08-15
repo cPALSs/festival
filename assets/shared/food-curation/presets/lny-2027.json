@@ -4,7 +4,7 @@
   "attendance": 6000,
   "audience_preset": "family_general",
   "festival_days": 2,
-  "hours_per_day": 6,
+  "hours_per_day": 8.5,
   "food_buy_rate": 0.40,
   "items_per_buyer": 1.1,
   "avg_ticket": 15,

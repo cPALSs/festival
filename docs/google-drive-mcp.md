@@ -3,7 +3,7 @@ title: Google Drive + Docs MCP Setup
 layout: default
 ---
 
-Google Docs and Drive folders for **specific festivals** live in each **project folder** in the coalition cPALSs monorepo — not in the public [festival](https://github.com/cPALSs/festival) repo. Cursor agents read and write via the **google-drive** MCP server (`@us-all/google-drive-mcp`).
+Google Docs and Drive folders for **specific festivals** live in each **project folder** in the coalition cPALSs monorepo — not in the public [festival](https://github.com/cPALSs/festival) repo. Cursor agents read and write via **`workspace-cpalss`** / **`workspace-cpalss`** — see [Google Workspace MCP](google-workspace-mcp.html).
 
 ## Drive registries (per festival)
 
@@ -31,31 +31,19 @@ Reusable across festivals — copy or upload to Drive from project setup scripts
 
 Festival-specific seeds (packet copy, debrief templates, staff directory) belong in the **project repo**, not the public festival site.
 
-## One-time setup (OAuth)
+## Auth
 
-Uses the same Google Cloud OAuth client as [Google Sheets MCP](google-sheets-mcp.html). Requires **Drive API** and **Docs API** enabled.
+MCP auth: [Google Workspace MCP](google-workspace-mcp.html) (Cursor servers `workspace-cpalss`, `workspace-cpalss`, …).
+
+Script OAuth (PDF export, publish pipelines) still uses `.google-workspace-oauth.json` at the cPALSs root:
 
 ```bash
-cd "/Users/bao/cPALSs/Festival Network"
-npm install
-npm run mcp:oauth
-npm run mcp:drive:verify
+npm run mcp:oauth -w festival
 ```
 
-Tokens save to `.google-workspace-oauth.json` at the cPALSs root (gitignored).
+## Agent tools (Drive / Docs)
 
-## Cursor MCP config
-
-Configure `google-drive` in `.cursor/mcp.json` (coalition monorepo) via `Operations/Festival Network/scripts/start-google-drive-mcp.mjs`.
-
-## Agent tools (google-drive MCP)
-
-| Tool | Use |
-|------|-----|
-| `list-files` / `search-files` | Browse festival folders |
-| `docs-get-document` / `docs-get-content` | Read Docs |
-| `docs-replace-text` / `docs-batch-update` | Edit sections and tables |
-| `export-file` | PDF export |
+Via **`workspace-cpalss`** and **`workspace-cpalss`**. Discover exact tool names with Cursor’s MCP tool list (`GetMcpTools`) — official Google Workspace MCP names differ from the retired `@dguido/google-workspace-mcp` tools.
 
 **Policy docs:** Repo markdown is draft source; publish formatted copies with:
 
@@ -77,7 +65,7 @@ When pushing `.md` to Google Docs via Drive (`media: text/markdown`):
 
 - **Google Doc = source of truth** for live sponsorship packet copy in each festival project
 - **Festival Network** = OAuth tooling, generic templates, market landscape sheets — not festival-specific copy or Drive IDs
-- **Sheets MCP** for market landscape research — see [google-sheets-mcp.html](google-sheets-mcp.html)
+- **Sheets** for market landscape research — see [google-sheets-mcp.html](google-sheets-mcp.html) (same Workspace MCP)
 
 ## Example: MAF 2026 project scripts
 
