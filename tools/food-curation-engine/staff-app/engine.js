@@ -354,10 +354,10 @@ export function capacityPlan(config) {
 const DRINK_PRIMARY_ARCHETYPES = new Set(["boba_milk_tea", "sugarcane_fruit_refresher"]);
 
 const SIGNATURE_LIMITS = {
-  open_cooking: 5,
-  food_truck: 5,
-  food_trailer: 5,
-  prepack: 8,
+  open_cooking: 10,
+  food_truck: 10,
+  food_trailer: 10,
+  prepack: 10,
   prepack_snacks: 10,
 };
 
@@ -682,8 +682,8 @@ export const NEED_SWAP_MAX_SCORE_GAP = 0.15;
 
 export const EVENTENY_FORM_HELP =
   "Eventeny: list your full capability menu in the first menu question (water/soda are fine — "
-  + "ignored for scoring). The signatures question is optional when you have five or fewer "
-  + "food items — only needed when you list more than five and must choose which to highlight.";
+  + "ignored for scoring). The signatures question is optional when you have 10 or fewer "
+  + "food items — only needed when you list more than 10 and must choose which to highlight.";
 
 export const EVENTENY_ELK_GROVE_BUSINESS_QUESTION =
   "Do you consider your business part of the Elk Grove business community?";
@@ -1451,6 +1451,13 @@ export function publishRosterCoverage(roster, needProfile, options = {}) {
   };
 }
 
+function normalizeBoothLabel(label) {
+  if (label == null) return label;
+  const text = String(label).trim();
+  const m = /^FOOD\s+TRUCK\s+(\d+)$/i.exec(text);
+  return m ? `FT${m[1]}` : text;
+}
+
 export function publishPublicMenu(roster, festivalName, options = {}) {
   const itemsSource = options.itemsSource || "offer_or_signature";
   const vendors = roster
@@ -1466,7 +1473,7 @@ export function publishPublicMenu(roster, festivalName, options = {}) {
       return {
         id: a.id,
         name: a.business_name,
-        booth_label: a.booth_label,
+        booth_label: normalizeBoothLabel(a.booth_label),
         booth_kind: a.booth_kind,
         vendor_class: a.vendor_class || a.vendor_role,
         dietary: a.dietary || [],
@@ -1487,8 +1494,8 @@ export function publishPublicMenu(roster, festivalName, options = {}) {
     disclaimer: "Menu subject to change. Filters reflect vendor self-report — not medical advice.",
     vendors,
     filter_facets: [
-      "nut_free", "gluten_free", "dairy_free",
-      "vegan", "vegetarian", "halal", "pork_free",
+      "nut_free", "gluten_free", "dairy_free", "pork_free",
+      "halal", "vegan", "vegetarian",
       "mild_spice", "kid_friendly", "easy_chew", "lower_sugar",
     ],
   };
@@ -1635,8 +1642,8 @@ function capabilityTasks(applicant, components, weights) {
       eventeny_hint:
         `Eventeny Q1 — list your full capability menu (${limit}+ food dishes for scoring; water/soda are fine to include). ${
           capCount <= limit
-            ? "Signatures (Q2) are optional when you have five or fewer food items."
-            : "Signatures (Q2) — pick up to five highlights if you list more than five food items."
+            ? `Signatures (Q2) are optional when you have ${limit} or fewer food items.`
+            : `Signatures (Q2) — pick up to ${limit} highlights if you list more than ${limit} food items.`
         }`,
       estimated_gain: mfGain >= 0.002 ? mfGain : null,
     }));
@@ -1660,7 +1667,7 @@ function capabilityTasks(applicant, components, weights) {
       title: "Signatures are optional for your menu size",
       detail:
         `With ${capCount} capability item${capCount === 1 ? "" : "s"}, `
-        + "the engine can score your full menu — signatures are only required above five items.",
+        + `the engine can score your full menu — signatures are only required above ${limit} items.`,
       eventeny_hint: EVENTENY_FORM_HELP,
     }));
   }

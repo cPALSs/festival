@@ -37,10 +37,7 @@ function escapeHtml(s) {
 }
 
 export function buildIconLegendHtml() {
-  const rows = [
-    ...Object.values(WARNING_EMOJI).map((meta) => ({ ...meta, kind: "warn" })),
-    ...Object.values(TAG_EMOJI).map((meta) => ({ ...meta, kind: "safe" })),
-  ];
+  const rows = Object.values(WARNING_EMOJI).map((meta) => ({ ...meta, kind: "warn" }));
   return `<ul class="icon-legend-list">${rows
     .map(
       (r) => `<li class="icon-legend-item icon-legend-${r.kind}">

@@ -1,5 +1,7 @@
 /** Public menu filter labels and sidebar grouping. */
 
+import { tagEmojiMeta } from "./menu-legend.js";
+
 const NEED_TAG_ALIASES = {
   halal: "halal_certified",
   vegan: "vegan_options",
@@ -34,14 +36,14 @@ export const FILTER_LABELS = {
 
 export const FILTER_GROUPS = [
   {
-    id: "allergy",
-    label: "Allergy considerations",
-    facets: ["nut_free", "gluten_free", "dairy_free"],
+    id: "free_from",
+    label: "Free-from",
+    facets: ["nut_free", "gluten_free", "dairy_free", "pork_free"],
   },
   {
     id: "dietary",
     label: "Dietary restrictions",
-    facets: ["vegan", "vegetarian", "halal", "pork_free"],
+    facets: ["halal", "vegan", "vegetarian"],
   },
   {
     id: "experience",
@@ -63,9 +65,14 @@ export function renderFilterGroupsHtml(facets, activeFilters) {
   ];
   if (!ordered.length) return "";
   return ordered
-    .map(
-      (f) => `<button type="button" class="chip ${activeFilters.has(f) ? "active" : ""}" data-f="${f}">${escapeHtml(FILTER_LABELS[f] || f)}</button>`,
-    )
+    .map((f) => {
+      const label = FILTER_LABELS[f] || f;
+      const meta = tagEmojiMeta(f);
+      const icon = meta?.emoji
+        ? `<span class="chip-emoji" aria-hidden="true">${meta.emoji}</span>`
+        : "";
+      return `<button type="button" class="chip ${activeFilters.has(f) ? "active" : ""}" data-f="${f}">${icon}${escapeHtml(label)}</button>`;
+    })
     .join("");
 }
 

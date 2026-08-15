@@ -192,9 +192,9 @@ def _capability_tasks(
                 f"Eventeny Q1 — list your full capability menu ({limit}+ food dishes for scoring; "
                 "water/soda are fine to include). "
                 + (
-                    "Signatures (Q2) are optional when you have five or fewer food items."
+                    f"Signatures (Q2) are optional when you have {limit} or fewer food items."
                     if cap_count <= limit
-                    else "Signatures (Q2) — pick up to five highlights if you list more than five food items."
+                    else f"Signatures (Q2) — pick up to {limit} highlights if you list more than {limit} food items."
                 )
             ),
             estimated_gain=mf_gain if mf_gain >= 0.002 else None,
@@ -223,7 +223,7 @@ def _capability_tasks(
             title="Signatures are optional for your menu size",
             detail=(
                 f"With {cap_count} capability item{'s' if cap_count != 1 else ''}, "
-                "the engine can score your full menu — signatures are only required above five items."
+                f"the engine can score your full menu — signatures are only required above {limit} items."
             ),
             eventeny_hint=EVENTENY_FORM_HELP,
         ))

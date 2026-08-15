@@ -584,13 +584,13 @@ class TestScoreImprovements(unittest.TestCase):
         self.assertIsNotNone(expand.get("estimated_gain"))
         self.assertIn("pts", expand["detail"])
 
-    def test_signatures_required_over_five_capability(self):
+    def test_signatures_required_over_limit_capability(self):
         from food_curation.classify import classify_applicant  # noqa: E402
         from food_curation.improvements import score_improvement_tasks  # noqa: E402
 
         cap = [
             {"item_id": f"i{n}", "name": f"Dish {n}", "dietary_tags": ["nut_free"]}
-            for n in range(7)
+            for n in range(11)
         ]
         app = classify_applicant({
             "booth_kind": "food_truck",

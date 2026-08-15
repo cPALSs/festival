@@ -81,10 +81,10 @@ EXCLUSIVITY_GROUPS = {
 }
 
 SIGNATURE_LIMITS = {
-    "open_cooking": 5,
-    "food_truck": 5,
-    "food_trailer": 5,
-    "prepack": 8,
+    "open_cooking": 10,
+    "food_truck": 10,
+    "food_trailer": 10,
+    "prepack": 10,
     "prepack_snacks": 10,
 }
 
@@ -210,6 +210,7 @@ CATEGORY_KEYWORDS = {
 }
 
 FILTER_FACETS = [
-    "nut_free", "gluten_free", "dairy_free", "vegan", "vegetarian", "halal", "pork_free",
+    "nut_free", "gluten_free", "dairy_free", "pork_free",
+    "halal", "vegan", "vegetarian",
     "mild_spice", "kid_friendly", "easy_chew", "lower_sugar",
 ]

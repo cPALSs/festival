@@ -13,8 +13,8 @@ from food_curation.vendor_skus import apply_sku_defaults
 
 EVENTENY_FORM_MENU_HELP = (
     "Eventeny: list your full capability menu in the first menu question (water/soda are fine — "
-    "ignored for scoring). The signatures question is optional when you have five or fewer "
-    "food items — only needed when you list more than five and must choose which to highlight."
+    "ignored for scoring). The signatures question is optional when you have 10 or fewer "
+    "food items — only needed when you list more than 10 and must choose which to highlight."
 )
 
 # Back-compat alias used across staff UI and improvements tasks.

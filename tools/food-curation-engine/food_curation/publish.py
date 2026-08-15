@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from datetime import date
 from typing import Any
 
@@ -10,6 +11,19 @@ from food_curation.menu_enrichment import filter_onsite_menu_items
 from food_curation.offer import menu_items_for_publication
 from food_curation.roster_coverage import publish_roster_coverage
 from food_curation.vendor_taxonomy import is_merchant_vendor
+
+_FOOD_TRUCK_LABEL = re.compile(r"^FOOD\s+TRUCK\s+(\d+)$", re.IGNORECASE)
+
+
+def normalize_booth_label(label: str | None) -> str | None:
+    """Guest-facing short codes: FOOD TRUCK 01 → FT01."""
+    if label is None:
+        return None
+    text = str(label).strip()
+    if not text:
+        return label
+    m = _FOOD_TRUCK_LABEL.match(text)
+    return f"FT{m.group(1)}" if m else text
 
 
 def publish_public_menu(
@@ -45,7 +59,7 @@ def publish_public_menu(
         vendors.append({
             "id": a.get("id"),
             "name": a.get("business_name"),
-            "booth_label": a.get("booth_label"),
+            "booth_label": normalize_booth_label(a.get("booth_label")),
             "booth_kind": a.get("booth_kind"),
             "dietary": a.get("dietary", []),
             "items": pub_items,
