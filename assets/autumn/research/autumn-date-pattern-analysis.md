@@ -27,8 +27,8 @@ status: draft
 
 | event_id | Years | Notes |
 |----------|-------|-------|
-| `asm-nguyen-autumn-moon` | 2024, 2025 (+2026 est.) | Strong series |
-| `riverside-umc-mid-autumn` | 2024, 2025 (+2026 est.) | Edition numbers on sheet |
+| `asm-nguyen-autumn-moon` | 2024, 2025, **2026 confirmed** | Strong series |
+| `riverside-umc-mid-autumn` | 2024, 2025, **2026 confirmed** | Edition numbers on sheet; 2026 public title omits “Nth annual” |
 | `caaps-lantern` | 2023, 2024*, 2025*, 2026 | *2024–25 on sheet with non-ISO dates in places — normalize |
 | `sac-state-harvest-moon` | 2024 (backfill), 2025 | Good |
 | `sf-supermarket-maf-rancho` | 2025 (+2026 est.) | Calendar October weekend |
@@ -68,9 +68,9 @@ Do not let season-calendar membership imply lunisolar timing.
 | event_id | Issue |
 |----------|--------|
 | `ca-is-my-home-*` | 2024 Fri Sep 13 & 2025 Fri Sep 12 = **2nd-weekend-of-Sep Fridays**; **2026 Sun Sep 20** breaks that (schema already flags). Lunar weekend offset alone would mis-project |
-| `asm-nguyen-autumn-moon` | 2024 Sat Sep 14 (MAF Sat); 2025 Sat Sep 20 (MAF−2w). Offset not stable |
+| `asm-nguyen-autumn-moon` | 2024 Sat Sep 14 (MAF Sat); 2025 Sat Sep 20 (MAF−2w); **2026 Sat Sep 26 confirmed (MAF Sat)** — offset not stable; prior-year-offset estimate (Sep 12) was wrong |
 | `caaps-lantern` | 2023 Sat Sep 30 (≈ MAF Sat); 2025 **Nov 1–2** (far from lunar); 2026 Sat Sep 19. Multi-year lunar offset **fails** — spectacle/schedule-driven |
-| `riverside-umc-mid-autumn` | 2024 Sat Sep 14; 2025 Sep 27 — week shift; edition continuity ≠ fixed MAF−Nw |
+| `riverside-umc-mid-autumn` | 2024 Sat Sep 14; 2025 Sep 27; **2026 Sat Sep 12 confirmed** — week shift every year; edition continuity ≠ fixed MAF−Nw. MAF −1 estimate (Sep 19) was wrong. |
 
 **Verdict on current method:** Keep **MAF ± weekends** as *default for lunar-aligned Yes products with agreeing years*, but:
 

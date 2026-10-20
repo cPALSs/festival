@@ -1,6 +1,11 @@
 {
   "version": 1,
   "source_of_truth": "google_sheets",
+  "graph_sot": {
+    "lny-market-landscape": "Community OS/database — event_series · community_event · community_event_landscape",
+    "autumn-market-landscape": "Community OS/database — event_series · community_event · community_event_landscape",
+    "community-activity-calendar": "Community OS/database — public_activity · org_lifecycle_cell · org_event_source"
+  },
   "mcp_server": "workspace-cpalss",
   "repository": "https://github.com/cPALSs/festival",
   "site": "https://festival.cpalss.com/",
@@ -14,34 +19,40 @@
       "Graphs": "Ecosystem relationship data (future)",
       "Operations": "Steering trackers, debriefs (future)"
     },
-    "note": "Market landscape lives in Research, not Marketing — Marketing is for outbound campaigns."
+    "note": "Market landscape Sheets archived to Archives/Research/Events Market 2026-08-27. Live producer roster stays in Research/Events Landscape/Events Market. Graph is SoT."
   },
   "spreadsheets": [
     {
       "id": "lny-market-landscape",
-      "title": "Greater Sacramento Lunar New Year Season - Market Landscape",
+      "title": "ARCHIVED — Greater Sacramento Lunar New Year Season - Market Landscape",
       "spreadsheet_id": "1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0",
       "url": "https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link",
       "season": "lny",
       "schema": "assets/lny/research/market-landscape-schema.md",
+      "status": "archived",
+      "graph_sot": "Community OS/database",
       "tab": "All",
       "view_tabs": [
         "2027",
         "2026"
-      ]
+      ],
+      "note": "Sheet archived 2026-08-21. Moved to Archives/Research/Events Market 2026-08-27. Edit graph; rebuild JSON via fetch-market-landscape-export.mjs from archive if needed."
     },
     {
       "id": "autumn-market-landscape",
-      "title": "Greater Sacramento Autumn Season - Market Landscape",
+      "title": "ARCHIVED — Greater Sacramento Autumn Season - Market Landscape",
       "spreadsheet_id": "1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA",
       "url": "https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link",
       "season": "autumn",
       "schema": "assets/autumn/research/market-landscape-schema.md",
+      "status": "archived",
+      "graph_sot": "Community OS/database",
       "tab": "All",
       "view_tabs": [
         "2026",
         "2025"
-      ]
+      ],
+      "note": "Sheet archived 2026-08-21. Moved to Archives/Research/Events Market 2026-08-27. Edit graph; rebuild JSON via fetch-market-landscape-export.mjs from archive if needed."
     },
     {
       "id": "season-producer-roster",
@@ -76,8 +87,8 @@
       "title": "Community Activity Calendar",
       "spreadsheet_id": "1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg",
       "url": "https://docs.google.com/spreadsheets/d/1jrq_Fj2fZ0dJu2VV-ACiKyFxdoCisx8mQg_a5URLUbg/edit?ouid=117520336769674993102",
-      "schema": "Governance/Partnerships/calendar/community-activity-calendar-schema.md",
-      "registry": "Governance/Partnerships/calendar/drive-registry.json",
+      "schema": "Community OS/calendar/community-activity-calendar-schema.md",
+      "registry": "Community OS/calendar/drive-registry.json",
       "tab": "Public events",
       "view_tabs": [
         "Org Lifecycle",

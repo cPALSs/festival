@@ -428,6 +428,6 @@ Export Eventeny CSV → `scripts/run_engine.py` (or staff app JSON import).
 
 - [MAF 2026 Vendor Platform - Eventeny Migration](../../Mid-Autumn%20Festival/2026/Business%20Development/MAF%202026%20Vendor%20Platform%20-%20Eventeny%20Migration.md) (scaffold only — not a live pilot)
 - [LNY 2026 Lessons & Booth Caps](LNY%202026%20Lessons%20&%20Booth%20Caps.md)
-- [Vendor profitability advisory](../../../../Governance/Partnerships/cPALSs%20Revenue%20Model%20-%20Decor%20Assets%20and%20APIDA%20LNY.md)
+- [Vendor profitability advisory](../../../../Community/cPALSs%20Revenue%20Model%20-%20Decor%20Assets%20and%20APIDA%20LNY.md)
 
 *Last updated: 2026-08-14 (pay-or-release to selection waitlist · R2 Jan 15 fill-first)*

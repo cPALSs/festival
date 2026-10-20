@@ -100,7 +100,9 @@ Examples:
 - `Sat, Oct 3, 2026 (estimated first Oct weekend; medium confidence)`  
 - `Sat, Feb 7, 2026 (estimated; pattern unclear; low confidence)` — no prior year only
 
-Confirmed / tentative steward rows omit the estimated gloss or use `(tentative)` without a fake rule.
+Confirmed / tentative steward rows omit the estimated gloss or use `(tentative)` without a fake rule. **Intended** (organizer stated, no public listing yet) uses `(intended; not confirmed)` — not an estimate gloss.
+
+On eglny / greatlantern season lists: **estimated** keeps the gray wash; **intended** uses a light-yellow wash in light theme and a muted gold wash in dark theme.
 
 **Export:** [`export-eglny-season-events.mjs`](../../../scripts/export-eglny-season-events.mjs) / [`export-glf-season-events.mjs`](../../../scripts/export-glf-season-events.mjs) compose gloss from the new fields in a follow-up PR. Localhost review before push.
 

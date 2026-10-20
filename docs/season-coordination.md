@@ -21,22 +21,22 @@ Below is one organizer's read, using **Greater Sacramento autumn 2026** as the w
 
 ## Worked example: autumn calendar (2026)
 
-Dates from the [autumn market landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit) (as of July 2026). Unmarked dates are **Confirmed**; **(est.)** = Estimated.
+Dates from the [autumn market landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit) (as of August 2026). Unmarked dates are **Confirmed**; **(est.)** = Estimated.
 
 | When | Event | Where |
 |------|-------|-------|
 | **Sep 12** (est.) Sat 6:30–10 PM | ASM Nguyen Autumn Moon Festival | Garcia Bend Park, Sacramento |
-| **Sep 19** (est.) Sat 5:00–8:30 PM | Riverside UMC Mid-Autumn Festival | Parish / neighborhood (Vallejo Way) |
+| **Sep 12** Sat 4:00–7:30 PM | Riverside UMC Mid-Autumn Community Festival | Parish / neighborhood (Vallejo Way) |
 | **Sep 19** Sat 4:00–11:00 PM | CAAPS Asian Fest + Music Fest | 3009 Power Inn Rd, Sacramento |
 | **Sep 20** (est.) Sun 10 AM–3 PM | Sac State Harvest Moon (JSSCC / APIDA pattern) | Capistrano Hall + courtyard (expected) |
 | **Sep 20** Sun 2:00–8:30 PM | California Is My Home Mid-Autumn Festival | District 56, Elk Grove |
-| **Sep 21** Mon 5:00–9:00 PM | APIDA Night Lights — Illuminating the Hive | Acorn Amphitheatre, Sac State campus |
+| **Sep 21** Mon 6:00–10:00 PM | APIDA Night Lights — Illuminating the Hive | Acorn Amphitheatre, Sac State campus |
 | **Sep 24** Thu 6:00–8:00 PM | ARI Autumn Moon Festival | New Happy Garden, Stockton Blvd |
 | ~~Sep 25–26~~ | ~~Great Lantern Festival~~ (**canceled** — not hosting 2026) | ~~Derr-Okamoto Park, Elk Grove~~ |
 | **Oct 3–4** (est.) | Giant Pumpkin Festival | Elk Grove Regional Park |
 | **Oct 3–4** (est.) | SF Supermarket Mid-Autumn activation | Rancho Cordova |
 
-That's a lot of weekends — and several events that look like the same product if you squint. **Sep 19–21** alone stacks parish, CAAPS spectacle, campus Harvest Moon, Elk Grove CAIMH, and Night Lights.
+That's a lot of weekends — and several events that look like the same product if you squint. **Sep 12** now stacks a parish fair with ASM Nguyen's park night (still estimated). **Sep 19–21** stacks CAAPS spectacle, campus Harvest Moon, Elk Grove CAIMH, and Night Lights.
 
 ---
 
@@ -61,8 +61,8 @@ I wouldn't try to merge everything into one mega-festival. I wouldn't chase the 
 
 | Event | Lane / market | Role in the season |
 |-------|---------------|-------------------|
-| ASM Nguyen (Sep 12) | Pocket / neighborhood park | Early warm-up — evening moon gathering before the Sep 19–21 cluster |
-| Riverside UMC (Sep 19) | Parish / neighborhood | Warm-up — build a lantern, bring community together |
+| ASM Nguyen (Sep 12 est.) | Pocket / neighborhood park | Early warm-up — evening moon gathering the same Saturday as Riverside |
+| Riverside UMC (Sep 12) | Parish / neighborhood | Warm-up — build a lantern, bring community together |
 | CAAPS (Sep 19) | Spectacle / night market | Asian Fest + Music Fest @ Power Inn — different product than family park fair |
 | Sac State Harvest Moon (Sep 20 est.) | Campus daytime | Courtyard / student fair — not the Elk Grove family evening product |
 | California Is My Home (Sep 20) | Elk Grove producers | Parallel fair — vendors, stage, local press |
@@ -74,7 +74,7 @@ I wouldn't try to merge everything into one mega-festival. I wouldn't chase the 
 
 Same events. Different assignment: **who each one is for, what job it does, which weekend it owns.**
 
-A parish fair isn't trying to be Sac State. CAAPS spectacle isn't trying to be the family fair at District 56. When each host knows its lane, cross-promo becomes honest — *ASM Sep 12 · Power Inn lights Sep 19 · CAIMH District 56 Sep 20 · campus Night Lights Sep 21 · ARI dinner Sep 24 · pumpkins + market plaza Oct 3–4* — instead of every flyer claiming to be "the only" or "the biggest." With Great Lantern Festival paused for 2026, that honesty matters even more: support the hosts who *are* running, don't invent a competing capstone.
+A parish fair isn't trying to be Sac State. CAAPS spectacle isn't trying to be the family fair at District 56. When each host knows its lane, cross-promo becomes honest — *Riverside parish + ASM park Sep 12 · Power Inn lights Sep 19 · CAIMH District 56 Sep 20 · campus Night Lights Sep 21 · ARI dinner Sep 24 · pumpkins + market plaza Oct 3–4* — instead of every flyer claiming to be "the only" or "the biggest." With Great Lantern Festival paused for 2026, that honesty matters even more: support the hosts who *are* running, don't invent a competing capstone.
 
 ---
 

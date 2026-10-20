@@ -6,7 +6,9 @@ season: lny
 
 # Market Landscape Schema — Lunar New Year Season
 
-**Live sheet:** [Greater Sacramento Lunar New Year Season - Market Landscape](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link)
+**Live sheet (archived):** [ARCHIVED — Greater Sacramento Lunar New Year Season - Market Landscape](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link)
+
+**Write SoT:** Community Graph — `event_series` (`eglny`) · `community_event` occurrences · `community_event_landscape` (`season_kind=lny`). Re-seed: `fetch-market-landscape-export.mjs` → `seed-market-landscape.mjs`.
 
 Row 1 in the Sheet must match these headers exactly.
 
@@ -74,6 +76,8 @@ Year tabs are `FILTER` formulas; they refresh when **All** changes. Do not edit 
 | `Reference only` | Out of region or out of season — context only |
 
 **Attendance source:** Always set when attendance is non-empty. Distinguish press/organizer claims from on-the-ground estimates and CCSD.
+
+**Schedule confidence** (current planning year — separate from row lifecycle): **Confirmed** · **Intended** · **Tentative** · **Estimated**. **Intended** = organizer stated the date (no public listing yet) — public site shows `(intended; not confirmed)` with a yellow / gold wash, not the gray estimate wash. See [public estimated-date display spec](../research/public-estimated-date-display-spec.md).
 
 ## Occurrence rows (one row per year)
 

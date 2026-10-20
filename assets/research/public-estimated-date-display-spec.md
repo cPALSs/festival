@@ -65,5 +65,17 @@ Always show the confidence clause on Estimated rows. Do not upgrade to high/medi
 ## Non-goals
 
 - Do not show raw day offsets like `LNY−10` on the public site  
-- Do not imply confirmation when Schedule confidence is Estimated  
+- Do not imply confirmation when Schedule confidence is Estimated or Intended  
 - Do not omit confidence on Estimated rows  
+
+## Intended (not confirmed)
+
+When the **organizer stated** a date (conversation / email) but has **not** published a listing:
+
+```text
+{ShortDow}, {ShortMonth} {Day}, {Year} (intended; not confirmed)
+```
+
+Do **not** keep the estimated-rule gloss — this is no longer a pattern projection.
+
+**Site wash:** estimated / tentative stay gray. Intended uses light yellow (`#fff6d4`) in light theme and a muted gold mix into `--surface` in dark theme (`--season-intended-bg`).  

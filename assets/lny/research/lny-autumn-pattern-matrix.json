@@ -967,7 +967,7 @@
         {
           "year": "2026",
           "status": "confirmed",
-          "dates": "2026-09-21 Mon 5-9 PM",
+          "dates": "2026-09-21 Mon 6–10 PM",
           "lead": "2026-09-21",
           "dow": "Mon",
           "fest": "2026-09-25",
@@ -1014,7 +1014,7 @@
       ]
     },
     "riverside-umc-mid-autumn": {
-      "name": "13th Annual Mid-Autumn Festival (community)",
+      "name": "Mid-Autumn Community Festival",
       "series": [
         {
           "year": "2024",
@@ -1032,14 +1032,14 @@
         },
         {
           "year": "2026",
-          "status": "planning",
-          "dates": "2026-09-19 Sat 5-8:30 PM (estimated)",
-          "lead": "2026-09-19",
+          "status": "confirmed",
+          "dates": "2026-09-12 Sat 4:00–7:30 PM",
+          "lead": "2026-09-12",
           "dow": "Sat",
           "fest": "2026-09-25",
           "festDow": "Fri",
-          "dayOffset": -6,
-          "weekendOffset": -1,
+          "dayOffset": -13,
+          "weekendOffset": -2,
           "festSat": "2026-09-26",
           "onFestDay": false,
           "landed": "before"
@@ -1047,7 +1047,7 @@
       ]
     },
     "asm-nguyen-autumn-moon": {
-      "name": "Autumn Moon Movie Night",
+      "name": "4th Annual Autumn Moon Movie Night",
       "series": [
         {
           "year": "2024",
@@ -1079,17 +1079,17 @@
         },
         {
           "year": "2026",
-          "status": "planning",
-          "dates": "2026-09-12 Sat 6:30–10 PM",
-          "lead": "2026-09-12",
+          "status": "confirmed",
+          "dates": "2026-09-26 Sat 6:00–10:00 PM",
+          "lead": "2026-09-26",
           "dow": "Sat",
           "fest": "2026-09-25",
           "festDow": "Fri",
-          "dayOffset": -13,
-          "weekendOffset": -2,
+          "dayOffset": 1,
+          "weekendOffset": 0,
           "festSat": "2026-09-26",
           "onFestDay": false,
-          "landed": "before"
+          "landed": "after"
         }
       ]
     },

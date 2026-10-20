@@ -9,7 +9,7 @@ status: draft
 
 Lunar Mid-Autumn / MAF Saturday (schema): **2024** ~Sep 17 Tue → MAF Sat **Sep 14**; **2025** Oct 6 Mon → Sat **Oct 4**; **2026** Sep 25 Fri → Sat **Sep 26**.
 
-Multi-year already on sheet (verify): `caaps-lantern`, `riverside-umc-mid-autumn`, `asm-nguyen-autumn-moon`, `sac-state-harvest-moon`, `sf-supermarket-maf-rancho`, `cpalss-maf` (2024+2026; 2025 gap intentional?).
+Multi-year already on sheet (verify): `caaps-lantern`, `riverside-umc-mid-autumn`, `asm-nguyen-autumn-moon` (**2026 confirmed** Sat Sep 26 movie night), `sac-state-harvest-moon`, `sf-supermarket-maf-rancho`, `cpalss-maf` (2024+2026; 2025 gap intentional?).
 
 | event_id | Years on sheet | Gaps / notes | Search targets |
 |----------|----------------|--------------|----------------|

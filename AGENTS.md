@@ -116,7 +116,7 @@ Paths below are for agents after `git clone` — not surfaced on GitHub Pages.
 - **Season naming:** Together → **Lunar New Year & Autumn Festivals** (LNY always before Autumn when listing both); alone → LNY / EGLNY or Autumn / Mid-Autumn / MAF ([tone of voice](docs/tone-of-voice.md))
 - **Events:** `event_id` slug on every landscape row — e.g. `cpalss-maf`, `cpalss-lny-capstone`, `caaps-lantern`
 - **Occurrences:** one row per `event_id` + `Season year`; use `Row status` (`planning`, `held`, `historical`, …)
-- **Schedule confidence** (autumn landscape): `Confirmed` · `Tentative` · `Estimated` — steward-verified; see [autumn market-research.md](docs/autumn/market-research.md). **Estimated** lunar-aligned dates use **MAF Saturday ± N weekends** from the prior held occurrence (not same Gregorian date); non-lunar rows keep calendar patterns — [schema](assets/autumn/research/market-landscape-schema.md)
+- **Schedule confidence** (autumn landscape): `Confirmed` · `Intended` · `Tentative` · `Estimated` — steward-verified; see [autumn market-research.md](docs/autumn/market-research.md). **Intended** = organizer stated, not yet public. **Estimated** lunar-aligned dates use **MAF Saturday ± N weekends** from the prior held occurrence (not same Gregorian date); non-lunar rows keep calendar patterns — [schema](assets/autumn/research/market-landscape-schema.md)
 - **Stakeholder involvement:** Community Activity Calendar → **Stakeholder event involvement** tab; sync via `scripts/sync-stakeholder-involvements.mjs`
 - **Lanes:** `L1`–`L7`
 - Arcs: `arc-moon`, `arc-fall`, `arc-lantern`, `ambient`

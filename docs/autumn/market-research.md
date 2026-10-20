@@ -33,6 +33,7 @@ The **2026** season is split by how sure we are about each occurrence:
 | Tier | Definition |
 |------|------------|
 | **Confirmed** | Calendar **steward** verified the date for planning |
+| **Intended** | Organizer stated this date; not yet a public listing |
 | **Tentative** | Spoken to organizer; they gave a committed date but event is not finalized |
 | **Estimated** | No organizer contact yet; date projected from prior held occurrence (see below) |
 

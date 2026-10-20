@@ -48,7 +48,7 @@ Two layers on the same **All** tab (both seasons):
 |--------|------|
 | **`Lunar aligned`** | **Keep.** `Yes` · `Partial` · `No` (+ short qualifier in cell OK). Gate for all festival-relative estimates. |
 | **`Dates`** | Occurrence fact. Always ISO lead `YYYY-MM-DD`. |
-| **`Schedule confidence`** | `Confirmed` · `Tentative` · `Estimated` (planning year). |
+| **`Schedule confidence`** | `Confirmed` · `Intended` · `Tentative` · `Estimated` (planning year). |
 | **`event_id`** | Series key across years. |
 
 **Tighten enums for `Lunar aligned` (optional cleanup, same column):**

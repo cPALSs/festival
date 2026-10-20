@@ -17,8 +17,8 @@ Unified, deduped volunteer contact list from LNY 2026 intake (Bugle shifts + Goo
 
 Pairs with:
 
-- [Recruitment pipeline](../../../../../Governance/Partnerships/data/community-activity-calendar-config.json) — capstone director leads (`idealist-*`, email replies)
-- [Seasonal outreach playbook](../../../../../Governance/Partnerships/outreach/seasonal-outreach-playbook.md)
+- [Recruitment pipeline](../../../../../Community OS/data/community-activity-calendar-config.json) — capstone director leads (`idealist-*`, email replies)
+- [Seasonal outreach playbook](../../../../../Community OS/outreach/seasonal-outreach-playbook.md)
 - [Event Producer Roster](producer-roster-schema.md) — season-shaping POCs (directors on placement)
 
 | Volunteer roster | Producer roster |

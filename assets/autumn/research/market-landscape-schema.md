@@ -6,7 +6,9 @@ season: autumn
 
 # Market Landscape Schema
 
-**Live sheet:** [Greater Sacramento Autumn Season - Market Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link)
+**Live sheet (archived):** [ARCHIVED — Greater Sacramento Autumn Season - Market Landscape](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link)
+
+**Write SoT:** Community Graph — `event_series` (`maf`) · `community_event` occurrences · `community_event_landscape` (`season_kind=autumn`). Re-seed: `fetch-market-landscape-export.mjs` → `seed-market-landscape.mjs`.
 
 Row 1 in the Sheet must match these headers exactly.
 
@@ -34,7 +36,7 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 | **event_id** | Stable slug linking all years of the same event — e.g. `cpalss-maf`, `caaps-lantern` |
 | **Season year** | Calendar year this row describes — `2025`, `2026`, `2027`, or `reference` |
 | **Row status** | `planning` · `confirmed` · `held` · `historical` · `cancelled` · `reference` |
-| **Schedule confidence** | **Confirmed** · **Tentative** · **Estimated** — required for current planning-year rows (see below) |
+| **Schedule confidence** | **Confirmed** · **Intended** · **Tentative** · **Estimated** — required for current planning-year rows (see below) |
 | **Confidence source** | `Steward confirmed` · `Public listing` · `Organizer conversation (pre-public)` · `Coalition internal` |
 | **Confirmed by** | Calendar steward name when human-confirmed |
 | **Confirmed date** | `YYYY-MM-DD` when steward confirmed |
@@ -100,6 +102,7 @@ The **2026** tab uses colored section bands — **Confirmed** · **Tentative** �
 | Value | When to use |
 |-------|-------------|
 | **Confirmed** | **Calendar steward** verified the date. Auto-signal: public listing (FB, Eventbrite, Sacramento365, organizer site). Steward may confirm **before** public post when organizer gave final date in conversation. |
+| **Intended** | Organizer stated this date (conversation or email) but has **not** posted a public listing yet. Public calendar: `(intended; not confirmed)` — yellow / gold wash, not gray. |
 | **Tentative** | Spoken to organizer; committed date but not finalized |
 | **Estimated** | No organizer contact; date projected from prior held occurrence (see below). Apply only to **planning-year** rows — not `held` / `historical`. |
 
@@ -131,7 +134,7 @@ Do **not** copy the prior Gregorian calendar date (e.g. “Sep 12 last year → 
 | event_id | 2025 held | Offset | 2026 estimate |
 |----------|-----------|--------|---------------|
 | `sac-state-harvest-moon` | Sun Sep 21 | MAF −2 weekends | Sun Sep 13 |
-| `riverside-umc-mid-autumn` | Sat Sep 27 | MAF −1 weekend | Sat Sep 19 |
+| `riverside-umc-mid-autumn` | Sat Sep 27 | MAF −1 weekend | Sat Sep 19 *(estimate; **2026 confirmed Sat Sep 12** / MAF −2 — do not reuse −1)* |
 
 **Non-lunar / calendar-pattern events** (`Lunar aligned` = No, or Partial with an explicit calendar pattern such as “first October weekend” or “2nd Friday of September”):
 

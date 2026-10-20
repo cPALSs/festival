@@ -77,16 +77,19 @@ Tokens save to `.zoom-mcp-tokens.json` at the vault root (gitignored). Re-run wh
 
 ## Cursor MCP config
 
-Wired in the coalition monorepo `.cursor/mcp.json` via `~/tools/zoom-mcp/start.mjs`:
+Wired in the coalition monorepo `.cursor/mcp.json` via `~/tools/zoom-mcp/start.mjs`. Cursor’s MCP spawn PATH is often `/usr/bin:/bin` only, so pin nvm `node` and prepend Homebrew/`npx`:
 
 ```json
 {
   "mcpServers": {
     "zoom-workspace": {
-      "command": "node",
+      "command": "/Users/bao/.nvm/versions/node/v22.20.0/bin/node",
       "args": ["/Users/bao/tools/zoom-mcp/start.mjs"],
       "cwd": "/Users/bao/cPALSs",
-      "env": { "ZOOM_MCP_HOME": "/Users/bao/cPALSs" }
+      "env": {
+        "ZOOM_MCP_HOME": "/Users/bao/cPALSs",
+        "PATH": "/Users/bao/.nvm/versions/node/v22.20.0/bin:/opt/homebrew/bin:/usr/local/bin:${env:PATH}"
+      }
     }
   }
 }
