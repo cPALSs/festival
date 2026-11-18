@@ -1,6 +1,6 @@
 # Festival Season Networks
 
-Open-source assets for **Lunar New Year & Autumn Festivals** season coordination in Greater Sacramento and beyond.
+Open toolkit for **festival organizers** — season coordination, booking, weather risk, food curation, and playbooks. Seeded in Greater Sacramento (Lunar New Year & Autumn) and forkable anywhere.
 
 **Site:** [festival.cpalss.com](https://festival.cpalss.com/) (human-friendly guides) · **Repo:** [github.com/cPALSs/festival](https://github.com/cPALSs/festival) (clone for AI agents and structured assets)
 

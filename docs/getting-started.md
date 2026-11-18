@@ -25,7 +25,7 @@ Shared Drive layout: **`Festival Network / Research`** (not Marketing) for marke
 
 ## Next steps
 
-Start from the [homepage toolkit](/) — friendly names for the same open-source assets:
+Start from the [homepage toolkit](/) — tools any festival organizer can fork:
 
 - [Auspicious Date Picker](auspicious-date-picker.html) — which weekend to book
 - [Weather Risk Monitor](weather-cancel-aid.html) — NWS clear / modify / cancel posture

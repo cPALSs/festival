@@ -43,30 +43,72 @@ html {
   text-wrap: balance;
 
   @media screen and (min-width: 64em) {
-    margin-bottom: 1.5rem; // was 2rem — match 25% height cut
+    margin-bottom: 1rem;
   }
 }
 
-// Homepage toolkit
-.home-lede {
-  font-size: 1.15rem;
-  line-height: 1.55;
-  max-width: 40rem;
-  margin: 0 0 0.75rem;
-  text-wrap: balance;
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.25rem;
+  margin: 1.25rem auto 0;
+  max-width: 36rem;
 }
 
-.home-audience {
-  margin: 0 0 1.75rem;
-  font-size: 0.95rem;
-  color: $blockquote-text-color;
+.site-nav-link {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+
+  &:hover,
+  &:focus-visible {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+  }
+
+  &.is-active {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+}
+
+.main-content .reports-more {
+  text-align: right;
+  margin-top: 0.35rem;
+}
+
+// Homepage toolkit — full-width under hero; TOC starts with Guides below
+.home-toolkit {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem 1.75rem;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 42em) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media screen and (min-width: 64em) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.doc-layout--after-toolkit {
+  padding-top: 0.25rem;
 }
 
 .toolkit-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.85rem;
-  margin: 0.75rem 0 2rem;
+  margin: 0;
 
   @media screen and (min-width: 42em) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
