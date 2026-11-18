@@ -1,0 +1,10 @@
+{
+  "id": "eglny-elk-grove",
+  "name": "Elk Grove Regional Park",
+  "program": "Elk Grove Lunar New Year (EGLNY)",
+  "lat": 38.4086,
+  "lon": -121.3716,
+  "timezone": "America/Los_Angeles",
+  "nws_user_agent": "festival-season-network-weather-cancel-aid (contact@cpalss.com)",
+  "notes": "Approx pavilion / festival footprint. Replace with your GPS if forking for another site."
+}

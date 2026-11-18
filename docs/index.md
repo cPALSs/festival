@@ -45,6 +45,7 @@ Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, rese
 - [Season coordination](season-coordination.html) — lane assignment (any season; autumn 2026 worked example)
 - [Staff recruitment checklist](staff-recruitment-checklist.html) — capstone director intake, triage, and placement
 - [Child audience design](child-audience/overview.html) — cohort guide (0–17) · fit tags · walkthroughs
+- [Weather cancel aid](weather-cancel-aid.html) — NWS-backed clear / modify / cancel posture for outdoor festivals (open-source tool)
 
 ## Live research
 

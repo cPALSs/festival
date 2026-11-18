@@ -103,6 +103,7 @@ Paths below are for agents after `git clone` — not surfaced on GitHub Pages.
 | Case studies | `assets/case-studies/` |
 | Shared kits | `assets/shared/group-activities/` |
 | Shared playbooks | `assets/shared/playbooks/` — [child audience index](assets/shared/playbooks/child-cohort-product-design.md) → `docs/child-audience/` topic pages |
+| Weather cancel aid | `tools/weather-cancel-aid/` — run `nws_cancel_aid.py`; human guide `docs/weather-cancel-aid.md` |
 
 ## Principles (constraints)
 

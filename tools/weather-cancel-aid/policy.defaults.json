@@ -1,0 +1,28 @@
+{
+  "id": "outdoor-festival-us-nws-v1",
+  "title": "Outdoor festival cancel/modify thresholds (NWS-aided)",
+  "notes": "Defaults inspired by Sacramento-area outdoor Tết practice. Fork and tune for your venue, AHJ, and insurance. Tool recommends posture only — humans cancel.",
+  "postures": {
+    "clear": "Proceed as planned; routine monitoring",
+    "modified": "Continue with weather protections; pause rides/inflatables in active rain; watch ponding",
+    "severe_cancel": "Recommend director + incident-command huddle for cancel or early close"
+  },
+  "thresholds": {
+    "wind_cancel_mph": 25,
+    "light_rain_inches_max": 0.25,
+    "heavy_rain_inches_min": 0.5,
+    "modified_precip_chance_min": 70,
+    "treat_wind_advisory_as_cancel": true,
+    "treat_flood_advisory_as_modified": true,
+    "warning_event_suffixes": ["Warning"],
+    "cancel_event_substrings": [
+      "thunderstorm",
+      "tornado",
+      "flash flood warning",
+      "flood warning",
+      "high wind warning",
+      "hurricane",
+      "tropical storm"
+    ]
+  }
+}

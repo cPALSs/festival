@@ -51,7 +51,14 @@ cd festival
 |---------|------|--------|
 | LNY | [docs/lny/](docs/lny/) | Market research guide |
 | Autumn | [docs/autumn/](docs/autumn/) | Market research guide |
-| Cross-season | [docs/season-coordination.md](docs/season-coordination.md) · [docs/child-audience/](docs/child-audience/) · [staff recruitment checklist](docs/staff-recruitment-checklist.md) | Season coordination, child audience, recruitment |
+| Cross-season | [docs/season-coordination.md](docs/season-coordination.md) · [docs/child-audience/](docs/child-audience/) · [staff recruitment checklist](docs/staff-recruitment-checklist.md) · [weather cancel aid](docs/weather-cancel-aid.md) | Season coordination, child audience, recruitment, NWS cancel aid |
+
+## Tools (clone + run)
+
+| Tool | Path |
+|------|------|
+| Food curation engine | [tools/food-curation-engine/](tools/food-curation-engine/) |
+| Weather cancel aid (NWS) | [tools/weather-cancel-aid/](tools/weather-cancel-aid/) |
 
 ## Contribute
 

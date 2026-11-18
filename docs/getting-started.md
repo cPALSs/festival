@@ -29,6 +29,7 @@ Shared Drive layout: **`Festival Network / Research`** (not Marketing) for marke
 - [Using market research](research.html)
 - [Season coordination](season-coordination.html)
 - [Staff recruitment checklist](staff-recruitment-checklist.html)
+- [Weather cancel aid](weather-cancel-aid.html) — open-source NWS cancel/modify posture tool
 - Season guides: [LNY research](lny/market-research.html), [Autumn research](autumn/market-research.html)
 
 ## Planning with AI {#planning-with-ai}
