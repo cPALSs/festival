@@ -1,11 +1,11 @@
 ---
-title: Weather cancel aid
+title: Weather Risk Monitor
 layout: default
 ---
 
 Outdoor festivals need a **cancel / modify call** when NWS products hit the venue — without pretending software can make the call alone.
 
-This Festival Season Network tool pulls live **National Weather Service** alerts and forecast for a GPS point and recommends a **posture**:
+**Weather Risk Monitor** (open-source cancel aid) pulls live **National Weather Service** alerts and forecast for a GPS point and recommends a **posture**:
 
 | Posture | Meaning |
 |---------|---------|
@@ -50,6 +50,7 @@ After clone, start at [AGENTS.md](https://github.com/cPALSs/festival/blob/main/A
 
 ## Related on this site
 
-- [Getting started](getting-started.html)
+- [Homepage toolkit](/)
+- [Auspicious Date Picker](auspicious-date-picker.html)
+- [Food Menu Curator](food-menu-curator.html)
 - [Plan with AI](plan-with-ai.html)
-- [Season coordination](season-coordination.html)

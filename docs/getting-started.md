@@ -25,11 +25,13 @@ Shared Drive layout: **`Festival Network / Research`** (not Marketing) for marke
 
 ## Next steps
 
+Start from the [homepage toolkit](/) — friendly names for the same open-source assets:
+
+- [Auspicious Date Picker](auspicious-date-picker.html) — which weekend to book
+- [Weather Risk Monitor](weather-cancel-aid.html) — NWS clear / modify / cancel posture
+- [Food Menu Curator](food-menu-curator.html) — vendor composition + public menu
+- [Season Coordinator](season-coordination.html) · [Market Landscape](research.html) · [Staff Recruitment](staff-recruitment-checklist.html)
 - [Principles (P1–P4)](principles.html)
-- [Using market research](research.html)
-- [Season coordination](season-coordination.html)
-- [Staff recruitment checklist](staff-recruitment-checklist.html)
-- [Weather cancel aid](weather-cancel-aid.html) — open-source NWS cancel/modify posture tool
 - Season guides: [LNY research](lny/market-research.html), [Autumn research](autumn/market-research.html)
 
 ## Planning with AI {#planning-with-ai}

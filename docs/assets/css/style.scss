@@ -47,6 +47,84 @@ html {
   }
 }
 
+// Homepage toolkit
+.home-lede {
+  font-size: 1.15rem;
+  line-height: 1.55;
+  max-width: 40rem;
+  margin: 0 0 0.75rem;
+  text-wrap: balance;
+}
+
+.home-audience {
+  margin: 0 0 1.75rem;
+  font-size: 0.95rem;
+  color: $blockquote-text-color;
+}
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin: 0.75rem 0 2rem;
+
+  @media screen and (min-width: 42em) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media screen and (min-width: 64em) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+a.toolkit-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem 1.15rem;
+  border: 1px solid $hr-border-color;
+  border-radius: 6px;
+  background: #fbfcfd;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $body-link-color;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(21, 120, 120, 0.12);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $body-link-color;
+    outline-offset: 2px;
+  }
+}
+
+.toolkit-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $section-headings-color;
+}
+
+.toolkit-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $body-link-color;
+}
+
+.toolkit-desc {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: $blockquote-text-color;
+}
+
 .site-footer-links {
   display: block;
   margin-bottom: 0.75rem;

@@ -3,61 +3,83 @@ title: Festival Season Network
 layout: default
 ---
 
-Open-source assets for **Lunar New Year & Autumn Festivals** — calendars, research, ecosystem graphs, playbooks, group-activity kits, and case studies.
+<p class="home-lede">Open toolkit for organizers of <strong>Lunar New Year &amp; Autumn Festivals</strong> — pick a better weekend, watch weather risk, curate food menus, and coordinate the season without reinventing the playbook.</p>
 
-| Audience | How to use |
-|----------|------------|
-| **People** | **You are here** — these GitHub Pages are human-friendly guides (principles, research, getting started). |
-| **AI agents** | **Clone the [repo](https://github.com/cPALSs/festival)** and start at [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md). Structured markdown, JSON, and the sheet registry live in the tree — agents work from the clone, not from scraped HTML. |
+<p class="home-audience">People: browse below. AI agents: <a href="https://github.com/cPALSs/festival">clone the repo</a> and start at <a href="https://github.com/cPALSs/festival/blob/main/AGENTS.md">AGENTS.md</a>.</p>
+
+## Toolkit
+
+<div class="toolkit-grid" role="list">
+
+<a class="toolkit-tile" role="listitem" href="auspicious-date-picker.html">
+<span class="toolkit-kicker">When</span>
+<span class="toolkit-name">Auspicious Date Picker</span>
+<span class="toolkit-desc">Which weekend should you book? Venue inventory first, then Tết- or moon-relative scoring — not vibes.</span>
+</a>
+
+<a class="toolkit-tile" role="listitem" href="weather-cancel-aid.html">
+<span class="toolkit-kicker">Safety</span>
+<span class="toolkit-name">Weather Risk Monitor</span>
+<span class="toolkit-desc">Live NWS alerts + forecast → clear / modified / cancel-band posture. Humans still make the call.</span>
+</a>
+
+<a class="toolkit-tile" role="listitem" href="food-menu-curator.html">
+<span class="toolkit-kicker">Vendors</span>
+<span class="toolkit-name">Food Menu Curator</span>
+<span class="toolkit-desc">Composition-first food vendor selection, capacity, and public menu publish — fork the engine.</span>
+</a>
+
+<a class="toolkit-tile" role="listitem" href="season-coordination.html">
+<span class="toolkit-kicker">Season</span>
+<span class="toolkit-name">Season Coordinator</span>
+<span class="toolkit-desc">Lane assignment so warm-ups feed the capstone instead of colliding with it.</span>
+</a>
+
+<a class="toolkit-tile" role="listitem" href="research.html">
+<span class="toolkit-kicker">Research</span>
+<span class="toolkit-name">Market Landscape</span>
+<span class="toolkit-desc">Who else is on the calendar? Live Sheets for LNY and Autumn, plus how to read them.</span>
+</a>
+
+<a class="toolkit-tile" role="listitem" href="staff-recruitment-checklist.html">
+<span class="toolkit-kicker">People</span>
+<span class="toolkit-name">Staff Recruitment</span>
+<span class="toolkit-desc">Capstone director intake, triage, and placement checklist you can reuse.</span>
+</a>
+
+<a class="toolkit-tile" role="listitem" href="child-audience/overview.html">
+<span class="toolkit-kicker">Family</span>
+<span class="toolkit-name">Child Audience Design</span>
+<span class="toolkit-desc">Cohorts 0–17, fit tags, site zoning, and walkthroughs for kids-first programming.</span>
+</a>
+
+<a class="toolkit-tile" role="listitem" href="plan-with-ai.html">
+<span class="toolkit-kicker">Agents</span>
+<span class="toolkit-name">Plan with AI</span>
+<span class="toolkit-desc">Clone, open AGENTS.md, wire Google Workspace MCP — agents work from files, not scraped HTML.</span>
+</a>
+
+</div>
+
+## Guides & foundations
+
+- [Getting started](getting-started.html)
+- [Principles (P1–P4)](principles.html)
+- [LNY market research](lny/market-research.html) · [Autumn market research](autumn/market-research.html)
+- [Tone of voice](tone-of-voice.html)
 
 ## What this is / is not
 
 - **Is:** Neutral shared tools any organizer can fork; decentralized coordination; AI-assisted planning
 - **Is not:** A membership org, event owner, or enforcement body
 
-## Start here
-
-- [Getting started](getting-started.html)
-- [Principles (P1–P4)](principles.html)
-- [Using market research](research.html)
-- [Season coordination](season-coordination.html)
-- [Staff recruitment checklist](staff-recruitment-checklist.html)
-
-**Planning with AI?** See [Getting started → Planning with AI](getting-started.html#planning-with-ai) or clone the repo and open [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md).
-
-## Seasons
-
-### Lunar New Year
-
-- [Market research](lny/market-research.html)
-- [Weekend booking — decision engine](lny/weekend-booking-decision-engine.html)
-- [Weekend booking — 2027 example](lny/weekend-booking-2027-example.html)
-
-### Autumn
-
-- [Market research](autumn/market-research.html)
-- [Weekend booking — decision engine](autumn/weekend-booking-decision-engine.html)
-- [Weekend booking — 2027 example](autumn/weekend-booking-2027-example.html)
-- [Venue factors](autumn/venue-factors.html)
-
-### Cross-season
-
-- [Season coordination](season-coordination.html) — lane assignment (any season; autumn 2026 worked example)
-- [Staff recruitment checklist](staff-recruitment-checklist.html) — capstone director intake, triage, and placement
-- [Child audience design](child-audience/overview.html) — cohort guide (0–17) · fit tags · walkthroughs
-- [Weather cancel aid](weather-cancel-aid.html) — NWS-backed clear / modify / cancel posture for outdoor festivals (open-source tool)
-
-## Live research
-
-Tabular event data lives in **Google Sheets** (not in the repo). Guides and narrative reports are on this site.
+## Live research sheets
 
 | Season | Market landscape |
-|--------|------------------------|
-| **Lunar New Year** | [Open in Google Sheets](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link) — [market research guide](lny/market-research.html) |
-| **Autumn** | [Open in Google Sheets](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link) — [market research guide](autumn/market-research.html) |
-
-See [Using market research](research.html) for how to read and contribute. **AI agents:** clone the repo and start at [AGENTS.md](https://github.com/cPALSs/festival/blob/main/AGENTS.md) — schemas, JSON graphs, and file paths are there, not on these pages.
+|--------|------------------|
+| **Lunar New Year** | [Open Sheet](https://docs.google.com/spreadsheets/d/1IB6beiKHC9R05r2o0imkh8MX_2u-qmhlVxTV3pxibs0/edit?usp=drive_link) |
+| **Autumn** | [Open Sheet](https://docs.google.com/spreadsheets/d/1Va0oCv09nyW98-JnWL9DuYYTsXG35cxjf_WqBZsySrA/edit?usp=drive_link) |
 
 ## Contact
 
-Questions about the network, season research, or using these assets? Email [contact@cpalss.com](mailto:contact@cpalss.com).
+Questions or want to contribute a tool? [contact@cpalss.com](mailto:contact@cpalss.com) · [Contribute](https://github.com/cPALSs/festival/blob/main/CONTRIBUTING.md)
