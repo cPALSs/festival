@@ -32,9 +32,11 @@
       {% include home-toolkit.html %}
       {% endif %}
       <div class="doc-layout{% if page.url == '/' %} doc-layout--after-toolkit{% endif %}">
+        {% unless page.url == '/' %}
         <nav class="doc-toc" id="doc-toc" aria-label="On this page" hidden>
           <p class="doc-toc-label">On this page</p>
         </nav>
+        {% endunless %}
         <div class="doc-main">
           {% if page.title and page.url != '/' and page.hide_title != true %}
           <h1 class="doc-page-title">{{ page.title }}</h1>
