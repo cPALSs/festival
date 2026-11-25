@@ -1,4 +1,3 @@
 {
-  "_comment": "Kenrick email → Zeffy export email(s). Use when applicants typo'd email or used alternate checkout address.",
-  "pinorritofoodtruck@gmail.com": ["rbimatong@gmail.com", "pinorritofoodtruck@gmail.com"]
+  "_comment": "Kenrick email → Zeffy export email(s). PII scrubbed from public repo 2026-11-25; keep private alias map outside git."
 }

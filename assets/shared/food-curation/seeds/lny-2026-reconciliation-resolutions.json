@@ -1,35 +1,39 @@
 {
   "_comment": "Staff-approved resolutions (Jul 2026). Applied by build_lny_2026_seed.py after Zeffy/Kenrick merge.",
-  "exclude_vendor_ids": ["vorwerk-thermomix"],
+  "exclude_vendor_ids": [
+    "vorwerk-thermomix"
+  ],
   "force_menu_source": {
     "d-t-kitchen": "kenrick",
     "pizza-lovers-sacramento": "kenrick"
   },
-  "merge_kenrick_menu_detail": ["bobette-tea"],
-  "signature_menu_from_kenrick": ["boba-meet-up"],
-  "canonical_email": {
-    "pinorritofoodtruck@gmail.com": "pinorritofoodtruck@gmail.com"
-  },
+  "merge_kenrick_menu_detail": [
+    "bobette-tea"
+  ],
+  "signature_menu_from_kenrick": [
+    "boba-meet-up"
+  ],
+  "canonical_email": {},
   "extra_pool": [
     {
-      "zeffy_email": "brewtik.coffee.tea@gmail.com",
+      "zeffy_email": null,
       "status": "waitlisted",
       "application_outcome": "cap_decline",
       "primary_archetype_id": "boba_milk_tea"
     },
     {
-      "zeffy_email": "chiameco@msn.com",
+      "zeffy_email": null,
       "status": "waitlisted",
       "application_outcome": "cap_decline",
       "dedupe_by_email": true
     },
     {
-      "zeffy_email": "alex@hotboi.co",
+      "zeffy_email": null,
       "status": "rejected",
       "application_outcome": "withdrew"
     },
     {
-      "zeffy_email": "bobabros916@gmail.com",
+      "zeffy_email": null,
       "status": "waitlisted",
       "application_outcome": "cap_decline",
       "primary_archetype_id": "boba_milk_tea"

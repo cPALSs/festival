@@ -8,7 +8,8 @@
     "fielded_2026": 31,
     "pool_total": 34,
     "signatures_note": "Q1=capability · Q2=simulated signatures · see resolutions file",
-    "festival_legacy": "vendor-festival-legacy.json"
+    "festival_legacy": "vendor-festival-legacy.json",
+    "pii_scrubbed": "2026-11-25 — email fields removed from public festival repo"
   },
   "applicants": [
     {
@@ -186,10 +187,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "asianfusionbbq@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "asianfusionbbq@gmail.com",
-        "canonical_email": "asianfusionbbq@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Pao Hep"
       },
       "instagram_handle": "@fusionbites",
@@ -376,10 +377,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "yummysnrbbq@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "yummysnrbbq@gmail.com",
-        "canonical_email": "yummysnrbbq@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Mimi or Ashley Sinnolai  (SR THAI BBQ & POTATO SWIRL)\nAshley RATANASIM (Mimi?)"
       },
       "instagram_handle": "@potatoswirlworld",
@@ -439,10 +440,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "bvorabouth84@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "bvorabouth84@gmail.com",
-        "canonical_email": "bvorabouth84@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Bounchanh Vorabouth"
       },
       "instagram_handle": "@sugarcanehut",
@@ -609,8 +610,8 @@
         "menu_source": "cleanup_resolved",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "bigevilmonkey@gmail.com",
-        "canonical_email": "bigevilmonkey@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Si Nguyen"
       },
       "setup_type": "open_food_canopy",
@@ -752,10 +753,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "aromaconcessions@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "aromaconcessions@gmail.com",
-        "canonical_email": "aromaconcessions@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Humberto Mireles Romo"
       },
       "instagram_handle": "@aromaconcessionsinc",
@@ -966,10 +967,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "krapisura@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "krapisura@gmail.com",
-        "canonical_email": "krapisura@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Kathleen Rapisura-Pardo"
       },
       "instagram_handle": "@mylumpialady916",
@@ -1208,8 +1209,8 @@
         "menu_source": "cleanup_resolved",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "lizettassoulfood@yahoo.com",
-        "canonical_email": "lizettassoulfood@yahoo.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Adriena Groves"
       },
       "instagram_handle": "@lizettas_soul_food",
@@ -1403,8 +1404,8 @@
         "menu_source": "cleanup_resolved",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "lowslowbbq75@gmail.com",
-        "canonical_email": "lowslowbbq75@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Kenneth Rowe"
       },
       "instagram_handle": "@low_slow_rowe",
@@ -1587,10 +1588,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "bobettetea@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "bobettetea@gmail.com",
-        "canonical_email": "bobettetea@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Linda Thao"
       },
       "instagram_handle": "@bobettetea",
@@ -1832,10 +1833,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "nyhia.lor@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "nyhia.lor@gmail.com",
-        "canonical_email": "nyhia.lor@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "nyhia lor"
       },
       "weak_brand": true,
@@ -1963,8 +1964,8 @@
         "menu_source": "cleanup_resolved",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "alondramac97@gmail.com",
-        "canonical_email": "alondramac97@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Alondra Macias"
       },
       "instagram_handle": "@pitayaslocas",
@@ -2126,10 +2127,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "sales@xdjerkykingz.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "sales@xdjerkykingz.com",
-        "canonical_email": "sales@xdjerkykingz.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Mack Xaysana"
       },
       "instagram_handle": "@xd_jerkykingz",
@@ -2640,8 +2641,8 @@
         "menu_source": "cleanup_resolved",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "Rhomesbistro@gmail.com",
-        "canonical_email": "Rhomesbistro@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Susan Lapena"
       },
       "instagram_handle": "@rhomes_bistro",
@@ -3001,10 +3002,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "kenrick_resolved",
-        "zeffy_email": "mfireweed@yahoo.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "mfireweed@yahoo.com",
-        "canonical_email": "mfireweed@yahoo.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Thy Hep or Saengdee (Dee) Meesai"
       },
       "weak_brand": true,
@@ -3202,10 +3203,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "bobameetup@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "bobameetup@gmail.com",
-        "canonical_email": "bobameetup@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Bee Thao"
       },
       "instagram_handle": "@boba_meetup",
@@ -3414,10 +3415,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "myzz_susan@hotmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "myzz_susan@hotmail.com",
-        "canonical_email": "myzz_susan@hotmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Susan Vue"
       },
       "setup_type": "open_food_canopy",
@@ -3572,10 +3573,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "zummifood678@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "zummifood678@gmail.com",
-        "canonical_email": "zummifood678@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Thanhchi Dzip"
       },
       "vietnamese_anchor": true,
@@ -3770,10 +3771,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "rbimatong@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "pinorritofoodtruck@gmail.com",
-        "canonical_email": "pinorritofoodtruck@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Ralph Imatong"
       },
       "instagram_handle": "@pinorritofoodtruck",
@@ -3984,8 +3985,8 @@
         "menu_source": "cleanup_resolved",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "calif_girl916@yahoo.com",
-        "canonical_email": "calif_girl916@yahoo.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Faiza Ghous"
       },
       "instagram_handle": "@rayskitchen645",
@@ -4104,10 +4105,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "chervang123@yahoo.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "chervang123@yahoo.com",
-        "canonical_email": "chervang123@yahoo.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Cher Vang"
       },
       "instagram_handle": "@wonton_crunchies",
@@ -4239,10 +4240,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "baboyboyscatering@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "baboyboyscatering@gmail.com",
-        "canonical_email": "baboyboyscatering@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "John Montuya"
       },
       "instagram_handle": "@baboyboys",
@@ -4399,10 +4400,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "cgaje@maizrestaurant.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "cgaje@maizrestaurant.com & jcedillo@maizrestaurant.com",
-        "canonical_email": "cgaje@maizrestaurant.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Christine Gaje"
       },
       "instagram_handle": "@maiz_mexican_catering",
@@ -4529,10 +4530,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "pizzaloverssacramento@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "pizzaloverssacramento@gmail.com",
-        "canonical_email": "pizzaloverssacramento@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Stacy Cisneros"
       },
       "instagram_handle": "@_pizzaloverssac_",
@@ -4659,10 +4660,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "shibainccafe@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "shibainccafe@gmail.com",
-        "canonical_email": "shibainccafe@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Ron Lim"
       },
       "instagram_handle": "@shibainccafe",
@@ -4722,10 +4723,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "huynhho1984@hotmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "huynhho1984@hotmail.com",
-        "canonical_email": "huynhho1984@hotmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Huynh Ho"
       },
       "instagram_handle": "@hssugarcanecafe",
@@ -4805,10 +4806,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "jerkyjerkyjerky31@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "jerkyjerkyjerky31@gmail.com",
-        "canonical_email": "jerkyjerkyjerky31@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Michael Eng"
       },
       "instagram_handle": "@jerkyjerkyfresno",
@@ -4962,10 +4963,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "redjordans1990@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "redjordans1990@gmail.com",
-        "canonical_email": "redjordans1990@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Ryan Larkin-Hsbon"
       },
       "instagram_handle": "@mrpopspopcorn",
@@ -5004,10 +5005,10 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "cleanup_resolved",
-        "zeffy_email": "truckeegourmet@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
-        "kenrick_email": "truckeegourmet@gmail.com",
-        "canonical_email": "truckeegourmet@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "TRUE NETHERBY"
       },
       "instagram_handle": "@tmg.express",
@@ -5062,8 +5063,8 @@
         "menu_source": "kenrick",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "gmsweetstreatsandcatering22@gmail.com",
-        "canonical_email": "gmsweetstreatsandcatering22@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Tara Henry"
       },
       "instagram_handle": "@glammeme_sweettreats",
@@ -5117,8 +5118,8 @@
         "menu_source": "cleanup_resolved",
         "zeffy_email": null,
         "zeffy_status": null,
-        "kenrick_email": "idbarrero@gmail.com",
-        "canonical_email": "idbarrero@gmail.com",
+        "kenrick_email": null,
+        "canonical_email": null,
         "kenrick_contact": "Ivan Barrero"
       },
       "instagram_handle": "@rootandcane",
@@ -5259,7 +5260,7 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "brewtik.coffee.tea@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Not checked-in",
         "kenrick_email": null,
         "pool": "extra_cap_decline_or_withdrew"
@@ -5288,7 +5289,7 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "alex@hotboi.co",
+        "zeffy_email": null,
         "zeffy_status": "Canceled",
         "kenrick_email": null,
         "pool": "extra_cap_decline_or_withdrew"
@@ -5746,7 +5747,7 @@
       "signatures_simulated_q2": true,
       "provenance": {
         "menu_source": "zeffy",
-        "zeffy_email": "bobabros916@gmail.com",
+        "zeffy_email": null,
         "zeffy_status": "Canceled",
         "kenrick_email": null,
         "pool": "extra_cap_decline_or_withdrew"
